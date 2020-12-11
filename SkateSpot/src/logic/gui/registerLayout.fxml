@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.TitledPane?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="841.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <TitledPane animated="false" collapsible="false" layoutX="220.0" layoutY="-46.0" prefHeight="521.0" prefWidth="811.0" style="-fx-background-color: 524B4B;" text="SkateSpot" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <content>
+            <AnchorPane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: rgb(52,4B,4B);" />
+         </content>
+      </TitledPane>
+   </children>
+</AnchorPane>
