@@ -14,7 +14,8 @@ public class HomeViewMain extends Application
 		launch(args);
 	}
 
-	public void start(Stage stage) throws Exception {
+	public void start(Stage stage) throws Exception
+	{
 		Parent root = FXMLLoader.load(getClass().getResource("homeLayout.fxml"));
 		Scene scene = new Scene(root);
 		stage.setTitle("SkateSpot");
@@ -22,8 +23,32 @@ public class HomeViewMain extends Application
 		stage.show();
 	}
 
-	public void handle(MouseEvent mouseEvent)
-	{
 
+	public void handle(MouseEvent mouseEvent) throws Exception					//Controller grafico
+	{
+		Stage stage;
+		Scene scene;
+		Parent root;
+		Button clickedButton = (Button)mouseEvent.getSource();
+		String value = clickedButton.getText();
+		switch (value)
+		{
+			case "LOGIN" -> {
+				root = FXMLLoader.load(getClass().getResource("loginLayout.fxml"));
+				scene = new Scene(root);
+				stage = new Stage();
+				stage.setTitle("LOGIN");
+				stage.setScene(scene);
+				stage.show();
+			}
+			case "SIGN UP" -> {
+				root = FXMLLoader.load(getClass().getResource("registerLayout.fxml"));
+				scene = new Scene(root);
+				stage = new Stage();
+				stage.setTitle("SIGN UP");
+				stage.setScene(scene);
+				stage.show();
+			}
+		}
 	}
 }
