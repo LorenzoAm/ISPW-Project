@@ -7,11 +7,12 @@
 <?import javafx.scene.control.ScrollPane?>
 <?import javafx.scene.control.SplitPane?>
 <?import javafx.scene.control.TitledPane?>
+<?import javafx.scene.image.Image?>
 <?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="612.0" prefWidth="965.0" style="-fx-background-color: rgb(52,50,50);" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1">
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="612.0" prefWidth="965.0" style="-fx-background-color: rgb(52,50,50);" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="logic.gui.HomeViewMain">
    <children>
       <TitledPane animated="false" collapsible="false" layoutX="220.0" layoutY="-46.0" prefHeight="521.0" prefWidth="811.0" style="-fx-background-color: rgb(52,50,50);" text="SkateSpot" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
         <content>
@@ -21,8 +22,8 @@
                     <items>
                       <AnchorPane maxHeight="90.0" maxWidth="1.7976931348623157E308" minHeight="0.0" minWidth="0.0" prefHeight="69.0" prefWidth="819.0" style="-fx-background-color: rgb(52,50,50);">
                            <children>
-                              <Button id="signUp" layoutX="748.0" layoutY="54.0" mnemonicParsing="false" nodeOrientation="LEFT_TO_RIGHT" prefHeight="0.0" prefWidth="86.0" style="-fx-background-color: rgb(52,57,57);" text="SIGN UP" textFill="#ff5c00" AnchorPane.bottomAnchor="6.00000000004" AnchorPane.rightAnchor="110.0" />
-                              <Button id="login" fx:id="login" layoutX="748.0" layoutY="6.0" mnemonicParsing="false" nodeOrientation="LEFT_TO_RIGHT" prefHeight="10.0" prefWidth="86.0" style="-fx-background-color: rgb(52,57,57);" text="LOGIN" textFill="#ff5c00" AnchorPane.rightAnchor="110.0" AnchorPane.topAnchor="6.0" />
+                              <Button id="signUp" layoutX="748.0" layoutY="54.0" mnemonicParsing="false" nodeOrientation="LEFT_TO_RIGHT" onMouseClicked="#handle" prefHeight="0.0" prefWidth="86.0" style="-fx-background-color: rgb(52,57,57);" text="SIGN UP" textFill="#ff5c00" AnchorPane.bottomAnchor="6.00000000004" AnchorPane.rightAnchor="110.0" />
+                              <Button id="login" fx:id="login" layoutX="748.0" layoutY="6.0" mnemonicParsing="false" nodeOrientation="LEFT_TO_RIGHT" onMouseClicked="#handle" prefHeight="10.0" prefWidth="86.0" style="-fx-background-color: rgb(52,57,57);" text="LOGIN" textFill="#ff5c00" AnchorPane.rightAnchor="110.0" AnchorPane.topAnchor="6.0" />
                               <MenuButton focusTraversable="false" maxHeight="80.0" mnemonicParsing="false" prefHeight="82.0" prefWidth="106.0" style="-fx-background-color: rgb(52,50,50);" text="     ------&#10;     ------&#10;     ------" textFill="#ff5c00">
                                 <items>
                                   <MenuItem mnemonicParsing="false" text="search spot" />
@@ -33,10 +34,17 @@
                                  </font>
                               </MenuButton>
                               <Label layoutX="782.0" layoutY="32.0" nodeOrientation="LEFT_TO_RIGHT" prefHeight="18.0" prefWidth="18.0" text="OR" textFill="#ff5c00" AnchorPane.rightAnchor="145.0" AnchorPane.topAnchor="37.0" />
-                              <Button alignment="CENTER" layoutX="856.0" layoutY="6.0" mnemonicParsing="false" nodeOrientation="LEFT_TO_RIGHT" prefHeight="69.0" prefWidth="72.0" style="-fx-background-radius: 100; -fx-background-image: url(&quot;C:\Users\Andrei\eclipse-workspace\SkateSpot\trunk\Progetto\Immages\person_grey&quot;);" textAlignment="CENTER" AnchorPane.rightAnchor="15.200000000000045" />
+                              <Button alignment="CENTER" layoutX="856.0" layoutY="6.0" mnemonicParsing="false" nodeOrientation="LEFT_TO_RIGHT" prefHeight="69.0" prefWidth="72.0" style="-fx-background-radius: 100;" textAlignment="CENTER" AnchorPane.rightAnchor="15.200000000000045">
+                                 <graphic>
+                                    <ImageView fitHeight="71.0" fitWidth="67.0" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@../resources/person_grey.png" />
+                                       </image>
+                                    </ImageView>
+                                 </graphic></Button>
                            </children>
                         </AnchorPane>
-                      <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="333.0" prefWidth="677.0" style="fx-ba: red;">
+                      <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="333.0" prefWidth="677.0" style="fx-ba: #ff0000;">
                            <children>
                               <SplitPane dividerPositions="0.07993384785005513" layoutX="271.0" layoutY="82.0" orientation="VERTICAL" prefHeight="364.8" prefWidth="819.2" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
                                 <items>
@@ -60,7 +68,7 @@
                                     </AnchorPane>
                                   <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0">
                                        <children>
-                                          <ScrollPane layoutX="90.0" layoutY="42.0" prefHeight="436.0" prefWidth="940.0" style="-fx-background-color: rgb(52,50,50);" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+                                          <ScrollPane layoutX="90.0" layoutY="42.0" onMouseClicked="#handle" prefHeight="436.0" prefWidth="940.0" style="-fx-background-color: rgb(52,50,50);" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
                                        </children>
                                     </AnchorPane>
                                 </items>
@@ -73,6 +81,5 @@
             </AnchorPane>
         </content>
       </TitledPane>
-      <ImageView fitHeight="150.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true" />
    </children>
 </AnchorPane>
