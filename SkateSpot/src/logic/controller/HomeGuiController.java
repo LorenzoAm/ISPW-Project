@@ -1,24 +1,23 @@
 package logic.controller;
 
 import javafx.fxml.FXMLLoader;
-import javafx.scene.Node;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.scene.control.Button;
 import javafx.scene.input.MouseEvent;
 import javafx.stage.Stage;
+import logic.gui.HomeMain;
+
+import java.io.IOException;
+
 
 public class HomeGuiController
 {
-    private Stage home;
+    private static Stage signUp;
+    private static Stage login;
 
-    public HomeGuiController(Stage home)
+    public void handle(MouseEvent mouseEvent) throws IOException
     {
-       this.home = home;
-    }
-    public void handle(MouseEvent mouseEvent) throws Exception
-    {
-        Stage stage;
         Scene scene;
         Parent root;
         Button clickedButton = (Button)mouseEvent.getSource();
@@ -26,25 +25,50 @@ public class HomeGuiController
         switch (value)
         {
             case "LOGIN" -> {
-                root = FXMLLoader.load(getClass().getResource("../gui/loginLayout.fxml"));
-                scene = new Scene(root);
-                stage = new Stage();
-                stage.setTitle("LOGIN");
-                stage.setScene(scene);
-                stage.show();
-                LoginGuiController l = new LoginGuiController(home);  //home stage is passed to LoginGuiController
-                ((Node)(mouseEvent.getSource())).getScene().getWindow().hide();
+                if(getLoginStage() == null)   //prima apertura di login
+                {
+                    root = FXMLLoader.load(getClass().getResource("../gui/loginLayout.fxml"));
+                    scene = new Scene(root);
+                    login = new Stage();
+                    login.setTitle("LOGIN");
+                    login.setScene(scene);
+                    login.show();
+                    HomeMain.getStage().close();
+                }
+                else
+                {
+                    login.show();
+                    HomeMain.getStage().close();
+                }
+
             }
             case "SIGN UP" -> {
-                root = FXMLLoader.load(getClass().getResource("../gui/signUpLayout.fxml"));
-                scene = new Scene(root);
-                stage = new Stage();
-                stage.setTitle("SIGN UP");
-                stage.setScene(scene);
-                stage.show();
-                SignUpGuiController s = new SignUpGuiController(home);  //home stage is passed to the SignUpGuiController
-                ((Node)(mouseEvent.getSource())).getScene().getWindow().hide();
+                if(getSignUpStage() == null)   //prima apertura di signUp
+                {
+                    root = FXMLLoader.load(getClass().getResource("../gui/signUpLayout.fxml"));
+                    scene = new Scene(root);
+                    signUp = new Stage();
+                    signUp.setTitle("SIGN UP");
+                    signUp.setScene(scene);
+                    signUp.show();
+                    HomeMain.getStage().close();
+                }
+                else
+                {
+                    signUp.show();
+                    HomeMain.getStage().close();
+                }
             }
         }
+    }
+
+    public static Stage getSignUpStage()
+    {
+        return signUp;
+    }
+
+    public static Stage getLoginStage()
+    {
+        return login;
     }
 }
