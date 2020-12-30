@@ -1,9 +1,8 @@
-package logic.controller;
+package logic.gui;
 
-import com.sun.glass.ui.Application;
-import javafx.scene.Node;
 import javafx.scene.control.Button;
 import javafx.scene.input.MouseEvent;
+import logic.gui.HomeGuiController;
 import logic.gui.HomeMain;
 
 

@@ -5,7 +5,7 @@
 <?import javafx.scene.layout.*?>
 <?import javafx.scene.text.*?>
 
-<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="612.0" prefWidth="965.0" style="-fx-background-color: rgb(52,50,50);" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="logic.controller.HomeGuiController">
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="612.0" prefWidth="965.0" style="-fx-background-color: rgb(52,50,50);" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="logic.gui.HomeGuiController">
    <children>
       <TitledPane fx:id="home" animated="false" collapsible="false" layoutX="220.0" layoutY="-46.0" prefHeight="521.0" prefWidth="811.0" style="-fx-background-color: rgb(52,50,50);" text="SkateSpot" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
         <content>
@@ -16,7 +16,7 @@
                       <AnchorPane maxHeight="90.0" maxWidth="1.7976931348623157E308" minHeight="0.0" minWidth="0.0" prefHeight="69.0" prefWidth="819.0" style="-fx-background-color: rgb(52,50,50);">
                            <children>
                               <Button id="signUp" layoutX="748.0" layoutY="54.0" mnemonicParsing="false" nodeOrientation="LEFT_TO_RIGHT" onMouseClicked="#handle" prefHeight="0.0" prefWidth="86.0" style="-fx-background-color: rgb(52,57,57);" text="SIGN UP" textFill="#ff5c00" AnchorPane.bottomAnchor="6.00000000004" AnchorPane.rightAnchor="110.0" />
-                              <Button id="login" fx:id="login" layoutX="748.0" layoutY="6.0" mnemonicParsing="false" nodeOrientation="LEFT_TO_RIGHT" onMouseClicked="#handle" prefHeight="10.0" prefWidth="86.0" style="-fx-background-color: rgb(52,57,57);" text="LOGIN" textFill="#ff5c00" AnchorPane.rightAnchor="110.0" AnchorPane.topAnchor="6.0" />
+                              <Button id="login"  layoutX="748.0" layoutY="6.0" mnemonicParsing="false" nodeOrientation="LEFT_TO_RIGHT" onMouseClicked="#handle" prefHeight="10.0" prefWidth="86.0" style="-fx-background-color: rgb(52,57,57);" text="LOGIN" textFill="#ff5c00" AnchorPane.rightAnchor="110.0" AnchorPane.topAnchor="6.0" />
                               <MenuButton focusTraversable="false" maxHeight="80.0" mnemonicParsing="false" prefHeight="82.0" prefWidth="106.0" style="-fx-background-color: rgb(52,50,50);" text="     ------&#10;     ------&#10;     ------" textFill="#ff5c00">
                                 <items>
                                   <MenuItem mnemonicParsing="false" text="search spot" />

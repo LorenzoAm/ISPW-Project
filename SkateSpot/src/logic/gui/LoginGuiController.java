@@ -1,13 +1,18 @@
-package logic.controller;
+package logic.gui;
 
-import javafx.scene.Node;
+import javafx.fxml.FXML;
 import javafx.scene.control.Button;
+import javafx.scene.control.TextField;
 import javafx.scene.input.MouseEvent;
-import logic.gui.HomeMain;
+import logic.bean.LoginBean;
 
 
 public class LoginGuiController
 {
+
+    @FXML
+    public TextField email;
+    public TextField password;
 
     public void handle(MouseEvent mouseEvent)
     {
@@ -19,8 +24,9 @@ public class LoginGuiController
                 HomeGuiController.getLoginStage().close();
                 HomeMain.getStage().show();
                 break;
-            case "Sign In":     //login button clicked --> create bean class
-                //IMPLEMENT SIGN IN USE CASE
+            case "Sign in":     //login button clicked --> create bean class
+                LoginBean bean = new LoginBean(email.getText(),password.getText());
+                bean.check();
                 break;
         }
     }
