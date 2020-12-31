@@ -2,6 +2,7 @@ package logic.gui;
 
 import javafx.fxml.FXML;
 import javafx.scene.control.Button;
+import javafx.scene.control.PasswordField;
 import javafx.scene.control.TextField;
 import javafx.scene.input.MouseEvent;
 import logic.bean.LoginBean;
@@ -12,7 +13,7 @@ public class LoginGuiController
 
     @FXML
     public TextField email;
-    public TextField password;
+    public PasswordField password;
 
     public void handle(MouseEvent mouseEvent)
     {
