@@ -33,8 +33,9 @@ public class SignUpGuiController
                 HomeGuiController.getSignUpStage().close();
                 HomeMain.getStage().show();
                 break;
-            case "Sign Up":     //sign up button clicked --> create bean class
+            case "Sign up":     //sign up button clicked --> create bean class
             	 SignUpBean bean = new SignUpBean(name.getText(),surname.getText(),email.getText(),password.getText(),confirmPassword.getText(), data.getValue());
+            	 System.out.println(bean.toString());
                 break;
         }
 
