@@ -1,11 +1,10 @@
 package logic.gui;
 
-import java.awt.TextField;
-
-import javax.swing.JRadioButton;
+//import javax.swing.JRadioButton;
 
 import javafx.scene.control.Button;
 import javafx.scene.control.DatePicker;
+import javafx.scene.control.TextField;
 import javafx.scene.control.PasswordField;
 import javafx.scene.input.MouseEvent;
 import logic.bean.SignUpBean;
@@ -14,14 +13,14 @@ import logic.bean.SignUpBean;
 public class SignUpGuiController
 {
 	//fxml
-	private TextField name;
-	private TextField surname;
-	private TextField email;
-	private PasswordField password;
-	private PasswordField confirmPassword;
-	private DatePicker data;
-	private JRadioButton genderMale;
-	private JRadioButton genderFemale;
+	public TextField name;
+	public TextField surname;
+	public TextField email;
+	public PasswordField password;
+	public PasswordField confirmPassword;
+	public DatePicker data;
+	//private JRadioButton genderMale;
+	//private JRadioButton genderFemale;
 
     public void handle(MouseEvent mouseEvent)
     {
