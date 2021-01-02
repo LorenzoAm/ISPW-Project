@@ -1,14 +1,27 @@
 package logic.gui;
 
+import java.awt.TextField;
+
+import javax.swing.JRadioButton;
+
 import javafx.scene.control.Button;
+import javafx.scene.control.DatePicker;
+import javafx.scene.control.PasswordField;
 import javafx.scene.input.MouseEvent;
-import logic.gui.HomeGuiController;
-import logic.gui.HomeMain;
+import logic.bean.SignUpBean;
 
 
 public class SignUpGuiController
 {
-
+	//fxml
+	private TextField name;
+	private TextField surname;
+	private TextField email;
+	private PasswordField password;
+	private PasswordField confirmPassword;
+	private DatePicker data;
+	private JRadioButton genderMale;
+	private JRadioButton genderFemale;
 
     public void handle(MouseEvent mouseEvent)
     {
@@ -21,7 +34,7 @@ public class SignUpGuiController
                 HomeMain.getStage().show();
                 break;
             case "Sign Up":     //sign up button clicked --> create bean class
-                //IMPLEMENT SING UP USE CASE
+            	 SignUpBean bean = new SignUpBean(name.getText(),surname.getText(),email.getText(),password.getText(),confirmPassword.getText(), data.getValue());
                 break;
         }
 
