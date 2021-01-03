@@ -8,6 +8,7 @@
 <?import javafx.scene.control.SplitPane?>
 <?import javafx.scene.control.TextField?>
 <?import javafx.scene.control.TitledPane?>
+<?import javafx.scene.control.ToggleGroup?>
 <?import javafx.scene.image.Image?>
 <?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.AnchorPane?>
@@ -51,8 +52,11 @@
                     </Button>
                <PasswordField fx:id="password" layoutX="339.0" layoutY="151.0" prefHeight="26.0" prefWidth="315.0" promptText="New password" />
                <PasswordField fx:id="confirmPassword" layoutX="339.0" layoutY="190.0" prefHeight="26.0" prefWidth="315.0" promptText="Confirm password" />
-               <RadioButton fx:id="genderMale" layoutX="340.0" layoutY="300.0" mnemonicParsing="false" text="Male" textFill="#ff5c00" />
-               <RadioButton fx:id="genderFemale" layoutX="410.0" layoutY="300.0" mnemonicParsing="false" text="Female" textFill="#ff5c00" />
+               <RadioButton fx:id="maleButton" layoutX="340.0" layoutY="300.0" mnemonicParsing="false" onAction="#radioButtonChanged" text="Male" textFill="#ff5c00">
+                  <toggleGroup>
+                     <ToggleGroup fx:id="radioToggleGroup" />
+                  </toggleGroup></RadioButton>
+               <RadioButton fx:id="femaleButton" layoutX="410.0" layoutY="300.0" mnemonicParsing="false" onAction="#radioButtonChanged" text="Female" textFill="#ff5c00" toggleGroup="$radioToggleGroup" />
                 </AnchorPane>
             </SplitPane>
         </AnchorPane>
