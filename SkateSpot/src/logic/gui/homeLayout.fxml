@@ -11,13 +11,13 @@
         <content>
           <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
                <children>
-                  <SplitPane dividerPositions="0.18788682581786031" layoutX="246.0" layoutY="117.0" orientation="VERTICAL" prefHeight="448.8" prefWidth="714.4" style="-fx-background-color: rgb(52,50,50);" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                  <SplitPane dividerPositions="0.16477675407512404" layoutX="246.0" layoutY="117.0" orientation="VERTICAL" prefHeight="448.8" prefWidth="714.4" style="-fx-background-color: rgb(52,50,50);" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
                     <items>
-                      <AnchorPane maxHeight="90.0" maxWidth="1.7976931348623157E308" minHeight="0.0" minWidth="0.0" prefHeight="69.0" prefWidth="819.0" style="-fx-background-color: rgb(52,50,50);">
+                      <AnchorPane maxHeight="90.0" maxWidth="1.7976931348623157E308" minHeight="0.0" minWidth="0.0" prefHeight="69.0" prefWidth="943.0" style="-fx-background-color: rgb(52,50,50);">
                            <children>
                               <Button id="signUp" layoutX="748.0" layoutY="54.0" mnemonicParsing="false" nodeOrientation="LEFT_TO_RIGHT" onMouseClicked="#handle" prefHeight="0.0" prefWidth="86.0" style="-fx-background-color: rgb(52,57,57);" text="SIGN UP" textFill="#ff5c00" AnchorPane.bottomAnchor="6.00000000004" AnchorPane.rightAnchor="110.0" />
-                              <Button id="login"  layoutX="748.0" layoutY="6.0" mnemonicParsing="false" nodeOrientation="LEFT_TO_RIGHT" onMouseClicked="#handle" prefHeight="10.0" prefWidth="86.0" style="-fx-background-color: rgb(52,57,57);" text="LOGIN" textFill="#ff5c00" AnchorPane.rightAnchor="110.0" AnchorPane.topAnchor="6.0" />
-                              <MenuButton focusTraversable="false" maxHeight="80.0" mnemonicParsing="false" prefHeight="82.0" prefWidth="106.0" style="-fx-background-color: rgb(52,50,50);" text="     ------&#10;     ------&#10;     ------" textFill="#ff5c00">
+                              <Button id="login" layoutX="748.0" layoutY="6.0" mnemonicParsing="false" nodeOrientation="LEFT_TO_RIGHT" onMouseClicked="#handle" prefHeight="10.0" prefWidth="86.0" style="-fx-background-color: rgb(52,57,57);" text="LOGIN" textFill="#ff5c00" AnchorPane.rightAnchor="110.0" AnchorPane.topAnchor="6.0" />
+                              <MenuButton focusTraversable="false" maxHeight="90.0" mnemonicParsing="false" prefHeight="90.0" prefWidth="111.0" style="-fx-background-color: rgb(52,50,50);" textFill="#ff5c00">
                                 <items>
                                   <MenuItem mnemonicParsing="false" text="search spot" />
                                   <MenuItem mnemonicParsing="false" text="add spot" />
@@ -27,14 +27,20 @@
                                  </font>
                               </MenuButton>
                               <Label layoutX="782.0" layoutY="32.0" nodeOrientation="LEFT_TO_RIGHT" prefHeight="18.0" prefWidth="18.0" text="OR" textFill="#ff5c00" AnchorPane.rightAnchor="145.0" AnchorPane.topAnchor="37.0" />
-                              <Button alignment="CENTER" layoutX="856.0" layoutY="6.0" mnemonicParsing="false" nodeOrientation="LEFT_TO_RIGHT" prefHeight="69.0" prefWidth="72.0" style="-fx-background-radius: 100;" textAlignment="CENTER" AnchorPane.rightAnchor="15.200000000000045">
+                              <Button alignment="CENTER" layoutX="854.0" layoutY="6.0" mnemonicParsing="false" nodeOrientation="LEFT_TO_RIGHT" prefHeight="60.0" prefWidth="66.0" style="-fx-background-radius: 100;" textAlignment="CENTER" AnchorPane.rightAnchor="18.0">
                                  <graphic>
-                                    <ImageView fitHeight="71.0" fitWidth="67.0" pickOnBounds="true" preserveRatio="true">
+                                    <ImageView fx:id="profilePic" fitHeight="71.0" fitWidth="50.0" pickOnBounds="true" preserveRatio="true">
                                        <image>
                                           <Image url="@../resources/person_grey.png" />
                                        </image>
                                     </ImageView>
                                  </graphic></Button>
+                              <Label fx:id="usernameLabel" layoutX="857.0" layoutY="67.0" text="Not logged" textFill="#f5f4f4" AnchorPane.rightAnchor="22.0" />
+                              <ImageView fitHeight="64.0" fitWidth="72.0" layoutX="45.0" layoutY="15.0" pickOnBounds="true" preserveRatio="true" AnchorPane.leftAnchor="12.0" AnchorPane.topAnchor="12.0">
+                                 <image>
+                                    <Image url="@../resources/menu_grey.png" />
+                                 </image>
+                              </ImageView>
                            </children>
                         </AnchorPane>
                       <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="333.0" prefWidth="677.0" style="fx-ba: #ff0000;">
