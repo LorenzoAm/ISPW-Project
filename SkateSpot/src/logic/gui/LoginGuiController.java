@@ -27,7 +27,6 @@ public class LoginGuiController
                 break;
             case "Sign in":     //login button clicked --> create bean class
                 LoginBean bean = new LoginBean(email.getText(),password.getText());
-                bean.check();
                 break;
         }
     }

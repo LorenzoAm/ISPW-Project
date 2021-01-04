@@ -130,7 +130,7 @@ public class SignUpBean
 			}
 			else
 			{
-				alert+="\nPasswords entered do not conicide.";
+				alert+="\nPasswords entered do not coincide.";
 				return false;
 			}
 		}
