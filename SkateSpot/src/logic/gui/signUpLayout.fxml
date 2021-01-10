@@ -41,22 +41,26 @@
                     <Label layoutX="339.0" layoutY="49.0" text="E' veloce e semplice" textFill="#ff5c00" />
                     <TextField fx:id="name" layoutX="339.0" layoutY="74.0" promptText="Name" AnchorPane.leftAnchor="339.0" />
                     <TextField fx:id="surname" layoutX="505.0" layoutY="74.0" promptText="Surname" />
-                    <TextField fx:id="email" layoutX="339.0" layoutY="112.0" maxWidth="315.0" prefHeight="25.0" prefWidth="315.0" promptText="Email" AnchorPane.leftAnchor="339.0" />
-                    <DatePicker fx:id="data" layoutX="339.0" layoutY="240.0" prefHeight="25.0" prefWidth="315.0" AnchorPane.leftAnchor="339.0" />
-                    <Label layoutX="339.0" layoutY="222.0" text="Date of birth" textFill="#ff5c00" AnchorPane.leftAnchor="339.0" />
-                    <Label layoutX="339.0" layoutY="277.0" text="Gender" textFill="#ff5c00" AnchorPane.leftAnchor="339.0" />
-                    <Button layoutX="300.0" layoutY="350.0" mnemonicParsing="false" onMouseClicked="#handle" prefHeight="78.0" prefWidth="315.0" style="-fx-background-color: rgb(52,60,60);" text="Sign up" textFill="#ff5c00" AnchorPane.leftAnchor="340.0">
+                    <TextField fx:id="email" layoutX="339.0" layoutY="141.0" maxWidth="315.0" prefHeight="25.0" prefWidth="315.0" promptText="Email" AnchorPane.leftAnchor="339.0" />
+                    <DatePicker fx:id="data" layoutX="339.0" layoutY="257.0" prefHeight="25.0" prefWidth="315.0" AnchorPane.leftAnchor="339.0" />
+                    <Label layoutX="339.0" layoutY="240.0" text="Date of birth" textFill="#ff5c00" AnchorPane.leftAnchor="339.0" />
+                    <Label layoutX="344.0" layoutY="291.0" text="Gender" textFill="#ff5c00" AnchorPane.leftAnchor="344.0" />
+                    <Button layoutX="339.0" layoutY="387.0" mnemonicParsing="false" onMouseClicked="#handle" prefHeight="78.0" prefWidth="315.0" style="-fx-background-color: rgb(52,60,60);" text="Sign up" textFill="#ff5c00" AnchorPane.leftAnchor="339.0">
                         <font>
                             <Font name="System Bold" size="26.0" />
                         </font>
                     </Button>
-               <PasswordField fx:id="password" layoutX="339.0" layoutY="151.0" prefHeight="26.0" prefWidth="315.0" promptText="New password" />
-               <PasswordField fx:id="confirmPassword" layoutX="339.0" layoutY="190.0" prefHeight="26.0" prefWidth="315.0" promptText="Confirm password" />
-               <RadioButton fx:id="maleButton" layoutX="340.0" layoutY="300.0" mnemonicParsing="false" onAction="#radioButtonChanged" text="Male" textFill="#ff5c00">
+               <PasswordField fx:id="password" layoutX="339.0" layoutY="174.0" prefHeight="26.0" prefWidth="315.0" promptText="New password" AnchorPane.topAnchor="174.0" />
+               <PasswordField fx:id="confirmPassword" layoutX="339.0" layoutY="207.0" prefHeight="26.0" prefWidth="315.0" promptText="Confirm password" />
+               <RadioButton fx:id="maleButton" layoutX="339.0" layoutY="308.0" mnemonicParsing="false" onAction="#radioButtonChanged" text="Male" textFill="#ff5c00">
                   <toggleGroup>
                      <ToggleGroup fx:id="radioToggleGroup" />
                   </toggleGroup></RadioButton>
-               <RadioButton fx:id="femaleButton" layoutX="410.0" layoutY="300.0" mnemonicParsing="false" onAction="#radioButtonChanged" text="Female" textFill="#ff5c00" toggleGroup="$radioToggleGroup" />
+               <RadioButton fx:id="femaleButton" layoutX="392.0" layoutY="308.0" mnemonicParsing="false" onAction="#radioButtonChanged" text="Female" textFill="#ff5c00" toggleGroup="$radioToggleGroup" />
+               <Label layoutX="341.0" layoutY="333.0" text="Type of account" textFill="#ff5c00" />
+               <RadioButton fx:id="skaterButton" layoutX="337.0" layoutY="350.0" mnemonicParsing="false" onAction="#typeOfAccountRadioButtonChanged" text="Skater" textFill="#ff5c00" />
+               <RadioButton fx:id="ownerButton" layoutX="396.0" layoutY="350.0" mnemonicParsing="false" onAction="#typeOfAccountRadioButtonChanged" text="Owner" textFill="#ff5c00" />
+               <TextField fx:id="username" layoutX="339.0" layoutY="108.0" prefHeight="25.0" prefWidth="315.0" promptText="Username" />
                 </AnchorPane>
             </SplitPane>
         </AnchorPane>

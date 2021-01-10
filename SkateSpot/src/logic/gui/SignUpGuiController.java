@@ -1,7 +1,5 @@
 package logic.gui;
 
-import javax.swing.JOptionPane;
-
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.scene.control.Button;
@@ -19,32 +17,51 @@ public class SignUpGuiController
 	//fxml
 	@FXML public TextField name;
 	@FXML public TextField surname;
+	@FXML public TextField username;
 	@FXML public TextField email;
 	@FXML public PasswordField password;
 	@FXML public PasswordField confirmPassword;
 	@FXML public DatePicker data;
 	@FXML private RadioButton maleButton;
 	@FXML private RadioButton femaleButton;
+	@FXML private RadioButton skaterButton;
+	@FXML private RadioButton ownerButton;
 	private String gender;
-	ToggleGroup radioToggleGroup = new ToggleGroup();
+	private String typeOfAccount;
+	ToggleGroup genderRadioToggleGroup = new ToggleGroup();
+	ToggleGroup typeOfAccountRadioToggleGroup = new ToggleGroup();
 
 	@FXML
 	private void radioButtonChanged(ActionEvent event)
 	{
 		if(maleButton.isSelected())
 		{
-			gender="Male";
+			gender="M";
 		}
 		if(femaleButton.isSelected())
 		{
-			gender="Female";
+			gender="F";
+		}
+	}
+	@FXML
+	private void typeOfAccountRadioButtonChanged(ActionEvent event)
+	{
+		if(skaterButton.isSelected())
+		{
+			typeOfAccount="Skater";
+		}
+		if(ownerButton.isSelected())
+		{
+			typeOfAccount="Owner";
 		}
 	}
 	@FXML
 	public void initialize()
 	{
-		maleButton.setToggleGroup(radioToggleGroup);
-		femaleButton.setToggleGroup(radioToggleGroup); 
+		maleButton.setToggleGroup(genderRadioToggleGroup);
+		femaleButton.setToggleGroup(genderRadioToggleGroup); 
+		skaterButton.setToggleGroup(typeOfAccountRadioToggleGroup);
+		ownerButton.setToggleGroup(typeOfAccountRadioToggleGroup); 
 	}
     public void handle(MouseEvent mouseEvent)
     {
@@ -58,7 +75,9 @@ public class SignUpGuiController
                 HomeMain.getStage().show();
                 break;
             case "Sign up":     //sign up button clicked --> create bean class
-            	SignUpBean bean = new SignUpBean(name.getText(),surname.getText(),email.getText(),password.getText(),confirmPassword.getText(), data.getValue(),gender);
+            	SignUpBean bean = new SignUpBean(name.getText(),surname.getText(),username.getText(),email.getText(),password.getText(),confirmPassword.getText());
+            	bean.controll(data.getValue(),gender,typeOfAccount);
+            	bean.check();
                 break;
         }
 

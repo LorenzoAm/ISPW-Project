@@ -13,25 +13,33 @@ public class SignUpBean
 {
 	private String name;
 	private String surname;
+	private String username;
 	private String email;
 	private String password;
+	private String confirmPassword;
 	private String gender;
-	private Date data;
+	private String typeOfAccount;
+	private LocalDate data;
 	private String alert="";
+	
 	public SignUpBean()
 	{}
-	public SignUpBean(String name,String surname,String email,String password,String confirmPassword,LocalDate data,String gender)
+	public SignUpBean(String name,String surname,String username,String email,String password,String confirmPassword)
 	{
-		if(check(name,surname,email,password,confirmPassword,data,gender))
-		{
 			setName(name);
 			setSurname(surname);
+			setUsername(username);
 			setEmail(email);
 			setPassword(password);
-			setDate(data);
-			setGender(gender);
-		}
+			setConfirmPassword(confirmPassword);
 	}
+	public void controll(LocalDate data,String gender,String typeOfAccount)
+	{
+		setDate(data);
+		setGender(gender);
+		setTypeOfAccount(typeOfAccount);
+	}
+	
 	public void setName(String name)
 	{
 		this.name=name;
@@ -40,6 +48,7 @@ public class SignUpBean
 	{
 		return name;
 	}
+	
 	public void setSurname(String surname)
 	{
 		this.surname=surname;
@@ -48,6 +57,16 @@ public class SignUpBean
 	{
 		return surname;
 	}
+	
+	public void setUsername(String username)
+	{
+		this.username=username;
+	}
+	public String getUsername()
+	{
+		return username;
+	}
+	
 	public void setEmail(String email)
 	{
 		this.email=email;
@@ -56,6 +75,7 @@ public class SignUpBean
 	{
 		return email;
 	}
+
 	public void setPassword(String password)
 	{
 		this.password=password;
@@ -64,16 +84,27 @@ public class SignUpBean
 	{
 		return password;
 	}
+	
+	public void setConfirmPassword(String confirmPassword)
+	{
+		this.confirmPassword=confirmPassword;
+	}
+	public String getconfirmPassword()
+	{
+		return confirmPassword;
+	}
+	
 	public void setDate(LocalDate data)
 	{
-		Instant instant = Instant.from(data.atStartOfDay(ZoneId.systemDefault()));
-		Date date = Date.from(instant);
-		this.data=date;
+		//Instant instant = Instant.from(data.atStartOfDay(ZoneId.systemDefault()));
+		//Date date = Date.from(instant);
+		this.data=data;
 	}
-	public Date getDate()
+	public LocalDate getDate()
 	{
 		return data;
 	}
+	
 	public void setGender(String gender)
 	{
 		this.gender=gender;
@@ -83,22 +114,31 @@ public class SignUpBean
 		return gender;
 	}
 	
-	public boolean check(String name,String surname,String email,String password,String confirmPassword,LocalDate data,String gender)
+	
+	public void setTypeOfAccount(String typeOfAccount)
 	{
-		if(checkName(name)&&checkSurname(surname)&&checkEmail(email)&&checkPassword(password,confirmPassword)&&checkDate(data)&&checkGender(gender))
+		this.typeOfAccount=typeOfAccount;
+	}
+	public String getTypeOfAccount()
+	{
+		return typeOfAccount;
+	}
+	
+	public void check()
+	{
+		if(checkName()&&checkSurname()&&checkUsername()&&checkEmail()&&checkPassword()&&checkDate()&&checkGender()&&checkTypeOfAccount())
 		{
 			JOptionPane.showMessageDialog(null, "Correctly recorded data.");
-			return true;
 		}
 		else
 		{
 			JOptionPane.showMessageDialog(null, alert);
-			return false;
 		}
 	}
 	
-	public boolean checkName(String name)
+	private boolean checkName()
 	{
+		
 		if ( (name!="") && (name != null) && (name.matches("^[a-zA-Z]*$")) ) 
 		{ 
 		       return true;
@@ -109,18 +149,29 @@ public class SignUpBean
 			return false;
 		}
 	}
-	public boolean checkSurname(String surname)
+	private boolean checkSurname()
 	{
 		if ( (surname!="") && (surname != null) && (surname.matches("^[a-zA-Z]*$")) ) { 
 		       return true;
 		}
 		else
 		{
-			alert+="\nThe surname entered is not valid, it should contain only alphabetic characters.";
+			alert+="\nThe surname entered is not valid, it should contain only alphabetic characters and numbers.";
 			return false;
 		}
 	}
-	public boolean checkPassword(String password, String confirmPassword)
+	private boolean checkUsername()
+	{
+		if ( (username!="") && (username != null) && (username.matches("^[a-zA-Z0-9]*$")) ) { 
+		       return true;
+		}
+		else
+		{
+			alert+="\nThe username entered is not valid, it should contain only alphabetic characters.";
+			return false;
+		}
+	}
+	private boolean checkPassword()
 	{
 		if(password.length()>7)
 		{
@@ -140,7 +191,7 @@ public class SignUpBean
 			return false;
 		}
 	}
-	public boolean checkEmail(String email)
+	private boolean checkEmail()
 	{
 		if(email.contains("@"))
 		{
@@ -187,8 +238,13 @@ public class SignUpBean
 		}
 	}
 	//ERRORE SE IL CAMPO E' VUOTO
-	public boolean checkDate(LocalDate data)
+	private boolean checkDate()
 	{
+		if(data==null)
+		{
+			alert+="\nYou must insert your birth date.";
+			return false;
+		}
 		 Instant instant = Instant.from(data.atStartOfDay(ZoneId.systemDefault()));
 		 Date date = Date.from(instant);
 		 Calendar calendar = Calendar.getInstance(TimeZone.getTimeZone("Europe/Rome"),Locale.ITALY);
@@ -204,15 +260,27 @@ public class SignUpBean
 			 return false;
 		 }
 	}
-	public boolean checkGender(String gender)
+	private boolean checkGender()
 	{
-		if(gender.equals("Male")||gender.equals("Female"))
+		if(gender.equals("M")||gender.equals("F"))
 		{
 			 return true;
 		}
 		else
 		{
 			alert+="\nGender not selected.";
+			 return false;
+		}
+	}
+	private boolean checkTypeOfAccount()
+	{
+		if(typeOfAccount.equals("Skater")||typeOfAccount.equals("Owner"))
+		{
+			 return true;
+		}
+		else
+		{
+			alert+="\nType of account not selected.";
 			 return false;
 		}
 	}
