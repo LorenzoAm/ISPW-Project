@@ -5,7 +5,7 @@ import javafx.scene.control.Button;
 import javafx.scene.control.PasswordField;
 import javafx.scene.control.TextField;
 import javafx.scene.input.MouseEvent;
-import logic.bean.LoginBean;
+import logic.beans.LoginBean;
 
 
 public class LoginGuiController
@@ -25,7 +25,7 @@ public class LoginGuiController
                 HomeGuiController.getLoginStage().close();
                 HomeMain.getStage().show();
                 break;
-            case "Sign in":     //login button clicked --> create bean class
+            case "Sign in":     //login button clicked --> create beans class
                 LoginBean bean = new LoginBean(email.getText(),password.getText());
                 break;
         }

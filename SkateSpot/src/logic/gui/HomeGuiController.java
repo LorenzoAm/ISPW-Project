@@ -6,19 +6,40 @@ import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.scene.control.Button;
 import javafx.scene.control.Label;
+import javafx.scene.image.Image;
 import javafx.scene.image.ImageView;
 import javafx.scene.input.MouseEvent;
 import javafx.stage.Stage;
 
+import javax.swing.*;
+import java.io.File;
 import java.io.IOException;
 
 
 public class HomeGuiController
 {
-    @FXML public static ImageView profilePic;
-    @FXML public static Label usernameLabel;
+    @FXML private static ImageView profilePic = new ImageView();
+    @FXML private static Label usernameLab = new Label();
+    @FXML private static Button premiumArea = new Button();
     private static Stage signUp;
     private static Stage login;
+
+
+
+    public static ImageView getProfilePic()
+    {
+        return profilePic;
+    }
+
+    public static Button getPremiumArea()
+    {
+        return premiumArea;
+    }
+
+    public static Label getUsernameLab()
+    {
+        return usernameLab;
+    }
 
     public void handle(MouseEvent mouseEvent) throws IOException
     {

@@ -1,8 +1,10 @@
-package logic.bean;
+package logic.beans;
 
-import logic.controller.LoginController;
+import javafx.scene.image.ImageView;
+import logic.controllers.LoginController;
 
 import javax.swing.*;
+import java.awt.*;
 
 public class LoginBean
 {
@@ -16,8 +18,8 @@ public class LoginBean
         setPassword(password);
         if(check())
         {
-            JOptionPane.showMessageDialog(null," correctly recorded data ");
-            LoginController.getInstance().login();
+            JOptionPane.showMessageDialog(null," correctly recorded data ","INFO",JOptionPane.INFORMATION_MESSAGE);
+            LoginController.getInstance().login(getEmail(),getPassword()); //richiamiamo login sull'istanza singleton passando i dati verificati dalla bean
         }
 
     }
@@ -42,7 +44,7 @@ public class LoginBean
         return password;
     }
 
-    public boolean check()    //return true if both email and password are correct, else it returns false
+    private boolean check()    //return true if both email and password are correct, else it returns false
     {
         return (checkEmail() && checkPassword());
     }

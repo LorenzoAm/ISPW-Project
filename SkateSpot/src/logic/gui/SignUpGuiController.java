@@ -9,7 +9,7 @@ import javafx.scene.control.RadioButton;
 import javafx.scene.control.TextField;
 import javafx.scene.control.ToggleGroup;
 import javafx.scene.input.MouseEvent;
-import logic.bean.SignUpBean;
+import logic.beans.SignUpBean;
 
 
 public class SignUpGuiController
@@ -74,9 +74,9 @@ public class SignUpGuiController
                 HomeGuiController.getSignUpStage().close();
                 HomeMain.getStage().show();
                 break;
-            case "Sign up":     //sign up button clicked --> create bean class
+            case "Sign up":     //sign up button clicked --> create beans class
             	SignUpBean bean = new SignUpBean(name.getText(),surname.getText(),username.getText(),email.getText(),password.getText(),confirmPassword.getText());
-            	bean.controll(data.getValue(),gender,typeOfAccount);
+            	bean.control(data.getValue(),gender,typeOfAccount);
             	bean.check();
                 break;
         }

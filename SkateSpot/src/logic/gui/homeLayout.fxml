@@ -17,7 +17,7 @@
                            <children>
                               <Button id="signUp" layoutX="748.0" layoutY="54.0" mnemonicParsing="false" nodeOrientation="LEFT_TO_RIGHT" onMouseClicked="#handle" prefHeight="0.0" prefWidth="86.0" style="-fx-background-color: rgb(52,57,57);" text="SIGN UP" textFill="#ff5c00" AnchorPane.bottomAnchor="6.00000000004" AnchorPane.rightAnchor="110.0" />
                               <Button id="login" layoutX="748.0" layoutY="6.0" mnemonicParsing="false" nodeOrientation="LEFT_TO_RIGHT" onMouseClicked="#handle" prefHeight="10.0" prefWidth="86.0" style="-fx-background-color: rgb(52,57,57);" text="LOGIN" textFill="#ff5c00" AnchorPane.rightAnchor="110.0" AnchorPane.topAnchor="6.0" />
-                              <MenuButton focusTraversable="false" maxHeight="90.0" mnemonicParsing="false" prefHeight="90.0" prefWidth="111.0" style="-fx-background-color: rgb(52,50,50);" textFill="#ff5c00">
+                              <MenuButton focusTraversable="false" maxHeight="91.0" mnemonicParsing="false" prefHeight="91.0" prefWidth="93.0" style="-fx-background-color: rgb(52,50,50);" textFill="#ff5c00">
                                 <items>
                                   <MenuItem mnemonicParsing="false" text="search spot" />
                                   <MenuItem mnemonicParsing="false" text="add spot" />
@@ -35,12 +35,13 @@
                                        </image>
                                     </ImageView>
                                  </graphic></Button>
-                              <Label fx:id="usernameLabel" layoutX="857.0" layoutY="67.0" text="Not logged" textFill="#f5f4f4" AnchorPane.rightAnchor="22.0" />
-                              <ImageView fitHeight="64.0" fitWidth="72.0" layoutX="45.0" layoutY="15.0" pickOnBounds="true" preserveRatio="true" AnchorPane.leftAnchor="12.0" AnchorPane.topAnchor="12.0">
+                              <Label fx:id="usernameLab" layoutX="857.0" layoutY="67.0" text="Not logged" textFill="#f5f4f4" AnchorPane.rightAnchor="22.0" />
+                              <ImageView fitHeight="64.0" fitWidth="52.0" layoutX="45.0" layoutY="15.0" pickOnBounds="true" preserveRatio="true" AnchorPane.leftAnchor="12.0" AnchorPane.topAnchor="18.0">
                                  <image>
                                     <Image url="@../resources/menu_grey.png" />
                                  </image>
                               </ImageView>
+                              <Button fx:id="premiumArea" disable="true" layoutX="104.0" layoutY="33.0" mnemonicParsing="false" style="-fx-background-color: rgb(52,57,57);" text="PREMIUM AREA" textFill="#ff5c00" />
                            </children>
                         </AnchorPane>
                       <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="333.0" prefWidth="677.0" style="fx-ba: #ff0000;">
