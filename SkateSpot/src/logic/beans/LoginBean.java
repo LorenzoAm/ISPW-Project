@@ -16,11 +16,6 @@ public class LoginBean
     {
         setEmail(email);
         setPassword(password);
-        if(check())
-        {
-            JOptionPane.showMessageDialog(null," correctly recorded data ","INFO",JOptionPane.INFORMATION_MESSAGE);
-            LoginController.getInstance().login(getEmail(),getPassword()); //richiamiamo login sull'istanza singleton passando i dati verificati dalla bean
-        }
 
     }
 
@@ -44,7 +39,7 @@ public class LoginBean
         return password;
     }
 
-    private boolean check()    //return true if both email and password are correct, else it returns false
+    public boolean check()    //return true if both email and password are correct, else it returns false
     {
         return (checkEmail() && checkPassword());
     }

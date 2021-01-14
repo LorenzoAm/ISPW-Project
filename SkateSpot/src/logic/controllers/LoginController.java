@@ -1,6 +1,8 @@
 package logic.controllers;
 
 import javafx.scene.image.Image;
+import logic.beans.LoginBean;
+import logic.beans.PushBean;
 import logic.entities.DAO.UserDAO;
 import logic.entities.User;
 import logic.gui.HomeGuiController;
@@ -13,6 +15,7 @@ public class LoginController
 {
     private static LoginController instance;
 
+
     private LoginController(){}
 
     public static LoginController getInstance()
@@ -22,30 +25,20 @@ public class LoginController
        return instance;
     }
 
-    public void login(String email,String password)
+    public void login(LoginBean bean)
     {
-        User user = UserDAO.findUser(email,password);
+        User user = UserDAO.findUser(bean.getEmail(),bean.getPassword());
         if(user != null)
         {
-            JOptionPane.showMessageDialog(null,"welcome back "+user.getNome()+" "+user.getCognome()+" !","WELCOME",JOptionPane.INFORMATION_MESSAGE);
-            if(user.getSesso() == "M")
-            {
-                File file = new File("../resources/male_icon.png");
-                Image image = new Image(file.toURI().toString());
-                HomeGuiController.getProfilePic().setImage(image);
+            File file;
+            Image image;
 
-            }
-            else
-            {
-                File file = new File("../resources/female_icon.png");
-                Image image = new Image(file.toURI().toString());
-                HomeGuiController.getProfilePic().setImage(image);
-            }
-            if(user.getTipo() == "Owner")
-            {
-                HomeGuiController.getPremiumArea().setDisable(false);
-            }
-            HomeGuiController.getUsernameLab().setText(user.getUsername());
+            JOptionPane.showMessageDialog(null,"welcome back "+user.getNome()+" "+user.getCognome()+" !","WELCOME",JOptionPane.INFORMATION_MESSAGE);
+
+            PushBean push = new PushBean(user.getUsername(),user.getSesso(),user.getTipo());
+
+            HomeGuiController home = new HomeGuiController();
+            home.changeUserInfo(push);
 
             HomeGuiController.getLoginStage().close();      //viene chiusa la schermata di login e riaperta la home
             HomeMain.getStage().show();

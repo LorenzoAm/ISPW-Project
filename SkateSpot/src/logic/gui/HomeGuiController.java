@@ -10,36 +10,58 @@ import javafx.scene.image.Image;
 import javafx.scene.image.ImageView;
 import javafx.scene.input.MouseEvent;
 import javafx.stage.Stage;
+import logic.beans.PushBean;
 
-import javax.swing.*;
 import java.io.File;
 import java.io.IOException;
 
 
 public class HomeGuiController
 {
-    @FXML private static ImageView profilePic = new ImageView();
-    @FXML private static Label usernameLab = new Label();
-    @FXML private static Button premiumArea = new Button();
+
+    @FXML
+    private ImageView profilePic;
+    @FXML
+    private Label usernameLab;
+    @FXML
+    private Button premiumArea;
+
     private static Stage signUp;
     private static Stage login;
 
-
-
-    public static ImageView getProfilePic()
+    public void changeUserInfo(PushBean bean)
     {
-        return profilePic;
+        File file;
+        Image image;
+
+        profilePic = new ImageView();
+        usernameLab = new Label();
+        premiumArea = new Button();
+
+        usernameLab.setText(bean.getUsername());
+
+        if(bean.getSesso() == "M")
+        {
+            file = new File("../resources/male_icon.png");
+            image = new Image(file.toURI().toString());
+
+        }
+        else
+        {
+            file = new File("../resources/female_icon.png");
+            image = new Image(file.toURI().toString());
+        }
+
+        profilePic.setImage(image);
+
+
+        if(bean.getTipo() == "Owner")
+        {
+            premiumArea.setDisable(false);
+        }
+
     }
 
-    public static Button getPremiumArea()
-    {
-        return premiumArea;
-    }
-
-    public static Label getUsernameLab()
-    {
-        return usernameLab;
-    }
 
     public void handle(MouseEvent mouseEvent) throws IOException
     {

@@ -6,14 +6,18 @@ import javafx.scene.control.PasswordField;
 import javafx.scene.control.TextField;
 import javafx.scene.input.MouseEvent;
 import logic.beans.LoginBean;
+import logic.controllers.LoginController;
+
+import javax.swing.*;
 
 
 public class LoginGuiController
 {
 
     @FXML
-    public TextField email;
-    public PasswordField password;
+    private TextField email;
+    @FXML
+    private PasswordField password;
 
     public void handle(MouseEvent mouseEvent)
     {
@@ -27,6 +31,11 @@ public class LoginGuiController
                 break;
             case "Sign in":     //login button clicked --> create beans class
                 LoginBean bean = new LoginBean(email.getText(),password.getText());
+                if(bean.check())
+                {
+                    JOptionPane.showMessageDialog(null," correctly recorded data ","INFO",JOptionPane.INFORMATION_MESSAGE);
+                    LoginController.getInstance().login(bean); //richiamiamo login sull'istanza singleton passando i dati verificati dalla bean
+                }
                 break;
         }
     }
