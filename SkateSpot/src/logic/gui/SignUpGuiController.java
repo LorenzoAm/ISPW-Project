@@ -9,7 +9,8 @@ import javafx.scene.control.RadioButton;
 import javafx.scene.control.TextField;
 import javafx.scene.control.ToggleGroup;
 import javafx.scene.input.MouseEvent;
-import logic.bean.SignUpBean;
+import logic.beans.SignUpBean;
+import logic.controllers.SignUpController;
 
 
 public class SignUpGuiController
@@ -74,10 +75,13 @@ public class SignUpGuiController
                 HomeGuiController.getSignUpStage().close();
                 HomeMain.getStage().show();
                 break;
-            case "Sign up":     //sign up button clicked --> create bean class
-            	SignUpBean bean = new SignUpBean(name.getText(),surname.getText(),username.getText(),email.getText(),password.getText(),confirmPassword.getText());
-            	bean.controll(data.getValue(),gender,typeOfAccount);
-            	bean.check();
+            case "Sign up":     //sign up button clicked --> create beans class
+            	SignUpBean bean = new SignUpBean(name.getText(),surname.getText(),username.getText(),email.getText(),password.getText(),confirmPassword.getText());//costrutttore
+            	bean.control(data.getValue(),gender,typeOfAccount);//finisce di passare i dati necesari (sonalCloud non accetta più di 7 parametri per costruttore)
+            	if(bean.check())
+            	{
+            		 SignUpController.getInstance().signUp(bean); //richiamiamo signUp sull'istanza singleton passando i dati verificati dalla bean
+            	}
                 break;
         }
 

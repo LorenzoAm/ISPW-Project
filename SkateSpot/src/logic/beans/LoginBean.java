@@ -1,8 +1,10 @@
-package logic.bean;
+package logic.beans;
 
-import logic.controller.LoginController;
+import javafx.scene.image.ImageView;
+import logic.controllers.LoginController;
 
 import javax.swing.*;
+import java.awt.*;
 
 public class LoginBean
 {
@@ -14,11 +16,6 @@ public class LoginBean
     {
         setEmail(email);
         setPassword(password);
-        if(check())
-        {
-            JOptionPane.showMessageDialog(null," correctly recorded data ");
-            LoginController.getInstance().login();
-        }
 
     }
 
