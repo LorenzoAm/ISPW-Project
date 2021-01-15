@@ -237,7 +237,6 @@ public class SignUpBean
 			return false;
 		}
 	}
-	//ERRORE SE IL CAMPO E' VUOTO
 	private boolean checkDate()
 	{
 		if(data==null)
