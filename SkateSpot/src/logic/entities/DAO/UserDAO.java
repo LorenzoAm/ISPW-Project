@@ -118,7 +118,7 @@ public class UserDAO
             else
             {
                 //Messagio Errore
-            	JOptionPane.showMessageDialog(null," Email already in use."," ERROR",JOptionPane.ERROR_MESSAGE);
+            	JOptionPane.showMessageDialog(null," Email already in use!"," ERROR",JOptionPane.ERROR_MESSAGE);
 
             }
 
