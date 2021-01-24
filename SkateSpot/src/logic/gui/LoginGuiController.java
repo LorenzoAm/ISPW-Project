@@ -33,7 +33,6 @@ public class LoginGuiController
                 LoginBean bean = new LoginBean(email.getText(),password.getText());
                 if(bean.check())
                 {
-                    JOptionPane.showMessageDialog(null," correctly recorded data ","INFO",JOptionPane.INFORMATION_MESSAGE);
                     LoginController.getInstance().login(bean); //richiamiamo login sull'istanza singleton passando i dati verificati dalla bean
                 }
                 break;

@@ -12,6 +12,7 @@ public class User
     private Date dataDiNascita;
     private String sesso;
     private String tipo;
+    private Spot spot;      //riferimento allo spot in cui l'utente sta facendo skate
 
     public User(String email, String username, String password, String nome, String cognome, Date dataDiNascita, String sesso, String tipo)
     {
@@ -23,10 +24,6 @@ public class User
         setDataDiNascita(dataDiNascita);
         setSesso(sesso);
         setTipo(tipo);
-    }
-
-    public User() {
-
     }
 
     public void setEmail(String email)
@@ -69,6 +66,11 @@ public class User
         this.tipo=tipo;
     }
 
+    public void setSpot(Spot spot)
+    {
+        this.spot = spot;
+    }
+
     public String getEmail()
     {
         return email;
@@ -109,8 +111,13 @@ public class User
         return tipo;
     }
 
+    public Spot getSpot()
+    {
+        return spot;
+    }
+
     public String toString()
     {
-        return " nome : "+getNome()+" cognome : "+getCognome()+" data di nascita : "+getDataDiNascita()+" sesso : "+getSesso()+" tipo di account : "+getTipo()+" username : "+getUsername()+" email : "+getEmail()+" password : "+getPassword();
+        return " Nome utente : "+getNome()+"\n cognome : "+getCognome()+"\n username : "+getUsername()+"\n email : "+getEmail()+"\n password : "+getPassword()+"\n data di nascita : "+getDataDiNascita()+"\n sesso : "+getSesso()+"\n tipo di account : "+getTipo();
     }
 }

@@ -6,6 +6,8 @@ import logic.entities.DAO.UserDAO;
 public class SignUpController
 {
 	private static SignUpController instance;
+
+	private SignUpController(){}
 	
 	public static SignUpController getInstance()
     {

@@ -10,10 +10,10 @@ public class UserDAO
 {
     //dichiarazioni utili alla connessione con il dbms
 
-    private static String USER = "root";
-    private static String PSW = "PASSWORD";
-    private static String URL = "jdbc:mysql://localhost:3306/skate_spot";
-    private static String DRIVER_CLASS_NAME = "com.mysql.jdbc.Driver";
+    private static final String USER = "root";
+    private static final String PSW = "PASSWORD";
+    private static final String URL = "jdbc:mysql://localhost:3306/skate_spot";
+    private static final String DRIVER_CLASS_NAME = "com.mysql.jdbc.Driver";
 
     public static User findUser(String email,String password)
     {
@@ -40,6 +40,12 @@ public class UserDAO
             {
                 //creazione istanza di tipo User
                  user = new User(rs.getString("Email"),rs.getString("Username"),rs.getString("Password"),rs.getString("Nome"),rs.getString("Cognome"),rs.getDate("DataDiNascita"),rs.getString("Sesso"),rs.getString("Tipo"));
+                 Integer spotCode = rs.getInt("CodiceSpot");   //se l'utente ha un riferimento a spot si crea lo spot
+
+                 if(spotCode != null)
+                 {
+                     user.setSpot(SpotDAO.createSpot(spotCode));   //si assegna il riferimento all'istanza di spot
+                 }
 
             }
 
@@ -47,7 +53,7 @@ public class UserDAO
             rs.close();
 
         }
-        catch(SQLException e)
+        catch(SQLException | ClassNotFoundException e)
         {
             e.printStackTrace();
         }

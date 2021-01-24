@@ -35,6 +35,12 @@ public class LoginController
 
             JOptionPane.showMessageDialog(null,"welcome back "+user.getNome()+" "+user.getCognome()+" !","WELCOME",JOptionPane.INFORMATION_MESSAGE);
 
+            if(user.getSpot() != null)
+            {
+                JOptionPane.showMessageDialog(null," You're currently skating in "+user.getSpot().getNome()+", enjoy your session ","INFORMATION",JOptionPane.INFORMATION_MESSAGE);
+            }
+
+            //TODO aggiornare la view dopo che l'utente ha effettuato il login
             PushBean push = new PushBean(user.getUsername(),user.getSesso(),user.getTipo());
 
             HomeGuiController home = new HomeGuiController();
