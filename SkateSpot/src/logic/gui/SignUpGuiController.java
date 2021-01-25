@@ -66,7 +66,6 @@ public class SignUpGuiController
 	}
     public void handle(MouseEvent mouseEvent)
     {
-    	this.initialize();
         Button button = (Button) mouseEvent.getSource();
         String value = button.getText();
         switch(value)
@@ -77,7 +76,7 @@ public class SignUpGuiController
                 break;
             case "Sign up":     //sign up button clicked --> create beans class
             	SignUpBean bean = new SignUpBean(name.getText(),surname.getText(),username.getText(),email.getText(),password.getText(),confirmPassword.getText());//costrutttore
-            	bean.control(data.getValue(),gender,typeOfAccount);//finisce di passare i dati necesari (sonalCloud non accetta più di 7 parametri per costruttore)
+            	bean.control(data.getValue(),gender,typeOfAccount);//finisce di passare i dati necesari (sonalCloud non accetta piï¿½ di 7 parametri per costruttore)
             	if(bean.check())
             	{
             		 SignUpController.getInstance().signUp(bean); //richiamiamo signUp sull'istanza singleton passando i dati verificati dalla bean

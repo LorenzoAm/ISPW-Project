@@ -42,6 +42,7 @@ public class LoginController
 
             //TODO aggiornare la view dopo che l'utente ha effettuato il login
 
+            HomeGuiController.setLogged(true);      //settiamo a true la variabile globale di login
             HomeGuiController.getLoginStage().close();      //viene chiusa la schermata di login e riaperta la home
             HomeMain.getStage().show();
         }

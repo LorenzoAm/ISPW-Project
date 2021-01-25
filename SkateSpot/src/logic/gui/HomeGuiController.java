@@ -1,5 +1,6 @@
 package logic.gui;
 
+import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
@@ -12,6 +13,7 @@ import javafx.scene.input.MouseEvent;
 import javafx.stage.Stage;
 import logic.beans.PullBean;
 
+import javax.swing.*;
 import java.io.File;
 import java.io.IOException;
 
@@ -28,8 +30,9 @@ public class HomeGuiController
 
     private static Stage signUp;
     private static Stage login;
+    private static Stage addSpot;
 
-
+    private static boolean logged = false;
 
 
     public void handle(MouseEvent mouseEvent) throws IOException
@@ -86,5 +89,38 @@ public class HomeGuiController
     public static Stage getLoginStage()
     {
         return login;
+    }
+
+    public static Stage getAddSpotStage(){ return addSpot; }
+
+    public static boolean getLogged()
+    {
+        return logged;
+    }
+
+    public static void setLogged(boolean value)
+    {
+        logged = value;
+    }
+
+
+    public void openAdd(ActionEvent actionEvent) throws IOException {
+        Scene scene;
+        Parent root;
+
+        if(getLogged())
+        {
+            root = FXMLLoader.load(getClass().getResource("../gui/addSpotLayout.fxml"));
+            scene = new Scene(root);
+            addSpot = new Stage();
+            addSpot.setTitle("LOGIN");
+            addSpot.setScene(scene);
+            addSpot.show();
+            HomeMain.getStage().close();
+        }
+        else
+        {
+            JOptionPane.showMessageDialog(null," You have to sign in before adding a spot ","WARNING",JOptionPane.INFORMATION_MESSAGE);
+        }
     }
 }

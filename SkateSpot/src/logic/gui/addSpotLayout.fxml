@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="612.0" prefWidth="965.0" style="-fx-background-color: rgb(52,50,50);" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="logic.gui.addSpotGUIController">
+    <TitledPane animated="false" collapsible="false" layoutX="220.0" layoutY="-46.0" prefHeight="521.0" prefWidth="811.0" style="-fx-background-color: rgb(52,50,50);" text="SkateSpot" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+            <SplitPane dividerPositions="0.18788682581786031" layoutX="246.0" layoutY="117.0" orientation="VERTICAL" prefHeight="448.8" prefWidth="714.4" style="-fx-background-color: rgb(52,50,50);" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                <AnchorPane maxHeight="80.0" minHeight="0.0" minWidth="0.0" prefHeight="69.0" prefWidth="819.0" style="-fx-background-color: rgb(52,50,50);">
+                    <Button alignment="CENTER" layoutX="856.0" layoutY="6.0" mnemonicParsing="false" nodeOrientation="LEFT_TO_RIGHT" onMouseClicked="#handle" prefHeight="69.0" prefWidth="72.0" style="-fx-background-radius: 100;" textAlignment="CENTER" AnchorPane.rightAnchor="14.0">
+                        <graphic>
+                            <ImageView fitHeight="57.0" fitWidth="55.0" pickOnBounds="true" preserveRatio="true">
+                                    <Image url="@../resources/home_grey.png" />
+                            </ImageView>
+                        </graphic>
+                    </Button>
+                    <Label layoutX="354.0" layoutY="4.0" text="SkateSpot" textFill="#ff5c00" AnchorPane.leftAnchor="354.0" AnchorPane.rightAnchor="354.0">
+                        <font>
+                            <Font name="System Bold Italic" size="50.0" />
+                        </font>
+                    </Label>
+                </AnchorPane>
+                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="333.0" prefWidth="677.0" style="fx-ba: red;">
+                    <Label layoutX="339.0" layoutY="14.0" prefHeight="17.0" prefWidth="218.0" text="Add a new spot" textFill="#ff5c00">
+                        <font>
+                            <Font name="System Bold" size="25.0" />
+                        </font>
+                    </Label>
+                    <TextField fx:id="name" layoutX="339.0" layoutY="58.0" prefHeight="26.0" prefWidth="316.0" promptText="Spot name" AnchorPane.bottomAnchor="394.0" AnchorPane.leftAnchor="339.0" />
+                    <TextField fx:id="email" layoutX="339.0" layoutY="129.0" maxWidth="315.0" prefHeight="25.0" prefWidth="315.0" promptText="Street number" AnchorPane.leftAnchor="339.0" />
+                    <Button layoutX="339.0" layoutY="385.0" mnemonicParsing="false" onMouseClicked="#handle" prefHeight="78.0" prefWidth="315.0" style="-fx-background-color: rgb(52,60,60);" text="Create spot" textFill="#ff5c00" AnchorPane.leftAnchor="339.0">
+                        <font>
+                            <Font name="System Bold" size="26.0" />
+                        </font>
+                    </Button>
+               <PasswordField fx:id="password" layoutX="339.0" layoutY="165.0" prefHeight="26.0" prefWidth="315.0" promptText="City" AnchorPane.topAnchor="165.0" />
+               <PasswordField fx:id="confirmPassword" layoutX="339.0" layoutY="202.0" prefHeight="26.0" prefWidth="315.0" promptText="Borough" />
+               <TextField fx:id="username" layoutX="339.0" layoutY="93.0" prefHeight="25.0" prefWidth="315.0" promptText="Street" />
+               <PasswordField fx:id="confirmPassword1" layoutX="339.0" layoutY="240.0" prefHeight="26.0" prefWidth="315.0" promptText="Municipality" />
+               <PasswordField fx:id="confirmPassword11" layoutX="339.0" layoutY="274.0" prefHeight="26.0" prefWidth="315.0" promptText="Type (street,skatepark...)" />
+               <PasswordField fx:id="confirmPassword111" layoutX="339.0" layoutY="309.0" prefHeight="66.0" prefWidth="315.0" promptText=" Description (max 200 char)" />
+                </AnchorPane>
+            </SplitPane>
+        </AnchorPane>
+    </TitledPane>
+</AnchorPane>

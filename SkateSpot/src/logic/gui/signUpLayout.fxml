@@ -24,12 +24,12 @@
                     </Label>
                 </AnchorPane>
                 <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="333.0" prefWidth="677.0" style="fx-ba: red;">
-                    <Label layoutX="339.0" layoutY="14.0" text="Iscriviti" textFill="#ff5c00">
+                    <Label layoutX="339.0" layoutY="14.0" text="Create a new account" textFill="#ff5c00">
                         <font>
                             <Font name="System Bold" size="29.0" />
                         </font>
                     </Label>
-                    <Label layoutX="339.0" layoutY="49.0" text="E' veloce e semplice" textFill="#ff5c00" />
+                    <Label layoutX="345.0" layoutY="50.0" text="Come on, it's simple!" textFill="#ff5c00" />
                     <TextField fx:id="name" layoutX="339.0" layoutY="74.0" promptText="Name" AnchorPane.leftAnchor="339.0" />
                     <TextField fx:id="surname" layoutX="505.0" layoutY="74.0" promptText="Surname" />
                     <TextField fx:id="email" layoutX="339.0" layoutY="141.0" maxWidth="315.0" prefHeight="25.0" prefWidth="315.0" promptText="Email" AnchorPane.leftAnchor="339.0" />
