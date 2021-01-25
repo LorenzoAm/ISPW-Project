@@ -10,7 +10,7 @@ import javafx.scene.image.Image;
 import javafx.scene.image.ImageView;
 import javafx.scene.input.MouseEvent;
 import javafx.stage.Stage;
-import logic.beans.PushBean;
+import logic.beans.PullBean;
 
 import java.io.File;
 import java.io.IOException;
@@ -29,38 +29,7 @@ public class HomeGuiController
     private static Stage signUp;
     private static Stage login;
 
-    public void changeUserInfo(PushBean bean)
-    {
-        File file;
-        Image image;
 
-        profilePic = new ImageView();
-        usernameLab = new Label();
-        premiumArea = new Button();
-
-        usernameLab.setText(bean.getUsername());
-
-        if(bean.getSesso() == "M")
-        {
-            file = new File("../resources/male_icon.png");
-            image = new Image(file.toURI().toString());
-
-        }
-        else
-        {
-            file = new File("../resources/female_icon.png");
-            image = new Image(file.toURI().toString());
-        }
-
-        profilePic.setImage(image);
-
-
-        if(bean.getTipo() == "Owner")
-        {
-            premiumArea.setDisable(false);
-        }
-
-    }
 
 
     public void handle(MouseEvent mouseEvent) throws IOException

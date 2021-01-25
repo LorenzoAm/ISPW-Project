@@ -2,7 +2,7 @@ package logic.controllers;
 
 import javafx.scene.image.Image;
 import logic.beans.LoginBean;
-import logic.beans.PushBean;
+import logic.beans.PullBean;
 import logic.entities.DAO.UserDAO;
 import logic.entities.User;
 import logic.gui.HomeGuiController;
@@ -41,10 +41,6 @@ public class LoginController
             }
 
             //TODO aggiornare la view dopo che l'utente ha effettuato il login
-            PushBean push = new PushBean(user.getUsername(),user.getSesso(),user.getTipo());
-
-            HomeGuiController home = new HomeGuiController();
-            home.changeUserInfo(push);
 
             HomeGuiController.getLoginStage().close();      //viene chiusa la schermata di login e riaperta la home
             HomeMain.getStage().show();

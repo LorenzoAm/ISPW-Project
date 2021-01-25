@@ -14,8 +14,8 @@ public class Spot
     private String descrizione;
     private String immagine;
     private Integer rating;
-    private String username;
-    private Date data;  //data in cui è stato aggiunto lo spot
+    private String username;       //username di chi ha aggiunto lo spot
+    private Date data;          //data in cui è stato aggiunto lo spot
 
     private List<Review> reviewList;
 

@@ -1,12 +1,12 @@
 package logic.beans;
 
-public class PushBean
+public class PullBean
 {
     private String sesso;
     private String username;
     private String tipo;
 
-    public PushBean(String username,String sesso,String tipo)
+    public PullBean(String username, String sesso, String tipo)
     {
         setUsername(username);
         setSesso(sesso);
