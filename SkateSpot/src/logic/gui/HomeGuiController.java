@@ -31,6 +31,7 @@ public class HomeGuiController
     private static Stage signUp;
     private static Stage login;
     private static Stage addSpot;
+    private static Stage premArea;
 
     private static boolean logged = false;
 
@@ -72,9 +73,28 @@ public class HomeGuiController
                     signUp.show();
                     HomeMain.getStage().close();
                 }
+             
                 else
                 {
                     signUp.show();
+                    HomeMain.getStage().close();
+                }
+            }
+            case "PREMIUM AREA" -> {
+                if(getPremiumAreaStage() == null)   //prima apertura di premium area
+                {
+                    root = FXMLLoader.load(getClass().getResource("../gui/premiumAreaLayout.fxml"));
+                    scene = new Scene(root);
+                    premArea = new Stage();
+                    premArea.setTitle("PREMIUM AREA");
+                    premArea.setScene(scene);
+                    premArea.show();
+                    HomeMain.getStage().close();
+                }
+             
+                else
+                {
+                	premArea.show();
                     HomeMain.getStage().close();
                 }
             }
@@ -89,6 +109,11 @@ public class HomeGuiController
     public static Stage getLoginStage()
     {
         return login;
+    }
+    
+    public static Stage getPremiumAreaStage()
+    {
+        return premArea;
     }
 
     public static Stage getAddSpotStage(){ return addSpot; }

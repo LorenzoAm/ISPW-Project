@@ -13,7 +13,7 @@ public class UserDAO
     private static final String USER = "root";
     private static final String PSW = "PASSWORD";
     private static final String URL = "jdbc:mysql://localhost:3306/skate_spot";
-    private static final String DRIVER_CLASS_NAME = "com.mysql.jdbc.Driver";
+    private static final String DRIVER_CLASS_NAME = "com.mysql.cj.jdbc.Driver";
 
     public static User findUser(String email,String password)
     {
