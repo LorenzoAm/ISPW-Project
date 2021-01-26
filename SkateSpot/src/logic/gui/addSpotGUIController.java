@@ -1,12 +1,14 @@
 package logic.gui;
 
+import java.io.IOException;
+
 import javafx.scene.control.Button;
 import javafx.scene.input.MouseEvent;
 
 public class addSpotGUIController
 {
 
-    public void handle(MouseEvent mouseEvent)
+    public void handle(MouseEvent mouseEvent) throws IOException
     {
         Button button = (Button) mouseEvent.getSource();
         String value = button.getText();
