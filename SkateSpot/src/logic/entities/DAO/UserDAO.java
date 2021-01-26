@@ -161,6 +161,67 @@ public class UserDAO
         }
 
 	}
+    
+    public static String findCodeUser(String email,String password)
+    {
+    	 Connection connection = null; //interface
+         Statement statement = null;
+         String code = null;
+
+         try
+         {
+             //loading dinamico del driver specifico
+             Class.forName(DRIVER_CLASS_NAME);
+             //apertura della connessione
+             connection=DriverManager.getConnection(URL,USER,PSW);
+             //creazione ed esecuzione query
+             statement=connection.createStatement(ResultSet.TYPE_SCROLL_INSENSITIVE,ResultSet.CONCUR_READ_ONLY);
+             String query = "SELECT Codice FROM utente WHERE Email = '"+email+"' AND Password = '"+password+"';";
+             ResultSet rs = statement.executeQuery(query);
+            
+             if (!rs.first()) //la query non ha prodotto risultati
+             {
+                 JOptionPane.showMessageDialog(null," No user found with password : "+password+" and email : "+email," ERROR",JOptionPane.ERROR_MESSAGE);
+             }
+             else
+             {
+                 code=rs.getString("Codice");
+             }
+
+             //chiudiamo il result set generato dalla query
+             rs.close();
+
+         }
+         catch(SQLException | ClassNotFoundException e)
+         {
+             e.printStackTrace();
+         }
+         finally  //chiudiamo statement e connessione
+         {
+             try
+             {
+                 if(statement != null)
+                     statement.close();
+             }
+             catch (SQLException e)
+             {
+                 e.printStackTrace();
+             }
+
+             try
+             {
+                 if(connection != null)
+                     connection.close();
+             }
+             catch(SQLException e)
+             {
+                 e.printStackTrace();
+             }
+
+         }
+
+         return code;
+    }
 }
 
 	

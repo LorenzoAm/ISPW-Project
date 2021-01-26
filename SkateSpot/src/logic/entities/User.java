@@ -70,7 +70,7 @@ public class User
     {
         this.spot = spot;
     }
-
+    
     public String getEmail()
     {
         return email;

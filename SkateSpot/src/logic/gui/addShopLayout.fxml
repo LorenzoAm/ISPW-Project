@@ -37,7 +37,7 @@
                     <Label layoutX="345.0" layoutY="50.0" text="Make it known to others!" textFill="#ff5c00" />
                     <TextField fx:id="name" layoutX="339.0" layoutY="74.0" prefHeight="25.0" prefWidth="315.0" promptText="Name" AnchorPane.leftAnchor="339.0" />
                     <TextField fx:id="city" layoutX="339.0" layoutY="141.0" maxWidth="315.0" prefHeight="25.0" prefWidth="315.0" promptText="City" AnchorPane.leftAnchor="339.0" />
-                    <Button layoutX="339.0" layoutY="387.0" mnemonicParsing="false" onMouseClicked="#handle" prefHeight="78.0" prefWidth="315.0" style="-fx-background-color: rgb(52,60,60);" text="Sign up" textFill="#ff5c00" AnchorPane.leftAnchor="339.0">
+                    <Button layoutX="339.0" layoutY="387.0" mnemonicParsing="false" onMouseClicked="#handle" prefHeight="78.0" prefWidth="315.0" style="-fx-background-color: rgb(52,60,60);" text="Register shop" textFill="#ff5c00" AnchorPane.leftAnchor="339.0">
                         <font>
                             <Font name="System Bold" size="26.0" />
                         </font>

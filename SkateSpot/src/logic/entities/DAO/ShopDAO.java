@@ -1,8 +1,8 @@
 package logic.entities.DAO;
 
-import logic.entities.Spot;
-
 import java.sql.*;
+
+import javax.swing.JOptionPane;
 
 public class ShopDAO
 {
@@ -11,34 +11,54 @@ public class ShopDAO
     private static String URL = "jdbc:mysql://localhost:3306/skate_spot";
     private static String DRIVER_CLASS_NAME = "com.mysql.cj.jdbc.Driver";
 
-    public static Spot createSpot(Integer code)
-    {
-        Connection connection = null;
+    public static void createShop(String partitaIVA,String name,String description,String city,String street,String number,String municipality,String area,String code)
+	{
+    	Connection connection = null; //interface
         Statement statement = null;
-        Spot spot = null;
-
+        int retFromQuery;
         try
         {
-            Class.forName(DRIVER_CLASS_NAME);
+            //loading dinamico del driver specifico
+            try {
+				Class.forName(DRIVER_CLASS_NAME);
+			} catch (ClassNotFoundException e) {
 
-            connection = DriverManager.getConnection(URL,USER,PSW);
-
-            statement = connection.createStatement(ResultSet.TYPE_SCROLL_INSENSITIVE,ResultSet.CONCUR_READ_ONLY);
-
-            String query = "SELECT S.Via,S.Civico,S.Citta,S.Zona,S.Nome,S.Tipo,S.Comune,S.NumeroDiSkater,S.Descrizione,S.Immagine,S.Rating,S.Data,U.Username FROM spot S JOIN utente U ON S.CodiceSkater = U.Codice WHERE S.Codice = '"+ code +"';";
-
+				e.printStackTrace();
+			}
+            //apertura della connessione
+            connection=DriverManager.getConnection(URL,USER,PSW);
+            //creazione ed esecuzione query
+            statement=connection.createStatement(ResultSet.TYPE_SCROLL_INSENSITIVE,ResultSet.CONCUR_READ_ONLY);
+            String query = "SELECT * FROM shop WHERE PartitaIVA = '"+partitaIVA+"' AND NOME= '"+name+"';";
             ResultSet rs = statement.executeQuery(query);
-
-            if(rs.first())
+           
+            if (!rs.first()) //la query non ha prodotto risultati
             {
-                String indirizzo = rs.getString("Via")+" "+rs.getInt("Civico")+" "+rs.getString("Citta");
-
-                spot = new Spot(indirizzo,rs.getString("Zona"),rs.getString("Nome"),rs.getString("Tipo"),rs.getString("Comune"),rs.getInt("NumeroDiSkater"),rs.getString("Descrizione"),rs.getString("Immagine"),rs.getInt("Rating"),rs.getString("Username"),rs.getDate("Data"));
-
-                rs.close();
+                //Inserisco dati nel db
+            	query = "INSERT INTO shop (PartitaIVA,Nome,Descrizione,Citta,Via,Civico,Comune,Zona,CodiceProprietario) VALUES ('"+partitaIVA+"','"+name+"','"+description+"','"+name+"','"+city+"','"+street+"','"+number+"','"+municipality+"','"+area+"','"+code+"');";
+            	retFromQuery = statement.executeUpdate(query);
+            	if (retFromQuery==2) //la query non ha prodotto risultati
+                {
+            		JOptionPane.showMessageDialog(null," OPS! Something went wrong."," ERROR",JOptionPane.ERROR_MESSAGE);
+                }
+            	else
+            	{
+            		JOptionPane.showMessageDialog(null," Your data has been saved into db!","WELCOME", JOptionPane.INFORMATION_MESSAGE);
+            	}
+            	
             }
+            else
+            {
+                //Messagio Errore
+            	JOptionPane.showMessageDialog(null," VAT number and same name already in use!"," ERROR",JOptionPane.ERROR_MESSAGE);
+
+            }
+
+            //chiudiamo il result set generato dalla query
+            rs.close();
+
         }
-        catch(SQLException | ClassNotFoundException e)
+        catch(SQLException e)
         {
             e.printStackTrace();
         }
@@ -64,7 +84,7 @@ public class ShopDAO
                 e.printStackTrace();
             }
 
-            return spot;
         }
-    }
+
+	}
 }
