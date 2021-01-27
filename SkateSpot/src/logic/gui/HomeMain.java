@@ -26,7 +26,7 @@ public class HomeMain extends Application
 
 	public static Stage getStage()
 	{
-		return home;
+		return home; vb
 	}
 
 

@@ -42,7 +42,7 @@ public class UserDAO
                 //creazione istanza di tipo User
                  user = new User(rs.getString("Email"),rs.getString("Username"),rs.getString("Password"),rs.getString("Nome"),rs.getString("Cognome"),rs.getDate("DataDiNascita"),rs.getString("Sesso"),rs.getString("Tipo"));
                  Integer spotCode = rs.getInt("CodiceSpot");   //se l'utente ha un riferimento ad uno spot si crea lo spot
-
+                 UserContainer.setInstance(user);
                  if(spotCode != null)
                  {
                      user.setSpot(SpotDAO.createSpot(spotCode));   //si assegna il riferimento all'istanza di spot
@@ -180,7 +180,7 @@ public class UserDAO
              statement=connection.createStatement(ResultSet.TYPE_SCROLL_INSENSITIVE,ResultSet.CONCUR_READ_ONLY);
              String query = "SELECT Codice FROM utente WHERE Email = '"+email+"' AND Password = '"+password+"';";
              ResultSet rs = statement.executeQuery(query);
-
+             System.out.println(rs.getInt("Codice"));
              code=rs.getInt("Codice");
 
 

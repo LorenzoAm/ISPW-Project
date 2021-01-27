@@ -23,6 +23,7 @@ public class AddShopController
 	public void createShop(ShopBean bean)
 	{
 		Integer code = UserDAO.findCodeUser(UserContainer.getInstance().getEmail(),UserContainer.getInstance().getPassword());  //estraiamo il codice dell'utente loggato dal DB in base alle sue credenziali
+		System.out.println(code);
 		Date date = new Date();
 		System.out.println(date);
 		ShopDAO.createShop(bean.getPartitaIVA(),bean.getName(),bean.getDescription(),bean.getCity(),bean.getStreet(),bean.getNumber(),bean.getMunicipality(),bean.getArea(),code,date);
