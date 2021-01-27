@@ -77,7 +77,6 @@ public class HomeGuiController
                 }
                 case "PREMIUM AREA" -> {
                     if (UserContainer.getInstance() != null) {
-                        System.out.println(UserContainer.getInstance().getTipo());
                         if (UserContainer.getInstance().getTipo().equals("Owner")) {
                             if (getPremiumAreaStage() == null)   //prima apertura di premium area
                             {
