@@ -34,6 +34,8 @@ public class LoginController
 
             UserContainer.setInstance(user);
 
+            System.out.println(" email : "+UserContainer.getInstance().getEmail()+" password : "+UserContainer.getInstance().getPassword());
+
             JOptionPane.showMessageDialog(null,"welcome back "+UserContainer.getInstance().getNome()+" "+UserContainer.getInstance().getCognome()+" !","WELCOME",JOptionPane.INFORMATION_MESSAGE);
 
             if(user.getSpot() != null)

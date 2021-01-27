@@ -6,6 +6,7 @@ import logic.entities.DAO.UserDAO;
 import logic.gui.HomeGuiController;
 import logic.gui.PremiumAreaGuiController;
 
+import java.time.LocalDate;
 import java.util.Date;
 
 
@@ -23,8 +24,8 @@ public class AddShopController
 	public void createShop(ShopBean bean)
 	{
 		Integer code = UserDAO.findCodeUser(UserContainer.getInstance().getEmail(),UserContainer.getInstance().getPassword());  //estraiamo il codice dell'utente loggato dal DB in base alle sue credenziali
-		Date date = new Date();
-		System.out.println(date);
+		LocalDate date = LocalDate.now();
+		System.out.println("Codice : "+code+" Data : "+date);
 		ShopDAO.createShop(bean.getPartitaIVA(),bean.getName(),bean.getDescription(),bean.getCity(),bean.getStreet(),bean.getNumber(),bean.getMunicipality(),bean.getArea(),code,date);
 
 		PremiumAreaGuiController.getAddShopStage().close(); //chiudiamo la finestra di inserimento spot

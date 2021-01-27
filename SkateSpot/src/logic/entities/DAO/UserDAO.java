@@ -16,7 +16,7 @@ public class UserDAO
     private static final String URL = "jdbc:mysql://localhost:3306/skate_spot";
     private static final String DRIVER_CLASS_NAME = "com.mysql.jdbc.Driver";
 
-    public static User findUser(String email,String password)
+    public static User findUser(String email,String password)  //metodo utilizzato per il login
     {
         Connection connection = null; //interface
         Statement statement = null;
@@ -86,7 +86,8 @@ public class UserDAO
 
 
     }
-    
+
+    // metodo utilizzato per il sign up
     public static void createUser(String name,String surname,String username,String email,String password,LocalDate data,String gender,String typeOfAccount)
 	{
     	Connection connection = null; //interface
@@ -163,7 +164,8 @@ public class UserDAO
         }
 
 	}
-    
+
+	//metodo utilizzato per risalire al codice dell'utente che sta aggiungendo uno shop/spot
     public static Integer findCodeUser(String email,String password)
     {
     	 Connection connection = null; //interface
@@ -178,11 +180,17 @@ public class UserDAO
              connection=DriverManager.getConnection(URL,USER,PSW);
              //creazione ed esecuzione query
              statement=connection.createStatement(ResultSet.TYPE_SCROLL_INSENSITIVE,ResultSet.CONCUR_READ_ONLY);
-             String query = "SELECT Codice FROM utente WHERE Email = '"+email+"' AND Password = '"+password+"';";
+             String query = "SELECT U.Codice FROM utente U WHERE U.Email = '"+email+"' AND U.Password = '"+password+"';";
              ResultSet rs = statement.executeQuery(query);
 
-             code=rs.getInt("Codice");
+             if(!rs.first()) {
 
+                JOptionPane.showMessageDialog(null," The query didn't produce result ","ERROR",JOptionPane.ERROR_MESSAGE);
+             }
+             else
+             {
+                 code = rs.getInt("Codice");
+             }
 
              //chiudiamo il result set generato dalla query
              rs.close();

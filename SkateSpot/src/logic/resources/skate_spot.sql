@@ -1,11 +1,11 @@
 -- phpMyAdmin SQL Dump
--- version 5.0.2
+-- version 5.0.4
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Creato il: Gen 10, 2021 alle 14:20
--- Versione del server: 10.4.14-MariaDB
--- Versione PHP: 7.4.10
+-- Creato il: Gen 27, 2021 alle 22:28
+-- Versione del server: 10.4.17-MariaDB
+-- Versione PHP: 8.0.0
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 START TRANSACTION;
@@ -74,12 +74,13 @@ CREATE TABLE `shop` (
   `Nome` varchar(30) NOT NULL,
   `Descrizione` varchar(200) NOT NULL,
   `Immagine` varchar(50) DEFAULT NULL,
-  `Città` varchar(30) NOT NULL,
+  `Citta` varchar(30) NOT NULL,
   `Via` varchar(30) NOT NULL,
   `Civico` int(4) NOT NULL,
   `Comune` varchar(30) NOT NULL,
   `Zona` varchar(30) NOT NULL,
-  `CodiceProprietario` int(11) NOT NULL
+  `CodiceProprietario` int(11) NOT NULL,
+  `DataInserimento` date NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 -- --------------------------------------------------------
@@ -92,7 +93,7 @@ CREATE TABLE `spot` (
   `Codice` int(11) NOT NULL,
   `Via` varchar(30) NOT NULL,
   `Civico` int(4) NOT NULL,
-  `Città` varchar(30) NOT NULL,
+  `Citta` varchar(30) NOT NULL,
   `Zona` varchar(30) NOT NULL,
   `Nome` varchar(30) NOT NULL,
   `Tipo` varchar(10) NOT NULL,
@@ -104,6 +105,13 @@ CREATE TABLE `spot` (
   `CodiceSkater` int(11) NOT NULL,
   `Data` date NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+--
+-- Dump dei dati per la tabella `spot`
+--
+
+INSERT INTO `spot` (`Codice`, `Via`, `Civico`, `Citta`, `Zona`, `Nome`, `Tipo`, `Comune`, `NumeroDiSkater`, `Descrizione`, `Immagine`, `Rating`, `CodiceSkater`, `Data`) VALUES
+(1, 'via Libero Leonardi', 106, 'Roma', 'Cinecittà', 'Cinetown', 'skatepark ', 'Roma', 10, 'Skatepark comunale all\'aperto dotato di muretti, mini ramp, bowl, due funbox, scale e diversi rail.', NULL, 5, 3, '2021-01-24');
 
 -- --------------------------------------------------------
 
@@ -130,8 +138,9 @@ CREATE TABLE `utente` (
 --
 
 INSERT INTO `utente` (`Codice`, `Email`, `Username`, `Password`, `Nome`, `Cognome`, `DataDiNascita`, `Sesso`, `Tipo`, `Immagine`, `CodiceSpot`) VALUES
-(1, 'lorenzoamoretti@gmail.com', 'LorenzAm', 'password', 'Lorenzo', 'Amoretti', '1999-06-09', 'M', 'premium', NULL, NULL),
-(2, 'peter92@gmail.com', 'Spiderman', 'password', 'Peter', 'Parker', '1992-05-12', 'M', 'base', NULL, NULL);
+(3, 'lorenzoamoretti@gmail.com', 'LorenzAm', 'password', 'Lorenzo', 'Amoretti', '1999-06-09', 'M', 'Owner', NULL, 1),
+(4, 'lolemasa@alice.it', 'Ukass99', 'Ukass_99', 'Lorenzo', 'Amoretti', '1999-01-09', 'M', 'Owner', NULL, NULL),
+(5, 'mariorossi@gmail.com', 'MR2020', 'password', 'Mario', 'Rossi', '1999-01-20', 'M', 'Owner', NULL, NULL);
 
 --
 -- Indici per le tabelle scaricate
@@ -212,13 +221,13 @@ ALTER TABLE `shop`
 -- AUTO_INCREMENT per la tabella `spot`
 --
 ALTER TABLE `spot`
-  MODIFY `Codice` int(11) NOT NULL AUTO_INCREMENT;
+  MODIFY `Codice` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
 
 --
 -- AUTO_INCREMENT per la tabella `utente`
 --
 ALTER TABLE `utente`
-  MODIFY `Codice` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
+  MODIFY `Codice` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
 
 --
 -- Limiti per le tabelle scaricate

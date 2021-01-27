@@ -1,9 +1,7 @@
 package logic.entities.DAO;
 
 import java.sql.*;
-
-import java.util.Date;
-
+import java.time.LocalDate;
 import javax.swing.JOptionPane;
 
 public class ShopDAO
@@ -13,7 +11,7 @@ public class ShopDAO
     private static String URL = "jdbc:mysql://localhost:3306/skate_spot";
     private static String DRIVER_CLASS_NAME = "com.mysql.jdbc.Driver";
 
-    public static void createShop(String partitaIVA,String name,String description,String city,String street,String number,String municipality,String area,Integer code,Date date)
+    public static void createShop(String partitaIVA, String name, String description, String city, String street, String number, String municipality, String area, Integer code, LocalDate date)
 	{
     	Connection connection = null; //interface
         Statement statement = null;
@@ -21,24 +19,22 @@ public class ShopDAO
         try
         {
             //loading dinamico del driver specifico
-            try {
-				Class.forName(DRIVER_CLASS_NAME);
-			} catch (ClassNotFoundException e) {
 
-				e.printStackTrace();
-			}
+            Class.forName(DRIVER_CLASS_NAME);
             //apertura della connessione
             connection=DriverManager.getConnection(URL,USER,PSW);
             //creazione ed esecuzione query
             statement=connection.createStatement(ResultSet.TYPE_SCROLL_INSENSITIVE,ResultSet.CONCUR_READ_ONLY);
-            String query = "SELECT * FROM shop WHERE PartitaIVA = '"+partitaIVA+"' OR Nome = '"+name+"' OR (Via = '"+street+"' AND Civico = '"+number+"');";
+
+            Integer streetNumber = Integer.parseInt(number);
+
+            String query = "SELECT * FROM shop WHERE PartitaIVA = '"+partitaIVA+"' OR Nome = '"+name+"' OR (Via = '"+street+"' AND Civico = '"+streetNumber+"');";
             ResultSet rs = statement.executeQuery(query);
            
             if (!rs.first()) //la query non ha prodotto risultati
             {
-                java.sql.Date sqlDate = new java.sql.Date(date.getTime());
                 //Inserisco dati nel db
-            	query = "INSERT INTO shop (PartitaIVA,Nome,Descrizione,Citta,Via,Civico,Comune,Zona,CodiceProprietario,Data) VALUES ('"+partitaIVA+"','"+name+"','"+description+"','"+city+"','"+street+"','"+number+"','"+municipality+"','"+area+"','"+code+"','"+sqlDate+"');";
+            	query = "INSERT INTO shop (PartitaIVA,Nome,Descrizione,Immagine,Citta,Via,Civico,Comune,Zona,CodiceProprietario,DataInserimento) VALUES ('"+partitaIVA+"','"+name+"','"+description+"','','"+city+"','"+street+"','"+number+"','"+municipality+"','"+area+"','"+code+"','"+date+"');";
             	retFromQuery = statement.executeUpdate(query);
             	if (retFromQuery==2) //la query non ha prodotto risultati
                 {
@@ -61,7 +57,7 @@ public class ShopDAO
             rs.close();
 
         }
-        catch(SQLException e)
+        catch(SQLException  | ClassNotFoundException e)
         {
             e.printStackTrace();
         }
