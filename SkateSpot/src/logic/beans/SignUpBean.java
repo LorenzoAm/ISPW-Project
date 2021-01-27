@@ -1,4 +1,5 @@
 package logic.beans;
+
 import java.time.Instant;
 import java.time.LocalDate;
 import java.time.ZoneId;
@@ -21,9 +22,7 @@ public class SignUpBean
 	private String typeOfAccount;
 	private LocalDate data;
 	private String alert="";
-	
-	public SignUpBean()
-	{}
+
 	public SignUpBean(String name,String surname,String username,String email,String password,String confirmPassword)
 	{
 			setName(name);

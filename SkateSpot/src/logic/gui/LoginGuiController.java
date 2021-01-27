@@ -8,8 +8,6 @@ import javafx.scene.input.MouseEvent;
 import logic.beans.LoginBean;
 import logic.controllers.LoginController;
 
-import javax.swing.*;
-
 
 public class LoginGuiController
 {

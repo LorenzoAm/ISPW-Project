@@ -1,10 +1,6 @@
 package logic.beans;
 
-import javafx.scene.image.ImageView;
-import logic.controllers.LoginController;
-
 import javax.swing.*;
-import java.awt.*;
 
 public class LoginBean
 {
@@ -12,7 +8,7 @@ public class LoginBean
     private String password;
 
 
-    public LoginBean(String email,String password)
+    public LoginBean(String email, String password)
     {
         setEmail(email);
         setPassword(password);

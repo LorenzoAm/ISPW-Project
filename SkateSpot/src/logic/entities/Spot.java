@@ -19,7 +19,7 @@ public class Spot
 
     private List<Review> reviewList;
 
-    public Spot(String indirizzo, String zona, String nome, String tipo, String comune, Integer numeroDiSkater, String descrizione, String immagine,Integer rating,String username,Date data)
+    public Spot(String indirizzo, String zona, String nome, String tipo, String comune, Integer numeroDiSkater, String descrizione, String immagine, Integer rating, String username, Date data)
     {
         setIndirizzo(indirizzo);
         setZona(zona);

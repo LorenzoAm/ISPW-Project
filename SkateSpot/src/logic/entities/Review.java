@@ -9,7 +9,7 @@ public class Review
     private String username;
     private Date data;
 
-    public Review(String descrizione,Integer rating,String username,Date data)
+    public Review(String descrizione, Integer rating, String username, Date data)
     {
         setDescrizione(descrizione);
         setRating(rating);

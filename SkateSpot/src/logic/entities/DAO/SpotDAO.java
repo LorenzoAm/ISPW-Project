@@ -9,7 +9,7 @@ public class SpotDAO
     private static String USER = "root";
     private static String PSW = "PASSWORD";
     private static String URL = "jdbc:mysql://localhost:3306/skate_spot";
-    private static String DRIVER_CLASS_NAME = "com.mysql.cj.jdbc.Driver";
+    private static String DRIVER_CLASS_NAME = "com.mysql.jdbc.Driver";
 
     public static Spot createSpot(Integer code)
     {

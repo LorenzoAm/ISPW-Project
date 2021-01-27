@@ -14,6 +14,8 @@ public class User
     private String tipo;
     private Spot spot;      //riferimento allo spot in cui l'utente sta facendo skate
 
+    public User(){}
+
     public User(String email, String username, String password, String nome, String cognome, Date dataDiNascita, String sesso, String tipo)
     {
         setEmail(email);

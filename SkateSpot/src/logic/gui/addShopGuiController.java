@@ -7,7 +7,7 @@ import javafx.scene.control.Button;
 import javafx.scene.control.TextField;
 import javafx.scene.input.MouseEvent;
 import logic.beans.ShopBean;
-import logic.controllers.ShopController;
+import logic.controllers.AddShopController;
 
 public class addShopGuiController 
 {
@@ -35,7 +35,7 @@ public class addShopGuiController
             	bean.control(street.getText(),number.getText());//finisce di passare i dati necesari (sonalCloud non accetta pi� di 7 parametri per costruttore)
             	if(bean.check())
             	{
-            		 ShopController.getInstance().createShop(bean); //richiamiamo signUp sull'istanza singleton passando i dati verificati dalla bean
+            		 AddShopController.getInstance().createShop(bean);
             	}
                 break;
         }

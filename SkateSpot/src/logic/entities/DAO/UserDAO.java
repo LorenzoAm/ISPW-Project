@@ -1,5 +1,6 @@
 package logic.entities.DAO;
 
+import logic.controllers.UserContainer;
 import logic.entities.User;
 
 import javax.swing.*;
@@ -13,7 +14,7 @@ public class UserDAO
     private static final String USER = "root";
     private static final String PSW = "PASSWORD";
     private static final String URL = "jdbc:mysql://localhost:3306/skate_spot";
-    private static final String DRIVER_CLASS_NAME = "com.mysql.cj.jdbc.Driver";
+    private static final String DRIVER_CLASS_NAME = "com.mysql.jdbc.Driver";
 
     public static User findUser(String email,String password)
     {
@@ -34,18 +35,19 @@ public class UserDAO
            
             if (!rs.first()) //la query non ha prodotto risultati
             {
-                JOptionPane.showMessageDialog(null," No user found with password : "+password+" and email : "+email," ERROR",JOptionPane.ERROR_MESSAGE);
+                JOptionPane.showMessageDialog(null," No user found corresponding to the entered data !"," ERROR",JOptionPane.ERROR_MESSAGE);
             }
             else
             {
                 //creazione istanza di tipo User
                  user = new User(rs.getString("Email"),rs.getString("Username"),rs.getString("Password"),rs.getString("Nome"),rs.getString("Cognome"),rs.getDate("DataDiNascita"),rs.getString("Sesso"),rs.getString("Tipo"));
-                 Integer spotCode = rs.getInt("CodiceSpot");   //se l'utente ha un riferimento a spot si crea lo spot
+                 Integer spotCode = rs.getInt("CodiceSpot");   //se l'utente ha un riferimento ad uno spot si crea lo spot
 
                  if(spotCode != null)
                  {
                      user.setSpot(SpotDAO.createSpot(spotCode));   //si assegna il riferimento all'istanza di spot
                  }
+
 
             }
 
@@ -162,11 +164,11 @@ public class UserDAO
 
 	}
     
-    public static String findCodeUser(String email,String password)
+    public static Integer findCodeUser(String email,String password)
     {
     	 Connection connection = null; //interface
          Statement statement = null;
-         String code = null;
+         Integer code = null;
 
          try
          {
@@ -178,15 +180,9 @@ public class UserDAO
              statement=connection.createStatement(ResultSet.TYPE_SCROLL_INSENSITIVE,ResultSet.CONCUR_READ_ONLY);
              String query = "SELECT Codice FROM utente WHERE Email = '"+email+"' AND Password = '"+password+"';";
              ResultSet rs = statement.executeQuery(query);
-            
-             if (!rs.first()) //la query non ha prodotto risultati
-             {
-                 JOptionPane.showMessageDialog(null," No user found with password : "+password+" and email : "+email," ERROR",JOptionPane.ERROR_MESSAGE);
-             }
-             else
-             {
-                 code=rs.getString("Codice");
-             }
+
+             code=rs.getInt("Codice");
+
 
              //chiudiamo il result set generato dalla query
              rs.close();
@@ -217,10 +213,10 @@ public class UserDAO
              {
                  e.printStackTrace();
              }
-
+             return code;
          }
 
-         return code;
+
     }
 }
 

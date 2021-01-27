@@ -15,13 +15,8 @@ public class ShopBean
 	private String description;
 	private String street;
 	private String number;
-	private String code;
 	private String alert;
-	private int dim=11;
-	public ShopBean()
-	{
-		
-	}
+
 	public ShopBean(String name,String city,String partitaIVA,String municipality,String area,String description)
 	{
 		setName(name);
@@ -30,21 +25,13 @@ public class ShopBean
 		setMunicipality(municipality);
 		setArea(area);
 		setDescription(description);
-		setCode();
 	}
 	public void control(String street,String number)
 	{
 		setStreet(street);
 		setNumber(number);
 	}
-	public void setCode()
-	{
-		code=UserDAO.findCodeUser(User.getEmail(),User.getPassword());
-	}
-	public String getCode()
-	{
-		return code;
-	}
+
 	public void setName(String name)
 	{
 		this.name=name;
@@ -133,7 +120,7 @@ public class ShopBean
 		}
 		else
 		{
-			alert+="\nThe name of the shop isn't entered.";
+			alert+="\nThe name of the shop wasn't entered.";
 			return false;
 		}
 	}
@@ -145,13 +132,13 @@ public class ShopBean
 		}
 		else
 		{
-			alert+="\nThe name of the city isn't entered.";
+			alert+="\nThe name of the city wasn't entered.";
 			return false;
 		}
 	}
 	private boolean checkPartitaIVA()
 	{
-		if ( (partitaIVA!="") && (partitaIVA != null) && (partitaIVA.matches("^[0-9]*$")) && (partitaIVA.length()== dim)) 
+		if ( (partitaIVA!="") && (partitaIVA != null) && (partitaIVA.matches("^[0-9]*$")) && (partitaIVA.length()== 11))
 		{ 
 		       return true;
 		}
@@ -169,7 +156,7 @@ public class ShopBean
 		}
 		else
 		{
-			alert+="\nThe municipality isn't entered.";
+			alert+="\nThe municipality wasn't entered.";
 			return false;
 		}
 	}
@@ -181,7 +168,7 @@ public class ShopBean
 		}
 		else
 		{
-			alert+="\nThe area isn't entered.";
+			alert+="\nThe area wasn't entered.";
 			return false;
 		}
 	}
@@ -193,7 +180,7 @@ public class ShopBean
 		}
 		else
 		{
-			alert+="\nThe description isn't entered.";
+			alert+="\nThe description wasn't entered.";
 			return false;
 		}
 	}
@@ -205,7 +192,7 @@ public class ShopBean
 		}
 		else
 		{
-			alert+="\nThe street isn't entered.";
+			alert+="\nThe street wasn't entered.";
 			return false;
 		}
 	}
@@ -217,7 +204,7 @@ public class ShopBean
 		}
 		else
 		{
-			alert+="\nThe number isn't correct.";
+			alert+="\nThe number wasn't correct.";
 			return false;
 		}
 	}
