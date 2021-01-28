@@ -11,6 +11,11 @@ public class UserContainer
         instance = user;
     }
 
+    public static void resetInstance()
+    {
+        instance = null;
+    }
+
     public static User getInstance()
     {
         return instance;

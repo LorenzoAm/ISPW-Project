@@ -34,7 +34,7 @@ public class ShopDAO
             if (!rs.first()) //la query non ha prodotto risultati
             {
                 //Inserisco dati nel db
-            	query = "INSERT INTO shop (PartitaIVA,Nome,Descrizione,Immagine,Citta,Via,Civico,Comune,Zona,CodiceProprietario,DataInserimento) VALUES ('"+partitaIVA+"','"+name+"','"+description+"','','"+city+"','"+street+"','"+number+"','"+municipality+"','"+area+"','"+code+"','"+date+"');";
+            	query = "INSERT INTO shop (PartitaIVA,Nome,Descrizione,Immagine,Citta,Via,Civico,Comune,Zona,CodiceProprietario,DataInserimento) VALUES ('"+partitaIVA+"','"+name+"','"+description+"','NULL','"+city+"','"+street+"','"+streetNumber+"','"+municipality+"','"+area+"','"+code+"','"+date+"');";
             	retFromQuery = statement.executeUpdate(query);
             	if (retFromQuery==2) //la query non ha prodotto risultati
                 {

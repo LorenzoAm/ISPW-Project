@@ -29,8 +29,6 @@ public class LoginController
         User user = UserDAO.findUser(bean.getEmail(),bean.getPassword());
         if(user != null)
         {
-            File file;
-            Image image;
 
             UserContainer.setInstance(user);
 

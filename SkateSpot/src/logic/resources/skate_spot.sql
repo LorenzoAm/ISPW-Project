@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Creato il: Gen 27, 2021 alle 22:28
+-- Creato il: Gen 28, 2021 alle 18:27
 -- Versione del server: 10.4.17-MariaDB
 -- Versione PHP: 8.0.0
 
@@ -83,6 +83,13 @@ CREATE TABLE `shop` (
   `DataInserimento` date NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
+--
+-- Dump dei dati per la tabella `shop`
+--
+
+INSERT INTO `shop` (`Codice`, `PartitaIVA`, `Nome`, `Descrizione`, `Immagine`, `Citta`, `Via`, `Civico`, `Comune`, `Zona`, `CodiceProprietario`, `DataInserimento`) VALUES
+(1, '12345678901', 'random', 'random description', 'NULL', 'Roma', 'random street', 17, 'random municipality', 'random area', 3, '2021-01-28');
+
 -- --------------------------------------------------------
 
 --
@@ -96,22 +103,24 @@ CREATE TABLE `spot` (
   `Citta` varchar(30) NOT NULL,
   `Zona` varchar(30) NOT NULL,
   `Nome` varchar(30) NOT NULL,
-  `Tipo` varchar(10) NOT NULL,
+  `Tipo` varchar(20) NOT NULL,
   `Comune` varchar(30) NOT NULL,
   `NumeroDiSkater` int(2) NOT NULL,
   `Descrizione` varchar(200) NOT NULL,
   `Immagine` varchar(50) DEFAULT NULL,
   `Rating` int(1) NOT NULL,
   `CodiceSkater` int(11) NOT NULL,
-  `Data` date NOT NULL
+  `DataInserimento` date NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 --
 -- Dump dei dati per la tabella `spot`
 --
 
-INSERT INTO `spot` (`Codice`, `Via`, `Civico`, `Citta`, `Zona`, `Nome`, `Tipo`, `Comune`, `NumeroDiSkater`, `Descrizione`, `Immagine`, `Rating`, `CodiceSkater`, `Data`) VALUES
-(1, 'via Libero Leonardi', 106, 'Roma', 'Cinecittà', 'Cinetown', 'skatepark ', 'Roma', 10, 'Skatepark comunale all\'aperto dotato di muretti, mini ramp, bowl, due funbox, scale e diversi rail.', NULL, 5, 3, '2021-01-24');
+INSERT INTO `spot` (`Codice`, `Via`, `Civico`, `Citta`, `Zona`, `Nome`, `Tipo`, `Comune`, `NumeroDiSkater`, `Descrizione`, `Immagine`, `Rating`, `CodiceSkater`, `DataInserimento`) VALUES
+(1, 'via Libero Leonardi', 106, 'Roma', 'Cinecittà', 'Cinetown', 'skatepark ', 'Roma', 10, 'Skatepark comunale all\'aperto dotato di muretti, mini ramp, bowl, due funbox, scale e diversi rail.', NULL, 5, 3, '2021-01-24'),
+(2, 'random street', 17, 'random city', 'random area', 'random spot', 'random street', 'random municipality', 0, '17', '', 0, 3, '2021-01-28'),
+(3, 'via', 15, 'città', 'area', 'nome', 'via', 'comune', 0, '15', 'NULL', 0, 3, '2021-01-28');
 
 -- --------------------------------------------------------
 
@@ -215,13 +224,13 @@ ALTER TABLE `recensione`
 -- AUTO_INCREMENT per la tabella `shop`
 --
 ALTER TABLE `shop`
-  MODIFY `Codice` int(11) NOT NULL AUTO_INCREMENT;
+  MODIFY `Codice` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
 
 --
 -- AUTO_INCREMENT per la tabella `spot`
 --
 ALTER TABLE `spot`
-  MODIFY `Codice` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
+  MODIFY `Codice` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
 
 --
 -- AUTO_INCREMENT per la tabella `utente`

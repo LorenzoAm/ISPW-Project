@@ -13,6 +13,7 @@ import java.util.Date;
 public class AddShopController
 {
 	private static AddShopController instance;
+
 	private AddShopController(){}
 	
 	public static AddShopController getInstance()
@@ -25,7 +26,6 @@ public class AddShopController
 	{
 		Integer code = UserDAO.findCodeUser(UserContainer.getInstance().getEmail(),UserContainer.getInstance().getPassword());  //estraiamo il codice dell'utente loggato dal DB in base alle sue credenziali
 		LocalDate date = LocalDate.now();
-		System.out.println("Codice : "+code+" Data : "+date);
 		ShopDAO.createShop(bean.getPartitaIVA(),bean.getName(),bean.getDescription(),bean.getCity(),bean.getStreet(),bean.getNumber(),bean.getMunicipality(),bean.getArea(),code,date);
 
 		PremiumAreaGuiController.getAddShopStage().close(); //chiudiamo la finestra di inserimento spot

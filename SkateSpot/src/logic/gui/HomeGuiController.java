@@ -10,6 +10,7 @@ import javafx.scene.control.Label;
 import javafx.scene.image.ImageView;
 import javafx.scene.input.MouseEvent;
 import javafx.stage.Stage;
+import logic.controllers.LogoutController;
 import logic.controllers.UserContainer;
 import javax.swing.*;
 import java.io.IOException;
@@ -17,13 +18,6 @@ import java.io.IOException;
 
 public class HomeGuiController
 {
-
-    @FXML
-    private ImageView profilePic;
-    @FXML
-    private Label usernameLab;
-    @FXML
-    private Button premiumArea;
 
     private static Stage signUp;
     private static Stage login;
@@ -40,7 +34,7 @@ public class HomeGuiController
         String value = clickedButton.getText();
             switch (value)
             {
-                case "LOGIN" -> {
+                case "LOGIN-LOGOUT" -> {
                     if (UserContainer.getInstance() == null) {
                         if (getLoginStage() == null)   //prima apertura di login
                         {
@@ -56,7 +50,7 @@ public class HomeGuiController
                             HomeMain.getStage().close();
                         }
                     } else {
-                        JOptionPane.showMessageDialog(null, " You're already logged in the system !", "INFORMATION", JOptionPane.INFORMATION_MESSAGE);
+                        LogoutController.getInstance().logout();
                     }
 
                 }
@@ -118,7 +112,7 @@ public class HomeGuiController
                 addSpot.show();
                 HomeMain.getStage().close();
             } else {
-                login.show();
+                addSpot.show();
                 HomeMain.getStage().close();
             }
         }
