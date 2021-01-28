@@ -16,13 +16,13 @@ import logic.controllers.SignUpController;
 public class SignUpGuiController
 {
 	//fxml
-	@FXML public TextField name;
-	@FXML public TextField surname;
-	@FXML public TextField username;
-	@FXML public TextField email;
-	@FXML public PasswordField password;
-	@FXML public PasswordField confirmPassword;
-	@FXML public DatePicker data;
+	@FXML private TextField name;
+	@FXML private TextField surname;
+	@FXML private TextField username;
+	@FXML private TextField email;
+	@FXML private PasswordField password;
+	@FXML private PasswordField confirmPassword;
+	@FXML private DatePicker data;
 	@FXML private RadioButton maleButton;
 	@FXML private RadioButton femaleButton;
 	@FXML private RadioButton skaterButton;

@@ -11,14 +11,14 @@ import logic.controllers.AddShopController;
 
 public class addShopGuiController 
 {
-	@FXML public TextField name;
-	@FXML public TextField city;
-	@FXML public TextField partitaIVA;
-	@FXML public TextField municipality;
-	@FXML public TextField area;
-	@FXML public TextField description;
-	@FXML public TextField street;
-	@FXML public TextField number;
+	@FXML private TextField name;
+	@FXML private TextField city;
+	@FXML private TextField partitaIVA;
+	@FXML private TextField municipality;
+	@FXML private TextField area;
+	@FXML private TextField description;
+	@FXML private TextField street;
+	@FXML private TextField number;
 	
 	public void handle(MouseEvent mouseEvent) throws IOException
     {
