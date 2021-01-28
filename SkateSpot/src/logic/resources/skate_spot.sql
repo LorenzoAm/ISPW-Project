@@ -70,7 +70,7 @@ CREATE TABLE `recensione` (
 
 CREATE TABLE `shop` (
   `Codice` int(11) NOT NULL,
-  `PartitaIVA` int(11) NOT NULL,
+  `PartitaIVA` varchar(11) NOT NULL,
   `Nome` varchar(30) NOT NULL,
   `Descrizione` varchar(200) NOT NULL,
   `Immagine` varchar(50) DEFAULT NULL,
