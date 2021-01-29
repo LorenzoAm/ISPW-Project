@@ -6,10 +6,9 @@ import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.scene.control.Button;
-import javafx.scene.control.Label;
-import javafx.scene.image.ImageView;
 import javafx.scene.input.MouseEvent;
 import javafx.stage.Stage;
+import logic.controllers.LeaveSpotController;
 import logic.controllers.LogoutController;
 import logic.controllers.UserContainer;
 import javax.swing.*;
@@ -23,7 +22,7 @@ public class HomeGuiController
     private static Stage login;
     private static Stage addSpot;
     private static Stage premArea;
-
+    private static Stage joinSpot;
 
 
     public void handle(MouseEvent mouseEvent) throws IOException
@@ -122,6 +121,33 @@ public class HomeGuiController
         }
     }
 
+    public void joinLeaveSpot(ActionEvent actionEvent) throws IOException
+    {
+        Scene scene;
+        Parent root;
+        if(UserContainer.getInstance() != null)
+        {
+            if(UserContainer.getInstance().getSpot() == null)  //se l'utente non ha un riferimento ad uno spot viene effettuato il join spot use case
+            {
+                root = FXMLLoader.load(getClass().getResource("../gui/joinSpotLayout.fxml"));
+                scene = new Scene(root);
+                joinSpot = new Stage();
+                joinSpot.setTitle("JOIN SPOT");
+                joinSpot.setScene(scene);
+                joinSpot.show();
+                HomeMain.getStage().close();
+            }
+            else   //leave spot use case
+            {
+                LeaveSpotController.getInstance().leaveSpot();
+            }
+        }
+        else
+        {
+            JOptionPane.showMessageDialog(null," You must be logged in the system in order to join or leave a spot! ","INFORMATION",JOptionPane.INFORMATION_MESSAGE);
+        }
+    }
+
     public static Stage getSignUpStage()
     {
         return signUp;
@@ -141,5 +167,11 @@ public class HomeGuiController
     {
         return addSpot;
     }
+
+    public static Stage getJoinSpotStage()
+    {
+        return joinSpot;
+    }
+
 
 }

@@ -11,7 +11,7 @@ import logic.beans.SpotBean;
 import logic.controllers.AddShopController;
 import logic.controllers.AddSpotController;
 
-public class addSpotGUIController
+public class AddSpotGUIController
 {
     @FXML private TextField name;
     @FXML private TextField street;

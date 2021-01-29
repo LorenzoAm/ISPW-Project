@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="612.0" prefWidth="965.0" style="-fx-background-color: rgb(52,50,50);" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="logic.gui.JoinSpotGUIController">
+    <TitledPane animated="false" collapsible="false" layoutX="220.0" layoutY="-46.0" prefHeight="521.0" prefWidth="811.0" style="-fx-background-color: rgb(52,50,50);" text="SkateSpot" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+            <SplitPane dividerPositions="0.18788682581786031" layoutX="246.0" layoutY="117.0" orientation="VERTICAL" prefHeight="448.8" prefWidth="714.4" style="-fx-background-color: rgb(52,50,50);" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                <AnchorPane maxHeight="80.0" minHeight="0.0" minWidth="0.0" prefHeight="69.0" prefWidth="819.0" style="-fx-background-color: rgb(52,50,50);">
+                    <Button alignment="CENTER" layoutX="856.0" layoutY="6.0" mnemonicParsing="false" nodeOrientation="LEFT_TO_RIGHT" onMouseClicked="#handle" prefHeight="69.0" prefWidth="72.0" style="-fx-background-radius: 100;" textAlignment="CENTER" AnchorPane.rightAnchor="14.0">
+                        <graphic>
+                            <ImageView fitHeight="64.0" fitWidth="54.0" pickOnBounds="true" preserveRatio="true">
+                                    <Image url="@../resources/home_grey.png" />
+                            </ImageView>
+                        </graphic>
+                    </Button>
+                    <Label alignment="CENTER" layoutX="354.0" layoutY="4.0" text="SkateSpot" textFill="#ff5c00" AnchorPane.leftAnchor="354.0" AnchorPane.rightAnchor="354.0">
+                        <font>
+                            <Font name="System Bold Italic" size="50.0" />
+                        </font>
+                    </Label>
+                </AnchorPane>
+                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="333.0" prefWidth="677.0" style="fx-ba: red;">
+                    <Label layoutX="400.0" layoutY="30.0" text="Enter the spot location" textFill="#ff5c00">
+                        <font>
+                            <Font name="System Bold" size="29.0" />
+                        </font>
+                    </Label>
+                    <TextField fx:id="street" layoutX="400.0" layoutY="100.0" maxWidth="315.0" prefHeight="25.0" prefWidth="315.0" promptText="Street" />
+                    <Button layoutX="400.0" layoutY="220.0" mnemonicParsing="false" onMouseClicked="#handle" prefHeight="78.0" prefWidth="315.0" style="-fx-background-color: rgb(52,60,60);" text="Join Spot" textFill="#ff5c00">
+                        <font>
+                            <Font name="System Bold" size="26.0" />
+                        </font>
+                    </Button>
+               <TextField fx:id="number" layoutX="400.0" layoutY="137.0" maxWidth="315.0" prefHeight="25.0" prefWidth="315.0" promptText="Street number" />
+               <TextField fx:id="city" layoutX="400.0" layoutY="177.0" maxWidth="315.0" prefHeight="25.0" prefWidth="315.0" promptText="City" />
+                </AnchorPane>
+            </SplitPane>
+        </AnchorPane>
+    </TitledPane>
+</AnchorPane>

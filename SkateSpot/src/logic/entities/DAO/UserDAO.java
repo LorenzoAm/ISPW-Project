@@ -1,6 +1,7 @@
 package logic.entities.DAO;
 
 import logic.controllers.UserContainer;
+import logic.entities.Spot;
 import logic.entities.User;
 
 import javax.swing.*;
@@ -225,6 +226,178 @@ public class UserDAO
          }
 
 
+    }
+
+    public static void leaveSpot(String email,String password)
+    {
+        Connection connection = null; //interface
+        Statement statement = null;
+        int retFromQuery;
+
+        try
+        {
+            //loading dinamico del driver specifico
+            Class.forName(DRIVER_CLASS_NAME);
+            //apertura della connessione
+            connection=DriverManager.getConnection(URL,USER,PSW);
+            //creazione ed esecuzione query
+            statement=connection.createStatement(ResultSet.TYPE_SCROLL_INSENSITIVE,ResultSet.CONCUR_READ_ONLY);
+            String query = "SELECT S.Codice,S.NumeroDiSkater FROM spot S JOIN utente U ON U.CodiceSpot = S.Codice WHERE U.Email ='"+email+"' AND U.Password = '"+password+"'";
+            ResultSet rs = statement.executeQuery(query);
+            if(rs.first())
+            {
+                int updatedNumber = rs.getInt("S.NumeroDiSkater")-1;
+                int code = rs.getInt("S.Codice");
+
+                query = "UPDATE utente SET CodiceSpot = NULL WHERE Email = '" + email + "' AND Password = '" + password + "';";
+                retFromQuery = statement.executeUpdate(query);
+
+                if (retFromQuery == 2) //la query non ha prodotto risultati
+                {
+                    JOptionPane.showMessageDialog(null, " OPS! Something went wrong.", " ERROR", JOptionPane.ERROR_MESSAGE);
+                } else {
+                    JOptionPane.showMessageDialog(null, " The update was successfully executed!", "WELCOME", JOptionPane.INFORMATION_MESSAGE);
+                }
+
+                query = "UPDATE spot SET NumeroDiSkater = '"+updatedNumber+"' WHERE Codice = '"+code+"';";
+                retFromQuery = statement.executeUpdate(query);
+
+                if (retFromQuery == 2) //la query non ha prodotto risultati
+                {
+                    JOptionPane.showMessageDialog(null, " OPS! Something went wrong.", " ERROR", JOptionPane.ERROR_MESSAGE);
+                } else {
+                    JOptionPane.showMessageDialog(null, " The update was successfully executed!", "WELCOME", JOptionPane.INFORMATION_MESSAGE);
+                }
+
+            }
+            else
+            {
+                JOptionPane.showMessageDialog(null," The query didn't produce result ","ERROR",JOptionPane.ERROR_MESSAGE);
+            }
+            rs.close();
+        }
+        catch(SQLException | ClassNotFoundException e)
+        {
+            e.printStackTrace();
+        }
+        finally  //chiudiamo statement e connessione
+        {
+            try
+            {
+                if(statement != null)
+                    statement.close();
+            }
+            catch (SQLException e)
+            {
+                e.printStackTrace();
+            }
+
+            try
+            {
+                if(connection != null)
+                    connection.close();
+            }
+            catch(SQLException e)
+            {
+                e.printStackTrace();
+            }
+        }
+
+    }
+
+    public static Spot joinSpot(String street, String number, String city)
+    {
+        Connection connection = null; //interface
+        Statement statement = null;
+        Spot spot = null;
+
+        try
+        {
+            //loading dinamico del driver specifico
+            Class.forName(DRIVER_CLASS_NAME);
+            //apertura della connessione
+            connection=DriverManager.getConnection(URL,USER,PSW);
+            //creazione ed esecuzione query
+            statement=connection.createStatement(ResultSet.TYPE_SCROLL_INSENSITIVE,ResultSet.CONCUR_READ_ONLY);
+            String query = "SELECT S.Codice,S.Nome,S.Via,S.Civico,S.Citta,S.Zona,S.Comune,S.Descrizione,S.Rating,S.NumeroDiSkater,S.Tipo,S.Immagine,S.DataInserimento,U.Username FROM spot S JOIN utente U ON S.CodiceSkater = U.Codice WHERE Via = '"+street+"' AND Civico = '"+number+"' AND Citta ='"+city+"'";
+            ResultSet rs = statement.executeQuery(query);
+
+            if(rs.first())
+            {
+                if(rs.getInt("NumeroDiSkater")<20)
+                {
+                    int retFromQuery;
+                    int codice = rs.getInt("S.Codice");
+                    int updatedNumber = rs.getInt("S.NumeroDiSkater")+1;
+
+                    String indirizzo = rs.getString("S.Via")+" "+rs.getInt("S.Civico")+" "+rs.getString("S.Citta");
+
+                    spot = new Spot(indirizzo,rs.getString("S.Zona"),rs.getString("S.Nome"),rs.getString("S.Tipo"),rs.getString("S.Comune"),rs.getInt("S.NumeroDiSkater"),rs.getString("S.Descrizione"),rs.getString("S.Immagine"),rs.getInt("S.Rating"),rs.getString("U.Username"),rs.getDate("S.DataInserimento"));
+
+                    query = "UPDATE spot SET NumeroDiSkater = '"+updatedNumber+"' WHERE Via = '"+rs.getString("S.Via")+"' AND Civico = '"+rs.getInt("S.Civico")+"' AND Citta = '"+rs.getString("S.Citta")+"' ";
+                    retFromQuery = statement.executeUpdate(query);
+
+                    if (retFromQuery==2) //la query non ha prodotto risultati
+                    {
+                        JOptionPane.showMessageDialog(null," OPS! Something went wrong."," ERROR",JOptionPane.ERROR_MESSAGE);
+                    }
+                    else
+                    {
+                        JOptionPane.showMessageDialog(null," The update was successfully executed!","WELCOME", JOptionPane.INFORMATION_MESSAGE);
+                    }
+
+                    query = "UPDATE utente SET CodiceSpot ='"+codice+"' WHERE  Email ='"+UserContainer.getInstance().getEmail()+"' AND Password ='"+UserContainer.getInstance().getPassword()+"' ";
+                    retFromQuery = statement.executeUpdate(query);
+
+                    if (retFromQuery==2) //la query non ha prodotto risultati
+                    {
+                        JOptionPane.showMessageDialog(null," OPS! Something went wrong."," ERROR",JOptionPane.ERROR_MESSAGE);
+                    }
+                    else
+                    {
+                        JOptionPane.showMessageDialog(null," The update was successfully executed!","WELCOME", JOptionPane.INFORMATION_MESSAGE);
+                    }
+
+                }
+                else
+                {
+                    JOptionPane.showMessageDialog(null," Sorry the spot is full at the moment ","INFORMATION",JOptionPane.INFORMATION_MESSAGE);
+                }
+            }
+            else
+            {
+                JOptionPane.showMessageDialog(null," The entered location doesn't match with any spot in the DB ","ERROR",JOptionPane.ERROR_MESSAGE);
+            }
+
+            rs.close();
+        }
+        catch(SQLException | ClassNotFoundException e)
+        {
+            e.printStackTrace();
+        }
+        finally  //chiudiamo statement e connessione
+        {
+            try
+            {
+                if(statement != null)
+                    statement.close();
+            }
+            catch (SQLException e)
+            {
+                e.printStackTrace();
+            }
+
+            try
+            {
+                if(connection != null)
+                    connection.close();
+            }
+            catch(SQLException e)
+            {
+                e.printStackTrace();
+            }
+            return spot;
+        }
     }
 }
 
