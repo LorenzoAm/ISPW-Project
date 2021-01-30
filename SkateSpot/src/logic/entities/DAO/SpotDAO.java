@@ -27,7 +27,7 @@ public class SpotDAO
 
             statement = connection.createStatement(ResultSet.TYPE_SCROLL_INSENSITIVE,ResultSet.CONCUR_READ_ONLY);
 
-            String query = "SELECT S.Via,S.Civico,S.Citta,S.Zona,S.Nome,S.Tipo,S.Comune,S.NumeroDiSkater,S.Descrizione,S.Immagine,S.Rating,S.DataInserimento,U.Username FROM spot S JOIN utente U ON S.CodiceSkater = U.Codice WHERE S.Codice = '"+ code +"';";
+            String query = "SELECT S.Via,S.Civico,S.Citta,S.Zona,S.Nome,S.Tipo,S.Comune,S.NumeroDiSkater,S.Descrizione,S.Immagine,S.DataInserimento,U.Username FROM spot S JOIN utente U ON S.CodiceSkater = U.Codice WHERE S.Codice = '"+ code +"';";
 
             ResultSet rs = statement.executeQuery(query);
 
@@ -35,7 +35,7 @@ public class SpotDAO
             {
                 String indirizzo = rs.getString("Via")+" "+rs.getInt("Civico")+" "+rs.getString("Citta");
 
-                spot = new Spot(indirizzo,rs.getString("Zona"),rs.getString("Nome"),rs.getString("Tipo"),rs.getString("Comune"),rs.getInt("NumeroDiSkater"),rs.getString("Descrizione"),rs.getString("Immagine"),rs.getInt("Rating"),rs.getString("Username"),rs.getDate("DataInserimento"));
+                spot = new Spot(indirizzo,rs.getString("Zona"),rs.getString("Nome"),rs.getString("Tipo"),rs.getString("Comune"),rs.getInt("NumeroDiSkater"),rs.getString("Descrizione"),rs.getString("Immagine"),rs.getString("Username"),rs.getDate("DataInserimento"));
 
                 rs.close();
             }
@@ -93,7 +93,7 @@ public class SpotDAO
             if (!rs.first()) //la query non ha prodotto risultati
             {
                 //Inserisco dati nel db
-                query = "INSERT INTO spot(Via,Civico,Citta,Zona,Nome,Tipo,Comune,NumeroDiSkater,Descrizione,Immagine,Rating,CodiceSkater,DataInserimento) VALUES ('"+street+"','"+streetNumber+"','"+city+"','"+area+"','"+name+"','"+type+"','"+municipality+"','0','"+description+"','NULL','0','"+code+"','"+date+"');";
+                query = "INSERT INTO spot(Via,Civico,Citta,Zona,Nome,Tipo,Comune,NumeroDiSkater,Descrizione,Immagine,CodiceSkater,DataInserimento) VALUES ('"+street+"','"+streetNumber+"','"+city+"','"+area+"','"+name+"','"+type+"','"+municipality+"','0','"+description+"','NULL','"+code+"','"+date+"');";
                 retFromQuery = statement.executeUpdate(query);
                 if (retFromQuery==2) //la query non ha prodotto risultati
                 {

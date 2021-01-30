@@ -10,7 +10,7 @@ public class HomeMain extends Application
 	private static Stage home;
 
 	public static void main(String[] args) {
-		launch(args);
+		launch(args); 
 	}
 
 	public void start(Stage primaryStage) throws Exception

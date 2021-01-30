@@ -332,7 +332,7 @@ public class UserDAO
 
                     String indirizzo = rs.getString("S.Via")+" "+rs.getInt("S.Civico")+" "+rs.getString("S.Citta");
 
-                    spot = new Spot(indirizzo,rs.getString("S.Zona"),rs.getString("S.Nome"),rs.getString("S.Tipo"),rs.getString("S.Comune"),rs.getInt("S.NumeroDiSkater"),rs.getString("S.Descrizione"),rs.getString("S.Immagine"),rs.getInt("S.Rating"),rs.getString("U.Username"),rs.getDate("S.DataInserimento"));
+                    spot = new Spot(indirizzo,rs.getString("S.Zona"),rs.getString("S.Nome"),rs.getString("S.Tipo"),rs.getString("S.Comune"),rs.getInt("S.NumeroDiSkater"),rs.getString("S.Descrizione"),rs.getString("S.Immagine"),rs.getString("U.Username"),rs.getDate("S.DataInserimento"));
 
                     query = "UPDATE spot SET NumeroDiSkater = '"+updatedNumber+"' WHERE Via = '"+rs.getString("S.Via")+"' AND Civico = '"+rs.getInt("S.Civico")+"' AND Citta = '"+rs.getString("S.Citta")+"' ";
                     retFromQuery = statement.executeUpdate(query);

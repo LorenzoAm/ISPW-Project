@@ -22,6 +22,7 @@ public class HomeGuiController
     private static Stage addSpot;
     private static Stage premArea;
     private static Stage joinSpot;
+    private static Stage viewSpot;
 
 
     public void handle(MouseEvent mouseEvent) throws IOException
@@ -92,8 +93,19 @@ public class HomeGuiController
                 }
 
                 case "SEARCH SPOT" -> {
-                    //TODO implementare search spot use case
-
+                	if (getViewSpotStage() == null)   //prima apertura di signUp
+                    {
+                        root = FXMLLoader.load(getClass().getResource("../gui/viewSpot.fxml"));
+                        scene = new Scene(root);
+                        viewSpot = new Stage();
+                        viewSpot.setTitle("VIEW SPOTS");
+                        viewSpot.setScene(scene);
+                        viewSpot.show();
+                        HomeMain.getStage().close();
+                    } else {
+                    	viewSpot.show();
+                        HomeMain.getStage().close();
+                    }
                 }
 
                 case "SEARCH SHOP" -> {
@@ -189,5 +201,9 @@ public class HomeGuiController
         return joinSpot;
     }
 
+    public static Stage getViewSpotStage()
+    {
+    	return viewSpot;
+    }
 
 }

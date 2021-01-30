@@ -13,13 +13,12 @@ public class Spot
     private Integer numeroDiSkater;
     private String descrizione;
     private String immagine;
-    private Integer rating;
     private String username;       //username di chi ha aggiunto lo spot
     private Date data;          //data in cui è stato aggiunto lo spot
 
     private List<Review> reviewList;
 
-    public Spot(String indirizzo, String zona, String nome, String tipo, String comune, Integer numeroDiSkater, String descrizione, String immagine, Integer rating, String username, Date data)
+    public Spot(String indirizzo, String zona, String nome, String tipo, String comune, Integer numeroDiSkater, String descrizione, String immagine, String username, Date data)
     {
         setIndirizzo(indirizzo);
         setZona(zona);
@@ -29,7 +28,6 @@ public class Spot
         setNumeroDiSkater(numeroDiSkater);
         setDescrizione(descrizione);
         setImmagine(immagine);
-        setRating(rating);
         setUsername(username);
         setData(data);
     }
@@ -41,11 +39,6 @@ public class Spot
     public void setUsername(String username)
     {
         this.username = username;
-    }
-
-    public void setRating(Integer rating)
-    {
-        this.rating = rating;
     }
 
     public void setImmagine(String immagine)
@@ -128,11 +121,6 @@ public class Spot
         return numeroDiSkater;
     }
 
-    public Integer getRating()
-    {
-        return rating;
-    }
-
     public String getUsername()
     {
         return username;
@@ -145,7 +133,7 @@ public class Spot
 
     public String toString()
     {
-        return " Nome spot : "+getNome()+"\n indirizzo : "+getIndirizzo()+"\n comune : "+getComune()+"\n zona : "+getZona()+"\n tipo : "+getTipo()+"\n descrizione : "+getDescrizione()+"\n rating : "+getRating()+"\n skater attualmente presenti "+getNumeroDiSkater()+"\n aggiunto da : "+getUsername()+" in data : "+getData();
+        return " Nome spot : "+getNome()+"\n indirizzo : "+getIndirizzo()+"\n comune : "+getComune()+"\n zona : "+getZona()+"\n tipo : "+getTipo()+"\n descrizione : "+getDescrizione()+"\n skater attualmente presenti "+getNumeroDiSkater()+"\n aggiunto da : "+getUsername()+" in data : "+getData();
     }
 
 
