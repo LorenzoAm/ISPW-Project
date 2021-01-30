@@ -6,10 +6,10 @@ import javax.swing.JOptionPane;
 
 public class ShopDAO
 {
-    private static String USER = "root";
-    private static String PSW = "PASSWORD";
-    private static String URL = "jdbc:mysql://localhost:3306/skate_spot";
-    private static String DRIVER_CLASS_NAME = "com.mysql.jdbc.Driver";
+    private static final String USER = "root";
+    private static final String PSW = "PASSWORD";
+    private static final String URL = "jdbc:mysql://localhost:3306/skate_spot";
+    private static final String DRIVER_CLASS_NAME = "com.mysql.jdbc.Driver";
 
     public static void createShop(String partitaIVA, String name, String description, String city, String street, String number, String municipality, String area, Integer code, LocalDate date)
 	{
@@ -26,7 +26,7 @@ public class ShopDAO
             //creazione ed esecuzione query
             statement=connection.createStatement(ResultSet.TYPE_SCROLL_INSENSITIVE,ResultSet.CONCUR_READ_ONLY);
 
-            Integer streetNumber = Integer.parseInt(number);
+            int streetNumber = Integer.parseInt(number);
 
             String query = "SELECT * FROM shop WHERE PartitaIVA = '"+partitaIVA+"' OR Nome = '"+name+"' OR (Via = '"+street+"' AND Civico = '"+streetNumber+"');";
             ResultSet rs = statement.executeQuery(query);
@@ -34,7 +34,7 @@ public class ShopDAO
             if (!rs.first()) //la query non ha prodotto risultati
             {
                 //Inserisco dati nel db
-            	query = "INSERT INTO shop (PartitaIVA,Nome,Descrizione,Immagine,Citta,Via,Civico,Comune,Zona,CodiceProprietario,DataInserimento) VALUES ('"+partitaIVA+"','"+name+"','"+description+"','NULL','"+city+"','"+street+"','"+streetNumber+"','"+municipality+"','"+area+"','"+code+"','"+date+"');";
+            	query = "INSERT INTO shop (PartitaIVA,Nome,Descrizione,Citta,Via,Civico,Comune,Zona,CodiceProprietario,DataInserimento) VALUES ('"+partitaIVA+"','"+name+"','"+description+"','"+city+"','"+street+"','"+streetNumber+"','"+municipality+"','"+area+"','"+code+"','"+date+"');";
             	retFromQuery = statement.executeUpdate(query);
             	if (retFromQuery==2) //la query non ha prodotto risultati
                 {

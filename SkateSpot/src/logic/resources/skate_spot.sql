@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Creato il: Gen 28, 2021 alle 18:27
+-- Creato il: Gen 30, 2021 alle 22:30
 -- Versione del server: 10.4.17-MariaDB
 -- Versione PHP: 8.0.0
 
@@ -73,7 +73,6 @@ CREATE TABLE `shop` (
   `PartitaIVA` varchar(11) NOT NULL,
   `Nome` varchar(30) NOT NULL,
   `Descrizione` varchar(200) NOT NULL,
-  `Immagine` varchar(50) DEFAULT NULL,
   `Citta` varchar(30) NOT NULL,
   `Via` varchar(30) NOT NULL,
   `Civico` int(4) NOT NULL,
@@ -82,13 +81,6 @@ CREATE TABLE `shop` (
   `CodiceProprietario` int(11) NOT NULL,
   `DataInserimento` date NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
-
---
--- Dump dei dati per la tabella `shop`
---
-
-INSERT INTO `shop` (`Codice`, `PartitaIVA`, `Nome`, `Descrizione`, `Immagine`, `Citta`, `Via`, `Civico`, `Comune`, `Zona`, `CodiceProprietario`, `DataInserimento`) VALUES
-(1, '12345678901', 'random', 'random description', 'NULL', 'Roma', 'random street', 17, 'random municipality', 'random area', 3, '2021-01-28');
 
 -- --------------------------------------------------------
 
@@ -107,8 +99,6 @@ CREATE TABLE `spot` (
   `Comune` varchar(30) NOT NULL,
   `NumeroDiSkater` int(2) NOT NULL,
   `Descrizione` varchar(200) NOT NULL,
-  `Immagine` varchar(50) DEFAULT NULL,
-  `Rating` int(1) NOT NULL,
   `CodiceSkater` int(11) NOT NULL,
   `DataInserimento` date NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
@@ -117,10 +107,9 @@ CREATE TABLE `spot` (
 -- Dump dei dati per la tabella `spot`
 --
 
-INSERT INTO `spot` (`Codice`, `Via`, `Civico`, `Citta`, `Zona`, `Nome`, `Tipo`, `Comune`, `NumeroDiSkater`, `Descrizione`, `Immagine`, `Rating`, `CodiceSkater`, `DataInserimento`) VALUES
-(1, 'via Libero Leonardi', 106, 'Roma', 'Cinecittà', 'Cinetown', 'skatepark ', 'Roma', 10, 'Skatepark comunale all\'aperto dotato di muretti, mini ramp, bowl, due funbox, scale e diversi rail.', NULL, 5, 3, '2021-01-24'),
-(2, 'random street', 17, 'random city', 'random area', 'random spot', 'random street', 'random municipality', 0, '17', '', 0, 3, '2021-01-28'),
-(3, 'via', 15, 'città', 'area', 'nome', 'via', 'comune', 0, '15', 'NULL', 0, 3, '2021-01-28');
+INSERT INTO `spot` (`Codice`, `Via`, `Civico`, `Citta`, `Zona`, `Nome`, `Tipo`, `Comune`, `NumeroDiSkater`, `Descrizione`, `CodiceSkater`, `DataInserimento`) VALUES
+(2, 'random street', 17, 'random city', 'random area', 'random spot', 'random street', 'random municipality', 2, '17', 3, '2021-01-28'),
+(3, 'via', 15, 'città', 'area', 'nome', 'via', 'comune', 2, '15', 3, '2021-01-28');
 
 -- --------------------------------------------------------
 
@@ -138,7 +127,6 @@ CREATE TABLE `utente` (
   `DataDiNascita` date NOT NULL,
   `Sesso` varchar(1) NOT NULL,
   `Tipo` varchar(10) NOT NULL,
-  `Immagine` varchar(50) DEFAULT NULL,
   `CodiceSpot` int(11) DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
@@ -146,10 +134,10 @@ CREATE TABLE `utente` (
 -- Dump dei dati per la tabella `utente`
 --
 
-INSERT INTO `utente` (`Codice`, `Email`, `Username`, `Password`, `Nome`, `Cognome`, `DataDiNascita`, `Sesso`, `Tipo`, `Immagine`, `CodiceSpot`) VALUES
-(3, 'lorenzoamoretti@gmail.com', 'LorenzAm', 'password', 'Lorenzo', 'Amoretti', '1999-06-09', 'M', 'Owner', NULL, 1),
-(4, 'lolemasa@alice.it', 'Ukass99', 'Ukass_99', 'Lorenzo', 'Amoretti', '1999-01-09', 'M', 'Owner', NULL, NULL),
-(5, 'mariorossi@gmail.com', 'MR2020', 'password', 'Mario', 'Rossi', '1999-01-20', 'M', 'Owner', NULL, NULL);
+INSERT INTO `utente` (`Codice`, `Email`, `Username`, `Password`, `Nome`, `Cognome`, `DataDiNascita`, `Sesso`, `Tipo`, `CodiceSpot`) VALUES
+(3, 'lorenzoamoretti@gmail.com', 'LorenzAm', 'password', 'Lorenzo', 'Amoretti', '1999-06-09', 'M', 'Owner', NULL),
+(4, 'lolemasa@alice.it', 'Ukass99', 'Ukass_99', 'Lorenzo', 'Amoretti', '1999-01-09', 'M', 'Owner', 3),
+(5, 'mariorossi@gmail.com', 'MR2020', 'password', 'Mario', 'Rossi', '1999-01-20', 'M', 'Owner', 2);
 
 --
 -- Indici per le tabelle scaricate

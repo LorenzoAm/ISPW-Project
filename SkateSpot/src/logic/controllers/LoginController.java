@@ -1,14 +1,13 @@
 package logic.controllers;
 
-import javafx.scene.image.Image;
+
 import logic.beans.LoginBean;
 import logic.entities.DAO.UserDAO;
 import logic.entities.User;
 import logic.gui.HomeGuiController;
 import logic.gui.HomeMain;
-
 import javax.swing.*;
-import java.io.File;
+
 
 public class LoginController
 {

@@ -1,7 +1,6 @@
 package logic.entities;
 
 import java.util.Date;
-import java.util.List;
 
 public class Spot
 {
@@ -12,14 +11,11 @@ public class Spot
     private String comune;
     private Integer numeroDiSkater;
     private String descrizione;
-    private String immagine;
-    private Integer rating;
     private String username;       //username di chi ha aggiunto lo spot
     private Date data;          //data in cui è stato aggiunto lo spot
 
-    private List<Review> reviewList;
 
-    public Spot(String indirizzo, String zona, String nome, String tipo, String comune, Integer numeroDiSkater, String descrizione, String immagine, Integer rating, String username, Date data)
+    public Spot(String indirizzo, String zona, String nome, String tipo, String comune, Integer numeroDiSkater, String descrizione, String username, Date data)
     {
         setIndirizzo(indirizzo);
         setZona(zona);
@@ -28,8 +24,6 @@ public class Spot
         setComune(comune);
         setNumeroDiSkater(numeroDiSkater);
         setDescrizione(descrizione);
-        setImmagine(immagine);
-        setRating(rating);
         setUsername(username);
         setData(data);
     }
@@ -38,19 +32,10 @@ public class Spot
     {
         this.data = data;
     }
+
     public void setUsername(String username)
     {
         this.username = username;
-    }
-
-    public void setRating(Integer rating)
-    {
-        this.rating = rating;
-    }
-
-    public void setImmagine(String immagine)
-    {
-        this.immagine = immagine;
     }
 
     public void setDescrizione(String descrizione)
@@ -118,19 +103,9 @@ public class Spot
         return descrizione;
     }
 
-    public String getImmagine()
-    {
-        return immagine;
-    }
-
     public Integer getNumeroDiSkater()
     {
         return numeroDiSkater;
-    }
-
-    public Integer getRating()
-    {
-        return rating;
     }
 
     public String getUsername()
@@ -145,7 +120,7 @@ public class Spot
 
     public String toString()
     {
-        return " Nome spot : "+getNome()+"\n indirizzo : "+getIndirizzo()+"\n comune : "+getComune()+"\n zona : "+getZona()+"\n tipo : "+getTipo()+"\n descrizione : "+getDescrizione()+"\n rating : "+getRating()+"\n skater attualmente presenti "+getNumeroDiSkater()+"\n aggiunto da : "+getUsername()+" in data : "+getData();
+        return " Nome spot : "+getNome()+"\n indirizzo : "+getIndirizzo()+"\n comune : "+getComune()+"\n zona : "+getZona()+"\n tipo : "+getTipo()+"\n descrizione : "+getDescrizione()+"\n skater attualmente presenti "+getNumeroDiSkater()+"\n aggiunto da : "+getUsername()+" in data : "+getData();
     }
 
 

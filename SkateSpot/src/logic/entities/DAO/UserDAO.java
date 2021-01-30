@@ -319,7 +319,7 @@ public class UserDAO
             connection=DriverManager.getConnection(URL,USER,PSW);
             //creazione ed esecuzione query
             statement=connection.createStatement(ResultSet.TYPE_SCROLL_INSENSITIVE,ResultSet.CONCUR_READ_ONLY);
-            String query = "SELECT S.Codice,S.Nome,S.Via,S.Civico,S.Citta,S.Zona,S.Comune,S.Descrizione,S.Rating,S.NumeroDiSkater,S.Tipo,S.Immagine,S.DataInserimento,U.Username FROM spot S JOIN utente U ON S.CodiceSkater = U.Codice WHERE Via = '"+street+"' AND Civico = '"+number+"' AND Citta ='"+city+"'";
+            String query = "SELECT S.Codice,S.Nome,S.Via,S.Civico,S.Citta,S.Zona,S.Comune,S.Descrizione,S.NumeroDiSkater,S.Tipo,S.DataInserimento,U.Username FROM spot S JOIN utente U ON S.CodiceSkater = U.Codice WHERE Via = '"+street+"' AND Civico = '"+number+"' AND Citta ='"+city+"'";
             ResultSet rs = statement.executeQuery(query);
 
             if(rs.first())
@@ -332,7 +332,7 @@ public class UserDAO
 
                     String indirizzo = rs.getString("S.Via")+" "+rs.getInt("S.Civico")+" "+rs.getString("S.Citta");
 
-                    spot = new Spot(indirizzo,rs.getString("S.Zona"),rs.getString("S.Nome"),rs.getString("S.Tipo"),rs.getString("S.Comune"),rs.getInt("S.NumeroDiSkater"),rs.getString("S.Descrizione"),rs.getString("S.Immagine"),rs.getInt("S.Rating"),rs.getString("U.Username"),rs.getDate("S.DataInserimento"));
+                    spot = new Spot(indirizzo,rs.getString("S.Zona"),rs.getString("S.Nome"),rs.getString("S.Tipo"),rs.getString("S.Comune"),rs.getInt("S.NumeroDiSkater"),rs.getString("S.Descrizione"),rs.getString("U.Username"),rs.getDate("S.DataInserimento"));
 
                     query = "UPDATE spot SET NumeroDiSkater = '"+updatedNumber+"' WHERE Via = '"+rs.getString("S.Via")+"' AND Civico = '"+rs.getInt("S.Civico")+"' AND Citta = '"+rs.getString("S.Citta")+"' ";
                     retFromQuery = statement.executeUpdate(query);

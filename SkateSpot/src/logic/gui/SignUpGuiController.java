@@ -68,21 +68,21 @@ public class SignUpGuiController
     {
         Button button = (Button) mouseEvent.getSource();
         String value = button.getText();
-        switch(value)
-        {
-            case "":        //home button clicked --> re-open home window
-                HomeGuiController.getSignUpStage().close();
-                HomeMain.getStage().show();
-                break;
-            case "Sign up":     //sign up button clicked --> create beans class
-            	SignUpBean bean = new SignUpBean(name.getText(),surname.getText(),username.getText(),email.getText(),password.getText(),confirmPassword.getText());//costrutttore
-            	bean.control(data.getValue(),gender,typeOfAccount);//finisce di passare i dati necesari (sonalCloud non accetta pi� di 7 parametri per costruttore)
-            	if(bean.check())
-            	{
-            		 SignUpController.getInstance().signUp(bean); //richiamiamo signUp sull'istanza singleton passando i dati verificati dalla bean
-            	}
-                break;
-        }
+		switch (value) {
+//home button clicked --> re-open home window
+			case "" -> {
+				HomeGuiController.getSignUpStage().close();
+				HomeMain.getStage().show();
+			}
+//sign up button clicked --> create beans class
+			case "Sign up" -> {
+				SignUpBean bean = new SignUpBean(name.getText(), surname.getText(), username.getText(), email.getText(), password.getText(), confirmPassword.getText());//costrutttore
+				bean.control(data.getValue(), gender, typeOfAccount);//finisce di passare i dati necesari (sonalCloud non accetta pi� di 7 parametri per costruttore)
+				if (bean.check()) {
+					SignUpController.getInstance().signUp(bean); //richiamiamo signUp sull'istanza singleton passando i dati verificati dalla bean
+				}
+			}
+		}
 
     }	
 }

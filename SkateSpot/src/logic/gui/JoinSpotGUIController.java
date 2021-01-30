@@ -6,7 +6,7 @@ import javafx.scene.control.TextField;
 import javafx.scene.input.MouseEvent;
 import logic.beans.JoinSpotBean;
 import logic.controllers.JoinSpotController;
-import logic.controllers.LoginController;
+
 
 public class JoinSpotGUIController
 {
@@ -19,21 +19,21 @@ public class JoinSpotGUIController
     {
         Button button = (Button) mouseEvent.getSource();
         String value = button.getText();
-        switch(value)
-        {
-            case "":            //home button clicked --> re-open home window
+        switch (value) {
+//home button clicked --> re-open home window
+            case "" -> {
                 HomeGuiController.getJoinSpotStage().close();
                 HomeMain.getStage().show();
-                break;
-            case "Join Spot":     //login button clicked --> create beans class
-                JoinSpotBean bean = new JoinSpotBean(street.getText(),number.getText(),city.getText());
-                if(bean.check())
-                {
+            }
+//login button clicked --> create beans class
+            case "Join Spot" -> {
+                JoinSpotBean bean = new JoinSpotBean(street.getText(), number.getText(), city.getText());
+                if (bean.check()) {
                     JoinSpotController.getInstance().joinSpot(bean); //richiamiamo login sull'istanza singleton passando i dati verificati dalla bean
                     HomeGuiController.getJoinSpotStage().close();
                     HomeMain.getStage().show();
                 }
-                break;
+            }
         }
     }
 }

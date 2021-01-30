@@ -1,30 +1,26 @@
 package logic.entities;
 
 import java.util.Date;
-import java.util.List;
 
 public class Shop
 {
     private Integer partitaIVA;
     private String nome;
     private String descrizione;
-    private String immagine;
     private String indirizzo;
     private String zona;
     private String comune;
     private String username;        //username proprietario
     private Date data;              //data in cui è stato aggiunto lo shop
 
-    private List<Item> items;
 
 
 
-    public Shop(Integer partitaIVA,String nome,String descrizione,String immagine,String indirizzo,String zona,String comune,String username,Date data )
+    public Shop(Integer partitaIVA,String nome,String descrizione,String indirizzo,String zona,String comune,String username,Date data )
     {
         setPartitaIVA(partitaIVA);
         setNome(nome);
         setDescrizione(descrizione);
-        setImmagine(immagine);
         setIndirizzo(indirizzo);
         setZona(zona);
         setComune(comune);
@@ -45,11 +41,6 @@ public class Shop
     public void setDescrizione(String descrizione)
     {
         this.descrizione = descrizione;
-    }
-
-    public void setImmagine(String immagine)
-    {
-        this.immagine = immagine;
     }
 
     public void setIndirizzo(String indirizzo)
@@ -95,11 +86,6 @@ public class Shop
     public String getDescrizione()
     {
         return descrizione;
-    }
-
-    public String getImmagine()
-    {
-        return immagine;
     }
 
     public String getUsername()
