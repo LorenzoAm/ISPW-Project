@@ -1,8 +1,6 @@
 package logic.gui;
 
 import java.io.IOException;
-
-import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
@@ -14,10 +12,7 @@ import javafx.stage.Stage;
 public class PremiumAreaGuiController 
 {
 	private static Stage addShop;
-	@FXML
-    private Button addNewShop;
-	@FXML
-    private Button viewShop;
+
 
     public void handle(MouseEvent mouseEvent) throws IOException
     {
@@ -32,7 +27,7 @@ public class PremiumAreaGuiController
                 HomeMain.getStage().show();
                 break;
                 
-            case "Add new shop":     //
+            case "Add new shop":
             	if(getAddShopStage() == null)   //prima apertura di add shop
                 {
                     root = FXMLLoader.load(getClass().getResource("../gui/addShopLayout.fxml"));
@@ -51,8 +46,8 @@ public class PremiumAreaGuiController
 
             
                 break;
-            case "View your shops":     //
-                
+            case "View your shops":
+                //TODO creare view your shops use case
                 break;
         }
     }

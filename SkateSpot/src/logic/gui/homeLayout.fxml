@@ -19,7 +19,6 @@
                               <Button id="login" layoutX="748.0" layoutY="6.0" mnemonicParsing="false" nodeOrientation="LEFT_TO_RIGHT" onMouseClicked="#handle" prefHeight="26.0" prefWidth="105.0" style="-fx-background-color: rgb(52,57,57);" text="LOGIN-LOGOUT" textFill="#ff5c00" AnchorPane.rightAnchor="110.0" AnchorPane.topAnchor="6.0" />
                               <MenuButton focusTraversable="false" maxHeight="91.0" mnemonicParsing="false" prefHeight="91.0" prefWidth="93.0" style="-fx-background-color: rgb(52,50,50);" textFill="#ff5c00">
                                 <items>
-                                  <MenuItem mnemonicParsing="false" text="search spot" />
                                   <MenuItem mnemonicParsing="false" onAction="#openAddSpot" text="add spot" />
                                     <MenuItem mnemonicParsing="false" onAction="#joinLeaveSpot" text="join-leave spot" />
                                 </items>
@@ -28,7 +27,7 @@
                                  </font>
                               </MenuButton>
                               <Label layoutX="771.0" layoutY="37.0" nodeOrientation="LEFT_TO_RIGHT" prefHeight="18.0" prefWidth="18.0" text="OR" textFill="#ff5c00" AnchorPane.rightAnchor="153.80000000000007" AnchorPane.topAnchor="37.0" />
-                              <Button alignment="CENTER" layoutX="855.0" layoutY="16.0" mnemonicParsing="false" nodeOrientation="LEFT_TO_RIGHT" prefHeight="60.0" prefWidth="66.0" style="-fx-background-radius: 100;" textAlignment="CENTER" AnchorPane.rightAnchor="21.800000000000068">
+                              <Button alignment="CENTER" layoutX="855.0" layoutY="12.0" mnemonicParsing="false" nodeOrientation="LEFT_TO_RIGHT" prefHeight="64.0" prefWidth="66.0" style="-fx-background-radius: 100;" textAlignment="CENTER" AnchorPane.rightAnchor="22.0">
                                  <graphic>
                                     <ImageView fx:id="profilePic" fitHeight="71.0" fitWidth="50.0" pickOnBounds="true" preserveRatio="true">
                                        <image>
@@ -46,27 +45,26 @@
                         </AnchorPane>
                       <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="333.0" prefWidth="677.0" style="fx-ba: #ff0000;">
                            <children>
-                              <SplitPane dividerPositions="0.07993384785005513" layoutX="271.0" layoutY="82.0" orientation="VERTICAL" prefHeight="364.8" prefWidth="819.2" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                              <SplitPane layoutX="271.0" layoutY="82.0" orientation="VERTICAL" prefHeight="364.8" prefWidth="819.2" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
                                 <items>
-                                  <AnchorPane maxHeight="35.0" minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0">
+                                  <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0" style="-fx-background-color: rgb(52,50,50);">
                                        <children>
-                                          <SplitPane dividerPositions="0.5" layoutX="297.0" layoutY="-67.0" prefHeight="26.4" prefWidth="817.6" style="-fx-background-color: rgb(52,50,50);" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
-                                            <items>
-                                              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="160.0" prefWidth="100.0">
-                                                   <children>
-                                                      <Button layoutX="-2.0" mnemonicParsing="false" onMouseClicked="#handle" prefHeight="24.8" prefWidth="405.6" style="-fx-background-color: rgb(52,50,50);" text="Button" textFill="#ff5c00" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
-                                                   </children>
-                                                </AnchorPane>
-                                              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="160.0" prefWidth="100.0">
-                                                   <children>
-                                                      <Button layoutX="117.0" mnemonicParsing="false" onMouseClicked="#handle" prefHeight="24.8" prefWidth="404.8" style="-fx-background-color: rgb(52,50,50);" text="Button" textFill="#ff5c00" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
-                                                   </children>
-                                                </AnchorPane>
-                                            </items>
-                                          </SplitPane>
-                                       </children>
-                                    </AnchorPane>
-                                  <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0" />
+                                          <Button id="login" layoutX="119.0" layoutY="289.0" mnemonicParsing="false" nodeOrientation="LEFT_TO_RIGHT" onMouseClicked="#handle" prefHeight="86.0" prefWidth="231.0" style="-fx-background-color: rgb(52,57,57);" text="SEARCH SPOT" textFill="#ff5c00">
+                                             <font>
+                                                <Font size="24.0" />
+                                             </font>
+                                          </Button>
+                                          <Button id="login" layoutX="604.0" layoutY="289.0" mnemonicParsing="false" nodeOrientation="LEFT_TO_RIGHT" onMouseClicked="#handle" prefHeight="86.0" prefWidth="231.0" style="-fx-background-color: rgb(52,57,57);" text="SEARCH SHOP" textFill="#ff5c00">
+                                             <font>
+                                                <Font size="24.0" />
+                                             </font>
+                                          </Button>
+                                          <ImageView fitHeight="275.0" fitWidth="264.0" layoutX="369.0" pickOnBounds="true" preserveRatio="true">
+                                             <image>
+                                                <Image url="@../resources/SkateSpot_Logo.png" />
+                                             </image>
+                                          </ImageView>
+                                       </children></AnchorPane>
                                 </items>
                               </SplitPane>
                            </children>

@@ -1,7 +1,6 @@
 package logic.gui;
 
 import javafx.event.ActionEvent;
-import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
@@ -91,6 +90,15 @@ public class HomeGuiController
                         JOptionPane.showMessageDialog(null, " You must be logged in the system in order to access the premium area!", "INFORMATION", JOptionPane.INFORMATION_MESSAGE);
                     }
                 }
+
+                case "SEARCH SPOT" -> {
+                    //TODO implementare search spot use case
+
+                }
+
+                case "SEARCH SHOP" -> {
+                    //TODO implementare search shop use case
+                }
             }
     }
 
@@ -129,13 +137,21 @@ public class HomeGuiController
         {
             if(UserContainer.getInstance().getSpot() == null)  //se l'utente non ha un riferimento ad uno spot viene effettuato il join spot use case
             {
-                root = FXMLLoader.load(getClass().getResource("../gui/joinSpotLayout.fxml"));
-                scene = new Scene(root);
-                joinSpot = new Stage();
-                joinSpot.setTitle("JOIN SPOT");
-                joinSpot.setScene(scene);
-                joinSpot.show();
-                HomeMain.getStage().close();
+                if(getJoinSpotStage()==null)     //prima apertura di joinSpot stage
+                {
+                    root = FXMLLoader.load(getClass().getResource("../gui/joinSpotLayout.fxml"));
+                    scene = new Scene(root);
+                    joinSpot = new Stage();
+                    joinSpot.setTitle("JOIN SPOT");
+                    joinSpot.setScene(scene);
+                    joinSpot.show();
+                    HomeMain.getStage().close();
+                }
+                else
+                {
+                    joinSpot.show();
+                    HomeMain.getStage().close();
+                }
             }
             else   //leave spot use case
             {
