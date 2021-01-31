@@ -12,6 +12,7 @@
 <?import javafx.scene.layout.RowConstraints?>
 <?import javafx.scene.text.Font?>
 
+
 <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="612.0" prefWidth="965.0" style="-fx-background-color: rgb(52,50,50);" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="logic.gui.ViewSpotGuiController">
    <children>
       <TitledPane fx:id="home" animated="false" collapsible="false" layoutX="220.0" layoutY="-46.0" prefHeight="521.0" prefWidth="811.0" style="-fx-background-color: rgb(52,50,50);" text="SkateSpot" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
@@ -29,7 +30,8 @@
                                           <Image url="@../resources/home_grey.png" />
                                        </image>
                                     </ImageView>
-                                 </graphic></Button>
+                                 </graphic>
+                              </Button>
                               <Label layoutX="339.0" layoutY="15.0" text="VIEW SPOTS" textFill="#ff5c00">
                                  <font>
                                     <Font name="System Bold" size="42.0" />
@@ -45,57 +47,57 @@
                                        <children>
                                           <Label fx:id="nome" layoutX="388.0" layoutY="14.0" text="NOME" textFill="#ff5c00">
                                              <font>
-                                                <Font name="System Bold" size="22.0" />
+                                                <Font name="System Bold" size="30.0" />
                                              </font>
                                           </Label>
-                                          <Label layoutX="605.0" layoutY="30.0" text=" skaters are here right now" textFill="#ff5c00" />
-                                          <Label fx:id="numero" layoutX="563.0" layoutY="30.0" text="numero" textFill="#ff5c00" />
+                                          <Label layoutX="580.0" layoutY="30.0" text=" skaters are here right now" textFill="#ff5c00" />
+                                          <Label fx:id="numero" layoutX="563.0" layoutY="30.0" text="n" textFill="#ff5c00" />
                                           <GridPane layoutX="114.0" layoutY="135.0" prefHeight="157.0" prefWidth="713.0">
                                             <columnConstraints>
-                                              <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
-                                              <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
-                                                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
-                                                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
-                                                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
-                                                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                              <ColumnConstraints hgrow="SOMETIMES" maxWidth="75.0" minWidth="10.0" prefWidth="70.0" />
+                                              <ColumnConstraints hgrow="SOMETIMES" maxWidth="236.0" minWidth="10.0" prefWidth="227.0" />
+                                                <ColumnConstraints hgrow="SOMETIMES" maxWidth="85.0" minWidth="10.0" prefWidth="80.0" />
+                                                <ColumnConstraints hgrow="SOMETIMES" maxWidth="103.0" minWidth="10.0" prefWidth="103.0" />
+                                                <ColumnConstraints hgrow="SOMETIMES" maxWidth="117.0" minWidth="10.0" prefWidth="117.0" />
+                                                <ColumnConstraints hgrow="SOMETIMES" maxWidth="101.0" minWidth="10.0" prefWidth="95.0" />
                                             </columnConstraints>
                                             <rowConstraints>
                                               <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
-                                              <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
-                                              <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                              <RowConstraints maxHeight="76.0" minHeight="10.0" prefHeight="74.0" vgrow="SOMETIMES" />
+                                              <RowConstraints maxHeight="47.0" minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
                                             </rowConstraints>
                                              <children>
-                                                <Label text="Address:" textFill="#ff5c00">
+                                                <Label text="Address:" textFill="#fb410d">
                                                    <font>
                                                       <Font size="14.0" />
                                                    </font>
                                                 </Label>
-                                                <Label text="Area:" textFill="#ff5c00" GridPane.columnIndex="2">
+                                                <Label text="Area:" textFill="#fb410d" GridPane.columnIndex="2">
                                                    <font>
                                                       <Font size="14.0" />
                                                    </font>
                                                 </Label>
-                                                <Label text="Municipality:" textFill="#ff5c00" GridPane.columnIndex="4">
+                                                <Label text="Municipality:" textFill="#fb410d" GridPane.columnIndex="4">
                                                    <font>
                                                       <Font size="14.0" />
                                                    </font>
                                                 </Label>
-                                                <Label text="Type:" textFill="#ff5c00" GridPane.rowIndex="1">
+                                                <Label text="Type:" textFill="#fb410d" GridPane.rowIndex="1">
                                                    <font>
                                                       <Font size="14.0" />
                                                    </font>
                                                 </Label>
-                                                <Label text="Description:" textFill="#ff5c00" GridPane.columnIndex="2" GridPane.rowIndex="1">
+                                                <Label text="Description:" textFill="#fb410d" GridPane.columnIndex="2" GridPane.rowIndex="1">
                                                    <font>
                                                       <Font size="14.0" />
                                                    </font>
                                                 </Label>
-                                                <Label text="Added by: " textFill="#ff5c00" GridPane.rowIndex="2">
+                                                <Label text="Added by: " textFill="#fb410d" GridPane.rowIndex="2">
                                                    <font>
                                                       <Font size="14.0" />
                                                    </font>
                                                 </Label>
-                                                <Label text="On:" textFill="#ff5c00" GridPane.columnIndex="3" GridPane.rowIndex="2">
+                                                <Label alignment="CENTER_RIGHT" text="          On:" textFill="#fb410d" GridPane.columnIndex="2" GridPane.rowIndex="2">
                                                    <font>
                                                       <Font size="14.0" />
                                                    </font>
@@ -125,19 +127,30 @@
                                                       <Font size="14.0" />
                                                    </font>
                                                 </Label>
-                                                <Label fx:id="data" prefHeight="20.0" prefWidth="198.0" text="data" textFill="#ff5c00" GridPane.columnIndex="4" GridPane.columnSpan="2" GridPane.rowIndex="2">
+                                                <Label fx:id="data" prefHeight="20.0" prefWidth="198.0" text="data" textFill="#ff5c00" GridPane.columnIndex="3" GridPane.columnSpan="3" GridPane.rowIndex="2">
                                                    <font>
                                                       <Font size="14.0" />
                                                    </font>
                                                 </Label>
-                                                <Label fx:id="descrizione" prefHeight="50.0" prefWidth="300.0" text="descrizione" textFill="#ff5c00" GridPane.columnIndex="3" GridPane.columnSpan="3" GridPane.rowIndex="1">
+                                                <Label fx:id="descrizione" maxWidth="300.0" prefHeight="60.0" prefWidth="300.0" text="descrizione" textAlignment="CENTER" textFill="#ff5c00" GridPane.columnIndex="3" GridPane.columnSpan="3" GridPane.rowIndex="1">
                                                    <font>
                                                       <Font size="14.0" />
                                                    </font>
                                                 </Label>
                                              </children>
                                           </GridPane>
-                                       </children></AnchorPane>
+                                          <Button layoutX="650.0" layoutY="330.0" mnemonicParsing="false" onMouseClicked="#nextSpot" prefHeight="76.0" prefWidth="143.0" style="-fx-background-color: rgb(52,60,60);" text="NEXT" textFill="#ff5c00">
+                                             <font>
+                                                <Font name="System Bold" size="18.0" />
+                                             </font>
+                                          </Button>
+                                          <Button layoutX="114.0" layoutY="330.0" mnemonicParsing="false" onMouseClicked="#previousSpot" prefHeight="76.0" prefWidth="143.0" style="-fx-background-color: rgb(52,60,60);" text="PREVIOUS" textFill="#ff5c00">
+                                             <font>
+                                                <Font name="System Bold" size="18.0" />
+                                             </font>
+                                          </Button>
+                                       </children>
+                                    </AnchorPane>
                                 </items>
                               </SplitPane>
                            </children>
