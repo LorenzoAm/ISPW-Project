@@ -5,6 +5,7 @@ import logic.entities.Spot;
 import javax.swing.*;
 import java.sql.*;
 import java.time.LocalDate;
+import java.util.ArrayList;
 
 public class SpotDAO
 {
@@ -144,5 +145,58 @@ public class SpotDAO
 
         }
 
+    }
+    public static ArrayList<Spot> getSpots()
+    {
+    	Connection connection = null;
+        Statement statement = null;
+        Spot spot = null;
+        ArrayList<Spot> spots = new ArrayList<Spot>();
+
+        try
+        {
+            Class.forName(DRIVER_CLASS_NAME);
+
+            connection = DriverManager.getConnection(URL,USER,PSW);
+
+            statement = connection.createStatement(ResultSet.TYPE_SCROLL_INSENSITIVE,ResultSet.CONCUR_READ_ONLY);
+
+            String query = "SELECT * FROM spot ;";
+            ResultSet rs = statement.executeQuery(query);
+            while(rs.next())
+            {
+                String indirizzo = rs.getString("Via")+", "+rs.getInt("Civico")+", "+rs.getString("Citta");
+                String username=UserDAO.getUsername(rs.getInt("CodiceSkater"));
+                spot = new Spot(indirizzo,rs.getString("Zona"),rs.getString("Nome"),rs.getString("Tipo"),rs.getString("Comune"),rs.getInt("NumeroDiSkater"),rs.getString("Descrizione"),username,rs.getDate("DataInserimento"));
+                spots.add(spot);
+            }
+        }
+        catch(SQLException | ClassNotFoundException e)
+        {
+            e.printStackTrace();
+        }
+        finally  //chiudiamo statement e connessione
+        {
+            try
+            {
+                if(statement != null)
+                    statement.close();
+            }
+            catch (SQLException e)
+            {
+                e.printStackTrace();
+            }
+
+            try
+            {
+                if(connection != null)
+                    connection.close();
+            }
+            catch(SQLException e)
+            {
+                e.printStackTrace();
+            }
+            return spots;
+        }
     }
 }

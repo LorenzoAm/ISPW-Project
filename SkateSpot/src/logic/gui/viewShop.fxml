@@ -12,8 +12,7 @@
 <?import javafx.scene.layout.RowConstraints?>
 <?import javafx.scene.text.Font?>
 
-
-<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="612.0" prefWidth="965.0" style="-fx-background-color: rgb(52,50,50);" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="logic.gui.ViewSpotGuiController">
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="612.0" prefWidth="965.0" style="-fx-background-color: rgb(52,50,50);" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="logic.gui.ViewShopGuiController">
    <children>
       <TitledPane fx:id="home" animated="false" collapsible="false" layoutX="220.0" layoutY="-46.0" prefHeight="521.0" prefWidth="811.0" style="-fx-background-color: rgb(52,50,50);" text="SkateSpot" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
         <content>
@@ -32,7 +31,7 @@
                                     </ImageView>
                                  </graphic>
                               </Button>
-                              <Label layoutX="339.0" layoutY="15.0" text="VIEW SPOTS" textFill="#ff5c00">
+                              <Label layoutX="339.0" layoutY="15.0" text="VIEW SHOPS" textFill="#ff5c00">
                                  <font>
                                     <Font name="System Bold" size="42.0" />
                                  </font>
@@ -45,13 +44,11 @@
                                 <items>
                                   <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0" style="-fx-background-color: rgb(52,50,50);">
                                        <children>
-                                          <Label fx:id="nome" layoutX="388.0" layoutY="14.0" text="NOME" textFill="#ff5c00">
+                                          <Label fx:id="nome" layoutX="425.0" layoutY="14.0" text="NOME" textFill="#ff5c00">
                                              <font>
                                                 <Font name="System Bold" size="30.0" />
                                              </font>
                                           </Label>
-                                          <Label layoutX="580.0" layoutY="30.0" text=" skaters are here right now" textFill="#ff5c00" />
-                                          <Label fx:id="numero" layoutX="563.0" layoutY="30.0" text="n" textFill="#ff5c00" />
                                           <GridPane layoutX="114.0" layoutY="135.0" prefHeight="157.0" prefWidth="713.0">
                                             <columnConstraints>
                                               <ColumnConstraints hgrow="SOMETIMES" maxWidth="75.0" minWidth="10.0" prefWidth="70.0" />
@@ -82,12 +79,7 @@
                                                       <Font size="14.0" />
                                                    </font>
                                                 </Label>
-                                                <Label text="Type:" textFill="#fb410d" GridPane.rowIndex="1">
-                                                   <font>
-                                                      <Font size="14.0" />
-                                                   </font>
-                                                </Label>
-                                                <Label text="Description:" textFill="#fb410d" GridPane.columnIndex="2" GridPane.rowIndex="1">
+                                                <Label text="Description:" textFill="#fb410d" GridPane.columnIndex="1" GridPane.rowIndex="1">
                                                    <font>
                                                       <Font size="14.0" />
                                                    </font>
@@ -117,11 +109,6 @@
                                                       <Font size="14.0" />
                                                    </font>
                                                 </Label>
-                                                <Label fx:id="tipo" text="tipo" textFill="#ff5c00" GridPane.columnIndex="1" GridPane.rowIndex="1">
-                                                   <font>
-                                                      <Font size="14.0" />
-                                                   </font>
-                                                </Label>
                                                 <Label fx:id="username" prefHeight="34.0" prefWidth="195.0" text="username" textFill="#ff5c00" GridPane.columnIndex="1" GridPane.columnSpan="2" GridPane.rowIndex="2">
                                                    <font>
                                                       <Font size="14.0" />
@@ -139,12 +126,12 @@
                                                 </Label>
                                              </children>
                                           </GridPane>
-                                          <Button layoutX="650.0" layoutY="330.0" mnemonicParsing="false" onMouseClicked="#nextSpot" prefHeight="76.0" prefWidth="143.0" style="-fx-background-color: rgb(52,60,60);" text="NEXT" textFill="#ff5c00">
+                                          <Button layoutX="650.0" layoutY="330.0" mnemonicParsing="false" onMouseClicked="#nextShop" prefHeight="76.0" prefWidth="143.0" style="-fx-background-color: rgb(52,60,60);" text="NEXT" textFill="#ff5c00">
                                              <font>
                                                 <Font name="System Bold" size="18.0" />
                                              </font>
                                           </Button>
-                                          <Button layoutX="114.0" layoutY="330.0" mnemonicParsing="false" onMouseClicked="#previousSpot" prefHeight="76.0" prefWidth="143.0" style="-fx-background-color: rgb(52,60,60);" text="PREVIOUS" textFill="#ff5c00">
+                                          <Button layoutX="114.0" layoutY="330.0" mnemonicParsing="false" onMouseClicked="#previousShop" prefHeight="76.0" prefWidth="143.0" style="-fx-background-color: rgb(52,60,60);" text="PREVIOUS" textFill="#ff5c00">
                                              <font>
                                                 <Font name="System Bold" size="18.0" />
                                              </font>
