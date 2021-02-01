@@ -62,7 +62,7 @@ public class JoinSpotBean
 
     private boolean checkCity()
     {
-        if ( (city!="") && (city != null))
+        if ( !(city.equals("")) && !(city.equals(null)))
         {
             return true;
         }
