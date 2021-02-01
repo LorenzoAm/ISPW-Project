@@ -6,13 +6,10 @@ import java.util.ArrayList;
 
 import javax.swing.JOptionPane;
 
-import javafx.event.EventHandler;
 import javafx.fxml.FXML;
 import javafx.scene.control.Button;
-import javafx.scene.control.TextField;
 import javafx.scene.control.Label;
 import javafx.scene.input.MouseEvent;
-import javafx.stage.WindowEvent;
 import logic.controllers.ViewSpotController;
 import logic.entities.Spot;
 
@@ -70,8 +67,6 @@ public class ViewSpotGuiController
 				i=spots.size()-1;
 			}
 			nome.setText(spots.get(i).getNome());
-			System.out.println(spots.get(i).getNome());
-			System.out.println(spots.get(i).getNome());
 			numero.setText(String.valueOf(spots.get(i).getNumeroDiSkater()).toString());
 			indirizzo.setText(spots.get(i).getIndirizzo());
 			zona.setText(spots.get(i).getZona());
@@ -103,8 +98,6 @@ public class ViewSpotGuiController
 				i=spots.size()-1;
 			}
 			nome.setText(spots.get(i).getNome());
-			System.out.println(spots.get(i).getNome());
-			System.out.println(spots.get(i).getNome());
 			numero.setText(String.valueOf(spots.get(i).getNumeroDiSkater()).toString());
 			indirizzo.setText(spots.get(i).getIndirizzo());
 			zona.setText(spots.get(i).getZona());

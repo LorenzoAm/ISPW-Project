@@ -4,7 +4,7 @@ import java.util.Date;
 
 public class Shop
 {
-    private Integer partitaIVA;
+    private String partitaIVA;
     private String nome;
     private String descrizione;
     private String indirizzo;
@@ -16,7 +16,7 @@ public class Shop
 
 
 
-    public Shop(Integer partitaIVA,String nome,String descrizione,String indirizzo,String zona,String comune,String username,Date data )
+    public Shop(String partitaIVA,String nome,String descrizione,String indirizzo,String zona,String comune,String username,Date data )
     {
         setPartitaIVA(partitaIVA);
         setNome(nome);
@@ -28,7 +28,7 @@ public class Shop
         setData(data);
     }
 
-    public void setPartitaIVA(Integer partitaIVA)
+    public void setPartitaIVA(String partitaIVA)
     {
         this.partitaIVA = partitaIVA;
     }
@@ -68,7 +68,7 @@ public class Shop
         this.data = data;
     }
 
-    public Integer getPartitaIVA()
+    public String getPartitaIVA()
     {
         return partitaIVA;
     }
