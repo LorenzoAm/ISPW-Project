@@ -52,7 +52,7 @@ public class ViewShopGuiController
 		shops=ViewShopController.getList();
 		if(shops==null)
 		{
-			JOptionPane.showMessageDialog(null,"ERROR! No shop was found!","WARNING",JOptionPane.WARNING_MESSAGE);
+			JOptionPane.showMessageDialog(null,"ERROR! No Shop was found!","WARNING",JOptionPane.WARNING_MESSAGE);
 		}
 		else
 		{
