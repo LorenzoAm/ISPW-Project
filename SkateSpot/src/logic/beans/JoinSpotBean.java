@@ -62,7 +62,7 @@ public class JoinSpotBean
 
     private boolean checkCity()
     {
-        if ( !(city.equals("")) && !(city.equals(null)))
+        if ( !city.equals("")) 
         {
             return true;
         }
@@ -75,7 +75,7 @@ public class JoinSpotBean
 
     private boolean checkStreet()
     {
-        if ( (street!="") && (street != null))
+        if (!street.equals("")) 
         {
             return true;
         }
@@ -88,7 +88,7 @@ public class JoinSpotBean
 
     private boolean checkNumber()
     {
-        if ( (number!="") && (number != null) && (number.matches("^[0-9]*$")))
+        if ( (!number.equals("")) && (number.matches("^[0-9]*$")))
         {
             return true;
         }
