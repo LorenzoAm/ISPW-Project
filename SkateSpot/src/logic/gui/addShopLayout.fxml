@@ -15,10 +15,12 @@
         <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
             <SplitPane dividerPositions="0.18788682581786031" layoutX="246.0" layoutY="117.0" orientation="VERTICAL" prefHeight="448.8" prefWidth="714.4" style="-fx-background-color: rgb(52,50,50);" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
                 <AnchorPane maxHeight="80.0" minHeight="0.0" minWidth="0.0" prefHeight="69.0" prefWidth="819.0" style="-fx-background-color: rgb(52,50,50);">
-                    <Button alignment="CENTER" layoutX="856.0" layoutY="6.0" mnemonicParsing="false" nodeOrientation="LEFT_TO_RIGHT" onMouseClicked="#handle" prefHeight="69.0" prefWidth="72.0" style="-fx-background-radius: 100;" textAlignment="CENTER" AnchorPane.rightAnchor="14.0">
+                    <Button alignment="CENTER" layoutX="857.0" layoutY="5.0" mnemonicParsing="false" nodeOrientation="LEFT_TO_RIGHT" onMouseClicked="#handle" prefHeight="69.0" prefWidth="72.0" style="-fx-background-radius: 100;" textAlignment="CENTER" AnchorPane.rightAnchor="14.200000000000045">
                         <graphic>
-                            <ImageView fitHeight="57.0" fitWidth="55.0" pickOnBounds="true" preserveRatio="true">
-                                    <Image url="@../resources/home_grey.png" />
+                            <ImageView fitHeight="63.0" fitWidth="59.0" pickOnBounds="true" preserveRatio="true">
+                        <image>
+                           <Image url="@../resources/arrow_grey.png" />
+                        </image>
                             </ImageView>
                         </graphic>
                     </Button>
