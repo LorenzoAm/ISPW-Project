@@ -51,7 +51,7 @@ public class ViewSpotGuiController
     }
 	public void nextSpot()
 	{
-		spots=ViewSpotController.getList();
+		spots=ViewSpotController.getInstance().getList();
 		if(spots==null)
 		{
 			JOptionPane.showMessageDialog(null,"ERROR! No spot was found!","WARNING",JOptionPane.WARNING_MESSAGE);
@@ -67,7 +67,7 @@ public class ViewSpotGuiController
 				i=spots.size()-1;
 			}
 			nome.setText(spots.get(i).getNome());
-			numero.setText(String.valueOf(spots.get(i).getNumeroDiSkater()).toString());
+			numero.setText(String.valueOf(spots.get(i).getNumeroDiSkater()));
 			indirizzo.setText(spots.get(i).getIndirizzo());
 			zona.setText(spots.get(i).getZona());
 			comune.setText(spots.get(i).getComune());
@@ -82,7 +82,7 @@ public class ViewSpotGuiController
 	}
 	public void previousSpot()
 	{
-		spots=ViewSpotController.getList();
+		spots=ViewSpotController.getInstance().getList();
 		if(spots==null)
 		{
 			JOptionPane.showMessageDialog(null,"ERROR! No spot was found!","WARNING",JOptionPane.WARNING_MESSAGE);
@@ -98,7 +98,7 @@ public class ViewSpotGuiController
 				i=spots.size()-1;
 			}
 			nome.setText(spots.get(i).getNome());
-			numero.setText(String.valueOf(spots.get(i).getNumeroDiSkater()).toString());
+			numero.setText(String.valueOf(spots.get(i).getNumeroDiSkater()));
 			indirizzo.setText(spots.get(i).getIndirizzo());
 			zona.setText(spots.get(i).getZona());
 			comune.setText(spots.get(i).getComune());

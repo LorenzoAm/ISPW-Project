@@ -28,7 +28,7 @@ public class addShopGuiController
 //home button clicked --> re-open home window
 			case "" -> {
 				PremiumAreaGuiController.getAddShopStage().close();
-				HomeMain.getStage().show();
+				HomeGuiController.getPremiumAreaStage().show();
 			}
 			case "Register shop" -> {
 				ShopBean bean = new ShopBean(name.getText(), city.getText(), partitaIVA.getText(), municipality.getText(), area.getText(), description.getText());//costrutttore

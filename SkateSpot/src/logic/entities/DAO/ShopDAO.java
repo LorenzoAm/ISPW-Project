@@ -6,6 +6,7 @@ import java.util.ArrayList;
 
 import javax.swing.JOptionPane;
 
+import logic.controllers.UserContainer;
 import logic.entities.Shop;
 
 public class ShopDAO
@@ -13,7 +14,7 @@ public class ShopDAO
     private static final String USER = "root";
     private static final String PSW = "PASSWORD";
     private static final String URL = "jdbc:mysql://localhost:3306/skate_spot";
-    private static final String DRIVER_CLASS_NAME = "com.mysql.jdbc.Driver";
+    //private static final String DRIVER_CLASS_NAME = "com.mysql.jdbc.Driver";
 
     public static void createShop(String partitaIVA, String name, String description, String city, String street, String number, String municipality, String area, Integer code, LocalDate date)
 	{
@@ -24,7 +25,7 @@ public class ShopDAO
         {
             //loading dinamico del driver specifico
 
-            Class.forName(DRIVER_CLASS_NAME);
+            //Class.forName(DRIVER_CLASS_NAME);
             //apertura della connessione
             connection=DriverManager.getConnection(URL,USER,PSW);
             //creazione ed esecuzione query
@@ -61,7 +62,7 @@ public class ShopDAO
             rs.close();
 
         }
-        catch(SQLException  | ClassNotFoundException e)
+        catch(SQLException e)
         {
             e.printStackTrace();
         }
@@ -100,7 +101,7 @@ public class ShopDAO
 
         try
         {
-            Class.forName(DRIVER_CLASS_NAME);
+            //Class.forName(DRIVER_CLASS_NAME);
 
             connection = DriverManager.getConnection(URL,USER,PSW);
 
@@ -116,7 +117,7 @@ public class ShopDAO
                 shops.add(shop);
             }
         }
-        catch(SQLException | ClassNotFoundException e)
+        catch(SQLException e)
         {
             e.printStackTrace();
         }
@@ -141,7 +142,63 @@ public class ShopDAO
             {
                 e.printStackTrace();
             }
-            return shops;
+           
         }
+        return shops;
     }
+
+	public static ArrayList<Shop> getMyShops() 
+	{
+		Connection connection = null;
+        Statement statement = null;
+        Shop shop = null;
+        ArrayList<Shop> shops = new ArrayList<Shop>();
+
+        try
+        {
+            //Class.forName(DRIVER_CLASS_NAME);
+
+            connection = DriverManager.getConnection(URL,USER,PSW);
+
+            statement = connection.createStatement(ResultSet.TYPE_SCROLL_INSENSITIVE,ResultSet.CONCUR_READ_ONLY);
+
+            String query = "SELECT S.Via,S.Civico,S.Citta,S.CodiceProprietario,S.PartitaIVA,S.Nome,S.Descrizione,S.Zona,S.Comune,S.DataInserimento FROM shop S JOIN utente U ON S.CodiceProprietario = U.Codice WHERE U.Email = '"+UserContainer.getInstance().getEmail()+"' AND U.Password = '"+UserContainer.getInstance().getPassword()+"';";
+            ResultSet rs = statement.executeQuery(query);
+            while(rs.next())
+            {
+                String indirizzo = rs.getString("S.Via")+", "+rs.getInt("S.Civico")+", "+rs.getString("S.Citta");
+                String username=UserDAO.getUsername(rs.getInt("S.CodiceProprietario"));
+                shop = new Shop(rs.getString("S.PartitaIVA"),rs.getString("S.Nome"),rs.getString("S.Descrizione"),indirizzo,rs.getString("S.Zona"),rs.getString("S.Comune"),username,rs.getDate("S.DataInserimento"));
+                shops.add(shop);
+            }
+        }
+        catch(SQLException e)
+        {
+            e.printStackTrace();
+        }
+        finally  //chiudiamo statement e connessione
+        {
+            try
+            {
+                if(statement != null)
+                    statement.close();
+            }
+            catch (SQLException e)
+            {
+                e.printStackTrace();
+            }
+
+            try
+            {
+                if(connection != null)
+                    connection.close();
+            }
+            catch(SQLException e)
+            {
+                e.printStackTrace();
+            }
+           
+        }
+        return shops;
+	}
 }

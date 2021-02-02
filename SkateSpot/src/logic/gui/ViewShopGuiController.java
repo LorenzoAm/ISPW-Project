@@ -49,7 +49,7 @@ public class ViewShopGuiController
     }
 	public void nextShop()
 	{
-		shops=ViewShopController.getList();
+		shops = ViewShopController.getInstance().getList();
 		if(shops==null)
 		{
 			JOptionPane.showMessageDialog(null,"ERROR! No shop was found!","WARNING",JOptionPane.WARNING_MESSAGE);
@@ -78,7 +78,7 @@ public class ViewShopGuiController
 	}
 	public void previousShop()
 	{
-		shops=ViewShopController.getList();
+		shops = ViewShopController.getInstance().getList();
 		if(shops==null)
 		{
 			JOptionPane.showMessageDialog(null,"ERROR! No shop was found!","WARNING",JOptionPane.WARNING_MESSAGE);

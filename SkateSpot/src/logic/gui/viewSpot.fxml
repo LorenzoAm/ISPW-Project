@@ -12,7 +12,6 @@
 <?import javafx.scene.layout.RowConstraints?>
 <?import javafx.scene.text.Font?>
 
-
 <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="612.0" prefWidth="965.0" style="-fx-background-color: rgb(52,50,50);" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="logic.gui.ViewSpotGuiController">
    <children>
       <TitledPane fx:id="home" animated="false" collapsible="false" layoutX="220.0" layoutY="-46.0" prefHeight="521.0" prefWidth="811.0" style="-fx-background-color: rgb(52,50,50);" text="SkateSpot" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
@@ -25,7 +24,7 @@
                            <children>
                               <Button alignment="CENTER" layoutX="855.0" layoutY="12.0" mnemonicParsing="false" nodeOrientation="LEFT_TO_RIGHT" onMouseClicked="#handle" prefHeight="64.0" prefWidth="66.0" style="-fx-background-radius: 100;" textAlignment="CENTER" AnchorPane.rightAnchor="22.0">
                                  <graphic>
-                                    <ImageView fx:id="profilePic" fitHeight="71.0" fitWidth="50.0" pickOnBounds="true" preserveRatio="true">
+                                    <ImageView fx:id="profilePic" fitHeight="71.0" fitWidth="50.0" onMouseClicked="#handle" pickOnBounds="true" preserveRatio="true">
                                        <image>
                                           <Image url="@../resources/home_grey.png" />
                                        </image>
@@ -43,7 +42,7 @@
                            <children>
                               <SplitPane layoutX="271.0" layoutY="82.0" orientation="VERTICAL" prefHeight="364.8" prefWidth="819.2" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
                                 <items>
-                                  <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0" style="-fx-background-color: rgb(52,50,50);">
+                                  <AnchorPane minHeight="0.0" minWidth="0.0" onMouseClicked="#handle" prefHeight="100.0" prefWidth="160.0" style="-fx-background-color: rgb(52,50,50);">
                                        <children>
                                           <Label fx:id="nome" layoutX="388.0" layoutY="14.0" text="NOME" textFill="#ff5c00">
                                              <font>
@@ -139,12 +138,12 @@
                                                 </Label>
                                              </children>
                                           </GridPane>
-                                          <Button layoutX="650.0" layoutY="330.0" mnemonicParsing="false" onMouseClicked="#nextSpot" prefHeight="76.0" prefWidth="143.0" style="-fx-background-color: rgb(52,60,60);" text="NEXT" textFill="#ff5c00">
+                                          <Button layoutX="650.0" layoutY="330.0" mnemonicParsing="false" onMouseClicked="#handle" prefHeight="76.0" prefWidth="143.0" style="-fx-background-color: rgb(52,60,60);" text="NEXT" textFill="#ff5c00">
                                              <font>
                                                 <Font name="System Bold" size="18.0" />
                                              </font>
                                           </Button>
-                                          <Button layoutX="114.0" layoutY="330.0" mnemonicParsing="false" onMouseClicked="#previousSpot" prefHeight="76.0" prefWidth="143.0" style="-fx-background-color: rgb(52,60,60);" text="PREVIOUS" textFill="#ff5c00">
+                                          <Button layoutX="114.0" layoutY="330.0" mnemonicParsing="false" onMouseClicked="#handle" prefHeight="76.0" prefWidth="143.0" style="-fx-background-color: rgb(52,60,60);" text="PREVIOUS" textFill="#ff5c00">
                                              <font>
                                                 <Font name="System Bold" size="18.0" />
                                              </font>

@@ -1,7 +1,5 @@
 package logic.beans;
 
-import javafx.fxml.FXML;
-import javafx.scene.control.TextField;
 
 import javax.swing.*;
 
@@ -29,8 +27,8 @@ public class SpotBean
 
     public void control(String type,String description)
     {
-        setType(street);
-        setDescription(number);
+        setType(type);
+        setDescription(description);
     }
 
     public void setName(String name)
@@ -130,7 +128,7 @@ public class SpotBean
 
     private boolean checkType()
     {
-        if ( (name!="") && (name != null))
+        if ( !name.equals(""))
         {
             return true;
         }
@@ -143,7 +141,7 @@ public class SpotBean
 
     private boolean checkName()
     {
-        if ( (name!="") && (name != null))
+        if ( !name.equals(""))
         {
             return true;
         }
@@ -156,7 +154,7 @@ public class SpotBean
 
     private boolean checkCity()
     {
-        if ( (city!="") && (city != null))
+        if ( !city.equals(""))
         {
             return true;
         }
@@ -169,7 +167,7 @@ public class SpotBean
 
     private boolean checkMunicipality()
     {
-        if ( (municipality!="") && (municipality != null))
+        if ( !municipality.equals(""))
         {
             return true;
         }
@@ -182,7 +180,7 @@ public class SpotBean
 
     private boolean checkArea()
     {
-        if ( (area!="") && (area != null))
+        if ( !area.equals(""))
         {
             return true;
         }
@@ -195,7 +193,7 @@ public class SpotBean
 
     private boolean checkDescription()
     {
-        if ( (description!="") && (description != null))
+        if ( !description.equals(""))
         {
             return true;
         }
@@ -208,7 +206,7 @@ public class SpotBean
 
     private boolean checkStreet()
     {
-        if ( (street!="") && (street != null))
+        if ( !street.equals(""))
         {
             return true;
         }
@@ -221,7 +219,7 @@ public class SpotBean
 
     private boolean checkNumber()
     {
-        if ( (number!="") && (number != null) && (number.matches("^[0-9]*$")))
+        if ( !(number.equals("")) && (number.matches("^[0-9]*$")))
         {
             return true;
         }

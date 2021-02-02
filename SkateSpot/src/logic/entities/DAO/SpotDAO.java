@@ -12,7 +12,7 @@ public class SpotDAO
     private static final String USER = "root";
     private static final String PSW = "PASSWORD";
     private static final String URL = "jdbc:mysql://localhost:3306/skate_spot";
-    private static final String DRIVER_CLASS_NAME = "com.mysql.jdbc.Driver";
+    //private static final String DRIVER_CLASS_NAME = "com.mysql.jdbc.Driver";
 
     public static Spot createSpot(Integer code)  //crea un istanza di Spot in base alla chiave esterna di un utente
     {
@@ -22,7 +22,7 @@ public class SpotDAO
 
         try
         {
-            Class.forName(DRIVER_CLASS_NAME);
+            //Class.forName(DRIVER_CLASS_NAME);
 
             connection = DriverManager.getConnection(URL,USER,PSW);
 
@@ -41,7 +41,7 @@ public class SpotDAO
                 rs.close();
             }
         }
-        catch(SQLException | ClassNotFoundException e)
+        catch(SQLException e)
         {
             e.printStackTrace();
         }
@@ -67,8 +67,9 @@ public class SpotDAO
                 e.printStackTrace();
             }
 
-            return spot;
+            
         }
+        return spot;
     }
 
     public static void createSpot(String name, String street, String number, String city, String municipality, String area, String type, String description, Integer code, LocalDate date)
@@ -80,7 +81,7 @@ public class SpotDAO
         {
             //loading dinamico del driver specifico
 
-            Class.forName(DRIVER_CLASS_NAME);
+            //Class.forName(DRIVER_CLASS_NAME);
             //apertura della connessione
             connection=DriverManager.getConnection(URL,USER,PSW);
             //creazione ed esecuzione query
@@ -117,7 +118,7 @@ public class SpotDAO
             rs.close();
 
         }
-        catch(SQLException  | ClassNotFoundException e)
+        catch(SQLException e)
         {
             e.printStackTrace();
         }
@@ -155,7 +156,7 @@ public class SpotDAO
 
         try
         {
-            Class.forName(DRIVER_CLASS_NAME);
+            //Class.forName(DRIVER_CLASS_NAME);
 
             connection = DriverManager.getConnection(URL,USER,PSW);
 
@@ -171,7 +172,7 @@ public class SpotDAO
                 spots.add(spot);
             }
         }
-        catch(SQLException | ClassNotFoundException e)
+        catch(SQLException e)
         {
             e.printStackTrace();
         }
@@ -196,7 +197,8 @@ public class SpotDAO
             {
                 e.printStackTrace();
             }
-            return spots;
+            
         }
+        return spots;
     }
 }

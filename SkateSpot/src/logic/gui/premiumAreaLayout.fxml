@@ -16,7 +16,7 @@
                 <AnchorPane maxHeight="80.0" minHeight="0.0" minWidth="0.0" prefHeight="69.0" prefWidth="819.0" style="-fx-background-color: rgb(52,50,50);">
                     <Button alignment="CENTER" layoutX="856.0" layoutY="6.0" mnemonicParsing="false" nodeOrientation="LEFT_TO_RIGHT" onMouseClicked="#handle" prefHeight="69.0" prefWidth="72.0" style="-fx-background-radius: 100;" textAlignment="CENTER" AnchorPane.rightAnchor="14.0">
                         <graphic>
-                            <ImageView fitHeight="64.0" fitWidth="54.0" pickOnBounds="true" preserveRatio="true">
+                            <ImageView fitHeight="64.0" fitWidth="54.0" onMouseClicked="#handle" pickOnBounds="true" preserveRatio="true">
                                     <Image url="@../resources/home_grey.png" />
                             </ImageView>
                         </graphic>

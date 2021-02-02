@@ -2,8 +2,6 @@ package logic.beans;
 
 import javax.swing.JOptionPane;
 
-import logic.entities.DAO.UserDAO;
-import logic.entities.User;
 
 public class ShopBean 
 {
@@ -114,7 +112,7 @@ public class ShopBean
 	
 	private boolean checkName()
 	{
-		if ( (name!="") && (name != null)) 
+		if ( !name.equals("")) 
 		{ 
 		       return true;
 		}
@@ -126,7 +124,7 @@ public class ShopBean
 	}
 	private boolean checkCity()
 	{
-		if ( (city!="") && (city != null)) 
+		if ( !city.equals("")) 
 		{ 
 		       return true;
 		}
@@ -138,7 +136,7 @@ public class ShopBean
 	}
 	private boolean checkPartitaIVA()
 	{
-		if ( (partitaIVA!="") && (partitaIVA != null) && (partitaIVA.matches("^[0-9]*$")) && (partitaIVA.length()== 11))
+		if ( !(partitaIVA.equals("")) && (partitaIVA.matches("^[0-9]*$")) && (partitaIVA.length()== 11))
 		{ 
 		       return true;
 		}
@@ -150,7 +148,7 @@ public class ShopBean
 	}
 	private boolean checkMunicipality()
 	{
-		if ( (municipality!="") && (municipality != null)) 
+		if ( !municipality.equals("")) 
 		{ 
 		       return true;
 		}
@@ -162,7 +160,7 @@ public class ShopBean
 	}
 	private boolean checkArea()
 	{
-		if ( (area!="") && (area != null)) 
+		if ( !area.equals("")) 
 		{ 
 		       return true;
 		}
@@ -174,7 +172,7 @@ public class ShopBean
 	}
 	private boolean checkDescription()
 	{
-		if ( (description!="") && (description != null)) 
+		if ( !description.equals("")) 
 		{ 
 		       return true;
 		}
@@ -186,7 +184,7 @@ public class ShopBean
 	}
 	private boolean checkStreet()
 	{
-		if ( (street!="") && (street != null)) 
+		if ( !street.equals("")) 
 		{ 
 		       return true;
 		}
@@ -198,7 +196,7 @@ public class ShopBean
 	}
 	private boolean checkNumber()
 	{
-		if ( (number!="") && (number != null) && (number.matches("^[0-9]*$"))) 
+		if ( !(number.equals("")) && (number.matches("^[0-9]*$"))) 
 		{ 
 		       return true;
 		}

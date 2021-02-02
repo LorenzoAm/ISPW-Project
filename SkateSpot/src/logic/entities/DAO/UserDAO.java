@@ -15,7 +15,7 @@ public class UserDAO
     private static final String USER = "root";
     private static final String PSW = "PASSWORD";
     private static final String URL = "jdbc:mysql://localhost:3306/skate_spot";
-    private static final String DRIVER_CLASS_NAME = "com.mysql.jdbc.Driver";
+    //private static final String DRIVER_CLASS_NAME = "com.mysql.jdbc.Driver";
 
     public static User findUser(String email,String password)  //metodo utilizzato per il login
     {
@@ -26,7 +26,7 @@ public class UserDAO
         try
         {
             //loading dinamico del driver specifico
-            Class.forName(DRIVER_CLASS_NAME);
+            //Class.forName(DRIVER_CLASS_NAME);
             //apertura della connessione
             connection=DriverManager.getConnection(URL,USER,PSW);
             //creazione ed esecuzione query
@@ -56,7 +56,7 @@ public class UserDAO
             rs.close();
 
         }
-        catch(SQLException | ClassNotFoundException e)
+        catch(SQLException e)
         {
             e.printStackTrace();
         }
@@ -82,10 +82,10 @@ public class UserDAO
                 e.printStackTrace();
             }
 
-            return user;
+            
         }
 
-
+        return user;
     }
 
     // metodo utilizzato per il sign up
@@ -97,12 +97,9 @@ public class UserDAO
         try
         {
             //loading dinamico del driver specifico
-            try {
-				Class.forName(DRIVER_CLASS_NAME);
-			} catch (ClassNotFoundException e) {
-
-				e.printStackTrace();
-			}
+            
+				//Class.forName(DRIVER_CLASS_NAME);
+			
             //apertura della connessione
             connection=DriverManager.getConnection(URL,USER,PSW);
             //creazione ed esecuzione query
@@ -176,7 +173,7 @@ public class UserDAO
          try
          {
              //loading dinamico del driver specifico
-             Class.forName(DRIVER_CLASS_NAME);
+             //Class.forName(DRIVER_CLASS_NAME);
              //apertura della connessione
              connection=DriverManager.getConnection(URL,USER,PSW);
              //creazione ed esecuzione query
@@ -197,7 +194,7 @@ public class UserDAO
              rs.close();
 
          }
-         catch(SQLException | ClassNotFoundException e)
+         catch(SQLException e)
          {
              e.printStackTrace();
          }
@@ -222,9 +219,9 @@ public class UserDAO
              {
                  e.printStackTrace();
              }
-             return code;
+             
          }
-
+         return code;
 
     }
 
@@ -237,7 +234,7 @@ public class UserDAO
         try
         {
             //loading dinamico del driver specifico
-            Class.forName(DRIVER_CLASS_NAME);
+            //Class.forName(DRIVER_CLASS_NAME);
             //apertura della connessione
             connection=DriverManager.getConnection(URL,USER,PSW);
             //creazione ed esecuzione query
@@ -255,18 +252,13 @@ public class UserDAO
                 if (retFromQuery == 2) //la query non ha prodotto risultati
                 {
                     JOptionPane.showMessageDialog(null, " OPS! Something went wrong.", " ERROR", JOptionPane.ERROR_MESSAGE);
-                } else {
-                    JOptionPane.showMessageDialog(null, " The update was successfully executed!", "WELCOME", JOptionPane.INFORMATION_MESSAGE);
                 }
-
                 query = "UPDATE spot SET NumeroDiSkater = '"+updatedNumber+"' WHERE Codice = '"+code+"';";
                 retFromQuery = statement.executeUpdate(query);
 
                 if (retFromQuery == 2) //la query non ha prodotto risultati
                 {
                     JOptionPane.showMessageDialog(null, " OPS! Something went wrong.", " ERROR", JOptionPane.ERROR_MESSAGE);
-                } else {
-                    JOptionPane.showMessageDialog(null, " The update was successfully executed!", "WELCOME", JOptionPane.INFORMATION_MESSAGE);
                 }
 
             }
@@ -276,7 +268,7 @@ public class UserDAO
             }
             rs.close();
         }
-        catch(SQLException | ClassNotFoundException e)
+        catch(SQLException e)
         {
             e.printStackTrace();
         }
@@ -314,7 +306,7 @@ public class UserDAO
         try
         {
             //loading dinamico del driver specifico
-            Class.forName(DRIVER_CLASS_NAME);
+            //Class.forName(DRIVER_CLASS_NAME);
             //apertura della connessione
             connection=DriverManager.getConnection(URL,USER,PSW);
             //creazione ed esecuzione query
@@ -341,10 +333,6 @@ public class UserDAO
                     {
                         JOptionPane.showMessageDialog(null," OPS! Something went wrong."," ERROR",JOptionPane.ERROR_MESSAGE);
                     }
-                    else
-                    {
-                        JOptionPane.showMessageDialog(null," The update was successfully executed!","WELCOME", JOptionPane.INFORMATION_MESSAGE);
-                    }
 
                     query = "UPDATE utente SET CodiceSpot ='"+codice+"' WHERE  Email ='"+UserContainer.getInstance().getEmail()+"' AND Password ='"+UserContainer.getInstance().getPassword()+"' ";
                     retFromQuery = statement.executeUpdate(query);
@@ -352,10 +340,6 @@ public class UserDAO
                     if (retFromQuery==2) //la query non ha prodotto risultati
                     {
                         JOptionPane.showMessageDialog(null," OPS! Something went wrong."," ERROR",JOptionPane.ERROR_MESSAGE);
-                    }
-                    else
-                    {
-                        JOptionPane.showMessageDialog(null," The update was successfully executed!","WELCOME", JOptionPane.INFORMATION_MESSAGE);
                     }
 
                 }
@@ -371,7 +355,7 @@ public class UserDAO
 
             rs.close();
         }
-        catch(SQLException | ClassNotFoundException e)
+        catch(SQLException e)
         {
             e.printStackTrace();
         }
@@ -396,8 +380,9 @@ public class UserDAO
             {
                 e.printStackTrace();
             }
-            return spot;
+            
         }
+        return spot;
     }
     public static String getUsername(int codice)
     {
@@ -408,7 +393,7 @@ public class UserDAO
          try
          {
              //loading dinamico del driver specifico
-             Class.forName(DRIVER_CLASS_NAME);
+             //Class.forName(DRIVER_CLASS_NAME);
              //apertura della connessione
              connection=DriverManager.getConnection(URL,USER,PSW);
              //creazione ed esecuzione query
@@ -430,7 +415,7 @@ public class UserDAO
              rs.close();
 
          }
-         catch(SQLException | ClassNotFoundException e)
+         catch(SQLException e)
          {
              e.printStackTrace();
          }
@@ -455,9 +440,9 @@ public class UserDAO
              {
                  e.printStackTrace();
              }
-             return username;
+             
          }
-
+         return username;
 
     }
 

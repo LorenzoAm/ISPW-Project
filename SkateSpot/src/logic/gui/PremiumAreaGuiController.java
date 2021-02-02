@@ -12,6 +12,7 @@ import javafx.stage.Stage;
 public class PremiumAreaGuiController 
 {
 	private static Stage addShop;
+	private static Stage viewShop;
 
 
     public void handle(MouseEvent mouseEvent) throws IOException
@@ -30,7 +31,7 @@ public class PremiumAreaGuiController
             case "Add new shop":
             	if(getAddShopStage() == null)   //prima apertura di add shop
                 {
-                    root = FXMLLoader.load(getClass().getResource("../gui/addShopLayout.fxml"));
+                    root = FXMLLoader.load(getClass().getResource("addShopLayout.fxml"));
                     scene = new Scene(root);
                     addShop = new Stage();
                     addShop.setTitle("ADD SHOP");
@@ -41,18 +42,38 @@ public class PremiumAreaGuiController
                 else
                 {
                     addShop.show();
-                    HomeMain.getStage().close();
+                    HomeGuiController.getPremiumAreaStage().close();
                 }
 
             
                 break;
             case "View your shops":
-                //TODO creare view your shops use case
+            	if(getViewShopStage() == null)   //prima apertura di add shop
+                {
+                    root = FXMLLoader.load(getClass().getResource("viewMyShopsLayout.fxml"));
+                    scene = new Scene(root);
+                    viewShop = new Stage();
+                    viewShop.setTitle("ADD SHOP");
+                    viewShop.setScene(scene);
+                    viewShop.show();
+                    HomeGuiController.getPremiumAreaStage().close();
+                }
+                else
+                {
+                    viewShop.show();
+                    HomeGuiController.getPremiumAreaStage().close();
+                }
                 break;
         }
     }
+    
     public static Stage getAddShopStage()
     {
         return addShop;
+    }
+    
+    public static Stage getViewShopStage()
+    {
+        return viewShop;
     }
 }

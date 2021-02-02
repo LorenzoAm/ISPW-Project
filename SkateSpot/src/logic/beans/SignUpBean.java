@@ -95,8 +95,6 @@ public class SignUpBean
 	
 	public void setDate(LocalDate data)
 	{
-		//Instant instant = Instant.from(data.atStartOfDay(ZoneId.systemDefault()));
-		//Date date = Date.from(instant);
 		this.data=data;
 	}
 	public LocalDate getDate()
@@ -140,7 +138,7 @@ public class SignUpBean
 	private boolean checkName()
 	{
 		
-		if ( (name!="") && (name != null) && (name.matches("^[a-zA-Z]*$")) ) 
+		if ( !(name.equals("")) && (name.matches("^[a-zA-Z]*$")) ) 
 		{ 
 		       return true;
 		}
@@ -152,7 +150,8 @@ public class SignUpBean
 	}
 	private boolean checkSurname()
 	{
-		if ( (surname!="") && (surname != null) && (surname.matches("^[a-zA-Z]*$")) ) { 
+		if ( !(surname.equals("")) && (surname.matches("^[a-zA-Z]*$")) ) 
+		{ 
 		       return true;
 		}
 		else
@@ -163,7 +162,8 @@ public class SignUpBean
 	}
 	private boolean checkUsername()
 	{
-		if ( (username!="") && (username != null) && (username.matches("^[a-zA-Z0-9]*$")) ) { 
+		if ( !(username.equals("")) && (username.matches("^[a-zA-Z0-9]*$")) ) 
+		{ 
 		       return true;
 		}
 		else

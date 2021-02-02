@@ -1,15 +1,24 @@
 package logic.controllers;
 
 import java.util.ArrayList;
-
-import logic.entities.Spot;
 import logic.entities.DAO.SpotDAO;
+import logic.entities.Spot;
 
 public class ViewSpotController 
 {
-	public static ArrayList<Spot> getList()
+	private static ViewSpotController instance;
+	
+	private ViewSpotController() {};
+	
+	public static ViewSpotController getInstance()
 	{
-		ArrayList<Spot> spots=SpotDAO.getSpots();
-		return spots;
+		if(instance == null)
+			instance = new ViewSpotController();
+		return instance;
+	}
+	
+	public ArrayList<Spot> getList()
+	{
+		return SpotDAO.getSpots();
 	}
 }

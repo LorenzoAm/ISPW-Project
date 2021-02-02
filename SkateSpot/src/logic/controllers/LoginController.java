@@ -2,8 +2,8 @@ package logic.controllers;
 
 
 import logic.beans.LoginBean;
-import logic.entities.DAO.UserDAO;
 import logic.entities.User;
+import logic.entities.DAO.UserDAO;
 import logic.gui.HomeGuiController;
 import logic.gui.HomeMain;
 import javax.swing.*;

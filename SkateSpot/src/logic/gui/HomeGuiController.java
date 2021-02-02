@@ -1,14 +1,12 @@
 package logic.gui;
 
 import javafx.event.ActionEvent;
-import javafx.event.EventHandler;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.scene.control.Button;
 import javafx.scene.input.MouseEvent;
 import javafx.stage.Stage;
-import javafx.stage.WindowEvent;
 import logic.controllers.LeaveSpotController;
 import logic.controllers.LogoutController;
 import logic.controllers.UserContainer;
@@ -40,7 +38,7 @@ public class HomeGuiController
                     if (UserContainer.getInstance() == null) {
                         if (getLoginStage() == null)   //prima apertura di login
                         {
-                            root = FXMLLoader.load(getClass().getResource("../gui/loginLayout.fxml"));
+                            root = FXMLLoader.load(getClass().getResource("loginLayout.fxml"));
                             scene = new Scene(root);
                             login = new Stage();
                             login.setTitle("LOGIN");
@@ -59,7 +57,7 @@ public class HomeGuiController
                 case "SIGN UP" -> {
                     if (getSignUpStage() == null)   //prima apertura di signUp
                     {
-                        root = FXMLLoader.load(getClass().getResource("../gui/signUpLayout.fxml"));
+                        root = FXMLLoader.load(getClass().getResource("signUpLayout.fxml"));
                         scene = new Scene(root);
                         signUp = new Stage();
                         signUp.setTitle("SIGN UP");
@@ -76,7 +74,7 @@ public class HomeGuiController
                         if (UserContainer.getInstance().getTipo().equals("Owner")) {
                             if (getPremiumAreaStage() == null)   //prima apertura di premium area
                             {
-                                root = FXMLLoader.load(getClass().getResource("../gui/premiumAreaLayout.fxml"));
+                                root = FXMLLoader.load(getClass().getResource("premiumAreaLayout.fxml"));
                                 scene = new Scene(root);
                                 premArea = new Stage();
                                 premArea.setTitle("PREMIUM AREA");
@@ -98,7 +96,7 @@ public class HomeGuiController
                 case "VIEW SPOTS" -> {
                 	if (getViewSpotStage() == null)   //prima apertura di viewSpot
                     {
-                        root = FXMLLoader.load(getClass().getResource("../gui/viewSpot.fxml"));
+                        root = FXMLLoader.load(getClass().getResource("viewSpot.fxml"));
                         scene = new Scene(root);
                         viewSpot = new Stage();
                         viewSpot.setTitle("VIEW SPOTS");
@@ -114,7 +112,7 @@ public class HomeGuiController
                 case "VIEW SHOPS" -> {
                 	if (getViewShopStage() == null)   //prima apertura di viewShop
                     {
-                        root = FXMLLoader.load(getClass().getResource("../gui/viewShop.fxml"));
+                        root = FXMLLoader.load(getClass().getResource("viewShop.fxml"));
                         scene = new Scene(root);
                         viewShop = new Stage();
                         viewShop.setTitle("VIEW SHOPS");
@@ -138,7 +136,7 @@ public class HomeGuiController
         {
             if (getAddSpotStage() == null)   //prima apertura di addSpot
             {
-                root = FXMLLoader.load(getClass().getResource("../gui/addSpotLayout.fxml"));
+                root = FXMLLoader.load(getClass().getResource("addSpotLayout.fxml"));
                 scene = new Scene(root);
                 addSpot = new Stage();
                 addSpot.setTitle("ADD SPOT");
@@ -166,7 +164,7 @@ public class HomeGuiController
             {
                 if(getJoinSpotStage()==null)     //prima apertura di joinSpot stage
                 {
-                    root = FXMLLoader.load(getClass().getResource("../gui/joinSpotLayout.fxml"));
+                    root = FXMLLoader.load(getClass().getResource("joinSpotLayout.fxml"));
                     scene = new Scene(root);
                     joinSpot = new Stage();
                     joinSpot.setTitle("JOIN SPOT");
