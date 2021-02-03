@@ -1,0 +1,108 @@
+
+logic.beans.SignUpBean#check()ZS
+IC:/Users/loren/git/ISPW-Project/SkateSpot/src/logic/beans/SignUpBean.java| |("10*∫
+2U
+IC:/Users/loren/git/ISPW-Project/SkateSpot/src/logic/beans/SignUpBean.javaÄ Ä(¸
+˘
+U
+IC:/Users/loren/git/ISPW-Project/SkateSpot/src/logic/beans/SignUpBean.javaÄ Ä(A
+
+%8void"Rjavax.swing.JOptionPane#showMessageDialog(Ljava/awt/Component;Ljava/lang/Object;)V*"
+javax.swing.JOptionPane*
+""*
+data entered correctly."_
+U
+IC:/Users/loren/git/ISPW-Project/SkateSpot/src/logic/beans/SignUpBean.javaÅ Å(
+""*ñ
+3T
+IC:/Users/loren/git/ISPW-Project/SkateSpot/src/logic/beans/SignUpBean.java~n ~(Ä≤
+Ø
+T
+IC:/Users/loren/git/ISPW-Project/SkateSpot/src/logic/beans/SignUpBean.java~n ~(Ç
+%7boolean",logic.beans.SignUpBean#checkTypeOfAccount()Z*
+logic.beans.SignUpBean*
+2
+1*ç
+4S
+IC:/Users/loren/git/ISPW-Project/SkateSpot/src/logic/beans/SignUpBean.java~_ ~(j™
+ß
+S
+IC:/Users/loren/git/ISPW-Project/SkateSpot/src/logic/beans/SignUpBean.java~_ ~(l
+%6boolean"%logic.beans.SignUpBean#checkGender()Z*
+logic.beans.SignUpBean*
+3
+1*ã
+5S
+IC:/Users/loren/git/ISPW-Project/SkateSpot/src/logic/beans/SignUpBean.java~R ~([®
+•
+S
+IC:/Users/loren/git/ISPW-Project/SkateSpot/src/logic/beans/SignUpBean.java~R ~(]
+%5boolean"#logic.beans.SignUpBean#checkDate()Z*
+logic.beans.SignUpBean*
+4
+1*è
+6S
+IC:/Users/loren/git/ISPW-Project/SkateSpot/src/logic/beans/SignUpBean.java~A ~(N¨
+©
+S
+IC:/Users/loren/git/ISPW-Project/SkateSpot/src/logic/beans/SignUpBean.java~A ~(P
+%4boolean"'logic.beans.SignUpBean#checkPassword()Z*
+logic.beans.SignUpBean*
+5
+1*å
+7S
+IC:/Users/loren/git/ISPW-Project/SkateSpot/src/logic/beans/SignUpBean.java~3 ~(=©
+¶
+S
+IC:/Users/loren/git/ISPW-Project/SkateSpot/src/logic/beans/SignUpBean.java~3 ~(?
+%3boolean"$logic.beans.SignUpBean#checkEmail()Z*
+logic.beans.SignUpBean*
+6
+1*è
+8S
+IC:/Users/loren/git/ISPW-Project/SkateSpot/src/logic/beans/SignUpBean.java~" ~(/¨
+©
+S
+IC:/Users/loren/git/ISPW-Project/SkateSpot/src/logic/beans/SignUpBean.java~" ~(1
+%2boolean"'logic.beans.SignUpBean#checkUsername()Z*
+logic.beans.SignUpBean*
+7
+1*é
+9S
+IC:/Users/loren/git/ISPW-Project/SkateSpot/src/logic/beans/SignUpBean.java~ ~(´
+®
+S
+IC:/Users/loren/git/ISPW-Project/SkateSpot/src/logic/beans/SignUpBean.java~ ~( 
+%1boolean"&logic.beans.SignUpBean#checkSurname()Z*
+logic.beans.SignUpBean*
+8
+1*å
+10S
+IC:/Users/loren/git/ISPW-Project/SkateSpot/src/logic/beans/SignUpBean.java~ ~(®
+•
+S
+IC:/Users/loren/git/ISPW-Project/SkateSpot/src/logic/beans/SignUpBean.java~ ~(
+%0boolean"#logic.beans.SignUpBean#checkName()Z*
+logic.beans.SignUpBean*
+9
+1*⁄
+1U
+IC:/Users/loren/git/ISPW-Project/SkateSpot/src/logic/beans/SignUpBean.javaÖ Ö(ü
+ú
+U
+IC:/Users/loren/git/ISPW-Project/SkateSpot/src/logic/beans/SignUpBean.javaÖ' Ö(,
+%9java.lang.String"__id*%*#
+logic.beans.SignUpBean"
+alert˙
+˜
+U
+IC:/Users/loren/git/ISPW-Project/SkateSpot/src/logic/beans/SignUpBean.javaÖ Ö(-
+%10void"Rjavax.swing.JOptionPane#showMessageDialog(Ljava/awt/Component;Ljava/lang/Object;)V*"
+javax.swing.JOptionPane*
+""*
+
+%9java.lang.String"_
+U
+IC:/Users/loren/git/ISPW-Project/SkateSpot/src/logic/beans/SignUpBean.javaÜ Ü(
+""B
+logic.beans.SignUpBean
