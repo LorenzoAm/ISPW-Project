@@ -22,6 +22,7 @@ public class SignUpBean
 	private String typeOfAccount;
 	private LocalDate data;
 	private String alert="";
+	private String match="^[a-zA-Z]*$";
 
 	public SignUpBean(String name,String surname,String username,String email,String password,String confirmPassword)
 	{
@@ -138,7 +139,7 @@ public class SignUpBean
 	private boolean checkName()
 	{
 		
-		if ( !(name.equals("")) && (name.matches("^[a-zA-Z]*$")) ) 
+		if ( !(name.equals("")) && (name.matches(match)) ) 
 		{ 
 		       return true;
 		}
@@ -150,7 +151,7 @@ public class SignUpBean
 	}
 	private boolean checkSurname()
 	{
-		if ( !(surname.equals("")) && (surname.matches("^[a-zA-Z]*$")) ) 
+		if ( !(surname.equals("")) && (surname.matches(match)) ) 
 		{ 
 		       return true;
 		}
@@ -204,7 +205,7 @@ public class SignUpBean
 					if(emailSplit[1].contains("."))
 					{
 						String[] emailSplit2 = emailSplit[1].split("\\.");
-						if(( (!emailSplit2[0].equals("")) && (emailSplit2[0].matches("^[a-zA-Z]*$")) ) && ( (!emailSplit2[1].equals("")) && (emailSplit2[1].matches("^[a-zA-Z]*$")) ))
+						if(( (!emailSplit2[0].equals("")) && (emailSplit2[0].matches(match)) ) && ( (!emailSplit2[1].equals("")) && (emailSplit2[1].matches(match)) ))
 						{
 							return true;
 						}

@@ -81,7 +81,7 @@ public class SpotDAO
         {
             //loading dinamico del driver specifico
 
-            //Class.forName(DRIVER_CLASS_NAME);
+           //Class.forName(DRIVER_CLASS_NAME);
             //apertura della connessione
             connection=DriverManager.getConnection(URL,USER,PSW);
             //creazione ed esecuzione query
