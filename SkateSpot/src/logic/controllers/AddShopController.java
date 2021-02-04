@@ -1,8 +1,8 @@
 package logic.controllers;
 
 import logic.beans.ShopBean;
-import logic.entities.DAO.ShopDAO;
-import logic.entities.DAO.UserDAO;
+import logic.entities.dao.ShopDAO;
+import logic.entities.dao.UserDAO;
 import logic.gui.HomeGuiController;
 import logic.gui.PremiumAreaGuiController;
 import java.time.LocalDate;

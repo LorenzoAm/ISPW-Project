@@ -1,8 +1,8 @@
 package logic.controllers;
 
 import logic.beans.SpotBean;
-import logic.entities.DAO.SpotDAO;
-import logic.entities.DAO.UserDAO;
+import logic.entities.dao.SpotDAO;
+import logic.entities.dao.UserDAO;
 import logic.gui.HomeGuiController;
 import logic.gui.HomeMain;
 

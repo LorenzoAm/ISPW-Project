@@ -1,7 +1,7 @@
 <%@ page language="java" contentType="text/html; charset=ISO-8859-1"
     pageEncoding="ISO-8859-1"%>
 <!DOCTYPE html>
-<html>
+<html lang="it">
 <head>
 <meta charset="ISO-8859-1">
 <title>Homepage</title>
@@ -15,6 +15,8 @@
 	<div>
 		<table>
 			<tr>
+				<th>
+				</th>
 				<td >
 					<img src="images/menu_grey.png" alt="MENU"/>
 				</td>
@@ -65,6 +67,8 @@
 	
 	<table>
 		<tr>
+		<th>
+		</th>
 			<td>
 				<img src="images/blank.png" alt="SPACE"/>
 			</td>
@@ -72,7 +76,7 @@
 				<img src="images/blank.png" alt="SPACE"/>
 			</td>
 			<td>
-				<img align="right" src="images/SkateSpot_Logo.png" alt="LOGO"/>
+				<img src="images/SkateSpot_Logo.png" alt="LOGO"/>
 			</td>
 			<td>
 				<img src="images/blank.png" alt="SPACE"/>
@@ -83,8 +87,10 @@
 	<div id="view-sect">
 		<table>
 			<tr>
+			<th>
+			</th>
 				<td>
-					<a href="">
+					<a href="viewSpots.jsp">
 						<img src="images/view_spot_button.png" alt="VIEW SPOTS" />
 					</a>
 				</td>
@@ -95,7 +101,7 @@
 					<img src="images/blank.png" alt="SPACE"/>
 				</td>
 				<td>
-					<a href="">
+					<a href="viewShops.jsp">
 						<img src="images/view_shop_button.png" alt="VIEW SHOPS" />
 					</a>
 				</td>

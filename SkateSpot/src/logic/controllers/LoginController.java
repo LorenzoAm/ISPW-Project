@@ -3,7 +3,7 @@ package logic.controllers;
 
 import logic.beans.LoginBean;
 import logic.entities.User;
-import logic.entities.DAO.UserDAO;
+import logic.entities.dao.UserDAO;
 import logic.gui.HomeGuiController;
 import logic.gui.HomeMain;
 import javax.swing.*;

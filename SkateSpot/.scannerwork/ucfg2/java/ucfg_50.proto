@@ -1,156 +1,17 @@
 
-0logic.entities.User#toString()Ljava/lang/String;P
-FC:/Users/loren/git/ISPW-Project/SkateSpot/src/logic/entities/User.javaw w("1*∆"
+3logic.entities.User#getPassword()Ljava/lang/String;P
+FC:/Users/loren/git/ISPW-Project/SkateSpot/src/logic/entities/User.javaO O("1*‡
 1P
-FC:/Users/loren/git/ISPW-Project/SkateSpot/src/logic/entities/User.javay y( ¬ø
+FC:/Users/loren/git/ISPW-Project/SkateSpot/src/logic/entities/User.javaQ Q(ö
+ó
 P
-FC:/Users/loren/git/ISPW-Project/SkateSpot/src/logic/entities/User.javay! y(*
-%0java.lang.String"/logic.entities.User#getNome()Ljava/lang/String;*
-logic.entities.User2	getNome()¶
-£
+FC:/Users/loren/git/ISPW-Project/SkateSpot/src/logic/entities/User.javaQ Q(
+%0java.lang.String"__id*%*#
+logic.entities.User"
+
+password"l
 P
-FC:/Users/loren/git/ISPW-Project/SkateSpot/src/logic/entities/User.javay y(*
-%1java.lang.String"__concat*
- Nome utente : *
+FC:/Users/loren/git/ISPW-Project/SkateSpot/src/logic/entities/User.javaQ Q(
 
-%0java.lang.String§
-°
-P
-FC:/Users/loren/git/ISPW-Project/SkateSpot/src/logic/entities/User.javay y(:
-%2java.lang.String"__concat*
-
-%1java.lang.String*
-\n cognome : »≈
-P
-FC:/Users/loren/git/ISPW-Project/SkateSpot/src/logic/entities/User.javay; y(G
-%3java.lang.String"2logic.entities.User#getCognome()Ljava/lang/String;*
-logic.entities.User2getCognome()´
-®
-P
-FC:/Users/loren/git/ISPW-Project/SkateSpot/src/logic/entities/User.javay y(G
-%4java.lang.String"__concat*
-
-%2java.lang.String*
-
-%3java.lang.String•
-¢
-P
-FC:/Users/loren/git/ISPW-Project/SkateSpot/src/logic/entities/User.javay y(X
-%5java.lang.String"__concat*
-
-%4java.lang.String*
-\n username :  «
-P
-FC:/Users/loren/git/ISPW-Project/SkateSpot/src/logic/entities/User.javayY y(f
-%6java.lang.String"3logic.entities.User#getUsername()Ljava/lang/String;*
-logic.entities.User2getUsername()´
-®
-P
-FC:/Users/loren/git/ISPW-Project/SkateSpot/src/logic/entities/User.javay y(f
-%7java.lang.String"__concat*
-
-%5java.lang.String*
-
-%6java.lang.String¢
-ü
-P
-FC:/Users/loren/git/ISPW-Project/SkateSpot/src/logic/entities/User.javay y(t
-%8java.lang.String"__concat*
-
-%7java.lang.String*
-\n email : ƒ¡
-P
-FC:/Users/loren/git/ISPW-Project/SkateSpot/src/logic/entities/User.javayu y(
-%9java.lang.String"0logic.entities.User#getEmail()Ljava/lang/String;*
-logic.entities.User2
-getEmail()¨
-©
-P
-FC:/Users/loren/git/ISPW-Project/SkateSpot/src/logic/entities/User.javay y(
-%10java.lang.String"__concat*
-
-%8java.lang.String*
-
-%9java.lang.String®
-•
-Q
-FC:/Users/loren/git/ISPW-Project/SkateSpot/src/logic/entities/User.javay y(ê
-%11java.lang.String"__concat*
-
-%10java.lang.String*
-\n password : Õ 
-R
-FC:/Users/loren/git/ISPW-Project/SkateSpot/src/logic/entities/User.javayë y(û
-%12java.lang.String"3logic.entities.User#getPassword()Ljava/lang/String;*
-logic.entities.User2getPassword()Ø
-¨
-Q
-FC:/Users/loren/git/ISPW-Project/SkateSpot/src/logic/entities/User.javay y(û
-%13java.lang.String"__concat*
-
-%11java.lang.String*
-
-%12java.lang.StringØ
-¨
-Q
-FC:/Users/loren/git/ISPW-Project/SkateSpot/src/logic/entities/User.javay y(∂
-%14java.lang.String"__concat*
-
-%13java.lang.String*
-\n data di nascita : ”–
-R
-FC:/Users/loren/git/ISPW-Project/SkateSpot/src/logic/entities/User.javay∑ y(…
-%15java.util.Date"6logic.entities.User#getDataDiNascita()Ljava/util/Date;*
-logic.entities.User2getDataDiNascita()≠
-™
-Q
-FC:/Users/loren/git/ISPW-Project/SkateSpot/src/logic/entities/User.javay y(…
-%16java.lang.String"__concat*
-
-%14java.lang.String*
-
-%15java.util.Date•
-¢
-Q
-FC:/Users/loren/git/ISPW-Project/SkateSpot/src/logic/entities/User.javay y(◊
-%17java.lang.String"__concat*
-
-%16java.lang.String*
-\n sesso : «ƒ
-R
-FC:/Users/loren/git/ISPW-Project/SkateSpot/src/logic/entities/User.javayÿ y(‚
-%18java.lang.String"0logic.entities.User#getSesso()Ljava/lang/String;*
-logic.entities.User2
-getSesso()Ø
-¨
-Q
-FC:/Users/loren/git/ISPW-Project/SkateSpot/src/logic/entities/User.javay y(‚
-%19java.lang.String"__concat*
-
-%17java.lang.String*
-
-%18java.lang.StringØ
-¨
-Q
-FC:/Users/loren/git/ISPW-Project/SkateSpot/src/logic/entities/User.javay y(˙
-%20java.lang.String"__concat*
-
-%19java.lang.String*
-\n tipo di account : ≈¬
-R
-FC:/Users/loren/git/ISPW-Project/SkateSpot/src/logic/entities/User.javay˚ y(Ñ
-%21java.lang.String"/logic.entities.User#getTipo()Ljava/lang/String;*
-logic.entities.User2	getTipo()Ø
-¨
-Q
-FC:/Users/loren/git/ISPW-Project/SkateSpot/src/logic/entities/User.javay y(Ñ
-%22java.lang.String"__concat*
-
-%20java.lang.String*
-
-%21java.lang.String"n
-Q
-FC:/Users/loren/git/ISPW-Project/SkateSpot/src/logic/entities/User.javay y(Ö
-
-%22java.lang.StringB
+%0java.lang.StringB
 logic.entities.User

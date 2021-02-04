@@ -1,50 +1,16 @@
 
-Vlogic.controllers.AddShopController#getInstance()Llogic/controllers/AddShopController;`
-VC:/Users/loren/git/ISPW-Project/SkateSpot/src/logic/controllers/AddShopController.java! (,"3*º
-2`
-VC:/Users/loren/git/ISPW-Project/SkateSpot/src/logic/controllers/AddShopController.java (-µ≤
-`
-VC:/Users/loren/git/ISPW-Project/SkateSpot/src/logic/controllers/AddShopController.java (+)
-%1#logic.controllers.AddShopController"#logic.controllers.AddShopController«
-ƒ
-`
-VC:/Users/loren/git/ISPW-Project/SkateSpot/src/logic/controllers/AddShopController.java (-
-%2"-logic.controllers.AddShopController#<init>()V*+
-)
-%1#logic.controllers.AddShopControllerÕ
- 
-`
-VC:/Users/loren/git/ISPW-Project/SkateSpot/src/logic/controllers/AddShopController.java (-3%
-#logic.controllers.AddShopController"
-
-instance"__id*+
-)
-%1#logic.controllers.AddShopController*
-1*Ω
-3`
-VC:/Users/loren/git/ISPW-Project/SkateSpot/src/logic/controllers/AddShopController.java
- (Õ
- 
-`
-VC:/Users/loren/git/ISPW-Project/SkateSpot/src/logic/controllers/AddShopController.java
- ()
-%0#logic.controllers.AddShopController"__id*5*3%
-#logic.controllers.AddShopController"
-
-instance*
-2
-1*«
-1`
-VC:/Users/loren/git/ISPW-Project/SkateSpot/src/logic/controllers/AddShopController.java (Õ
- 
-`
-VC:/Users/loren/git/ISPW-Project/SkateSpot/src/logic/controllers/AddShopController.java ()
-%3#logic.controllers.AddShopController"__id*5*3%
-#logic.controllers.AddShopController"
-
-instance"è
-`
-VC:/Users/loren/git/ISPW-Project/SkateSpot/src/logic/controllers/AddShopController.java (+
-)
-%3#logic.controllers.AddShopControllerB'"%
-#logic.controllers.AddShopController
+6logic.entities.User#getDataDiNascita()Ljava/util/Date;P
+FC:/Users/loren/git/ISPW-Project/SkateSpot/src/logic/entities/User.javac c( "1*·
+1P
+FC:/Users/loren/git/ISPW-Project/SkateSpot/src/logic/entities/User.javae e(ù
+ö
+P
+FC:/Users/loren/git/ISPW-Project/SkateSpot/src/logic/entities/User.javae e(
+%0java.util.Date"__id***(
+logic.entities.User"
+dataDiNascita"j
+P
+FC:/Users/loren/git/ISPW-Project/SkateSpot/src/logic/entities/User.javae e(
+
+%0java.util.DateB
+logic.entities.User

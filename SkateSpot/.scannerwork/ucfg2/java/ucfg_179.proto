@@ -1,16 +1,16 @@
 
-2logic.beans.ShopBean#getNumber()Ljava/lang/String;Q
-GC:/Users/loren/git/ISPW-Project/SkateSpot/src/logic/beans/ShopBean.java] ]("1*â
+7logic.beans.ShopBean#getDescription()Ljava/lang/String;Q
+GC:/Users/loren/git/ISPW-Project/SkateSpot/src/logic/beans/ShopBean.javaM M("1*ç
 1Q
-GC:/Users/loren/git/ISPW-Project/SkateSpot/src/logic/beans/ShopBean.java_	 _(š
-—
+GC:/Users/loren/git/ISPW-Project/SkateSpot/src/logic/beans/ShopBean.javaO	 O(Ÿ
+œ
 Q
-GC:/Users/loren/git/ISPW-Project/SkateSpot/src/logic/beans/ShopBean.java_	 _(
-%0java.lang.String"__id*$*"
-logic.beans.ShopBean"
-number"m
+GC:/Users/loren/git/ISPW-Project/SkateSpot/src/logic/beans/ShopBean.javaO	 O(
+%0java.lang.String"__id*)*'
+logic.beans.ShopBean"
+description"m
 Q
-GC:/Users/loren/git/ISPW-Project/SkateSpot/src/logic/beans/ShopBean.java_ _(
+GC:/Users/loren/git/ISPW-Project/SkateSpot/src/logic/beans/ShopBean.javaO O(
 
 %0java.lang.StringB
 logic.beans.ShopBean

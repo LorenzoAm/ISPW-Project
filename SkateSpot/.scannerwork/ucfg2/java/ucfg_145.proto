@@ -1,108 +1,16 @@
 
-logic.beans.SpotBean#check()ZQ
-GC:/Users/loren/git/ISPW-Project/SkateSpot/src/logic/beans/SpotBean.javas s("10*®
-2Q
-GC:/Users/loren/git/ISPW-Project/SkateSpot/src/logic/beans/SpotBean.javaw w(ø
-õ
-Q
-GC:/Users/loren/git/ISPW-Project/SkateSpot/src/logic/beans/SpotBean.javaw w(J
-
-%8void"Rjavax.swing.JOptionPane#showMessageDialog(Ljava/awt/Component;Ljava/lang/Object;)V*"
-javax.swing.JOptionPane*
-""*
-data entered correctly."[
-Q
-GC:/Users/loren/git/ISPW-Project/SkateSpot/src/logic/beans/SpotBean.javax x(
-""*Œ
-3R
-GC:/Users/loren/git/ISPW-Project/SkateSpot/src/logic/beans/SpotBean.javaur u(‚ª
-§
-R
-GC:/Users/loren/git/ISPW-Project/SkateSpot/src/logic/beans/SpotBean.javaur u(„
-%7boolean"(logic.beans.SpotBean#checkDescription()Z*
-logic.beans.SpotBean*
-2
-1*ƒ
-4Q
-GC:/Users/loren/git/ISPW-Project/SkateSpot/src/logic/beans/SpotBean.javaue u(n¢
-Ÿ
-Q
-GC:/Users/loren/git/ISPW-Project/SkateSpot/src/logic/beans/SpotBean.javaue u(p
-%6boolean"!logic.beans.SpotBean#checkType()Z*
-logic.beans.SpotBean*
-3
-1*ƒ
-5Q
-GC:/Users/loren/git/ISPW-Project/SkateSpot/src/logic/beans/SpotBean.javauX u(a¢
-Ÿ
-Q
-GC:/Users/loren/git/ISPW-Project/SkateSpot/src/logic/beans/SpotBean.javauX u(c
-%5boolean"!logic.beans.SpotBean#checkArea()Z*
-logic.beans.SpotBean*
-4
-1*‹
-6Q
-GC:/Users/loren/git/ISPW-Project/SkateSpot/src/logic/beans/SpotBean.javauC u(Tª
-§
-Q
-GC:/Users/loren/git/ISPW-Project/SkateSpot/src/logic/beans/SpotBean.javauC u(V
-%4boolean")logic.beans.SpotBean#checkMunicipality()Z*
-logic.beans.SpotBean*
-5
-1*ƒ
-7Q
-GC:/Users/loren/git/ISPW-Project/SkateSpot/src/logic/beans/SpotBean.javau6 u(?¢
-Ÿ
-Q
-GC:/Users/loren/git/ISPW-Project/SkateSpot/src/logic/beans/SpotBean.javau6 u(A
-%3boolean"!logic.beans.SpotBean#checkCity()Z*
-logic.beans.SpotBean*
-6
-1*…
-8Q
-GC:/Users/loren/git/ISPW-Project/SkateSpot/src/logic/beans/SpotBean.javau' u(2¤
-¡
-Q
-GC:/Users/loren/git/ISPW-Project/SkateSpot/src/logic/beans/SpotBean.javau' u(4
-%2boolean"#logic.beans.SpotBean#checkNumber()Z*
-logic.beans.SpotBean*
-7
-1*…
-9Q
-GC:/Users/loren/git/ISPW-Project/SkateSpot/src/logic/beans/SpotBean.javau u(#¤
-¡
-Q
-GC:/Users/loren/git/ISPW-Project/SkateSpot/src/logic/beans/SpotBean.javau u(%
-%1boolean"#logic.beans.SpotBean#checkStreet()Z*
-logic.beans.SpotBean*
-8
-1*„
-10Q
-GC:/Users/loren/git/ISPW-Project/SkateSpot/src/logic/beans/SpotBean.javau u(¢
-Ÿ
-Q
-GC:/Users/loren/git/ISPW-Project/SkateSpot/src/logic/beans/SpotBean.javau u(
-%0boolean"!logic.beans.SpotBean#checkName()Z*
-logic.beans.SpotBean*
-9
-1*È
+0logic.beans.SpotBean#getName()Ljava/lang/String;Q
+GC:/Users/loren/git/ISPW-Project/SkateSpot/src/logic/beans/SpotBean.javaJ J("1*à
 1Q
-GC:/Users/loren/git/ISPW-Project/SkateSpot/src/logic/beans/SpotBean.java| |(™
-–
+GC:/Users/loren/git/ISPW-Project/SkateSpot/src/logic/beans/SpotBean.javaL L(˜
+•
 Q
-GC:/Users/loren/git/ISPW-Project/SkateSpot/src/logic/beans/SpotBean.java|0 |(5
-%9java.lang.String"__id*#*!
-logic.beans.SpotBean"
-alertö
-ó
+GC:/Users/loren/git/ISPW-Project/SkateSpot/src/logic/beans/SpotBean.javaL L(
+%0java.lang.String"__id*"* 
+logic.beans.SpotBean"
+name"m
 Q
-GC:/Users/loren/git/ISPW-Project/SkateSpot/src/logic/beans/SpotBean.java| |(6
-%10void"Rjavax.swing.JOptionPane#showMessageDialog(Ljava/awt/Component;Ljava/lang/Object;)V*"
-javax.swing.JOptionPane*
-""*
+GC:/Users/loren/git/ISPW-Project/SkateSpot/src/logic/beans/SpotBean.javaL L(
 
-%9java.lang.String"[
-Q
-GC:/Users/loren/git/ISPW-Project/SkateSpot/src/logic/beans/SpotBean.java} }(
-""B
+%0java.lang.StringB
 logic.beans.SpotBean

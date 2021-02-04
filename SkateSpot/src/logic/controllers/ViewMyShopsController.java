@@ -3,7 +3,7 @@ package logic.controllers;
 import java.util.ArrayList;
 
 import logic.entities.Shop;
-import logic.entities.DAO.ShopDAO;
+import logic.entities.dao.ShopDAO;
 
 public class ViewMyShopsController 
 {

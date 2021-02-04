@@ -1,16 +1,48 @@
 
-0logic.beans.ShopBean#getName()Ljava/lang/String;Q
-GC:/Users/loren/git/ISPW-Project/SkateSpot/src/logic/beans/ShopBean.java% %("1*à
-1Q
-GC:/Users/loren/git/ISPW-Project/SkateSpot/src/logic/beans/ShopBean.java'	 '(˜
-•
-Q
-GC:/Users/loren/git/ISPW-Project/SkateSpot/src/logic/beans/ShopBean.java'	 '(
-%0java.lang.String"__id*"* 
-logic.beans.ShopBean"
-name"m
-Q
-GC:/Users/loren/git/ISPW-Project/SkateSpot/src/logic/beans/ShopBean.java' '(
-
-%0java.lang.StringB
-logic.beans.ShopBean
+^logic.controllers.ViewMyShopsController#getInstance()Llogic/controllers/ViewMyShopsController;d
+ZC:/Users/loren/git/ISPW-Project/SkateSpot/src/logic/controllers/ViewMyShopsController.java% (0"3*ä
+2d
+ZC:/Users/loren/git/ISPW-Project/SkateSpot/src/logic/controllers/ViewMyShopsController.java ()Á¾
+d
+ZC:/Users/loren/git/ISPW-Project/SkateSpot/src/logic/controllers/ViewMyShopsController.java ('-
+%1'logic.controllers.ViewMyShopsController"'logic.controllers.ViewMyShopsControllerÓ
+Ð
+d
+ZC:/Users/loren/git/ISPW-Project/SkateSpot/src/logic/controllers/ViewMyShopsController.java ()
+%2"1logic.controllers.ViewMyShopsController#<init>()V*/
+-
+%1'logic.controllers.ViewMyShopsControllerÙ
+Ö
+d
+ZC:/Users/loren/git/ISPW-Project/SkateSpot/src/logic/controllers/ViewMyShopsController.java ()7)
+'logic.controllers.ViewMyShopsController"
+
+instance"__id*/
+-
+%1'logic.controllers.ViewMyShopsController*
+1*Í
+3d
+ZC:/Users/loren/git/ISPW-Project/SkateSpot/src/logic/controllers/ViewMyShopsController.java (Ù
+Ö
+d
+ZC:/Users/loren/git/ISPW-Project/SkateSpot/src/logic/controllers/ViewMyShopsController.java (-
+%0'logic.controllers.ViewMyShopsController"__id*9*7)
+'logic.controllers.ViewMyShopsController"
+
+instance*
+2
+1*ß
+1d
+ZC:/Users/loren/git/ISPW-Project/SkateSpot/src/logic/controllers/ViewMyShopsController.java	 (Ù
+Ö
+d
+ZC:/Users/loren/git/ISPW-Project/SkateSpot/src/logic/controllers/ViewMyShopsController.java	 (-
+%3'logic.controllers.ViewMyShopsController"__id*9*7)
+'logic.controllers.ViewMyShopsController"
+
+instance"—
+d
+ZC:/Users/loren/git/ISPW-Project/SkateSpot/src/logic/controllers/ViewMyShopsController.java (/
+-
+%3'logic.controllers.ViewMyShopsControllerB+")
+'logic.controllers.ViewMyShopsController

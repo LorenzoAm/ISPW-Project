@@ -1,7 +1,7 @@
 package logic.controllers;
 
 import logic.beans.JoinSpotBean;
-import logic.entities.DAO.UserDAO;
+import logic.entities.dao.UserDAO;
 
 import javax.swing.*;
 
