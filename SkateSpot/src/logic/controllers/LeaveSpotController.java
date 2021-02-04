@@ -2,7 +2,7 @@ package logic.controllers;
 
 import javax.swing.*;
 
-import logic.entities.DAO.UserDAO;
+import logic.entities.dao.UserDAO;
 
 public class LeaveSpotController
 {

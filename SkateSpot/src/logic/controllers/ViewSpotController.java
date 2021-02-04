@@ -1,8 +1,9 @@
 package logic.controllers;
 
 import java.util.ArrayList;
-import logic.entities.DAO.SpotDAO;
+
 import logic.entities.Spot;
+import logic.entities.dao.SpotDAO;
 
 public class ViewSpotController 
 {

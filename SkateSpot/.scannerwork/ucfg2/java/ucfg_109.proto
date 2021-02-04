@@ -1,0 +1,67 @@
+
+,logic.beans.SignUpBean#checkTypeOfAccount()ZU
+IC:/Users/loren/git/ISPW-Project/SkateSpot/src/logic/beans/SignUpBean.javaï ï(#"4*ª
+2U
+IC:/Users/loren/git/ISPW-Project/SkateSpot/src/logic/beans/SignUpBean.javaô ô("_
+U
+IC:/Users/loren/git/ISPW-Project/SkateSpot/src/logic/beans/SignUpBean.javaô ô(
+""*Á
+3U
+IC:/Users/loren/git/ISPW-Project/SkateSpot/src/logic/beans/SignUpBean.javaó% ó(2ß
+§
+U
+IC:/Users/loren/git/ISPW-Project/SkateSpot/src/logic/beans/SignUpBean.javaó% ó(2
+%2java.lang.String"__id*-*+
+logic.beans.SignUpBean"
+typeOfAccountÿ’
+U
+IC:/Users/loren/git/ISPW-Project/SkateSpot/src/logic/beans/SignUpBean.javaó% ó(B
+%3boolean",java.lang.String#equals(Ljava/lang/Object;)Z*
+
+%2java.lang.String*	
+Owner2equals(Ljava/lang/Object;)*
+2
+1*Ë
+4U
+IC:/Users/loren/git/ISPW-Project/SkateSpot/src/logic/beans/SignUpBean.javaó ó(ß
+§
+U
+IC:/Users/loren/git/ISPW-Project/SkateSpot/src/logic/beans/SignUpBean.javaó ó(
+%0java.lang.String"__id*-*+
+logic.beans.SignUpBean"
+typeOfAccountŸ÷
+U
+IC:/Users/loren/git/ISPW-Project/SkateSpot/src/logic/beans/SignUpBean.javaó ó(#
+%1boolean",java.lang.String#equals(Ljava/lang/Object;)Z*
+
+%0java.lang.String*
+
+Skater2equals(Ljava/lang/Object;)*
+2
+3*ô
+1U
+IC:/Users/loren/git/ISPW-Project/SkateSpot/src/logic/beans/SignUpBean.javaù ù(ü
+ú
+U
+IC:/Users/loren/git/ISPW-Project/SkateSpot/src/logic/beans/SignUpBean.javaù ù(
+%4java.lang.String"__id*%*#
+logic.beans.SignUpBean"
+alert©
+¶
+U
+IC:/Users/loren/git/ISPW-Project/SkateSpot/src/logic/beans/SignUpBean.javaù ù(+
+%5"__concat*
+
+%4java.lang.String*#!
+\nType of account not selected.ç
+ä
+U
+IC:/Users/loren/git/ISPW-Project/SkateSpot/src/logic/beans/SignUpBean.javaù ù(+#
+logic.beans.SignUpBean"
+alert"__id*
+
+%5"_
+U
+IC:/Users/loren/git/ISPW-Project/SkateSpot/src/logic/beans/SignUpBean.javaû û(
+""B
+logic.beans.SignUpBean

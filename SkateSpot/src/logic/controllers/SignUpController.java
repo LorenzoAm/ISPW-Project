@@ -1,7 +1,7 @@
 package logic.controllers;
 
 import logic.beans.SignUpBean;
-import logic.entities.DAO.UserDAO;
+import logic.entities.dao.UserDAO;
 import logic.gui.HomeGuiController;
 import logic.gui.HomeMain;
 

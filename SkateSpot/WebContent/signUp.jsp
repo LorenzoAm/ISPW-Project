@@ -1,10 +1,10 @@
 <%@ page language="java" contentType="text/html; charset=ISO-8859-1"
     pageEncoding="ISO-8859-1"%>
 <!DOCTYPE html>
-<html>
+<html lang="it">
 <head>
 <meta charset="ISO-8859-1">
-<title>SignUp</title>
+<title>Sign Up</title>
 </head>
 <body>
 	<div>
@@ -26,7 +26,7 @@
   			<label >Email: </label>
   			<input type="text" id="email" name="email"><br><br>
   			<label >New password: </label>
-  			<input type="text" id="password" name="password"><br><br>
+  			<input type="password" id="password" name="password"><br><br>
   			<label >Confirm password: </label>
   			<input type="password" id="confirmPassword" name="confirmPassword"><br><br>
   			<label >Date of birth: </label>
