@@ -1,0 +1,10 @@
+SMAP
+addSpot_jsp.java
+JSP
+*S JSP
+*F
++ 0 addSpot.jsp
+WebContent/addSpot.jsp
+*L
+2,43:116,0
+*E
