@@ -124,6 +124,9 @@ public class HomeGuiController
                         HomeMain.getStage().close();
                     }
                 }
+                default ->{
+                	break;
+                }
             }
     }
 

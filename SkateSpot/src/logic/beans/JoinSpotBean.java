@@ -62,14 +62,14 @@ public class JoinSpotBean
 
     private boolean checkCity()
     {
-        if ( !city.equals("")) 
+        if (city.equals("")) 
         {
-            return true;
+        	alert+="\nThe name of the city wasn't entered.";
+            return false;
         }
         else
         {
-            alert+="\nThe name of the city wasn't entered.";
-            return false;
+            return true;
         }
     }
 

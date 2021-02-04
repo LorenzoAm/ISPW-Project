@@ -24,19 +24,19 @@ public class AddSpotGUIController
     {
         Button button = (Button) mouseEvent.getSource();
         String value = button.getText();
-        switch (value) {
-//home button clicked --> re-open home window
-            case "" -> {
+        if(value.equals(""))//home button clicked --> re-open home window
+         {
                 HomeGuiController.getAddSpotStage().close();
                 HomeMain.getStage().show();
-            }
-            case "Register spot" -> {
+         }
+        else
+        {
                 SpotBean bean = new SpotBean(name.getText(), street.getText(), number.getText(), city.getText(), municipality.getText(), area.getText());//costruttore
                 bean.control(type.getText(), description.getText());//finisce di passare i dati necessari (sonalCloud non accetta pi� di 7 parametri per costruttore)
                 if (bean.check()) {
                     AddSpotController.getInstance().createSpot(bean);
                 }
-            }
-        }
+         }
+        
     }
 }

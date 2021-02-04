@@ -64,6 +64,8 @@ public class PremiumAreaGuiController
                     HomeGuiController.getPremiumAreaStage().close();
                 }
                 break;
+             default: 
+            	 break;
         }
     }
     

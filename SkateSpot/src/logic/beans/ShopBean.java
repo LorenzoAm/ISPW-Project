@@ -5,14 +5,14 @@ import javax.swing.JOptionPane;
 
 public class ShopBean 
 {
-	private String name;
-	private String city;
-	private String partitaIVA;
-	private String municipality;
-	private String area;
-	private String description;
-	private String street;
-	private String number;
+	private String name="";
+	private String city="";
+	private String partitaIVA="";
+	private String municipality="";
+	private String area="";
+	private String description="";
+	private String street="";
+	private String number="";
 	private String alert;
 
 	public ShopBean(String name,String city,String partitaIVA,String municipality,String area,String description)
@@ -32,7 +32,15 @@ public class ShopBean
 
 	public void setName(String name)
 	{
-		this.name=name;
+		if ( !name.equals("")) 
+		{ 
+			this.name=name;
+		}
+		else
+		{
+			alert+="\nThe name of the shop wasn't entered.";
+		}
+		
 	}
 	public String getName()
 	{
@@ -40,7 +48,14 @@ public class ShopBean
 	}
 	public void setCity(String city)
 	{
-		this.city=city;
+		if ( !city.equals("")) 
+		{ 
+			this.city=city;
+		}
+		else
+		{
+			alert+="\nThe name of the city wasn't entered.";
+		}		
 	}
 	public String getCity()
 	{
@@ -48,7 +63,14 @@ public class ShopBean
 	}
 	public void setPartitaIVA(String partitaIVA)
 	{
-		this.partitaIVA=partitaIVA;
+		if ( !(partitaIVA.equals("")) && (partitaIVA.matches("^[0-9]*$")) && (partitaIVA.length()== 11))
+		{ 
+			this.partitaIVA=partitaIVA;
+		}
+		else
+		{
+			alert+="\nThe VAT number isn't correct.";
+		}		
 	}
 	public String getPartitaIVA()
 	{
@@ -56,7 +78,14 @@ public class ShopBean
 	}
 	public void setMunicipality(String municipality)
 	{
-		this.municipality=municipality;
+		if ( !municipality.equals("")) 
+		{ 
+			this.municipality=municipality;
+		}
+		else
+		{
+			alert+="\nThe municipality wasn't entered.";
+		}		
 	}
 	public String getMunicipality()
 	{
@@ -64,7 +93,14 @@ public class ShopBean
 	}
 	public void setArea(String area)
 	{
-		this.area=area;
+		if ( !area.equals("")) 
+		{ 
+			this.area=area;
+		}
+		else
+		{
+			alert+="\nThe area wasn't entered.";
+		}		
 	}
 	public String getArea()
 	{
@@ -72,7 +108,15 @@ public class ShopBean
 	}
 	public void setDescription(String description)
 	{
-		this.description=description;
+		if ( !description.equals("")) 
+		{ 
+			this.description=description;
+		}
+		else
+		{
+			alert+="\nThe description wasn't entered.";
+		}
+		
 	}
 	public String getDescription()
 	{
@@ -80,7 +124,15 @@ public class ShopBean
 	}
 	public void setStreet(String street)
 	{
-		this.street=street;
+		if ( !street.equals("")) 
+		{ 
+			this.street=street;
+		}
+		else
+		{
+			alert+="\nThe street wasn't entered.";
+		}
+		
 	}
 	public String getStreet()
 	{
@@ -88,7 +140,15 @@ public class ShopBean
 	}
 	public void setNumber(String number)
 	{
-		this.number=number;
+		if ( !(number.equals("")) && (number.matches("^[0-9]*$"))) 
+		{ 
+			this.number=number;
+		}
+		else
+		{
+			alert+="\nThe number wasn't correct.";
+		}
+		
 	}
 	public String getNumber()
 	{
@@ -97,7 +157,7 @@ public class ShopBean
 	
 	public boolean check()
 	{
-		if(checkName()&&checkCity()&&checkPartitaIVA()&&checkMunicipality()&&checkArea()&&checkDescription()&&checkStreet()&&checkNumber())
+		if(!name.equals("")&&!city.equals("")&&!partitaIVA.equals("")&&!municipality.equals("")&&!area.equals("")&&!description.equals("")&&!street.equals("")&&!number.equals(""))
 		{
 			JOptionPane.showMessageDialog(null, "data entered correctly.");
 			return true;
@@ -109,102 +169,4 @@ public class ShopBean
 		}
 		
 	}
-	
-	private boolean checkName()
-	{
-		if ( !name.equals("")) 
-		{ 
-		       return true;
-		}
-		else
-		{
-			alert+="\nThe name of the shop wasn't entered.";
-			return false;
-		}
-	}
-	private boolean checkCity()
-	{
-		if ( !city.equals("")) 
-		{ 
-		       return true;
-		}
-		else
-		{
-			alert+="\nThe name of the city wasn't entered.";
-			return false;
-		}
-	}
-	private boolean checkPartitaIVA()
-	{
-		if ( !(partitaIVA.equals("")) && (partitaIVA.matches("^[0-9]*$")) && (partitaIVA.length()== 11))
-		{ 
-		       return true;
-		}
-		else
-		{
-			alert+="\nThe VAT number isn't correct.";
-			return false;
-		}
-	}
-	private boolean checkMunicipality()
-	{
-		if ( !municipality.equals("")) 
-		{ 
-		       return true;
-		}
-		else
-		{
-			alert+="\nThe municipality wasn't entered.";
-			return false;
-		}
-	}
-	private boolean checkArea()
-	{
-		if ( !area.equals("")) 
-		{ 
-		       return true;
-		}
-		else
-		{
-			alert+="\nThe area wasn't entered.";
-			return false;
-		}
-	}
-	private boolean checkDescription()
-	{
-		if ( !description.equals("")) 
-		{ 
-		       return true;
-		}
-		else
-		{
-			alert+="\nThe description wasn't entered.";
-			return false;
-		}
-	}
-	private boolean checkStreet()
-	{
-		if ( !street.equals("")) 
-		{ 
-		       return true;
-		}
-		else
-		{
-			alert+="\nThe street wasn't entered.";
-			return false;
-		}
-	}
-	private boolean checkNumber()
-	{
-		if ( !(number.equals("")) && (number.matches("^[0-9]*$"))) 
-		{ 
-		       return true;
-		}
-		else
-		{
-			alert+="\nThe number wasn't correct.";
-			return false;
-		}
-	}
-	
 }

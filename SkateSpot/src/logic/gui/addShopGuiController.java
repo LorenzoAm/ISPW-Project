@@ -24,19 +24,18 @@ public class addShopGuiController
     {
         Button button = (Button) mouseEvent.getSource();
         String value = button.getText();
-		switch (value) {
-//home button clicked --> re-open home window
-			case "" -> {
+		if(value.equals(""))//home button clicked --> re-open home window
+		{
 				PremiumAreaGuiController.getAddShopStage().close();
 				HomeGuiController.getPremiumAreaStage().show();
-			}
-			case "Register shop" -> {
+		}
+		else
+		{
 				ShopBean bean = new ShopBean(name.getText(), city.getText(), partitaIVA.getText(), municipality.getText(), area.getText(), description.getText());//costrutttore
 				bean.control(street.getText(), number.getText());//finisce di passare i dati necesari (sonalCloud non accetta pi� di 7 parametri per costruttore)
 				if (bean.check()) {
 					AddShopController.getInstance().createShop(bean);
 				}
-			}
 		}
     }
 }

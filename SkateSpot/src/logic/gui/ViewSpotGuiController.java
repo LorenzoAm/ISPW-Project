@@ -47,6 +47,8 @@ public class ViewSpotGuiController
             case "PREVIOUS":
             	previousSpot();
             	break;
+            default:
+            	break;
         } 
     }
 	public void nextSpot()

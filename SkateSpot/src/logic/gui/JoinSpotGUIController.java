@@ -19,21 +19,20 @@ public class JoinSpotGUIController
     {
         Button button = (Button) mouseEvent.getSource();
         String value = button.getText();
-        switch (value) {
+        if(value.equals("")) {
 //home button clicked --> re-open home window
-            case "" -> {
                 HomeGuiController.getJoinSpotStage().close();
                 HomeMain.getStage().show();
-            }
+        }
 //login button clicked --> create beans class
-            case "Join Spot" -> {
+        else
+        {
                 JoinSpotBean bean = new JoinSpotBean(street.getText(), number.getText(), city.getText());
                 if (bean.check()) {
                     JoinSpotController.getInstance().joinSpot(bean); //richiamiamo login sull'istanza singleton passando i dati verificati dalla bean
                     HomeGuiController.getJoinSpotStage().close();
                     HomeMain.getStage().show();
                 }
-            }
         }
     }
 }

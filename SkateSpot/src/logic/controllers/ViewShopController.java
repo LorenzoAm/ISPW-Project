@@ -9,8 +9,6 @@ public class ViewShopController
 {
 	private static ViewShopController instance;
 	
-	private ViewShopController() {};
-	
 	public static ViewShopController getInstance()
 	{
 		if(instance == null)

@@ -9,8 +9,6 @@ public class ViewMyShopsController
 {
 private static ViewMyShopsController instance;
 	
-	private ViewMyShopsController() {};
-	
 	public static ViewMyShopsController getInstance()
 	{
 		if(instance == null)

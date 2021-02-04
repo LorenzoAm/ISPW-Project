@@ -44,6 +44,8 @@ public class ViewMyShopsGuiController
             case "PREVIOUS":
             	previousShop();
             	break;
+            default:
+            	break;
         } 
     }
 	public void nextShop()

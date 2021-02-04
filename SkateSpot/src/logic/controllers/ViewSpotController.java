@@ -8,8 +8,6 @@ public class ViewSpotController
 {
 	private static ViewSpotController instance;
 	
-	private ViewSpotController() {};
-	
 	public static ViewSpotController getInstance()
 	{
 		if(instance == null)

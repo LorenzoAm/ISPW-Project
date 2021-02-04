@@ -21,19 +21,18 @@ public class LoginGuiController
     {
         Button button = (Button) mouseEvent.getSource();
         String value = button.getText();
-        switch (value) {
-//home button clicked --> re-open home window
-            case "" -> {
+        if(value.equals(""))//home button clicked --> re-open home window
+        {
                 HomeGuiController.getLoginStage().close();
                 HomeMain.getStage().show();
-            }
+        }
 //login button clicked --> create beans class
-            case "Sign in" -> {
+        else
+        {
                 LoginBean bean = new LoginBean(email.getText(), password.getText());
                 if (bean.check()) {
                     LoginController.getInstance().login(bean); //richiamiamo login sull'istanza singleton passando i dati verificati dalla bean
                 }
-            }
         }
     }
 }
