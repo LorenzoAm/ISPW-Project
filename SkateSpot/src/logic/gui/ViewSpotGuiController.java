@@ -68,17 +68,7 @@ public class ViewSpotGuiController
 			{
 				i=spots.size()-1;
 			}
-			nome.setText(spots.get(i).getNome());
-			numero.setText(String.valueOf(spots.get(i).getNumeroDiSkater()));
-			indirizzo.setText(spots.get(i).getIndirizzo());
-			zona.setText(spots.get(i).getZona());
-			comune.setText(spots.get(i).getComune());
-			tipo.setText(spots.get(i).getTipo());
-			username.setText(spots.get(i).getUsername());
-			sdf=new SimpleDateFormat();
-			data.setText(sdf.format(spots.get(i).getData()));
-			descrizione.setText(spots.get(i).getDescrizione());
-			descrizione.setWrapText(true);
+			this.setLabels();
 		}
 		i++;
 	}
@@ -99,18 +89,23 @@ public class ViewSpotGuiController
 			{
 				i=spots.size()-1;
 			}
-			nome.setText(spots.get(i).getNome());
-			numero.setText(String.valueOf(spots.get(i).getNumeroDiSkater()));
-			indirizzo.setText(spots.get(i).getIndirizzo());
-			zona.setText(spots.get(i).getZona());
-			comune.setText(spots.get(i).getComune());
-			tipo.setText(spots.get(i).getTipo());
-			username.setText(spots.get(i).getUsername());
-			sdf=new SimpleDateFormat();
-			data.setText(sdf.format(spots.get(i).getData()));
-			descrizione.setText(spots.get(i).getDescrizione());
-			descrizione.setWrapText(true);
+			this.setLabels();
 		}
 		i--;
+	}
+	
+	public void setLabels()
+	{
+		nome.setText(spots.get(i).getNome());
+		numero.setText(String.valueOf(spots.get(i).getNumeroDiSkater()));
+		indirizzo.setText(spots.get(i).getIndirizzo());
+		zona.setText(spots.get(i).getZona());
+		comune.setText(spots.get(i).getComune());
+		tipo.setText(spots.get(i).getTipo());
+		username.setText(spots.get(i).getUsername());
+		sdf=new SimpleDateFormat();
+		data.setText(sdf.format(spots.get(i).getData()));
+		descrizione.setText(spots.get(i).getDescrizione());
+		descrizione.setWrapText(true);
 	}
 }

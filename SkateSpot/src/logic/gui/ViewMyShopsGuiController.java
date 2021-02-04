@@ -65,15 +65,7 @@ public class ViewMyShopsGuiController
 			{
 				i=shops.size()-1;
 			}
-			nome.setText(shops.get(i).getNome());
-			indirizzo.setText(shops.get(i).getIndirizzo());
-			zona.setText(shops.get(i).getZona());
-			comune.setText(shops.get(i).getComune());
-			username.setText(shops.get(i).getUsername());
-			sdf=new SimpleDateFormat();
-			data.setText(sdf.format(shops.get(i).getData()));
-			descrizione.setText(shops.get(i).getDescrizione());
-			descrizione.setWrapText(true);
+			this.setLabels();
 		}
 		i++;
 	}
@@ -94,17 +86,21 @@ public class ViewMyShopsGuiController
 			{
 				i=shops.size()-1;
 			}
-			nome.setText(shops.get(i).getNome());
-			indirizzo.setText(shops.get(i).getIndirizzo());
-			zona.setText(shops.get(i).getZona());
-			comune.setText(shops.get(i).getComune());
-			username.setText(shops.get(i).getUsername());
-			sdf=new SimpleDateFormat();
-			data.setText(sdf.format(shops.get(i).getData()));
-			descrizione.setText(shops.get(i).getDescrizione());
-			descrizione.setWrapText(true);
+			this.setLabels();
 		}
 		i--;
+	}
+	public void setLabels()
+	{
+		nome.setText(shops.get(i).getNome());
+		indirizzo.setText(shops.get(i).getIndirizzo());
+		zona.setText(shops.get(i).getZona());
+		comune.setText(shops.get(i).getComune());
+		username.setText(shops.get(i).getUsername());
+		sdf=new SimpleDateFormat();
+		data.setText(sdf.format(shops.get(i).getData()));
+		descrizione.setText(shops.get(i).getDescrizione());
+		descrizione.setWrapText(true);
 	}
 
 }
