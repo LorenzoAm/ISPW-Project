@@ -3,6 +3,7 @@ package logic.controllers;
 import logic.beans.SpotBean;
 import logic.entities.dao.SpotDAO;
 import logic.entities.dao.UserDAO;
+import logic.exception.ExistingSpotException;
 
 import java.time.LocalDate;
 
@@ -19,7 +20,7 @@ public class AddSpotController
         return instance;
     }
 
-    public void createSpot(SpotBean bean)
+    public void createSpot(SpotBean bean) throws ExistingSpotException
     {
         Integer code = UserDAO.findCodeUser(UserContainer.getInstance().getEmail(),UserContainer.getInstance().getPassword());
         LocalDate date = LocalDate.now();

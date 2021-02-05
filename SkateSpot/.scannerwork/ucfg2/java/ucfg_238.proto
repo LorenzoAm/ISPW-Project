@@ -1,74 +1,74 @@
 
-_org.apache.jsp.WebContent.viewSpots_jsp#_jsp_getExpressionFactory()Ljavax/el/ExpressionFactory;q
-gC:\Users\loren\git\ISPW-Project\SkateSpot\.scannerwork\jsp\org\apache\jsp\WebContent\viewSpots_jsp.java3$ 3(="5*…
-2q
-gC:\Users\loren\git\ISPW-Project\SkateSpot\.scannerwork\jsp\org\apache\jsp\WebContent\viewSpots_jsp.java7" 7(.®
-•
-q
-gC:\Users\loren\git\ISPW-Project\SkateSpot\.scannerwork\jsp\org\apache\jsp\WebContent\viewSpots_jsp.java7" 7(."
+\org.apache.jsp.WebContent.signUp_jsp#_jsp_getExpressionFactory()Ljavax/el/ExpressionFactory;n
+dC:\Users\loren\git\ISPW-Project\SkateSpot\.scannerwork\jsp\org\apache\jsp\WebContent\signUp_jsp.java7$ 7(="5*Æ
+2n
+dC:\Users\loren\git\ISPW-Project\SkateSpot\.scannerwork\jsp\org\apache\jsp\WebContent\signUp_jsp.java;" ;(.•
+¢
+n
+dC:\Users\loren\git\ISPW-Project\SkateSpot\.scannerwork\jsp\org\apache\jsp\WebContent\signUp_jsp.java;" ;(."
 %2javax.servlet.jsp.JspFactory"__id*
-""°û
-q
-gC:\Users\loren\git\ISPW-Project\SkateSpot\.scannerwork\jsp\org\apache\jsp\WebContent\viewSpots_jsp.java7H 7(Z!
-%3javax.servlet.ServletConfig"Ejavax.servlet.Servlet#getServletConfig()Ljavax/servlet/ServletConfig;*+)
-'org.apache.jsp.WebContent.viewSpots_jsp2getServletConfig()£†
-q
-gC:\Users\loren\git\ISPW-Project\SkateSpot\.scannerwork\jsp\org\apache\jsp\WebContent\viewSpots_jsp.java7H 7(n"
+""õò
+n
+dC:\Users\loren\git\ISPW-Project\SkateSpot\.scannerwork\jsp\org\apache\jsp\WebContent\signUp_jsp.java;H ;(Z!
+%3javax.servlet.ServletConfig"Ejavax.servlet.Servlet#getServletConfig()Ljavax/servlet/ServletConfig;*(&
+$org.apache.jsp.WebContent.signUp_jsp2getServletConfig()†ù
+n
+dC:\Users\loren\git\ISPW-Project\SkateSpot\.scannerwork\jsp\org\apache\jsp\WebContent\signUp_jsp.java;H ;(n"
 %4javax.servlet.ServletContext"Mjavax.servlet.ServletConfig#getServletContext()Ljavax/servlet/ServletContext;*#
 !
-%3javax.servlet.ServletConfig2getServletContext()´®
-q
-gC:\Users\loren\git\ISPW-Project\SkateSpot\.scannerwork\jsp\org\apache\jsp\WebContent\viewSpots_jsp.java7" 7(o-
+%3javax.servlet.ServletConfig2getServletContext()®•
+n
+dC:\Users\loren\git\ISPW-Project\SkateSpot\.scannerwork\jsp\org\apache\jsp\WebContent\signUp_jsp.java;" ;(o-
 %5'javax.servlet.jsp.JspApplicationContext"~javax.servlet.jsp.JspFactory#getJspApplicationContext(Ljavax/servlet/ServletContext;)Ljavax/servlet/jsp/JspApplicationContext;*$
 "
 %2javax.servlet.jsp.JspFactory*$
 "
-%4javax.servlet.ServletContext28getJspApplicationContext(Ljavax/servlet/ServletContext;)æª
-r
-gC:\Users\loren\git\ISPW-Project\SkateSpot\.scannerwork\jsp\org\apache\jsp\WebContent\viewSpots_jsp.java7" 7(Ü 
+%4javax.servlet.ServletContext28getJspApplicationContext(Ljavax/servlet/ServletContext;)ª∏
+o
+dC:\Users\loren\git\ISPW-Project\SkateSpot\.scannerwork\jsp\org\apache\jsp\WebContent\signUp_jsp.java;" ;(Ü 
 %6javax.el.ExpressionFactory"Zjavax.servlet.jsp.JspApplicationContext#getExpressionFactory()Ljavax/el/ExpressionFactory;*/
 -
-%5'javax.servlet.jsp.JspApplicationContext2getExpressionFactory()Á
-‰
-r
-gC:\Users\loren\git\ISPW-Project\SkateSpot\.scannerwork\jsp\org\apache\jsp\WebContent\viewSpots_jsp.java7
- 7(ÜD)
-'org.apache.jsp.WebContent.viewSpots_jsp"
+%5'javax.servlet.jsp.JspApplicationContext2getExpressionFactory()·
+ﬁ
+o
+dC:\Users\loren\git\ISPW-Project\SkateSpot\.scannerwork\jsp\org\apache\jsp\WebContent\signUp_jsp.java;
+ ;(ÜA&
+$org.apache.jsp.WebContent.signUp_jsp"
 _el_expressionfactory"__id*"
  
 %6javax.el.ExpressionFactory*
-1*Á
-3q
-gC:\Users\loren\git\ISPW-Project\SkateSpot\.scannerwork\jsp\org\apache\jsp\WebContent\viewSpots_jsp.java6 6(!Ê
-„
-q
-gC:\Users\loren\git\ISPW-Project\SkateSpot\.scannerwork\jsp\org\apache\jsp\WebContent\viewSpots_jsp.java6 6(! 
-%1javax.el.ExpressionFactory"__id*F*D)
-'org.apache.jsp.WebContent.viewSpots_jsp"
+1*ﬁ
+3n
+dC:\Users\loren\git\ISPW-Project\SkateSpot\.scannerwork\jsp\org\apache\jsp\WebContent\signUp_jsp.java: :(!‡
+›
+n
+dC:\Users\loren\git\ISPW-Project\SkateSpot\.scannerwork\jsp\org\apache\jsp\WebContent\signUp_jsp.java: :(! 
+%1javax.el.ExpressionFactory"__id*C*A&
+$org.apache.jsp.WebContent.signUp_jsp"
 _el_expressionfactory*
 2
-1*Á
-5q
-gC:\Users\loren\git\ISPW-Project\SkateSpot\.scannerwork\jsp\org\apache\jsp\WebContent\viewSpots_jsp.java4 4(Ê
-„
-q
-gC:\Users\loren\git\ISPW-Project\SkateSpot\.scannerwork\jsp\org\apache\jsp\WebContent\viewSpots_jsp.java4 4( 
-%0javax.el.ExpressionFactory"__id*F*D)
-'org.apache.jsp.WebContent.viewSpots_jsp"
+1*ﬁ
+5n
+dC:\Users\loren\git\ISPW-Project\SkateSpot\.scannerwork\jsp\org\apache\jsp\WebContent\signUp_jsp.java8 8(‡
+›
+n
+dC:\Users\loren\git\ISPW-Project\SkateSpot\.scannerwork\jsp\org\apache\jsp\WebContent\signUp_jsp.java8 8( 
+%0javax.el.ExpressionFactory"__id*C*A&
+$org.apache.jsp.WebContent.signUp_jsp"
 _el_expressionfactory*
 3
-1*˘
-1q
-gC:\Users\loren\git\ISPW-Project\SkateSpot\.scannerwork\jsp\org\apache\jsp\WebContent\viewSpots_jsp.java; ;( Ê
-„
-q
-gC:\Users\loren\git\ISPW-Project\SkateSpot\.scannerwork\jsp\org\apache\jsp\WebContent\viewSpots_jsp.java; ;(  
-%7javax.el.ExpressionFactory"__id*F*D)
-'org.apache.jsp.WebContent.viewSpots_jsp"
-_el_expressionfactory"ó
-q
-gC:\Users\loren\git\ISPW-Project\SkateSpot\.scannerwork\jsp\org\apache\jsp\WebContent\viewSpots_jsp.java; ;(!"
+1*Ì
+1n
+dC:\Users\loren\git\ISPW-Project\SkateSpot\.scannerwork\jsp\org\apache\jsp\WebContent\signUp_jsp.java? ?( ‡
+›
+n
+dC:\Users\loren\git\ISPW-Project\SkateSpot\.scannerwork\jsp\org\apache\jsp\WebContent\signUp_jsp.java? ?(  
+%7javax.el.ExpressionFactory"__id*C*A&
+$org.apache.jsp.WebContent.signUp_jsp"
+_el_expressionfactory"î
+n
+dC:\Users\loren\git\ISPW-Project\SkateSpot\.scannerwork\jsp\org\apache\jsp\WebContent\signUp_jsp.java? ?(!"
  
 %7javax.el.ExpressionFactory:
-%jsp_contextB+)
-'org.apache.jsp.WebContent.viewSpots_jsp
+%jsp_contextB(&
+$org.apache.jsp.WebContent.signUp_jsp

@@ -5,6 +5,7 @@ import java.time.LocalDate;
 import java.util.ArrayList;
 import logic.controllers.UserContainer;
 import logic.entities.Shop;
+import logic.exception.ExistingShopException;
 
 public class ShopDAO
 {
@@ -14,11 +15,10 @@ public class ShopDAO
 
 
     private ShopDAO( ) {}
-    public static void createShop(String partitaIVA, String name, String description, String city, String street, String number, String municipality, String area, Integer code, LocalDate date)
+    public static void createShop(String partitaIVA, String name, String description, String city, String street, String number, String municipality, String area, Integer code, LocalDate date) throws ExistingShopException
 	{
     	Connection connection = null; //interface
         Statement statement = null;
-        int retFromQuery;
         try
         {
 
@@ -36,23 +36,13 @@ public class ShopDAO
             {
                 //Inserisco dati nel db
             	query = "INSERT INTO shop (PartitaIVA,Nome,Descrizione,Citta,Via,Civico,Comune,Zona,CodiceProprietario,DataInserimento) VALUES ('"+partitaIVA+"','"+name+"','"+description+"','"+city+"','"+street+"','"+streetNumber+"','"+municipality+"','"+area+"','"+code+"','"+date+"');";
-            	retFromQuery = statement.executeUpdate(query);
-            	/*if (retFromQuery==2) //la query non ha prodotto risultati
-                {
-            		JOptionPane.showMessageDialog(null," OPS! Something went wrong."," ERROR",JOptionPane.ERROR_MESSAGE);
-                }
-            	else
-            	{
-            		JOptionPane.showMessageDialog(null," Your data has been saved into db!","INFORMATION", JOptionPane.INFORMATION_MESSAGE);
-            	}*/
+            	statement.executeUpdate(query);
             	
             }
-           /* else
+            else
             {
-                //Messagio Errore
-            	JOptionPane.showMessageDialog(null," The shop already exists ! "," ERROR",JOptionPane.ERROR_MESSAGE);
-
-            }*/	
+                throw new ExistingShopException();
+            }
 
             //chiudiamo il result set generato dalla query
             rs.close();

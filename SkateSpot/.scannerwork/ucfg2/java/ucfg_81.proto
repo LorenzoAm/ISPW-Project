@@ -1,16 +1,16 @@
 
-2logic.beans.SignUpBean#getName()Ljava/lang/String;S
-IC:/Users/loren/git/ISPW-Project/SkateSpot/src/logic/beans/SignUpBean.java/ /("1*è
-1S
-IC:/Users/loren/git/ISPW-Project/SkateSpot/src/logic/beans/SignUpBean.java1	 1(œ
-™
-S
-IC:/Users/loren/git/ISPW-Project/SkateSpot/src/logic/beans/SignUpBean.java1	 1(
-%0java.lang.String"__id*$*"
-logic.beans.SignUpBean"
-name"o
-S
-IC:/Users/loren/git/ISPW-Project/SkateSpot/src/logic/beans/SignUpBean.java1 1(
-
-%0java.lang.StringB
-logic.beans.SignUpBean
+-logic.entities.Shop#getData()Ljava/util/Date;P
+FC:/Users/loren/git/ISPW-Project/SkateSpot/src/logic/entities/Shop.javaj j("1*Ø
+1P
+FC:/Users/loren/git/ISPW-Project/SkateSpot/src/logic/entities/Shop.javal l(”
+‘
+P
+FC:/Users/loren/git/ISPW-Project/SkateSpot/src/logic/entities/Shop.javal l(
+%0java.util.Date"__id*!*
+logic.entities.Shop"
+data"j
+P
+FC:/Users/loren/git/ISPW-Project/SkateSpot/src/logic/entities/Shop.javal l(
+
+%0java.util.DateB
+logic.entities.Shop

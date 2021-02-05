@@ -9,6 +9,8 @@ import javafx.scene.input.MouseEvent;
 import logic.beans.JoinSpotBean;
 import logic.controllers.JoinSpotController;
 import logic.controllers.UserContainer;
+import logic.exception.FullSpotException;
+import logic.exception.SpotNotFoundException;
 
 
 public class JoinSpotGUIController
@@ -23,20 +25,30 @@ public class JoinSpotGUIController
         Button button = (Button) mouseEvent.getSource();
         String value = button.getText();
         if(value.equals("")) {
-//home button clicked --> re-open home window
+        						//home button clicked --> re-open home window
                 HomeGuiController.getJoinSpotStage().close();
                 HomeMain.getStage().show();
         }
-//login button clicked --> create beans class
+        							//login button clicked --> create beans class
         else
         {
                 JoinSpotBean bean = new JoinSpotBean(street.getText(), number.getText(), city.getText());
-                if (bean.check()) {
+                if (bean.check()) 
+                {
+                	try {
                     JoinSpotController.getInstance().joinSpot(bean); //richiamiamo login sull'istanza singleton passando i dati verificati dalla bean
                     if(UserContainer.getInstance().getSpot()!=null)
                     	JOptionPane.showMessageDialog(null," You've joined "+UserContainer.getInstance().getSpot().getNome()+", enjoy your session!","INFORMATION",JOptionPane.INFORMATION_MESSAGE);
-                    HomeGuiController.getJoinSpotStage().close();
-                    HomeMain.getStage().show();
+                	}
+                	catch(FullSpotException | SpotNotFoundException e)
+                	{
+                		e.printStackTrace();
+                	}
+                    finally
+                    {
+                    	HomeGuiController.getJoinSpotStage().close();
+                    	HomeMain.getStage().show();
+                    }
                 }
         }
     }

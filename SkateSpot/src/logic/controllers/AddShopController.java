@@ -3,6 +3,8 @@ package logic.controllers;
 import logic.beans.ShopBean;
 import logic.entities.dao.ShopDAO;
 import logic.entities.dao.UserDAO;
+import logic.exception.ExistingShopException;
+
 import java.time.LocalDate;
 
 
@@ -18,7 +20,7 @@ public class AddShopController
            instance = new AddShopController();
        return instance;
     }
-	public void createShop(ShopBean bean)
+	public void createShop(ShopBean bean) throws ExistingShopException
 	{
 		Integer code = UserDAO.findCodeUser(UserContainer.getInstance().getEmail(),UserContainer.getInstance().getPassword());  //estraiamo il codice dell'utente loggato dal DB in base alle sue credenziali
 		LocalDate date = LocalDate.now();

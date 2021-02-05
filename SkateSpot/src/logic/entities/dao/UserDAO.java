@@ -3,6 +3,10 @@ package logic.entities.dao;
 import logic.controllers.UserContainer;
 import logic.entities.Spot;
 import logic.entities.User;
+import logic.exception.ExistingEmailException;
+import logic.exception.FullSpotException;
+import logic.exception.SpotNotFoundException;
+
 import java.sql.*;
 import java.time.LocalDate;
 
@@ -13,6 +17,8 @@ public class UserDAO
     private static final String USER = "root";
     private static final String PSW = "PASSWORD";
     private static final String URL = "jdbc:mysql://localhost:3306/skate_spot";
+    
+    private UserDAO() {}
 
     public static User findUser(String email,String password)  //metodo utilizzato per il login
     {
@@ -78,11 +84,10 @@ public class UserDAO
     }
 
     // metodo utilizzato per il sign up
-    public static void createUser(String name,String surname,String username,String email,String password,LocalDate data,String gender,String typeOfAccount)
+    public static void createUser(String name,String surname,String username,String email,String password,LocalDate data,String gender,String typeOfAccount) throws ExistingEmailException
 	{
     	Connection connection = null; //interface
         Statement statement = null;
-        int retFromQuery;
         try
         {
 
@@ -97,23 +102,13 @@ public class UserDAO
             {
                 //Inserisco dati nel db
             	query = "INSERT INTO utente (Email,Username,Password,Nome,Cognome,DataDiNascita,Sesso,Tipo) VALUES ('"+email+"','"+username+"','"+password+"','"+name+"','"+surname+"','"+data+"','"+gender+"','"+typeOfAccount+"');";
-            	retFromQuery = statement.executeUpdate(query);
-            	/*if (retFromQuery==2) //la query non ha prodotto risultati
-                {
-            		JOptionPane.showMessageDialog(null," OPS! Something went wrong."," ERROR",JOptionPane.ERROR_MESSAGE);
-                }
-            	else
-            	{
-            		JOptionPane.showMessageDialog(null," Your data has been saved into db!","WELCOME", JOptionPane.INFORMATION_MESSAGE);
-            	}*/
-            	
+            	statement.executeUpdate(query);
+            		
             }
-            /*else
+            else
             {
-                //Messagio Errore
-            	JOptionPane.showMessageDialog(null," Email already in use!"," ERROR",JOptionPane.ERROR_MESSAGE);
-
-            }*/
+                throw new ExistingEmailException(email);
+            }
 
             //chiudiamo il result set generato dalla query
             rs.close();
@@ -209,7 +204,7 @@ public class UserDAO
     {
         Connection connection = null; //interface
         Statement statement = null;
-        int retFromQuery;
+        int updatedNumber,code;
 
         try
         {
@@ -219,31 +214,16 @@ public class UserDAO
             statement=connection.createStatement(ResultSet.TYPE_SCROLL_INSENSITIVE,ResultSet.CONCUR_READ_ONLY);
             String query = "SELECT S.Codice,S.NumeroDiSkater FROM spot S JOIN utente U ON U.CodiceSpot = S.Codice WHERE U.Email ='"+email+"' AND U.Password = '"+password+"'";
             ResultSet rs = statement.executeQuery(query);
-            if(rs.first())
-            {
-                int updatedNumber = rs.getInt("S.NumeroDiSkater")-1;
-                int code = rs.getInt("S.Codice");
+            updatedNumber = rs.getInt("S.NumeroDiSkater")-1;
+            code = rs.getInt("S.Codice");
 
-                query = "UPDATE utente SET CodiceSpot = NULL WHERE Email = '" + email + "' AND Password = '" + password + "';";
-                retFromQuery = statement.executeUpdate(query);
+            query = "UPDATE utente SET CodiceSpot = NULL WHERE Email = '" + email + "' AND Password = '" + password + "';";
+            statement.executeUpdate(query);
 
-                /*if (retFromQuery == 2) //la query non ha prodotto risultati
-                {
-                    JOptionPane.showMessageDialog(null, " OPS! Something went wrong.", " ERROR", JOptionPane.ERROR_MESSAGE);
-                }*/
-                query = "UPDATE spot SET NumeroDiSkater = '"+updatedNumber+"' WHERE Codice = '"+code+"';";
-                retFromQuery = statement.executeUpdate(query);
+               
+            query = "UPDATE spot SET NumeroDiSkater = '"+updatedNumber+"' WHERE Codice = '"+code+"';";
+            statement.executeUpdate(query);
 
-                /*if (retFromQuery == 2) //la query non ha prodotto risultati
-                {
-                    JOptionPane.showMessageDialog(null, " OPS! Something went wrong.", " ERROR", JOptionPane.ERROR_MESSAGE);
-                }*/
-
-            }
-           /* else
-            {
-                JOptionPane.showMessageDialog(null," The query didn't produce result ","ERROR",JOptionPane.ERROR_MESSAGE);
-            }*/
             rs.close();
         }
         catch(SQLException e)
@@ -275,7 +255,7 @@ public class UserDAO
 
     }
 
-    public static Spot joinSpot(String street, String number, String city)
+    public static Spot joinSpot(String street, String number, String city) throws FullSpotException,SpotNotFoundException
     {
         Connection connection = null; //interface
         Statement statement = null;
@@ -294,7 +274,7 @@ public class UserDAO
             {
                 if(rs.getInt("NumeroDiSkater")<20)
                 {
-                    int retFromQuery;
+                 
                     int codice = rs.getInt("S.Codice");
                     int updatedNumber = rs.getInt("S.NumeroDiSkater")+1;
 
@@ -303,31 +283,23 @@ public class UserDAO
                     spot = new Spot(indirizzo,rs.getString("S.Zona"),rs.getString("S.Nome"),rs.getString("S.Tipo"),rs.getString("S.Comune"),rs.getInt("S.NumeroDiSkater"),rs.getString("S.Descrizione"),rs.getString("U.Username"),rs.getDate("S.DataInserimento"));
 
                     query = "UPDATE spot SET NumeroDiSkater = '"+updatedNumber+"' WHERE Via = '"+rs.getString("S.Via")+"' AND Civico = '"+rs.getInt("S.Civico")+"' AND Citta = '"+rs.getString("S.Citta")+"' ";
-                    retFromQuery = statement.executeUpdate(query);
-
-                    /*if (retFromQuery==2) //la query non ha prodotto risultati
-                    {
-                        JOptionPane.showMessageDialog(null," OPS! Something went wrong."," ERROR",JOptionPane.ERROR_MESSAGE);
-                    }*/
+                    statement.executeUpdate(query);
 
                     query = "UPDATE utente SET CodiceSpot ='"+codice+"' WHERE  Email ='"+UserContainer.getInstance().getEmail()+"' AND Password ='"+UserContainer.getInstance().getPassword()+"' ";
-                    retFromQuery = statement.executeUpdate(query);
+                    statement.executeUpdate(query);
 
-                    /*if (retFromQuery==2) //la query non ha prodotto risultati
-                    {
-                        JOptionPane.showMessageDialog(null," OPS! Something went wrong."," ERROR",JOptionPane.ERROR_MESSAGE);
-                    }*/
 
                 }
-                /*else
+                else
                 {
-                    JOptionPane.showMessageDialog(null," Sorry the spot is full at the moment ","INFORMATION",JOptionPane.INFORMATION_MESSAGE);
-                }*/
+                    throw new FullSpotException(rs.getString("S.Nome"));
+                }
             }
-            /*else
+            else
             {
-                JOptionPane.showMessageDialog(null," The entered location doesn't match with any spot in the DB ","ERROR",JOptionPane.ERROR_MESSAGE);
-            }*/
+            	String indirizzo=street+" "+number+","+city+" ";
+               throw new SpotNotFoundException(indirizzo);
+            }
 
             rs.close();
         }

@@ -1,17 +1,16 @@
 
-Horg.apache.jsp.WebContent.viewMyShops_jsp#getDependants()Ljava/util/Map;s
-iC:\Users\loren\git\ISPW-Project\SkateSpot\.scannerwork\jsp\org\apache\jsp\WebContent\viewMyShops_jsp.java'8 '(E"1*‚
-1s
-iC:\Users\loren\git\ISPW-Project\SkateSpot\.scannerwork\jsp\org\apache\jsp\WebContent\viewMyShops_jsp.java( ((ÿ
-’
-s
-iC:\Users\loren\git\ISPW-Project\SkateSpot\.scannerwork\jsp\org\apache\jsp\WebContent\viewMyShops_jsp.java( ((
-%0java.util.Map"__id*C*A+
-)org.apache.jsp.WebContent.viewMyShops_jsp"
-_jspx_dependants"å
-s
-iC:\Users\loren\git\ISPW-Project\SkateSpot\.scannerwork\jsp\org\apache\jsp\WebContent\viewMyShops_jsp.java( ((
-
-%0java.util.Map:
-%jsp_contextB-+
-)org.apache.jsp.WebContent.viewMyShops_jsp
+2logic.beans.ShopBean#getNumber()Ljava/lang/String;S
+GC:/Users/loren/git/ISPW-Project/SkateSpot/src/logic/beans/ShopBean.javaõ õ("1*Ë
+1S
+GC:/Users/loren/git/ISPW-Project/SkateSpot/src/logic/beans/ShopBean.javaù	 ù(ú
+ô
+S
+GC:/Users/loren/git/ISPW-Project/SkateSpot/src/logic/beans/ShopBean.javaù	 ù(
+%0java.lang.String"__id*$*"
+logic.beans.ShopBean"
+number"o
+S
+GC:/Users/loren/git/ISPW-Project/SkateSpot/src/logic/beans/ShopBean.javaù ù(
+
+%0java.lang.StringB
+logic.beans.ShopBean

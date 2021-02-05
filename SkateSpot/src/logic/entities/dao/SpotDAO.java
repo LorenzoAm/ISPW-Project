@@ -1,6 +1,8 @@
 package logic.entities.dao;
 
 import logic.entities.Spot;
+import logic.exception.ExistingSpotException;
+
 import java.sql.*;
 import java.time.LocalDate;
 import java.util.ArrayList;
@@ -71,11 +73,10 @@ public class SpotDAO
         return spot;
     }
 
-    public static void createSpot(String name, String street, String number, String city, String municipality, String area, String type, String description, Integer code, LocalDate date)
+    public static void createSpot(String name, String street, String number, String city, String municipality, String area, String type, String description, Integer code, LocalDate date) throws ExistingSpotException
     {
         Connection connection = null; //interface
         Statement statement = null;
-        int retFromQuery;
         try
         {
             //apertura della connessione
@@ -92,23 +93,14 @@ public class SpotDAO
             {
                 //Inserisco dati nel db
                 query = "INSERT INTO spot(Via,Civico,Citta,Zona,Nome,Tipo,Comune,NumeroDiSkater,Descrizione,CodiceSkater,DataInserimento) VALUES ('"+street+"','"+streetNumber+"','"+city+"','"+area+"','"+name+"','"+type+"','"+municipality+"','0','"+description+"','"+code+"','"+date+"');";
-                retFromQuery = statement.executeUpdate(query);
-               /* if (retFromQuery==2) //la query non ha prodotto risultati
-                {
-                    JOptionPane.showMessageDialog(null," OPS! Something went wrong."," ERROR",JOptionPane.ERROR_MESSAGE);
-                }
-                else
-                {
-                    JOptionPane.showMessageDialog(null," Your data has been saved into db!","INFORMATION", JOptionPane.INFORMATION_MESSAGE);
-                }*/
+                statement.executeUpdate(query);
 
             }
-            /*else
+            else
             {
-                //Messagio Errore
-                JOptionPane.showMessageDialog(null," The spot already exists ! "," ERROR",JOptionPane.ERROR_MESSAGE);
+                throw new ExistingSpotException();
 
-            }*/
+            }
 
             //chiudiamo il result set generato dalla query
             rs.close();

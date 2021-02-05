@@ -2,6 +2,7 @@ package logic.controllers;
 
 import logic.beans.SignUpBean;
 import logic.entities.dao.UserDAO;
+import logic.exception.ExistingEmailException;
 
 public class SignUpController
 {
@@ -16,7 +17,7 @@ public class SignUpController
        return instance;
     }
 	
-	public void signUp(SignUpBean bean)
+	public void signUp(SignUpBean bean) throws ExistingEmailException
 	{
 		UserDAO.createUser(bean.getName(),bean.getSurname(),bean.getUsername(),bean.getEmail(),bean.getPassword(),bean.getDate(),bean.getGender(),bean.getTypeOfAccount());
 	}

@@ -2,6 +2,8 @@ package logic.controllers;
 
 import logic.beans.JoinSpotBean;
 import logic.entities.dao.UserDAO;
+import logic.exception.FullSpotException;
+import logic.exception.SpotNotFoundException;
 
 
 public class JoinSpotController
@@ -17,7 +19,7 @@ public class JoinSpotController
         return instance;
     }
 
-    public void joinSpot(JoinSpotBean bean)
+    public void joinSpot(JoinSpotBean bean) throws FullSpotException,SpotNotFoundException
     {
         UserContainer.getInstance().setSpot(UserDAO.joinSpot(bean.getStreet(),bean.getNumber(),bean.getCity()));
     }

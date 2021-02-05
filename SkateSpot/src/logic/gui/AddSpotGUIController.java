@@ -8,6 +8,7 @@ import javafx.scene.control.TextField;
 import javafx.scene.input.MouseEvent;
 import logic.beans.SpotBean;
 import logic.controllers.AddSpotController;
+import logic.exception.ExistingSpotException;
 
 public class AddSpotGUIController
 {
@@ -33,10 +34,21 @@ public class AddSpotGUIController
         {
                 SpotBean bean = new SpotBean(name.getText(), street.getText(), number.getText(), city.getText(), municipality.getText(), area.getText());//costruttore
                 bean.control(type.getText(), description.getText());//finisce di passare i dati necessari (sonalCloud non accetta pi� di 7 parametri per costruttore)
-                if (bean.check()) {
-                    AddSpotController.getInstance().createSpot(bean);
-                    HomeGuiController.getAddSpotStage().close();
-                    HomeMain.getStage().show();
+                if (bean.check()) 
+                {
+                	try 
+                	{
+                		AddSpotController.getInstance().createSpot(bean);
+                	}
+                	catch(ExistingSpotException e) 
+                	{
+                		e.printStackTrace();
+                	}
+                	finally
+                	{
+                		HomeGuiController.getAddSpotStage().close();
+                		HomeMain.getStage().show();
+                	}
                 }
          }
         

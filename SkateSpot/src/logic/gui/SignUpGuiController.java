@@ -11,11 +11,12 @@ import javafx.scene.control.ToggleGroup;
 import javafx.scene.input.MouseEvent;
 import logic.beans.SignUpBean;
 import logic.controllers.SignUpController;
+import logic.exception.ExistingEmailException;
 
 
 public class SignUpGuiController
 {
-	//fxml
+	
 	@FXML private TextField name;
 	@FXML private TextField surname;
 	@FXML private TextField username;
@@ -78,10 +79,21 @@ public class SignUpGuiController
 		{
 				SignUpBean bean = new SignUpBean(name.getText(), surname.getText(), username.getText(), email.getText(), password.getText(), confirmPassword.getText());//costrutttore
 				bean.control(data.getValue(), gender, typeOfAccount);//finisce di passare i dati necesari (sonalCloud non accetta pi� di 7 parametri per costruttore)
-				if (bean.check()) {
-					SignUpController.getInstance().signUp(bean); //richiamiamo signUp sull'istanza singleton passando i dati verificati dalla bean
-					HomeGuiController.getSignUpStage().close();      //viene chiusa la schermata di login e riaperta la home
-					HomeMain.getStage().show();
+				if (bean.check()) 
+				{
+					try
+					{
+						SignUpController.getInstance().signUp(bean); //richiamiamo signUp sull'istanza singleton passando i dati verificati dalla bean
+					}
+					catch(ExistingEmailException e)
+					{
+						e.printStackTrace();
+					}
+					finally
+					{
+						HomeGuiController.getSignUpStage().close();      //viene chiusa la schermata di login e riaperta la home
+						HomeMain.getStage().show();
+					}
 				}
 		}
     }	
