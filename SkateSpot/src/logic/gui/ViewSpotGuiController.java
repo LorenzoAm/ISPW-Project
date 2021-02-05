@@ -26,7 +26,6 @@ public class ViewSpotGuiController
 	@FXML private Label data;
 	@FXML private Label descrizione;
 	ArrayList<Spot> spots;
-	private SimpleDateFormat sdf;
 	private int i=0;	
 	
 	public void handle(MouseEvent mouseEvent) throws IOException
@@ -96,6 +95,8 @@ public class ViewSpotGuiController
 	
 	public void setLabels()
 	{
+		SimpleDateFormat sdf; 
+		
 		nome.setText(spots.get(i).getNome());
 		numero.setText(String.valueOf(spots.get(i).getNumeroDiSkater()));
 		indirizzo.setText(spots.get(i).getIndirizzo());

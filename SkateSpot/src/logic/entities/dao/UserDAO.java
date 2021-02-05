@@ -15,8 +15,7 @@ public class UserDAO
     private static final String USER = "root";
     private static final String PSW = "PASSWORD";
     private static final String URL = "jdbc:mysql://localhost:3306/skate_spot";
-    //private static final String DRIVER_CLASS_NAME = "com.mysql.jdbc.Driver";
-
+    
     public static User findUser(String email,String password)  //metodo utilizzato per il login
     {
         Connection connection = null; //interface
@@ -25,8 +24,6 @@ public class UserDAO
 
         try
         {
-            //loading dinamico del driver specifico
-            //Class.forName(DRIVER_CLASS_NAME);
             //apertura della connessione
             connection=DriverManager.getConnection(URL,USER,PSW);
             //creazione ed esecuzione query
@@ -95,11 +92,7 @@ public class UserDAO
         Statement statement = null;
         int retFromQuery;
         try
-        {
-            //loading dinamico del driver specifico
-            
-				//Class.forName(DRIVER_CLASS_NAME);
-			
+        {			
             //apertura della connessione
             connection=DriverManager.getConnection(URL,USER,PSW);
             //creazione ed esecuzione query
@@ -172,8 +165,6 @@ public class UserDAO
 
          try
          {
-             //loading dinamico del driver specifico
-             //Class.forName(DRIVER_CLASS_NAME);
              //apertura della connessione
              connection=DriverManager.getConnection(URL,USER,PSW);
              //creazione ed esecuzione query
@@ -233,8 +224,6 @@ public class UserDAO
 
         try
         {
-            //loading dinamico del driver specifico
-            //Class.forName(DRIVER_CLASS_NAME);
             //apertura della connessione
             connection=DriverManager.getConnection(URL,USER,PSW);
             //creazione ed esecuzione query
@@ -305,8 +294,6 @@ public class UserDAO
 
         try
         {
-            //loading dinamico del driver specifico
-            //Class.forName(DRIVER_CLASS_NAME);
             //apertura della connessione
             connection=DriverManager.getConnection(URL,USER,PSW);
             //creazione ed esecuzione query
@@ -392,8 +379,6 @@ public class UserDAO
 
          try
          {
-             //loading dinamico del driver specifico
-             //Class.forName(DRIVER_CLASS_NAME);
              //apertura della connessione
              connection=DriverManager.getConnection(URL,USER,PSW);
              //creazione ed esecuzione query

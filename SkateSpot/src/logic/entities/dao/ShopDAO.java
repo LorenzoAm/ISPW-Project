@@ -14,7 +14,6 @@ public class ShopDAO
     private static final String USER = "root";
     private static final String PSW = "PASSWORD";
     private static final String URL = "jdbc:mysql://localhost:3306/skate_spot";
-    //private static final String DRIVER_CLASS_NAME = "com.mysql.jdbc.Driver";
 
     public static void createShop(String partitaIVA, String name, String description, String city, String street, String number, String municipality, String area, Integer code, LocalDate date)
 	{
@@ -23,9 +22,6 @@ public class ShopDAO
         int retFromQuery;
         try
         {
-            //loading dinamico del driver specifico
-
-            //Class.forName(DRIVER_CLASS_NAME);
             //apertura della connessione
             connection=DriverManager.getConnection(URL,USER,PSW);
             //creazione ed esecuzione query
@@ -101,7 +97,6 @@ public class ShopDAO
 
         try
         {
-            //Class.forName(DRIVER_CLASS_NAME);
 
             connection = DriverManager.getConnection(URL,USER,PSW);
 
@@ -152,12 +147,10 @@ public class ShopDAO
 		Connection connection = null;
         Statement statement = null;
         Shop shop = null;
-        ArrayList<Shop> shops = new ArrayList<Shop>();
+        ArrayList<Shop> shops = new ArrayList<>();
 
         try
         {
-            //Class.forName(DRIVER_CLASS_NAME);
-
             connection = DriverManager.getConnection(URL,USER,PSW);
 
             statement = connection.createStatement(ResultSet.TYPE_SCROLL_INSENSITIVE,ResultSet.CONCUR_READ_ONLY);

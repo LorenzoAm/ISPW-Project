@@ -23,7 +23,6 @@ public class ViewMyShopsGuiController
 	@FXML private Label data;
 	@FXML private Label descrizione;
 	ArrayList<Shop> shops;
-	private SimpleDateFormat sdf;
 	private int i=0;	
 	
 	public void handle(MouseEvent mouseEvent) throws IOException
@@ -92,6 +91,8 @@ public class ViewMyShopsGuiController
 	}
 	public void setLabels()
 	{
+		SimpleDateFormat sdf;
+		
 		nome.setText(shops.get(i).getNome());
 		indirizzo.setText(shops.get(i).getIndirizzo());
 		zona.setText(shops.get(i).getZona());

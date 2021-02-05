@@ -12,8 +12,7 @@ public class SpotDAO
     private static final String USER = "root";
     private static final String PSW = "PASSWORD";
     private static final String URL = "jdbc:mysql://localhost:3306/skate_spot";
-    //private static final String DRIVER_CLASS_NAME = "com.mysql.jdbc.Driver";
-
+    
     public static Spot createSpot(Integer code)  //crea un istanza di Spot in base alla chiave esterna di un utente
     {
         Connection connection = null;
@@ -22,8 +21,6 @@ public class SpotDAO
 
         try
         {
-            //Class.forName(DRIVER_CLASS_NAME);
-
             connection = DriverManager.getConnection(URL,USER,PSW);
 
             statement = connection.createStatement(ResultSet.TYPE_SCROLL_INSENSITIVE,ResultSet.CONCUR_READ_ONLY);
@@ -79,9 +76,6 @@ public class SpotDAO
         int retFromQuery;
         try
         {
-            //loading dinamico del driver specifico
-
-            //Class.forName(DRIVER_CLASS_NAME);
             //apertura della connessione
             connection=DriverManager.getConnection(URL,USER,PSW);
             //creazione ed esecuzione query
@@ -152,12 +146,10 @@ public class SpotDAO
     	Connection connection = null;
         Statement statement = null;
         Spot spot = null;
-        ArrayList<Spot> spots = new ArrayList<Spot>();
+        ArrayList<Spot> spots = new ArrayList<>();
 
         try
         {
-            //Class.forName(DRIVER_CLASS_NAME);
-
             connection = DriverManager.getConnection(URL,USER,PSW);
 
             statement = connection.createStatement(ResultSet.TYPE_SCROLL_INSENSITIVE,ResultSet.CONCUR_READ_ONLY);
