@@ -1,16 +1,16 @@
 
-/logic.entities.User#getNome()Ljava/lang/String;P
-FC:/Users/loren/git/ISPW-Project/SkateSpot/src/logic/entities/User.javaY Y("1*Ü
+0logic.entities.User#getSesso()Ljava/lang/String;P
+FC:/Users/loren/git/ISPW-Project/SkateSpot/src/logic/entities/User.javah h("1*Ý
 1P
-FC:/Users/loren/git/ISPW-Project/SkateSpot/src/logic/entities/User.java[ [(–
-“
+FC:/Users/loren/git/ISPW-Project/SkateSpot/src/logic/entities/User.javaj j(—
+”
 P
-FC:/Users/loren/git/ISPW-Project/SkateSpot/src/logic/entities/User.java[ [(
-%0java.lang.String"__id*!*
-logic.entities.User"
-nome"l
+FC:/Users/loren/git/ISPW-Project/SkateSpot/src/logic/entities/User.javaj j(
+%0java.lang.String"__id*"* 
+logic.entities.User"
+sesso"l
 P
-FC:/Users/loren/git/ISPW-Project/SkateSpot/src/logic/entities/User.java[ [(
+FC:/Users/loren/git/ISPW-Project/SkateSpot/src/logic/entities/User.javaj j(
 
 %0java.lang.StringB
 logic.entities.User

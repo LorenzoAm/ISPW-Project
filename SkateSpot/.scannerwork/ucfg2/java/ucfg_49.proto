@@ -1,17 +1,16 @@
 
-3logic.entities.User#getUsername()Ljava/lang/String;P
-FC:/Users/loren/git/ISPW-Project/SkateSpot/src/logic/entities/User.javaT T("1*‡
+6logic.entities.User#getDataDiNascita()Ljava/util/Date;P
+FC:/Users/loren/git/ISPW-Project/SkateSpot/src/logic/entities/User.javac c( "1*·
 1P
-FC:/Users/loren/git/ISPW-Project/SkateSpot/src/logic/entities/User.javaV V(ö
-ó
+FC:/Users/loren/git/ISPW-Project/SkateSpot/src/logic/entities/User.javae e(ù
+ö
 P
-FC:/Users/loren/git/ISPW-Project/SkateSpot/src/logic/entities/User.javaV V(
-%0java.lang.String"__id*%*#
-logic.entities.User"
-
-username"l
+FC:/Users/loren/git/ISPW-Project/SkateSpot/src/logic/entities/User.javae e(
+%0java.util.Date"__id***(
+logic.entities.User"
+dataDiNascita"j
 P
-FC:/Users/loren/git/ISPW-Project/SkateSpot/src/logic/entities/User.javaV V(
-
-%0java.lang.StringB
+FC:/Users/loren/git/ISPW-Project/SkateSpot/src/logic/entities/User.javae e(
+
+%0java.util.DateB
 logic.entities.User

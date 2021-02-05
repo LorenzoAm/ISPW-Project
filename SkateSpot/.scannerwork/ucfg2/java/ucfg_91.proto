@@ -1,17 +1,16 @@
 
-6logic.beans.SignUpBean#getPassword()Ljava/lang/String;S
-IC:/Users/loren/git/ISPW-Project/SkateSpot/src/logic/beans/SignUpBean.javaS S("1*Ï
+=logic.beans.SignUpBean#getconfirmPassword()Ljava/lang/String;S
+IC:/Users/loren/git/ISPW-Project/SkateSpot/src/logic/beans/SignUpBean.java\ \(!"1*Û
 1S
-IC:/Users/loren/git/ISPW-Project/SkateSpot/src/logic/beans/SignUpBean.javaU	 U(†
-ù
+IC:/Users/loren/git/ISPW-Project/SkateSpot/src/logic/beans/SignUpBean.java^	 ^(ß
+§
 S
-IC:/Users/loren/git/ISPW-Project/SkateSpot/src/logic/beans/SignUpBean.javaU	 U(
-%0java.lang.String"__id*(*&
-logic.beans.SignUpBean"
-
-password"o
+IC:/Users/loren/git/ISPW-Project/SkateSpot/src/logic/beans/SignUpBean.java^	 ^(
+%0java.lang.String"__id*/*-
+logic.beans.SignUpBean"
+confirmPassword"o
 S
-IC:/Users/loren/git/ISPW-Project/SkateSpot/src/logic/beans/SignUpBean.javaU U(
+IC:/Users/loren/git/ISPW-Project/SkateSpot/src/logic/beans/SignUpBean.java^ ^(
 
 %0java.lang.StringB
 logic.beans.SignUpBean

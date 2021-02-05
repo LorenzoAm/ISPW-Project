@@ -1,16 +1,16 @@
 
-4logic.entities.Shop#getIndirizzo()Ljava/lang/String;P
-FC:/Users/loren/git/ISPW-Project/SkateSpot/src/logic/entities/Shop.javaQ Q("1*á
+/logic.entities.Shop#getZona()Ljava/lang/String;P
+FC:/Users/loren/git/ISPW-Project/SkateSpot/src/logic/entities/Shop.java` `("1*Ü
 1P
-FC:/Users/loren/git/ISPW-Project/SkateSpot/src/logic/entities/Shop.javaS S(›
-˜
+FC:/Users/loren/git/ISPW-Project/SkateSpot/src/logic/entities/Shop.javab b(–
+“
 P
-FC:/Users/loren/git/ISPW-Project/SkateSpot/src/logic/entities/Shop.javaS S(
-%0java.lang.String"__id*&*$
-logic.entities.Shop"
-	indirizzo"l
+FC:/Users/loren/git/ISPW-Project/SkateSpot/src/logic/entities/Shop.javab b(
+%0java.lang.String"__id*!*
+logic.entities.Shop"
+zona"l
 P
-FC:/Users/loren/git/ISPW-Project/SkateSpot/src/logic/entities/Shop.javaS S(
+FC:/Users/loren/git/ISPW-Project/SkateSpot/src/logic/entities/Shop.javab b(
 
 %0java.lang.StringB
 logic.entities.Shop

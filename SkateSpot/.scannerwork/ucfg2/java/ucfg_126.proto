@@ -1,16 +1,16 @@
 
-/logic.entities.Spot#getZona()Ljava/lang/String;P
-FC:/Users/loren/git/ISPW-Project/SkateSpot/src/logic/entities/Spot.java[ [("1*Ü
+:logic.entities.Spot#getNumeroDiSkater()Ljava/lang/Integer;P
+FC:/Users/loren/git/ISPW-Project/SkateSpot/src/logic/entities/Spot.javaj j($"1*è
 1P
-FC:/Users/loren/git/ISPW-Project/SkateSpot/src/logic/entities/Spot.java] ](–
-“
+FC:/Users/loren/git/ISPW-Project/SkateSpot/src/logic/entities/Spot.javal l(¡
+ž
 P
-FC:/Users/loren/git/ISPW-Project/SkateSpot/src/logic/entities/Spot.java] ](
-%0java.lang.String"__id*!*
-logic.entities.Spot"
-zona"l
+FC:/Users/loren/git/ISPW-Project/SkateSpot/src/logic/entities/Spot.javal l(
+%0java.lang.Integer"__id*+*)
+logic.entities.Spot"
+numeroDiSkater"m
 P
-FC:/Users/loren/git/ISPW-Project/SkateSpot/src/logic/entities/Spot.java] ](
-
-%0java.lang.StringB
+FC:/Users/loren/git/ISPW-Project/SkateSpot/src/logic/entities/Spot.javal l(
+
+%0java.lang.IntegerB
 logic.entities.Spot

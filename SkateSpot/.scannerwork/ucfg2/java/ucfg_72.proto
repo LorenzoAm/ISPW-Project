@@ -1,16 +1,17 @@
 
-/logic.entities.Shop#getNome()Ljava/lang/String;P
-FC:/Users/loren/git/ISPW-Project/SkateSpot/src/logic/entities/Shop.javaL L("1*Ü
+3logic.entities.Shop#getUsername()Ljava/lang/String;P
+FC:/Users/loren/git/ISPW-Project/SkateSpot/src/logic/entities/Shop.java[ [("1*à
 1P
-FC:/Users/loren/git/ISPW-Project/SkateSpot/src/logic/entities/Shop.javaN N(–
-“
+FC:/Users/loren/git/ISPW-Project/SkateSpot/src/logic/entities/Shop.java] ](š
+—
 P
-FC:/Users/loren/git/ISPW-Project/SkateSpot/src/logic/entities/Shop.javaN N(
-%0java.lang.String"__id*!*
-logic.entities.Shop"
-nome"l
+FC:/Users/loren/git/ISPW-Project/SkateSpot/src/logic/entities/Shop.java] ](
+%0java.lang.String"__id*%*#
+logic.entities.Shop"
+
+username"l
 P
-FC:/Users/loren/git/ISPW-Project/SkateSpot/src/logic/entities/Shop.javaN N(
+FC:/Users/loren/git/ISPW-Project/SkateSpot/src/logic/entities/Shop.java] ](
 
 %0java.lang.StringB
 logic.entities.Shop

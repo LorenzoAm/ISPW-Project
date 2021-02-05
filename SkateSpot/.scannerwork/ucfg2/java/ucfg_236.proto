@@ -1,17 +1,16 @@
 
-Forg.apache.jsp.WebContent.viewSpots_jsp#getDependants()Ljava/util/Map;q
-gC:\Users\loren\git\ISPW-Project\SkateSpot\.scannerwork\jsp\org\apache\jsp\WebContent\viewSpots_jsp.java'8 '(E"1*Ú
+Jorg.apache.jsp.WebContent.viewSpots_jsp#getPackageImports()Ljava/util/Set;q
+gC:\Users\loren\git\ISPW-Project\SkateSpot\.scannerwork\jsp\org\apache\jsp\WebContent\viewSpots_jsp.java+) +(:"1*Ÿ
 1q
-gC:\Users\loren\git\ISPW-Project\SkateSpot\.scannerwork\jsp\org\apache\jsp\WebContent\viewSpots_jsp.java( ((Ô
-Ñ
+gC:\Users\loren\git\ISPW-Project\SkateSpot\.scannerwork\jsp\org\apache\jsp\WebContent\viewSpots_jsp.java, ,(!™
+–
 q
-gC:\Users\loren\git\ISPW-Project\SkateSpot\.scannerwork\jsp\org\apache\jsp\WebContent\viewSpots_jsp.java( ((
-%0java.util.Map"__id*A*?)
-'org.apache.jsp.WebContent.viewSpots_jsp"
-_jspx_dependants"Š
+gC:\Users\loren\git\ISPW-Project\SkateSpot\.scannerwork\jsp\org\apache\jsp\WebContent\viewSpots_jsp.java, ,(!
+%0java.util.Set"__id*
+"""Š
 q
-gC:\Users\loren\git\ISPW-Project\SkateSpot\.scannerwork\jsp\org\apache\jsp\WebContent\viewSpots_jsp.java( ((
+gC:\Users\loren\git\ISPW-Project\SkateSpot\.scannerwork\jsp\org\apache\jsp\WebContent\viewSpots_jsp.java, ,("
 
-%0java.util.Map:
+%0java.util.Set:
 %jsp_contextB+)
 'org.apache.jsp.WebContent.viewSpots_jsp

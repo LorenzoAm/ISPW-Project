@@ -1,99 +1,135 @@
 
-'logic.beans.SignUpBean#checkPassword()ZU
-IC:/Users/loren/git/ISPW-Project/SkateSpot/src/logic/beans/SignUpBean.java° °("5*
+#logic.beans.SignUpBean#checkDate()ZU
+IC:/Users/loren/git/ISPW-Project/SkateSpot/src/logic/beans/SignUpBean.javaó ó("5*»
 2U
-IC:/Users/loren/git/ISPW-Project/SkateSpot/src/logic/beans/SignUpBean.javaº º(	Ÿ
-œ
+IC:/Users/loren/git/ISPW-Project/SkateSpot/src/logic/beans/SignUpBean.java ("_
 U
-IC:/Users/loren/git/ISPW-Project/SkateSpot/src/logic/beans/SignUpBean.javaº º(	
-%5java.lang.String"__id*%*#
-logic.beans.SignUpBean"
-alert®
-«
-U
-IC:/Users/loren/git/ISPW-Project/SkateSpot/src/logic/beans/SignUpBean.javaº º(1
-%6"__concat*
-
-%5java.lang.String*(&
-$\nPasswords entered do not coincide.
-Š
-U
-IC:/Users/loren/git/ISPW-Project/SkateSpot/src/logic/beans/SignUpBean.javaº º(1#
-logic.beans.SignUpBean"
-alert"__id*
-
-%6"_
-U
-IC:/Users/loren/git/ISPW-Project/SkateSpot/src/logic/beans/SignUpBean.java» »(
-""*»
+IC:/Users/loren/git/ISPW-Project/SkateSpot/src/logic/beans/SignUpBean.java (
+""*§
 3U
-IC:/Users/loren/git/ISPW-Project/SkateSpot/src/logic/beans/SignUpBean.java¶ ¶("_
+IC:/Users/loren/git/ISPW-Project/SkateSpot/src/logic/beans/SignUpBean.javaú ú(¡
+
 U
-IC:/Users/loren/git/ISPW-Project/SkateSpot/src/logic/beans/SignUpBean.java¶ ¶(
-""*
-4U
-IC:/Users/loren/git/ISPW-Project/SkateSpot/src/logic/beans/SignUpBean.java´ ´(¢
-Ÿ
-U
-IC:/Users/loren/git/ISPW-Project/SkateSpot/src/logic/beans/SignUpBean.java´ ´(
-%2java.lang.String"__id*(*&
-logic.beans.SignUpBean"
-
-password©
-¦
-U
-IC:/Users/loren/git/ISPW-Project/SkateSpot/src/logic/beans/SignUpBean.java´ ´(%
-%3java.lang.String"__id*/*-
-logic.beans.SignUpBean"
-confirmPasswordçä
-U
-IC:/Users/loren/git/ISPW-Project/SkateSpot/src/logic/beans/SignUpBean.java´ ´(&
-%4boolean",java.lang.String#equals(Ljava/lang/Object;)Z*
-
-%2java.lang.String*
-
-%3java.lang.String2equals(Ljava/lang/Object;)*
-2
-3*¯
-5U
-IC:/Users/loren/git/ISPW-Project/SkateSpot/src/logic/beans/SignUpBean.java² ²(¢
-Ÿ
-U
-IC:/Users/loren/git/ISPW-Project/SkateSpot/src/logic/beans/SignUpBean.java² ²(
-%0java.lang.String"__id*(*&
-logic.beans.SignUpBean"
-
-password¥¢
-U
-IC:/Users/loren/git/ISPW-Project/SkateSpot/src/logic/beans/SignUpBean.java² ²(	
-%1int"java.lang.String#length()I*
-
-%0java.lang.String2length()*
-4
-1*¬
-1U
-IC:/Users/loren/git/ISPW-Project/SkateSpot/src/logic/beans/SignUpBean.javaÀ À(Ÿ
-œ
-U
-IC:/Users/loren/git/ISPW-Project/SkateSpot/src/logic/beans/SignUpBean.javaÀ À(
-%7java.lang.String"__id*%*#
-logic.beans.SignUpBean"
-alert¼
+IC:/Users/loren/git/ISPW-Project/SkateSpot/src/logic/beans/SignUpBean.javaú" ú(&
+%1java.time.LocalDate"__id*$*"
+logic.beans.SignUpBean"
+data¼
 ¹
 U
-IC:/Users/loren/git/ISPW-Project/SkateSpot/src/logic/beans/SignUpBean.javaÀ À(>
-%8"__concat*
+IC:/Users/loren/git/ISPW-Project/SkateSpot/src/logic/beans/SignUpBean.javaú4 ú(J
+%2java.time.ZoneId"2java.time.ZoneId#systemDefault()Ljava/time/ZoneId;*"
+java.time.ZoneId¡
+U
+IC:/Users/loren/git/ISPW-Project/SkateSpot/src/logic/beans/SignUpBean.javaú" ú(K
+%3java.time.ZonedDateTime"Mjava.time.LocalDate#atStartOfDay(Ljava/time/ZoneId;)Ljava/time/ZonedDateTime;*
+
+%1java.time.LocalDate*
 
-%7java.lang.String*64
-2\nThe password must be at least 8 characters long.
-Š
+%2java.time.ZoneId2 atStartOfDay(Ljava/time/ZoneId;)ı
+ú
 U
-IC:/Users/loren/git/ISPW-Project/SkateSpot/src/logic/beans/SignUpBean.javaÀ À(>#
-logic.beans.SignUpBean"
-alert"__id*
-
-%8"_
+IC:/Users/loren/git/ISPW-Project/SkateSpot/src/logic/beans/SignUpBean.javaú ú(L
+%4java.time.Instant"Pjava.time.Instant#from(Ljava/time/temporal/TemporalAccessor;)Ljava/time/Instant;*"
+java.time.Instant*
+
+%3java.time.ZonedDateTime™
+–
 U
-IC:/Users/loren/git/ISPW-Project/SkateSpot/src/logic/beans/SignUpBean.javaÁ Á(
+IC:/Users/loren/git/ISPW-Project/SkateSpot/src/logic/beans/SignUpBean.javaú ú(M
+instantjava.time.Instant"__id*
+
+%4java.time.InstantŞ
+Û
+U
+IC:/Users/loren/git/ISPW-Project/SkateSpot/src/logic/beans/SignUpBean.javaû û(!
+%5java.util.Date"8java.util.Date#from(Ljava/time/Instant;)Ljava/util/Date;*"
+java.util.Date*
+
+instantjava.time.Instant
+
+U
+IC:/Users/loren/git/ISPW-Project/SkateSpot/src/logic/beans/SignUpBean.javaû û("
+datejava.util.Date"__id*
+
+%5java.util.Dateå
+â
+U
+IC:/Users/loren/git/ISPW-Project/SkateSpot/src/logic/beans/SignUpBean.javaü, ü(O
+%6java.util.TimeZone"Fjava.util.TimeZone#getTimeZone(Ljava/lang/String;)Ljava/util/TimeZone;*"
+java.util.TimeZone*
+Europe/Rome
+}
+U
+IC:/Users/loren/git/ISPW-Project/SkateSpot/src/logic/beans/SignUpBean.javaüP ü(\
+%7java.util.Locale"__id*
+""
+›
+U
+IC:/Users/loren/git/ISPW-Project/SkateSpot/src/logic/beans/SignUpBean.javaü ü(]
+%8java.util.Calendar"Zjava.util.Calendar#getInstance(Ljava/util/TimeZone;Ljava/util/Locale;)Ljava/util/Calendar;*"
+java.util.Calendar*
+
+%6java.util.TimeZone*
+
+%7java.util.Localeœ
+™
+U
+IC:/Users/loren/git/ISPW-Project/SkateSpot/src/logic/beans/SignUpBean.javaü ü(^
+calendarjava.util.Calendar"__id*
+
+%8java.util.Calendarr
+p
+U
+IC:/Users/loren/git/ISPW-Project/SkateSpot/src/logic/beans/SignUpBean.javaı ı(	
+%9int"__id*
+""ÄÁ
+U
+IC:/Users/loren/git/ISPW-Project/SkateSpot/src/logic/beans/SignUpBean.javaı ı(#
+%10void"java.util.Calendar#add(II)V* 
+
+calendarjava.util.Calendar*
+	
+%9int*
+""2add(II)ÌÉ
+U
+IC:/Users/loren/git/ISPW-Project/SkateSpot/src/logic/beans/SignUpBean.javaş ş("
+%11java.util.Date",java.util.Calendar#getTime()Ljava/util/Date;* 
+
+calendarjava.util.Calendar2	getTime()’
+
+U
+IC:/Users/loren/git/ISPW-Project/SkateSpot/src/logic/beans/SignUpBean.javaş ş(#
+todayjava.util.Date"__id*
+
+%11java.util.Dateãà
+U
+IC:/Users/loren/git/ISPW-Project/SkateSpot/src/logic/beans/SignUpBean.javaÿ ÿ(
+%12boolean"(java.util.Date#before(Ljava/util/Date;)Z*
+
+datejava.util.Date*
+
+todayjava.util.Date2before(Ljava/util/Date;)*
+2
+1*»
+4U
+IC:/Users/loren/git/ISPW-Project/SkateSpot/src/logic/beans/SignUpBean.javaø
+ ø("_
+U
+IC:/Users/loren/git/ISPW-Project/SkateSpot/src/logic/beans/SignUpBean.javaø ø(
+""*†
+5U
+IC:/Users/loren/git/ISPW-Project/SkateSpot/src/logic/beans/SignUpBean.javaõ õ(	¡
+
+U
+IC:/Users/loren/git/ISPW-Project/SkateSpot/src/logic/beans/SignUpBean.javaõ õ(	
+%0java.time.LocalDate"__id*$*"
+logic.beans.SignUpBean"
+data*
+3
+4*»
+1U
+IC:/Users/loren/git/ISPW-Project/SkateSpot/src/logic/beans/SignUpBean.java† †("_
+U
+IC:/Users/loren/git/ISPW-Project/SkateSpot/src/logic/beans/SignUpBean.java† †(
 ""B
 logic.beans.SignUpBean

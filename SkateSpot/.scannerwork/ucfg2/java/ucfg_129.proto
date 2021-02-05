@@ -1,16 +1,175 @@
 
-:logic.entities.Spot#getNumeroDiSkater()Ljava/lang/Integer;P
-FC:/Users/loren/git/ISPW-Project/SkateSpot/src/logic/entities/Spot.javaj j($"1*Ë
+0logic.entities.Spot#toString()Ljava/lang/String;P
+FC:/Users/loren/git/ISPW-Project/SkateSpot/src/logic/entities/Spot.javay y("1*¸&
 1P
-FC:/Users/loren/git/ISPW-Project/SkateSpot/src/logic/entities/Spot.javal l(°
+FC:/Users/loren/git/ISPW-Project/SkateSpot/src/logic/entities/Spot.java{ {(¬ø
+P
+FC:/Users/loren/git/ISPW-Project/SkateSpot/src/logic/entities/Spot.java{ {((
+%0java.lang.String"/logic.entities.Spot#getNome()Ljava/lang/String;*
+logic.entities.Spot2	getNome()§
+°
+P
+FC:/Users/loren/git/ISPW-Project/SkateSpot/src/logic/entities/Spot.java{ {((
+%1java.lang.String"__concat*
+ Nome spot : *
+
+%0java.lang.String¶
+£
+P
+FC:/Users/loren/git/ISPW-Project/SkateSpot/src/logic/entities/Spot.java{ {(:
+%2java.lang.String"__concat*
+
+%1java.lang.String*
+\n indirizzo : Ã…
+P
+FC:/Users/loren/git/ISPW-Project/SkateSpot/src/logic/entities/Spot.java{; {(I
+%3java.lang.String"4logic.entities.Spot#getIndirizzo()Ljava/lang/String;*
+logic.entities.Spot2getIndirizzo()´
+®
+P
+FC:/Users/loren/git/ISPW-Project/SkateSpot/src/logic/entities/Spot.java{ {(I
+%4java.lang.String"__concat*
+
+%2java.lang.String*
+
+%3java.lang.String£
+†
+P
+FC:/Users/loren/git/ISPW-Project/SkateSpot/src/logic/entities/Spot.java{ {(X
+%5java.lang.String"__concat*
+
+%4java.lang.String*
+\n comune : ∆√
+P
+FC:/Users/loren/git/ISPW-Project/SkateSpot/src/logic/entities/Spot.java{Y {(d
+%6java.lang.String"1logic.entities.Spot#getComune()Ljava/lang/String;*
+logic.entities.Spot2getComune()´
+®
+P
+FC:/Users/loren/git/ISPW-Project/SkateSpot/src/logic/entities/Spot.java{ {(d
+%7java.lang.String"__concat*
+
+%5java.lang.String*
+
+%6java.lang.String°
 û
 P
-FC:/Users/loren/git/ISPW-Project/SkateSpot/src/logic/entities/Spot.javal l(
-%0java.lang.Integer"__id*+*)
-logic.entities.Spot"
-numeroDiSkater"m
+FC:/Users/loren/git/ISPW-Project/SkateSpot/src/logic/entities/Spot.java{ {(q
+%8java.lang.String"__concat*
+
+%7java.lang.String*
+
+\n zona : ¬ø
 P
-FC:/Users/loren/git/ISPW-Project/SkateSpot/src/logic/entities/Spot.javal l(
+FC:/Users/loren/git/ISPW-Project/SkateSpot/src/logic/entities/Spot.java{r {({
+%9java.lang.String"/logic.entities.Spot#getZona()Ljava/lang/String;*
+logic.entities.Spot2	getZona()¨
+©
+P
+FC:/Users/loren/git/ISPW-Project/SkateSpot/src/logic/entities/Spot.java{ {({
+%10java.lang.String"__concat*
+
+%8java.lang.String*
+
+%9java.lang.String§
+°
+Q
+FC:/Users/loren/git/ISPW-Project/SkateSpot/src/logic/entities/Spot.java{ {(à
+%11java.lang.String"__concat*
 
-%0java.lang.IntegerB
+%10java.lang.String*
+
+\n tipo : ≈¬
+R
+FC:/Users/loren/git/ISPW-Project/SkateSpot/src/logic/entities/Spot.java{â {(í
+%12java.lang.String"/logic.entities.Spot#getTipo()Ljava/lang/String;*
+logic.entities.Spot2	getTipo()Ø
+¨
+Q
+FC:/Users/loren/git/ISPW-Project/SkateSpot/src/logic/entities/Spot.java{ {(í
+%13java.lang.String"__concat*
+
+%11java.lang.String*
+
+%12java.lang.String´
+®
+Q
+FC:/Users/loren/git/ISPW-Project/SkateSpot/src/logic/entities/Spot.java{ {(¶
+%14java.lang.String"__concat*
+
+%13java.lang.String*
+\n descrizione : ”–
+R
+FC:/Users/loren/git/ISPW-Project/SkateSpot/src/logic/entities/Spot.java{ß {(∑
+%15java.lang.String"6logic.entities.Spot#getDescrizione()Ljava/lang/String;*
+logic.entities.Spot2getDescrizione()Ø
+¨
+Q
+FC:/Users/loren/git/ISPW-Project/SkateSpot/src/logic/entities/Spot.java{ {(∑
+%16java.lang.String"__concat*
+
+%14java.lang.String*
+
+%15java.lang.Stringπ
+∂
+Q
+FC:/Users/loren/git/ISPW-Project/SkateSpot/src/logic/entities/Spot.java{ {(Ÿ
+%17java.lang.String"__concat*
+
+%16java.lang.String*#!
+\n skater attualmente presenti €ÿ
+R
+FC:/Users/loren/git/ISPW-Project/SkateSpot/src/logic/entities/Spot.java{⁄ {(Ì
+%18java.lang.Integer":logic.entities.Spot#getNumeroDiSkater()Ljava/lang/Integer;*
+logic.entities.Spot2getNumeroDiSkater()∞
+≠
+Q
+FC:/Users/loren/git/ISPW-Project/SkateSpot/src/logic/entities/Spot.java{ {(Ì
+%19java.lang.String"__concat*
+
+%17java.lang.String*
+
+%18java.lang.Integer´
+®
+Q
+FC:/Users/loren/git/ISPW-Project/SkateSpot/src/logic/entities/Spot.java{ {(Å
+%20java.lang.String"__concat*
+
+%19java.lang.String*
+\n aggiunto da : Õ 
+R
+FC:/Users/loren/git/ISPW-Project/SkateSpot/src/logic/entities/Spot.java{Ç {(è
+%21java.lang.String"3logic.entities.Spot#getUsername()Ljava/lang/String;*
+logic.entities.Spot2getUsername()Ø
+¨
+Q
+FC:/Users/loren/git/ISPW-Project/SkateSpot/src/logic/entities/Spot.java{ {(è
+%22java.lang.String"__concat*
+
+%20java.lang.String*
+
+%21java.lang.String•
+¢
+Q
+FC:/Users/loren/git/ISPW-Project/SkateSpot/src/logic/entities/Spot.java{ {(ù
+%23java.lang.String"__concat*
+
+%22java.lang.String*
+ in data : ¡æ
+R
+FC:/Users/loren/git/ISPW-Project/SkateSpot/src/logic/entities/Spot.java{û {(ß
+%24java.util.Date"-logic.entities.Spot#getData()Ljava/util/Date;*
+logic.entities.Spot2	getData()≠
+™
+Q
+FC:/Users/loren/git/ISPW-Project/SkateSpot/src/logic/entities/Spot.java{ {(ß
+%25java.lang.String"__concat*
+
+%23java.lang.String*
+
+%24java.util.Date"n
+Q
+FC:/Users/loren/git/ISPW-Project/SkateSpot/src/logic/entities/Spot.java{ {(®
+
+%25java.lang.StringB
 logic.entities.Spot
