@@ -11,10 +11,7 @@ public class ShopDAO
     private static final String USER = "root";
     private static final String PSW = "PASSWORD";
     private static final String URL = "jdbc:mysql://localhost:3306/skate_spot";
-<<<<<<< HEAD
-=======
-    
->>>>>>> stash
+
 
     private ShopDAO( ) {}
     public static void createShop(String partitaIVA, String name, String description, String city, String street, String number, String municipality, String area, Integer code, LocalDate date)
@@ -24,10 +21,7 @@ public class ShopDAO
         int retFromQuery;
         try
         {
-<<<<<<< HEAD
-=======
-           
->>>>>>> stash
+
             //apertura della connessione
             connection=DriverManager.getConnection(URL,USER,PSW);
             //creazione ed esecuzione query
@@ -157,10 +151,6 @@ public class ShopDAO
 
         try
         {
-<<<<<<< HEAD
-=======
-
->>>>>>> stash
             connection = DriverManager.getConnection(URL,USER,PSW);
 
             statement = connection.createStatement(ResultSet.TYPE_SCROLL_INSENSITIVE,ResultSet.CONCUR_READ_ONLY);

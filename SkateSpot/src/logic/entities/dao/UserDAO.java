@@ -13,11 +13,7 @@ public class UserDAO
     private static final String USER = "root";
     private static final String PSW = "PASSWORD";
     private static final String URL = "jdbc:mysql://localhost:3306/skate_spot";
-<<<<<<< HEAD
-    
-=======
 
->>>>>>> stash
     public static User findUser(String email,String password)  //metodo utilizzato per il login
     {
         Connection connection = null; //interface
@@ -26,10 +22,7 @@ public class UserDAO
 
         try
         {
-<<<<<<< HEAD
-=======
 
->>>>>>> stash
             //apertura della connessione
             connection=DriverManager.getConnection(URL,USER,PSW);
             //creazione ed esecuzione query
@@ -91,12 +84,8 @@ public class UserDAO
         Statement statement = null;
         int retFromQuery;
         try
-<<<<<<< HEAD
-        {			
-=======
         {
-			
->>>>>>> stash
+
             //apertura della connessione
             connection=DriverManager.getConnection(URL,USER,PSW);
             //creazione ed esecuzione query
@@ -169,10 +158,7 @@ public class UserDAO
 
          try
          {
-<<<<<<< HEAD
-             //apertura della connessione
-=======
->>>>>>> stash
+
              connection=DriverManager.getConnection(URL,USER,PSW);
              //creazione ed esecuzione query
              statement=connection.createStatement(ResultSet.TYPE_SCROLL_INSENSITIVE,ResultSet.CONCUR_READ_ONLY);
@@ -227,11 +213,7 @@ public class UserDAO
 
         try
         {
-<<<<<<< HEAD
-            //apertura della connessione
-=======
-           
->>>>>>> stash
+
             connection=DriverManager.getConnection(URL,USER,PSW);
             //creazione ed esecuzione query
             statement=connection.createStatement(ResultSet.TYPE_SCROLL_INSENSITIVE,ResultSet.CONCUR_READ_ONLY);
@@ -386,10 +368,7 @@ public class UserDAO
 
          try
          {
-<<<<<<< HEAD
-=======
-             
->>>>>>> stash
+
              //apertura della connessione
              connection=DriverManager.getConnection(URL,USER,PSW);
              //creazione ed esecuzione query
