@@ -3,8 +3,6 @@ package logic.controllers;
 import logic.beans.ShopBean;
 import logic.entities.dao.ShopDAO;
 import logic.entities.dao.UserDAO;
-import logic.gui.HomeGuiController;
-import logic.gui.PremiumAreaGuiController;
 import java.time.LocalDate;
 
 
@@ -26,8 +24,6 @@ public class AddShopController
 		LocalDate date = LocalDate.now();
 		ShopDAO.createShop(bean.getPartitaIVA(),bean.getName(),bean.getDescription(),bean.getCity(),bean.getStreet(),bean.getNumber(),bean.getMunicipality(),bean.getArea(),code,date);
 
-		PremiumAreaGuiController.getAddShopStage().close(); //chiudiamo la finestra di inserimento spot
-		HomeGuiController.getPremiumAreaStage().show();		//riapriamo l'area premium
 	}
 	
 }

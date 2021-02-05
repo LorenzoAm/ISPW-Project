@@ -1,16 +1,17 @@
 
-Gorg.apache.jsp.WebContent.signUp_jsp#getPackageImports()Ljava/util/Set;n
-dC:\Users\loren\git\ISPW-Project\SkateSpot\.scannerwork\jsp\org\apache\jsp\WebContent\signUp_jsp.java+) +(:"1*–
-1n
-dC:\Users\loren\git\ISPW-Project\SkateSpot\.scannerwork\jsp\org\apache\jsp\WebContent\signUp_jsp.java, ,(!–
-“
-n
-dC:\Users\loren\git\ISPW-Project\SkateSpot\.scannerwork\jsp\org\apache\jsp\WebContent\signUp_jsp.java, ,(!
-%0java.util.Set"__id*
-"""‡
-n
-dC:\Users\loren\git\ISPW-Project\SkateSpot\.scannerwork\jsp\org\apache\jsp\WebContent\signUp_jsp.java, ,("
+Eorg.apache.jsp.WebContent.joinSpot_jsp#getDependants()Ljava/util/Map;p
+fC:\Users\loren\git\ISPW-Project\SkateSpot\.scannerwork\jsp\org\apache\jsp\WebContent\joinSpot_jsp.java'8 '(E"1*Ö
+1p
+fC:\Users\loren\git\ISPW-Project\SkateSpot\.scannerwork\jsp\org\apache\jsp\WebContent\joinSpot_jsp.java( ((Ò
+Ï
+p
+fC:\Users\loren\git\ISPW-Project\SkateSpot\.scannerwork\jsp\org\apache\jsp\WebContent\joinSpot_jsp.java( ((
+%0java.util.Map"__id*@*>(
+&org.apache.jsp.WebContent.joinSpot_jsp"
+_jspx_dependants"‰
+p
+fC:\Users\loren\git\ISPW-Project\SkateSpot\.scannerwork\jsp\org\apache\jsp\WebContent\joinSpot_jsp.java( ((
 
-%0java.util.Set:
-%jsp_contextB(&
-$org.apache.jsp.WebContent.signUp_jsp
+%0java.util.Map:
+%jsp_contextB*(
+&org.apache.jsp.WebContent.joinSpot_jsp

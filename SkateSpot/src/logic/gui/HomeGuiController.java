@@ -50,6 +50,7 @@ public class HomeGuiController
                             HomeMain.getStage().close();
                         }
                     } else {
+                    	JOptionPane.showMessageDialog(null," Bye "+UserContainer.getInstance().getNome()+" "+UserContainer.getInstance().getCognome()+", see you soon!","LOGOUT",JOptionPane.INFORMATION_MESSAGE);
                         LogoutController.getInstance().logout();
                     }
 
@@ -183,6 +184,7 @@ public class HomeGuiController
             }
             else   //leave spot use case
             {
+            	JOptionPane.showMessageDialog(null," You're leaving "+UserContainer.getInstance().getSpot().getNome()+",hope you enjoyed your session!","INFORMATION",JOptionPane.INFORMATION_MESSAGE);
                 LeaveSpotController.getInstance().leaveSpot();
             }
         }

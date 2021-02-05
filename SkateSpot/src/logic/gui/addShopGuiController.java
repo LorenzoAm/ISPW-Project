@@ -35,6 +35,8 @@ public class addShopGuiController
 				bean.control(street.getText(), number.getText());//finisce di passare i dati necesari (sonalCloud non accetta pi� di 7 parametri per costruttore)
 				if (bean.check()) {
 					AddShopController.getInstance().createShop(bean);
+					PremiumAreaGuiController.getAddShopStage().close(); //chiudiamo la finestra di inserimento spot
+					HomeGuiController.getPremiumAreaStage().show();		//riapriamo l'area premium
 				}
 		}
     }

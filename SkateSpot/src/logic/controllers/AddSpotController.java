@@ -3,8 +3,6 @@ package logic.controllers;
 import logic.beans.SpotBean;
 import logic.entities.dao.SpotDAO;
 import logic.entities.dao.UserDAO;
-import logic.gui.HomeGuiController;
-import logic.gui.HomeMain;
 
 import java.time.LocalDate;
 
@@ -26,8 +24,5 @@ public class AddSpotController
         Integer code = UserDAO.findCodeUser(UserContainer.getInstance().getEmail(),UserContainer.getInstance().getPassword());
         LocalDate date = LocalDate.now();
         SpotDAO.createSpot(bean.getName(),bean.getStreet(),bean.getNumber(),bean.getCity(),bean.getMunicipality(),bean.getArea(),bean.getType(),bean.getDescription(),code,date);
-
-        HomeGuiController.getAddSpotStage().close();
-        HomeMain.getStage().show();
     }
 }

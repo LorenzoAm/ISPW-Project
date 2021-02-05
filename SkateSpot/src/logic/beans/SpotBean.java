@@ -14,6 +14,8 @@ public class SpotBean
     private String type;
     private String description;
     private String alert;
+    
+    public SpotBean() {}
 
     public SpotBean(String name,String street,String number,String city,String municipality,String area)
     {

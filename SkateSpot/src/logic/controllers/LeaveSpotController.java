@@ -1,6 +1,5 @@
 package logic.controllers;
 
-import javax.swing.*;
 
 import logic.entities.dao.UserDAO;
 
@@ -19,7 +18,6 @@ public class LeaveSpotController
 
     public void leaveSpot()
     {
-        JOptionPane.showMessageDialog(null," You're leaving "+UserContainer.getInstance().getSpot().getNome()+",hope you enjoyed your session!","INFORMATION",JOptionPane.INFORMATION_MESSAGE);
         UserDAO.leaveSpot(UserContainer.getInstance().getEmail(),UserContainer.getInstance().getPassword());
         UserContainer.getInstance().setSpot(null);
     }

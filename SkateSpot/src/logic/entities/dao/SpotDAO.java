@@ -1,8 +1,6 @@
-package logic.entities.DAO;
+package logic.entities.dao;
 
 import logic.entities.Spot;
-
-import javax.swing.*;
 import java.sql.*;
 import java.time.LocalDate;
 import java.util.ArrayList;
@@ -13,6 +11,12 @@ public class SpotDAO
     private static final String PSW = "PASSWORD";
     private static final String URL = "jdbc:mysql://localhost:3306/skate_spot";
     
+<<<<<<< HEAD
+=======
+
+    private SpotDAO( ) {}
+    
+>>>>>>> stash
     public static Spot createSpot(Integer code)  //crea un istanza di Spot in base alla chiave esterna di un utente
     {
         Connection connection = null;
@@ -21,6 +25,10 @@ public class SpotDAO
 
         try
         {
+<<<<<<< HEAD
+=======
+
+>>>>>>> stash
             connection = DriverManager.getConnection(URL,USER,PSW);
 
             statement = connection.createStatement(ResultSet.TYPE_SCROLL_INSENSITIVE,ResultSet.CONCUR_READ_ONLY);
@@ -76,6 +84,11 @@ public class SpotDAO
         int retFromQuery;
         try
         {
+<<<<<<< HEAD
+=======
+            //loading dinamico del driver specifico
+
+>>>>>>> stash
             //apertura della connessione
             connection=DriverManager.getConnection(URL,USER,PSW);
             //creazione ed esecuzione query
@@ -91,22 +104,22 @@ public class SpotDAO
                 //Inserisco dati nel db
                 query = "INSERT INTO spot(Via,Civico,Citta,Zona,Nome,Tipo,Comune,NumeroDiSkater,Descrizione,CodiceSkater,DataInserimento) VALUES ('"+street+"','"+streetNumber+"','"+city+"','"+area+"','"+name+"','"+type+"','"+municipality+"','0','"+description+"','"+code+"','"+date+"');";
                 retFromQuery = statement.executeUpdate(query);
-                if (retFromQuery==2) //la query non ha prodotto risultati
+               /* if (retFromQuery==2) //la query non ha prodotto risultati
                 {
                     JOptionPane.showMessageDialog(null," OPS! Something went wrong."," ERROR",JOptionPane.ERROR_MESSAGE);
                 }
                 else
                 {
                     JOptionPane.showMessageDialog(null," Your data has been saved into db!","INFORMATION", JOptionPane.INFORMATION_MESSAGE);
-                }
+                }*/
 
             }
-            else
+            /*else
             {
                 //Messagio Errore
                 JOptionPane.showMessageDialog(null," The spot already exists ! "," ERROR",JOptionPane.ERROR_MESSAGE);
 
-            }
+            }*/
 
             //chiudiamo il result set generato dalla query
             rs.close();
@@ -150,6 +163,10 @@ public class SpotDAO
 
         try
         {
+<<<<<<< HEAD
+=======
+
+>>>>>>> stash
             connection = DriverManager.getConnection(URL,USER,PSW);
 
             statement = connection.createStatement(ResultSet.TYPE_SCROLL_INSENSITIVE,ResultSet.CONCUR_READ_ONLY);

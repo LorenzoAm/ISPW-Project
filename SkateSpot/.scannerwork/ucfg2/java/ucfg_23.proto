@@ -1,17 +1,16 @@
 
-5logic.beans.LoginBean#getPassword()Ljava/lang/String;R
-HC:/Users/loren/git/ISPW-Project/SkateSpot/src/logic/beans/LoginBean.java! !("1*è
+2logic.beans.LoginBean#getEmail()Ljava/lang/String;R
+HC:/Users/loren/git/ISPW-Project/SkateSpot/src/logic/beans/LoginBean.java ("1*å
 1R
-HC:/Users/loren/git/ISPW-Project/SkateSpot/src/logic/beans/LoginBean.java# #(ž
-›
+HC:/Users/loren/git/ISPW-Project/SkateSpot/src/logic/beans/LoginBean.java (›
+˜
 R
-HC:/Users/loren/git/ISPW-Project/SkateSpot/src/logic/beans/LoginBean.java# #(
-%0java.lang.String"__id*'*%
-logic.beans.LoginBean"
-
-password"n
+HC:/Users/loren/git/ISPW-Project/SkateSpot/src/logic/beans/LoginBean.java (
+%0java.lang.String"__id*$*"
+logic.beans.LoginBean"
+email"n
 R
-HC:/Users/loren/git/ISPW-Project/SkateSpot/src/logic/beans/LoginBean.java# #(
+HC:/Users/loren/git/ISPW-Project/SkateSpot/src/logic/beans/LoginBean.java (
 
 %0java.lang.StringB
 logic.beans.LoginBean

@@ -8,6 +8,8 @@ public class JoinSpotBean
     private String number;
     private String city;
     private String alert;
+    
+    public JoinSpotBean() {}
 
     public JoinSpotBean(String street,String number,String city)
     {

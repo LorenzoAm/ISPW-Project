@@ -1,16 +1,17 @@
 
-0logic.entities.User#getEmail()Ljava/lang/String;P
-FC:/Users/loren/git/ISPW-Project/SkateSpot/src/logic/entities/User.javaJ J("1*Ý
+3logic.entities.User#getUsername()Ljava/lang/String;P
+FC:/Users/loren/git/ISPW-Project/SkateSpot/src/logic/entities/User.javaT T("1*à
 1P
-FC:/Users/loren/git/ISPW-Project/SkateSpot/src/logic/entities/User.javaL L(—
-”
+FC:/Users/loren/git/ISPW-Project/SkateSpot/src/logic/entities/User.javaV V(š
+—
 P
-FC:/Users/loren/git/ISPW-Project/SkateSpot/src/logic/entities/User.javaL L(
-%0java.lang.String"__id*"* 
-logic.entities.User"
-email"l
+FC:/Users/loren/git/ISPW-Project/SkateSpot/src/logic/entities/User.javaV V(
+%0java.lang.String"__id*%*#
+logic.entities.User"
+
+username"l
 P
-FC:/Users/loren/git/ISPW-Project/SkateSpot/src/logic/entities/User.javaL L(
+FC:/Users/loren/git/ISPW-Project/SkateSpot/src/logic/entities/User.javaV V(
 
 %0java.lang.StringB
 logic.entities.User

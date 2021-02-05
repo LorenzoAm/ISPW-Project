@@ -80,6 +80,8 @@ public class SignUpGuiController
 				bean.control(data.getValue(), gender, typeOfAccount);//finisce di passare i dati necesari (sonalCloud non accetta pi� di 7 parametri per costruttore)
 				if (bean.check()) {
 					SignUpController.getInstance().signUp(bean); //richiamiamo signUp sull'istanza singleton passando i dati verificati dalla bean
+					HomeGuiController.getSignUpStage().close();      //viene chiusa la schermata di login e riaperta la home
+					HomeMain.getStage().show();
 				}
 		}
     }	

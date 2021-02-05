@@ -1,12 +1,26 @@
-<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
-    pageEncoding="ISO-8859-1"%>
+<%@ page language="java" contentType="text/html; charset=ISO-8859-1" pageEncoding="ISO-8859-1"%>
+ <%@ page import="logic.controllers.UserContainer"%>   
+    
+    <%
+    	if(request.getParameter("login")!=null)
+    	{
+    		if(UserContainer.getInstance()==null)
+    		{
+    	
+    %>
+         <jsp:forward page="login.jsp"/>
+    <%
+    		}
+    	}
+    
+   	%>
+    
 <!DOCTYPE html>
 <html lang="it">
 <head>
 <meta charset="ISO-8859-1">
 <title>Homepage</title>
-<link rel="stylesheet" href="css/style1.css" />
-<script src="js/script1.js" ></script>
+
 </head>
 <body>
 	<div>
@@ -16,6 +30,7 @@
 		<table>
 			<tr>
 				<th>
+					<p></p>
 				</th>
 				<td >
 					<img src="images/menu_grey.png" alt="MENU"/>
@@ -24,7 +39,9 @@
 					<img src="images/Triangle.png" alt="DROP"/>
 				</td>
 				<td>
-					<input type="image" onclick="" src="images/premium_area.png" alt="PREMIUM AREA"/>
+					<form>
+								<input type="submit" value="PREMIUM AREA"  name="premium"/>
+					</form>
 				</td>
 				<td>
 					<img src="images/blank.png" alt="SPACE"/>
@@ -39,12 +56,14 @@
 					<table>
 						<tr>
 							<td>
-								<input type="image" onclick="" src="images/login_logout.png" alt="LOGIN-LOGOUT"/>
+							<form>
+								<input type="submit" value="LOGIN-LOGOUT"  name="login"/>
+							</form>
 							</td>
 						</tr>
 						<tr>
 							<td>
-								<p align="center">OR</p>
+								<p>OR</p>
 							</td>
 						</tr>
 						<tr>

@@ -1,16 +1,16 @@
 
-2logic.beans.SpotBean#getNumber()Ljava/lang/String;Q
-GC:/Users/loren/git/ISPW-Project/SkateSpot/src/logic/beans/SpotBean.javaT T("1*‚
+8logic.beans.SpotBean#getMunicipality()Ljava/lang/String;Q
+GC:/Users/loren/git/ISPW-Project/SkateSpot/src/logic/beans/SpotBean.java^ ^(!"1*Ë
 1Q
-GC:/Users/loren/git/ISPW-Project/SkateSpot/src/logic/beans/SpotBean.javaV V(ö
-ó
+GC:/Users/loren/git/ISPW-Project/SkateSpot/src/logic/beans/SpotBean.java` `(†
+ù
 Q
-GC:/Users/loren/git/ISPW-Project/SkateSpot/src/logic/beans/SpotBean.javaV V(
-%0java.lang.String"__id*$*"
-logic.beans.SpotBean"
-number"m
+GC:/Users/loren/git/ISPW-Project/SkateSpot/src/logic/beans/SpotBean.java` `(
+%0java.lang.String"__id***(
+logic.beans.SpotBean"
+municipality"m
 Q
-GC:/Users/loren/git/ISPW-Project/SkateSpot/src/logic/beans/SpotBean.javaV V(
+GC:/Users/loren/git/ISPW-Project/SkateSpot/src/logic/beans/SpotBean.java` `(
 
 %0java.lang.StringB
 logic.beans.SpotBean

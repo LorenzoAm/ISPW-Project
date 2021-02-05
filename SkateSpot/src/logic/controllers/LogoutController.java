@@ -1,7 +1,5 @@
 package logic.controllers;
 
-import javax.swing.*;
-
 public class LogoutController
 {
     private static LogoutController instance;
@@ -17,7 +15,6 @@ public class LogoutController
 
     public void logout()
     {
-        JOptionPane.showMessageDialog(null," Bye "+UserContainer.getInstance().getNome()+" "+UserContainer.getInstance().getCognome()+", see you soon!","LOGOUT",JOptionPane.INFORMATION_MESSAGE);
         UserContainer.resetInstance();
     }
 }

@@ -946,11 +946,12 @@ valueOf(J)-java.lang.String#valueOf(J)Ljava/lang/String;2
 $logic.controllers.ViewSpotControllerjava.lang.Object:
 <init>().logic.controllers.ViewSpotController#<init>()VP
 	getList()Clogic.controllers.ViewSpotController#getList()Ljava/util/ArrayList;i
-getInstance()Xlogic.controllers.ViewSpotController#getInstance()Llogic/controllers/ViewSpotController;Ë
+getInstance()Xlogic.controllers.ViewSpotController#getInstance()Llogic/controllers/ViewSpotController;•
 logic.gui.ViewShopGuiControllerjava.lang.Object9
 
 nextShop()+logic.gui.ViewShopGuiController#nextShop()V5
-<init>())logic.gui.ViewShopGuiController#<init>()VA
+<init>())logic.gui.ViewShopGuiController#<init>()V;
+setLabels(),logic.gui.ViewShopGuiController#setLabels()VA
 previousShop()/logic.gui.ViewShopGuiController#previousShop()V'
 java.lang.Cloneablejava.lang.Objectï
 java.text.Formatjava.lang.Cloneablejava.lang.Objectjava.io.Serializable”
@@ -1041,9 +1042,10 @@ KmatchString(Ljava/lang/String;IILjava/util/Map;Ljava/text/CalendarBuilder;)gja
 OmatchString(Ljava/lang/String;II[Ljava/lang/String;Ljava/text/CalendarBuilder;)kjava.text.SimpleDateFormat#matchString(Ljava/lang/String;II[Ljava/lang/String;Ljava/text/CalendarBuilder;)I◊
 "logic.controllers.SignUpControllerjava.lang.Object8
 <init>(),logic.controllers.SignUpController#<init>()Ve
-getInstance()Tlogic.controllers.SignUpController#getInstance()Llogic/controllers/SignUpController;Ë
+getInstance()Tlogic.controllers.SignUpController#getInstance()Llogic/controllers/SignUpController;•
 logic.gui.ViewSpotGuiControllerjava.lang.Object5
-<init>())logic.gui.ViewSpotGuiController#<init>()V9
+<init>())logic.gui.ViewSpotGuiController#<init>()V;
+setLabels(),logic.gui.ViewSpotGuiController#setLabels()V9
 
 nextSpot()+logic.gui.ViewSpotGuiController#nextSpot()VA
 previousSpot()/logic.gui.ViewSpotGuiController#previousSpot()VÛ
@@ -1068,12 +1070,12 @@ getEmail()2logic.beans.LoginBean#getEmail()Ljava/lang/String;j
 getAddSpotStage()4logic.gui.HomeGuiController#getAddSpotStage()LStage;K
 getViewSpotStage()5logic.gui.HomeGuiController#getViewSpotStage()LStage;K
 getJoinSpotStage()5logic.gui.HomeGuiController#getJoinSpotStage()LStage;•
-logic.entities.dao.ShopDAOjava.lang.ObjectL
-getMyShops()<logic.entities.dao.ShopDAO#getMyShops()Ljava/util/ArrayList;0
-<init>()$logic.entities.dao.ShopDAO#<init>()V™
-ƒcreateShop(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/Integer;Ljava/time/LocalDate;)‡logic.entities.dao.ShopDAO#createShop(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/Integer;Ljava/time/LocalDate;)VH
+logic.entities.DAO.ShopDAOjava.lang.ObjectL
+getMyShops()<logic.entities.DAO.ShopDAO#getMyShops()Ljava/util/ArrayList;0
+<init>()$logic.entities.DAO.ShopDAO#<init>()V™
+ƒcreateShop(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/Integer;Ljava/time/LocalDate;)‡logic.entities.DAO.ShopDAO#createShop(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/Integer;Ljava/time/LocalDate;)VH
 
-getShops():logic.entities.dao.ShopDAO#getShops()Ljava/util/ArrayList;≈
+getShops():logic.entities.DAO.ShopDAO#getShops()Ljava/util/ArrayList;≈
 java.sql.DriverManagerjava.lang.Objectb
 #setLogWriter(Ljava/io/PrintWriter;);java.sql.DriverManager#setLogWriter(Ljava/io/PrintWriter;)Vb
 #deregisterDriver(Ljava/sql/Driver;);java.sql.DriverManager#deregisterDriver(Ljava/sql/Driver;)VL
@@ -1248,14 +1250,14 @@ $logic.controllers.ViewShopControllerjava.lang.Object:
 <init>().logic.controllers.ViewShopController#<init>()VP
 	getList()Clogic.controllers.ViewShopController#getList()Ljava/util/ArrayList;i
 getInstance()Xlogic.controllers.ViewShopController#getInstance()Llogic/controllers/ViewShopController;◊
-logic.entities.dao.UserDAOjava.lang.Objectñ
-2findCodeUser(Ljava/lang/String;Ljava/lang/String;)`logic.entities.dao.UserDAO#findCodeUser(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/Integer;0
-<init>()$logic.entities.dao.UserDAO#<init>()V‡
-ücreateUser(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/time/LocalDate;Ljava/lang/String;Ljava/lang/String;)ªlogic.entities.dao.UserDAO#createUser(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/time/LocalDate;Ljava/lang/String;Ljava/lang/String;)V~
-/leaveSpot(Ljava/lang/String;Ljava/lang/String;)Klogic.entities.dao.UserDAO#leaveSpot(Ljava/lang/String;Ljava/lang/String;)V•
-@joinSpot(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)alogic.entities.dao.UserDAO#joinSpot(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)LSpot;Å
-.findUser(Ljava/lang/String;Ljava/lang/String;)Ologic.entities.dao.UserDAO#findUser(Ljava/lang/String;Ljava/lang/String;)LUser;M
-getUsername(I);logic.entities.dao.UserDAO#getUsername(I)Ljava/lang/String;h
+logic.entities.DAO.UserDAOjava.lang.Objectñ
+2findCodeUser(Ljava/lang/String;Ljava/lang/String;)`logic.entities.DAO.UserDAO#findCodeUser(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/Integer;0
+<init>()$logic.entities.DAO.UserDAO#<init>()V‡
+ücreateUser(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/time/LocalDate;Ljava/lang/String;Ljava/lang/String;)ªlogic.entities.DAO.UserDAO#createUser(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/time/LocalDate;Ljava/lang/String;Ljava/lang/String;)V~
+/leaveSpot(Ljava/lang/String;Ljava/lang/String;)Klogic.entities.DAO.UserDAO#leaveSpot(Ljava/lang/String;Ljava/lang/String;)V•
+@joinSpot(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)alogic.entities.DAO.UserDAO#joinSpot(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)LSpot;Å
+.findUser(Ljava/lang/String;Ljava/lang/String;)Ologic.entities.DAO.UserDAO#findUser(Ljava/lang/String;Ljava/lang/String;)LUser;M
+getUsername(I);logic.entities.DAO.UserDAO#getUsername(I)Ljava/lang/String;h
 logic.gui.addShopGuiControllerjava.lang.Object4
 <init>()(logic.gui.addShopGuiController#<init>()Vı
 logic.controllers.UserContainerjava.lang.Object5
@@ -1287,11 +1289,12 @@ getSesso()0logic.entities.User#getSesso()Ljava/lang/String;«
 ñ<init>(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/util/Date;Ljava/lang/String;Ljava/lang/String;)´logic.entities.User#<init>(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/util/Date;Ljava/lang/String;Ljava/lang/String;)V]
 "setDataDiNascita(Ljava/util/Date;)7logic.entities.User#setDataDiNascita(Ljava/util/Date;)VU
 setCognome(Ljava/lang/String;)3logic.entities.User#setCognome(Ljava/lang/String;)VL
-getDataDiNascita()6logic.entities.User#getDataDiNascita()Ljava/util/Date;Ù
+getDataDiNascita()6logic.entities.User#getDataDiNascita()Ljava/util/Date;¥
 "logic.gui.ViewMyShopsGuiControllerjava.lang.Object<
 
 nextShop().logic.gui.ViewMyShopsGuiController#nextShop()V8
-<init>(),logic.gui.ViewMyShopsGuiController#<init>()VD
+<init>(),logic.gui.ViewMyShopsGuiController#<init>()V>
+setLabels()/logic.gui.ViewMyShopsGuiController#setLabels()VD
 previousShop()2logic.gui.ViewMyShopsGuiController#previousShop()V€
 #logic.controllers.AddShopControllerjava.lang.Object9
 <init>()-logic.controllers.AddShopController#<init>()Vg
@@ -1716,12 +1719,12 @@ set(IIIII)java.util.Calendar#set(IIIII)V4
 <init>()/logic.controllers.LeaveSpotController#<init>()Vk
 getInstance()Zlogic.controllers.LeaveSpotController#getInstance()Llogic/controllers/LeaveSpotController;A
 leaveSpot()2logic.controllers.LeaveSpotController#leaveSpot()Vº
-logic.entities.dao.SpotDAOjava.lang.Objectc
-createSpot(Ljava/lang/Integer;)@logic.entities.dao.SpotDAO#createSpot(Ljava/lang/Integer;)LSpot;0
-<init>()$logic.entities.dao.SpotDAO#<init>()VH
+logic.entities.DAO.SpotDAOjava.lang.Objectc
+createSpot(Ljava/lang/Integer;)@logic.entities.DAO.SpotDAO#createSpot(Ljava/lang/Integer;)LSpot;0
+<init>()$logic.entities.DAO.SpotDAO#<init>()VH
 
-getSpots():logic.entities.dao.SpotDAO#getSpots()Ljava/util/ArrayList;™
-ƒcreateSpot(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/Integer;Ljava/time/LocalDate;)‡logic.entities.dao.SpotDAO#createSpot(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/Integer;Ljava/time/LocalDate;)VÀ
+getSpots():logic.entities.DAO.SpotDAO#getSpots()Ljava/util/ArrayList;™
+ƒcreateSpot(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/Integer;Ljava/time/LocalDate;)‡logic.entities.DAO.SpotDAO#createSpot(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/Integer;Ljava/time/LocalDate;)VÀ
 logic.entities.Spotjava.lang.Objecte
 &setNumeroDiSkater(Ljava/lang/Integer;);logic.entities.Spot#setNumeroDiSkater(Ljava/lang/Integer;)V@
 getComune()1logic.entities.Spot#getComune()Ljava/lang/String;>
@@ -1778,34 +1781,26 @@ t<init>(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;
 'logic.controllers.ViewMyShopsControllerjava.lang.Object=
 <init>()1logic.controllers.ViewMyShopsController#<init>()VS
 	getList()Flogic.controllers.ViewMyShopsController#getList()Ljava/util/ArrayList;o
-getInstance()^logic.controllers.ViewMyShopsController#getInstance()Llogic/controllers/ViewMyShopsController;¸
-logic.beans.ShopBeanjava.lang.Object0
-checkArea()!logic.beans.ShopBean#checkArea()Z4
-checkStreet()#logic.beans.ShopBean#checkStreet()Z\
-!setPartitaIVA(Ljava/lang/String;)7logic.beans.ShopBean#setPartitaIVA(Ljava/lang/String;)VK
-getDescription()7logic.beans.ShopBean#getDescription()Ljava/lang/String;4
-checkNumber()#logic.beans.ShopBean#checkNumber()Zt
--control(Ljava/lang/String;Ljava/lang/String;)Clogic.beans.ShopBean#control(Ljava/lang/String;Ljava/lang/String;)V0
-checkName()!logic.beans.ShopBean#checkName()ZÉ
-t<init>(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)älogic.beans.ShopBean#<init>(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)VP
-setArea(Ljava/lang/String;)1logic.beans.ShopBean#setArea(Ljava/lang/String;)V=
-	getName()0logic.beans.ShopBean#getName()Ljava/lang/String;=
-	getArea()0logic.beans.ShopBean#getArea()Ljava/lang/String;`
-#setMunicipality(Ljava/lang/String;)9logic.beans.ShopBean#setMunicipality(Ljava/lang/String;)VP
-setCity(Ljava/lang/String;)1logic.beans.ShopBean#setCity(Ljava/lang/String;)V>
-checkDescription()(logic.beans.ShopBean#checkDescription()ZP
+getInstance()^logic.controllers.ViewMyShopsController#getInstance()Llogic/controllers/ViewMyShopsController;∫
+logic.beans.ShopBeanjava.lang.ObjectP
 setName(Ljava/lang/String;)1logic.beans.ShopBean#setName(Ljava/lang/String;)VA
 getStreet()2logic.beans.ShopBean#getStreet()Ljava/lang/String;I
-getPartitaIVA()6logic.beans.ShopBean#getPartitaIVA()Ljava/lang/String;@
-checkMunicipality())logic.beans.ShopBean#checkMunicipality()Z=
+getPartitaIVA()6logic.beans.ShopBean#getPartitaIVA()Ljava/lang/String;\
+!setPartitaIVA(Ljava/lang/String;)7logic.beans.ShopBean#setPartitaIVA(Ljava/lang/String;)VK
+getDescription()7logic.beans.ShopBean#getDescription()Ljava/lang/String;=
 	getCity()0logic.beans.ShopBean#getCity()Ljava/lang/String;^
 "setDescription(Ljava/lang/String;)8logic.beans.ShopBean#setDescription(Ljava/lang/String;)VA
-getNumber()2logic.beans.ShopBean#getNumber()Ljava/lang/String;T
+getNumber()2logic.beans.ShopBean#getNumber()Ljava/lang/String;t
+-control(Ljava/lang/String;Ljava/lang/String;)Clogic.beans.ShopBean#control(Ljava/lang/String;Ljava/lang/String;)VÉ
+t<init>(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)älogic.beans.ShopBean#<init>(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)VP
+setArea(Ljava/lang/String;)1logic.beans.ShopBean#setArea(Ljava/lang/String;)VT
 setNumber(Ljava/lang/String;)3logic.beans.ShopBean#setNumber(Ljava/lang/String;)VT
-setStreet(Ljava/lang/String;)3logic.beans.ShopBean#setStreet(Ljava/lang/String;)V<
-checkPartitaIVA()'logic.beans.ShopBean#checkPartitaIVA()Z(
-check()logic.beans.ShopBean#check()Z0
-checkCity()!logic.beans.ShopBean#checkCity()ZM
+setStreet(Ljava/lang/String;)3logic.beans.ShopBean#setStreet(Ljava/lang/String;)V=
+	getName()0logic.beans.ShopBean#getName()Ljava/lang/String;=
+	getArea()0logic.beans.ShopBean#getArea()Ljava/lang/String;(
+check()logic.beans.ShopBean#check()Z`
+#setMunicipality(Ljava/lang/String;)9logic.beans.ShopBean#setMunicipality(Ljava/lang/String;)VP
+setCity(Ljava/lang/String;)1logic.beans.ShopBean#setCity(Ljava/lang/String;)VM
 getMunicipality()8logic.beans.ShopBean#getMunicipality()Ljava/lang/String;
 Applicationjava.lang.ObjectÀ
 logic.gui.HomeMainApplication(
@@ -1842,18 +1837,18 @@ _jspInit()1org.apache.jasper.runtime.HttpJspBase#_jspInit()V;
 _jspDestroy()4org.apache.jasper.runtime.HttpJspBase#_jspDestroy()V€
 Xservice(Ljavax/servlet/http/HttpServletRequest;Ljavax/servlet/http/HttpServletResponse;)org.apache.jasper.runtime.HttpJspBase#service(Ljavax/servlet/http/HttpServletRequest;Ljavax/servlet/http/HttpServletResponse;)VC
 jspDestroy()3org.apache.jasper.runtime.HttpJspBase#jspDestroy()Vq
-#init(Ljavax/servlet/ServletConfig;)Jorg.apache.jasper.runtime.HttpJspBase#init(Ljavax/servlet/ServletConfig;)V‡
-$org.apache.jsp.WebContent.signUp_jsp*org.apache.jasper.runtime.JspSourceImports,org.apache.jasper.runtime.JspSourceDependent%org.apache.jasper.runtime.HttpJspBase>
+#init(Ljavax/servlet/ServletConfig;)Jorg.apache.jasper.runtime.HttpJspBase#init(Ljavax/servlet/ServletConfig;)Vî	
+)org.apache.jsp.WebContent.viewMyShops_jsp*org.apache.jasper.runtime.JspSourceImports,org.apache.jasper.runtime.JspSourceDependent%org.apache.jasper.runtime.HttpJspBaseC
 
-_jspInit()0org.apache.jsp.WebContent.signUp_jsp#_jspInit()VV
-getDependants()Corg.apache.jsp.WebContent.signUp_jsp#getDependants()Ljava/util/Map;„
-\_jspService(Ljavax/servlet/http/HttpServletRequest;Ljavax/servlet/http/HttpServletResponse;)Çorg.apache.jsp.WebContent.signUp_jsp#_jspService(Ljavax/servlet/http/HttpServletRequest;Ljavax/servlet/http/HttpServletResponse;)V:
-<init>().org.apache.jsp.WebContent.signUp_jsp#<init>()V{
-_jsp_getExpressionFactory()\org.apache.jsp.WebContent.signUp_jsp#_jsp_getExpressionFactory()Ljavax/el/ExpressionFactory;^
-getPackageImports()Gorg.apache.jsp.WebContent.signUp_jsp#getPackageImports()Ljava/util/Set;D
-_jspDestroy()3org.apache.jsp.WebContent.signUp_jsp#_jspDestroy()VZ
-getClassImports()Eorg.apache.jsp.WebContent.signUp_jsp#getClassImports()Ljava/util/Set;~
-_jsp_getInstanceManager()aorg.apache.jsp.WebContent.signUp_jsp#_jsp_getInstanceManager()Lorg/apache/tomcat/InstanceManager;/
+_jspInit()5org.apache.jsp.WebContent.viewMyShops_jsp#_jspInit()V[
+getDependants()Horg.apache.jsp.WebContent.viewMyShops_jsp#getDependants()Ljava/util/Map;Ë
+\_jspService(Ljavax/servlet/http/HttpServletRequest;Ljavax/servlet/http/HttpServletResponse;)áorg.apache.jsp.WebContent.viewMyShops_jsp#_jspService(Ljavax/servlet/http/HttpServletRequest;Ljavax/servlet/http/HttpServletResponse;)V?
+<init>()3org.apache.jsp.WebContent.viewMyShops_jsp#<init>()VÄ
+_jsp_getExpressionFactory()aorg.apache.jsp.WebContent.viewMyShops_jsp#_jsp_getExpressionFactory()Ljavax/el/ExpressionFactory;c
+getPackageImports()Lorg.apache.jsp.WebContent.viewMyShops_jsp#getPackageImports()Ljava/util/Set;I
+_jspDestroy()8org.apache.jsp.WebContent.viewMyShops_jsp#_jspDestroy()V_
+getClassImports()Jorg.apache.jsp.WebContent.viewMyShops_jsp#getClassImports()Ljava/util/Set;É
+_jsp_getInstanceManager()forg.apache.jsp.WebContent.viewMyShops_jsp#_jsp_getInstanceManager()Lorg/apache/tomcat/InstanceManager;/
 javax.servlet.ServletConfigjava.lang.Object“
 javax.servlet.jsp.JspFactoryjava.lang.Objecte
 getDefaultFactory()Njavax.servlet.jsp.JspFactory#getDefaultFactory()Ljavax/servlet/jsp/JspFactory;2
@@ -1927,7 +1922,73 @@ pushBody()Njavax.servlet.jsp.PageContext#pushBody()Ljavax/servlet/jsp/tagext/Bo
 <init>(Ljava/lang/String;):javax.servlet.ServletException#<init>(Ljava/lang/String;)VÇ
 /<init>(Ljava/lang/String;Ljava/lang/Throwable;)Ojavax.servlet.ServletException#<init>(Ljava/lang/String;Ljava/lang/Throwable;)VT
 getRootCause()Bjavax.servlet.ServletException#getRootCause()Ljava/lang/Throwable;^
-<init>(Ljava/lang/Throwable;)=javax.servlet.ServletException#<init>(Ljava/lang/Throwable;)V÷
+<init>(Ljava/lang/Throwable;)=javax.servlet.ServletException#<init>(Ljava/lang/Throwable;)Vî	
+)org.apache.jsp.WebContent.premiumArea_jsp*org.apache.jasper.runtime.JspSourceImports,org.apache.jasper.runtime.JspSourceDependent%org.apache.jasper.runtime.HttpJspBaseC
+
+_jspInit()5org.apache.jsp.WebContent.premiumArea_jsp#_jspInit()V[
+getDependants()Horg.apache.jsp.WebContent.premiumArea_jsp#getDependants()Ljava/util/Map;Ë
+\_jspService(Ljavax/servlet/http/HttpServletRequest;Ljavax/servlet/http/HttpServletResponse;)áorg.apache.jsp.WebContent.premiumArea_jsp#_jspService(Ljavax/servlet/http/HttpServletRequest;Ljavax/servlet/http/HttpServletResponse;)V?
+<init>()3org.apache.jsp.WebContent.premiumArea_jsp#<init>()VÄ
+_jsp_getExpressionFactory()aorg.apache.jsp.WebContent.premiumArea_jsp#_jsp_getExpressionFactory()Ljavax/el/ExpressionFactory;c
+getPackageImports()Lorg.apache.jsp.WebContent.premiumArea_jsp#getPackageImports()Ljava/util/Set;I
+_jspDestroy()8org.apache.jsp.WebContent.premiumArea_jsp#_jspDestroy()V_
+getClassImports()Jorg.apache.jsp.WebContent.premiumArea_jsp#getClassImports()Ljava/util/Set;É
+_jsp_getInstanceManager()forg.apache.jsp.WebContent.premiumArea_jsp#_jsp_getInstanceManager()Lorg/apache/tomcat/InstanceManager;Í
+%org.apache.jsp.WebContent.addShop_jsp*org.apache.jasper.runtime.JspSourceImports,org.apache.jasper.runtime.JspSourceDependent%org.apache.jasper.runtime.HttpJspBase?
+
+_jspInit()1org.apache.jsp.WebContent.addShop_jsp#_jspInit()VW
+getDependants()Dorg.apache.jsp.WebContent.addShop_jsp#getDependants()Ljava/util/Map;‰
+\_jspService(Ljavax/servlet/http/HttpServletRequest;Ljavax/servlet/http/HttpServletResponse;)Éorg.apache.jsp.WebContent.addShop_jsp#_jspService(Ljavax/servlet/http/HttpServletRequest;Ljavax/servlet/http/HttpServletResponse;)V;
+<init>()/org.apache.jsp.WebContent.addShop_jsp#<init>()V|
+_jsp_getExpressionFactory()]org.apache.jsp.WebContent.addShop_jsp#_jsp_getExpressionFactory()Ljavax/el/ExpressionFactory;_
+getPackageImports()Horg.apache.jsp.WebContent.addShop_jsp#getPackageImports()Ljava/util/Set;E
+_jspDestroy()4org.apache.jsp.WebContent.addShop_jsp#_jspDestroy()V[
+getClassImports()Forg.apache.jsp.WebContent.addShop_jsp#getClassImports()Ljava/util/Set;
+_jsp_getInstanceManager()borg.apache.jsp.WebContent.addShop_jsp#_jsp_getInstanceManager()Lorg/apache/tomcat/InstanceManager;Í
+%org.apache.jsp.WebContent.addSpot_jsp*org.apache.jasper.runtime.JspSourceImports,org.apache.jasper.runtime.JspSourceDependent%org.apache.jasper.runtime.HttpJspBase?
+
+_jspInit()1org.apache.jsp.WebContent.addSpot_jsp#_jspInit()VW
+getDependants()Dorg.apache.jsp.WebContent.addSpot_jsp#getDependants()Ljava/util/Map;‰
+\_jspService(Ljavax/servlet/http/HttpServletRequest;Ljavax/servlet/http/HttpServletResponse;)Éorg.apache.jsp.WebContent.addSpot_jsp#_jspService(Ljavax/servlet/http/HttpServletRequest;Ljavax/servlet/http/HttpServletResponse;)V;
+<init>()/org.apache.jsp.WebContent.addSpot_jsp#<init>()V|
+_jsp_getExpressionFactory()]org.apache.jsp.WebContent.addSpot_jsp#_jsp_getExpressionFactory()Ljavax/el/ExpressionFactory;_
+getPackageImports()Horg.apache.jsp.WebContent.addSpot_jsp#getPackageImports()Ljava/util/Set;E
+_jspDestroy()4org.apache.jsp.WebContent.addSpot_jsp#_jspDestroy()V[
+getClassImports()Forg.apache.jsp.WebContent.addSpot_jsp#getClassImports()Ljava/util/Set;
+_jsp_getInstanceManager()borg.apache.jsp.WebContent.addSpot_jsp#_jsp_getInstanceManager()Lorg/apache/tomcat/InstanceManager;ı
+&org.apache.jsp.WebContent.joinSpot_jsp*org.apache.jasper.runtime.JspSourceImports,org.apache.jasper.runtime.JspSourceDependent%org.apache.jasper.runtime.HttpJspBase@
+
+_jspInit()2org.apache.jsp.WebContent.joinSpot_jsp#_jspInit()VX
+getDependants()Eorg.apache.jsp.WebContent.joinSpot_jsp#getDependants()Ljava/util/Map;Â
+\_jspService(Ljavax/servlet/http/HttpServletRequest;Ljavax/servlet/http/HttpServletResponse;)Ñorg.apache.jsp.WebContent.joinSpot_jsp#_jspService(Ljavax/servlet/http/HttpServletRequest;Ljavax/servlet/http/HttpServletResponse;)V<
+<init>()0org.apache.jsp.WebContent.joinSpot_jsp#<init>()V}
+_jsp_getExpressionFactory()^org.apache.jsp.WebContent.joinSpot_jsp#_jsp_getExpressionFactory()Ljavax/el/ExpressionFactory;`
+getPackageImports()Iorg.apache.jsp.WebContent.joinSpot_jsp#getPackageImports()Ljava/util/Set;F
+_jspDestroy()5org.apache.jsp.WebContent.joinSpot_jsp#_jspDestroy()V\
+getClassImports()Gorg.apache.jsp.WebContent.joinSpot_jsp#getClassImports()Ljava/util/Set;Ä
+_jsp_getInstanceManager()corg.apache.jsp.WebContent.joinSpot_jsp#_jsp_getInstanceManager()Lorg/apache/tomcat/InstanceManager;‡
+$org.apache.jsp.WebContent.signUp_jsp*org.apache.jasper.runtime.JspSourceImports,org.apache.jasper.runtime.JspSourceDependent%org.apache.jasper.runtime.HttpJspBase>
+
+_jspInit()0org.apache.jsp.WebContent.signUp_jsp#_jspInit()VV
+getDependants()Corg.apache.jsp.WebContent.signUp_jsp#getDependants()Ljava/util/Map;„
+\_jspService(Ljavax/servlet/http/HttpServletRequest;Ljavax/servlet/http/HttpServletResponse;)Çorg.apache.jsp.WebContent.signUp_jsp#_jspService(Ljavax/servlet/http/HttpServletRequest;Ljavax/servlet/http/HttpServletResponse;)V:
+<init>().org.apache.jsp.WebContent.signUp_jsp#<init>()V{
+_jsp_getExpressionFactory()\org.apache.jsp.WebContent.signUp_jsp#_jsp_getExpressionFactory()Ljavax/el/ExpressionFactory;^
+getPackageImports()Gorg.apache.jsp.WebContent.signUp_jsp#getPackageImports()Ljava/util/Set;D
+_jspDestroy()3org.apache.jsp.WebContent.signUp_jsp#_jspDestroy()VZ
+getClassImports()Eorg.apache.jsp.WebContent.signUp_jsp#getClassImports()Ljava/util/Set;~
+_jsp_getInstanceManager()aorg.apache.jsp.WebContent.signUp_jsp#_jsp_getInstanceManager()Lorg/apache/tomcat/InstanceManager;ˇ
+'org.apache.jsp.WebContent.viewSpots_jsp*org.apache.jasper.runtime.JspSourceImports,org.apache.jasper.runtime.JspSourceDependent%org.apache.jasper.runtime.HttpJspBaseA
+
+_jspInit()3org.apache.jsp.WebContent.viewSpots_jsp#_jspInit()VY
+getDependants()Forg.apache.jsp.WebContent.viewSpots_jsp#getDependants()Ljava/util/Map;Ê
+\_jspService(Ljavax/servlet/http/HttpServletRequest;Ljavax/servlet/http/HttpServletResponse;)Öorg.apache.jsp.WebContent.viewSpots_jsp#_jspService(Ljavax/servlet/http/HttpServletRequest;Ljavax/servlet/http/HttpServletResponse;)V=
+<init>()1org.apache.jsp.WebContent.viewSpots_jsp#<init>()V~
+_jsp_getExpressionFactory()_org.apache.jsp.WebContent.viewSpots_jsp#_jsp_getExpressionFactory()Ljavax/el/ExpressionFactory;a
+getPackageImports()Jorg.apache.jsp.WebContent.viewSpots_jsp#getPackageImports()Ljava/util/Set;G
+_jspDestroy()6org.apache.jsp.WebContent.viewSpots_jsp#_jspDestroy()V]
+getClassImports()Horg.apache.jsp.WebContent.viewSpots_jsp#getClassImports()Ljava/util/Set;Å
+_jsp_getInstanceManager()dorg.apache.jsp.WebContent.viewSpots_jsp#_jsp_getInstanceManager()Lorg/apache/tomcat/InstanceManager;÷
 #org.apache.jsp.WebContent.index_jsp*org.apache.jasper.runtime.JspSourceImports,org.apache.jasper.runtime.JspSourceDependent%org.apache.jasper.runtime.HttpJspBase=
 
 _jspInit()/org.apache.jsp.WebContent.index_jsp#_jspInit()VU
@@ -1938,4 +1999,26 @@ _jspInit()/org.apache.jsp.WebContent.index_jsp#_jspInit()VU
 getPackageImports()Forg.apache.jsp.WebContent.index_jsp#getPackageImports()Ljava/util/Set;C
 _jspDestroy()2org.apache.jsp.WebContent.index_jsp#_jspDestroy()VY
 getClassImports()Dorg.apache.jsp.WebContent.index_jsp#getClassImports()Ljava/util/Set;}
-_jsp_getInstanceManager()`org.apache.jsp.WebContent.index_jsp#_jsp_getInstanceManager()Lorg/apache/tomcat/InstanceManager;
+_jsp_getInstanceManager()`org.apache.jsp.WebContent.index_jsp#_jsp_getInstanceManager()Lorg/apache/tomcat/InstanceManager;ˇ
+'org.apache.jsp.WebContent.viewShops_jsp*org.apache.jasper.runtime.JspSourceImports,org.apache.jasper.runtime.JspSourceDependent%org.apache.jasper.runtime.HttpJspBaseA
+
+_jspInit()3org.apache.jsp.WebContent.viewShops_jsp#_jspInit()VY
+getDependants()Forg.apache.jsp.WebContent.viewShops_jsp#getDependants()Ljava/util/Map;Ê
+\_jspService(Ljavax/servlet/http/HttpServletRequest;Ljavax/servlet/http/HttpServletResponse;)Öorg.apache.jsp.WebContent.viewShops_jsp#_jspService(Ljavax/servlet/http/HttpServletRequest;Ljavax/servlet/http/HttpServletResponse;)V=
+<init>()1org.apache.jsp.WebContent.viewShops_jsp#<init>()V~
+_jsp_getExpressionFactory()_org.apache.jsp.WebContent.viewShops_jsp#_jsp_getExpressionFactory()Ljavax/el/ExpressionFactory;a
+getPackageImports()Jorg.apache.jsp.WebContent.viewShops_jsp#getPackageImports()Ljava/util/Set;G
+_jspDestroy()6org.apache.jsp.WebContent.viewShops_jsp#_jspDestroy()V]
+getClassImports()Horg.apache.jsp.WebContent.viewShops_jsp#getClassImports()Ljava/util/Set;Å
+_jsp_getInstanceManager()dorg.apache.jsp.WebContent.viewShops_jsp#_jsp_getInstanceManager()Lorg/apache/tomcat/InstanceManager;÷
+#org.apache.jsp.WebContent.login_jsp*org.apache.jasper.runtime.JspSourceImports,org.apache.jasper.runtime.JspSourceDependent%org.apache.jasper.runtime.HttpJspBase=
+
+_jspInit()/org.apache.jsp.WebContent.login_jsp#_jspInit()VU
+getDependants()Borg.apache.jsp.WebContent.login_jsp#getDependants()Ljava/util/Map;‚
+\_jspService(Ljavax/servlet/http/HttpServletRequest;Ljavax/servlet/http/HttpServletResponse;)Åorg.apache.jsp.WebContent.login_jsp#_jspService(Ljavax/servlet/http/HttpServletRequest;Ljavax/servlet/http/HttpServletResponse;)V9
+<init>()-org.apache.jsp.WebContent.login_jsp#<init>()Vz
+_jsp_getExpressionFactory()[org.apache.jsp.WebContent.login_jsp#_jsp_getExpressionFactory()Ljavax/el/ExpressionFactory;]
+getPackageImports()Forg.apache.jsp.WebContent.login_jsp#getPackageImports()Ljava/util/Set;C
+_jspDestroy()2org.apache.jsp.WebContent.login_jsp#_jspDestroy()VY
+getClassImports()Dorg.apache.jsp.WebContent.login_jsp#getClassImports()Ljava/util/Set;}
+_jsp_getInstanceManager()`org.apache.jsp.WebContent.login_jsp#_jsp_getInstanceManager()Lorg/apache/tomcat/InstanceManager;

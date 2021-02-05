@@ -8,8 +8,6 @@ import java.util.Date;
 import java.util.Locale;
 import java.util.TimeZone;
 
-import javax.swing.JOptionPane;
-
 public class SignUpBean
 {
 	private String name;
@@ -21,8 +19,10 @@ public class SignUpBean
 	private String gender;
 	private String typeOfAccount;
 	private LocalDate data;
-	private String alert="";
 	private String match="^[a-zA-Z]*$";
+	//private String alert
+	
+	public SignUpBean() {}
 
 	public SignUpBean(String name,String surname,String username,String email,String password,String confirmPassword)
 	{
@@ -126,12 +126,12 @@ public class SignUpBean
 	{
 		if(checkName()&&checkSurname()&&checkUsername()&&checkEmail()&&checkPassword()&&checkDate()&&checkGender()&&checkTypeOfAccount())
 		{
-			JOptionPane.showMessageDialog(null, "data entered correctly.");
+			//JOptionPane.showMessageDialog(null, "data entered correctly.");
 			return true;
 		}
 		else
 		{
-			JOptionPane.showMessageDialog(null, alert);
+			//JOptionPane.showMessageDialog(null, alert);
 			return false;
 		}
 	}
@@ -145,7 +145,7 @@ public class SignUpBean
 		}
 		else
 		{
-			alert+="\nThe name entered is not valid, it should contain only alphabetic characters.";
+			//alert+="\nThe name entered is not valid, it should contain only alphabetic characters.";
 			return false;
 		}
 	}
@@ -157,7 +157,7 @@ public class SignUpBean
 		}
 		else
 		{
-			alert+="\nThe surname entered is not valid, it should contain only alphabetic characters and numbers.";
+			//alert+="\nThe surname entered is not valid, it should contain only alphabetic characters and numbers.";
 			return false;
 		}
 	}
@@ -169,7 +169,7 @@ public class SignUpBean
 		}
 		else
 		{
-			alert+="\nThe username entered is not valid, it should contain only alphabetic characters.";
+			//alert+="\nThe username entered is not valid, it should contain only alphabetic characters.";
 			return false;
 		}
 	}
@@ -183,13 +183,13 @@ public class SignUpBean
 			}
 			else
 			{
-				alert+="\nPasswords entered do not coincide.";
+				//alert+="\nPasswords entered do not coincide.";
 				return false;
 			}
 		}
 		else
 		{
-			alert+="\nThe password must be at least 8 characters long.";
+			//alert+="\nThe password must be at least 8 characters long.";
 			return false;
 		}
 	}
@@ -211,31 +211,31 @@ public class SignUpBean
 						}
 						else
 						{
-							alert+="\nThe email entered is incorrect, the email domain does not exist.";
+							//alert+="\nThe email entered is incorrect, the email domain does not exist.";
 							return false;
 						}
 					}
 					else
 					{
-						alert+="\nThe email entered is incorrect, the email domain does not exist.";
+						//alert+="\nThe email entered is incorrect, the email domain does not exist.";
 						return false;
 					}
 				}
 				else
 				{
-					alert+="\nThe email entered is incorrect, the username of the email can contain only alphanumeric characters.";
+					//alert+="\nThe email entered is incorrect, the username of the email can contain only alphanumeric characters.";
 					return false;					
 				}
 			}
 			else
 			{
-				alert+="\nThe email entered is incorrect, too many @ entered.";
+				//alert+="\nThe email entered is incorrect, too many @ entered.";
 				return false;
 			}
 		}
 		else
 		{
-			alert+="\nThe email entered is incorrect, @ absent.";
+			//alert+="\nThe email entered is incorrect, @ absent.";
 			return false;
 		}
 	}
@@ -244,7 +244,7 @@ public class SignUpBean
 	{
 		if(data==null)
 		{
-			alert+="\nYou must insert your birth date.";
+			//alert+="\nYou must insert your birth date.";
 			return false;
 		}
 		 Instant instant = Instant.from(data.atStartOfDay(ZoneId.systemDefault()));
@@ -258,7 +258,7 @@ public class SignUpBean
 		 }
 		 else
 		 {
-			 alert+="\nYou must be at least 10 years old to use the software.";
+			 //alert+="\nYou must be at least 10 years old to use the software.";
 			 return false;
 		 }
 	}
@@ -270,7 +270,7 @@ public class SignUpBean
 		}
 		else
 		{
-			alert+="\nGender not selected.";
+			//alert+="\nGender not selected.";
 			 return false;
 		}
 	}
@@ -282,7 +282,7 @@ public class SignUpBean
 		}
 		else
 		{
-			alert+="\nType of account not selected.";
+			//alert+="\nType of account not selected.";
 			 return false;
 		}
 	}

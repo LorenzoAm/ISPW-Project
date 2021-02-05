@@ -1,16 +1,16 @@
 
-:logic.entities.Spot#getNumeroDiSkater()Ljava/lang/Integer;P
-FC:/Users/loren/git/ISPW-Project/SkateSpot/src/logic/entities/Spot.javaj j($"1*è
+-logic.entities.Spot#getData()Ljava/util/Date;P
+FC:/Users/loren/git/ISPW-Project/SkateSpot/src/logic/entities/Spot.javat t("1*Ø
 1P
-FC:/Users/loren/git/ISPW-Project/SkateSpot/src/logic/entities/Spot.javal l(¡
-ž
+FC:/Users/loren/git/ISPW-Project/SkateSpot/src/logic/entities/Spot.javav v(”
+‘
 P
-FC:/Users/loren/git/ISPW-Project/SkateSpot/src/logic/entities/Spot.javal l(
-%0java.lang.Integer"__id*+*)
-logic.entities.Spot"
-numeroDiSkater"m
+FC:/Users/loren/git/ISPW-Project/SkateSpot/src/logic/entities/Spot.javav v(
+%0java.util.Date"__id*!*
+logic.entities.Spot"
+data"j
 P
-FC:/Users/loren/git/ISPW-Project/SkateSpot/src/logic/entities/Spot.javal l(
-
-%0java.lang.IntegerB
+FC:/Users/loren/git/ISPW-Project/SkateSpot/src/logic/entities/Spot.javav v(
+
+%0java.util.DateB
 logic.entities.Spot

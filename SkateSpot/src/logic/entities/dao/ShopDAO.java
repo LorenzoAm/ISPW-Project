@@ -1,11 +1,8 @@
-package logic.entities.DAO;
+package logic.entities.dao;
 
 import java.sql.*;
 import java.time.LocalDate;
 import java.util.ArrayList;
-
-import javax.swing.JOptionPane;
-
 import logic.controllers.UserContainer;
 import logic.entities.Shop;
 
@@ -14,7 +11,12 @@ public class ShopDAO
     private static final String USER = "root";
     private static final String PSW = "PASSWORD";
     private static final String URL = "jdbc:mysql://localhost:3306/skate_spot";
+<<<<<<< HEAD
+=======
+    
+>>>>>>> stash
 
+    private ShopDAO( ) {}
     public static void createShop(String partitaIVA, String name, String description, String city, String street, String number, String municipality, String area, Integer code, LocalDate date)
 	{
     	Connection connection = null; //interface
@@ -22,6 +24,10 @@ public class ShopDAO
         int retFromQuery;
         try
         {
+<<<<<<< HEAD
+=======
+           
+>>>>>>> stash
             //apertura della connessione
             connection=DriverManager.getConnection(URL,USER,PSW);
             //creazione ed esecuzione query
@@ -37,22 +43,22 @@ public class ShopDAO
                 //Inserisco dati nel db
             	query = "INSERT INTO shop (PartitaIVA,Nome,Descrizione,Citta,Via,Civico,Comune,Zona,CodiceProprietario,DataInserimento) VALUES ('"+partitaIVA+"','"+name+"','"+description+"','"+city+"','"+street+"','"+streetNumber+"','"+municipality+"','"+area+"','"+code+"','"+date+"');";
             	retFromQuery = statement.executeUpdate(query);
-            	if (retFromQuery==2) //la query non ha prodotto risultati
+            	/*if (retFromQuery==2) //la query non ha prodotto risultati
                 {
             		JOptionPane.showMessageDialog(null," OPS! Something went wrong."," ERROR",JOptionPane.ERROR_MESSAGE);
                 }
             	else
             	{
             		JOptionPane.showMessageDialog(null," Your data has been saved into db!","INFORMATION", JOptionPane.INFORMATION_MESSAGE);
-            	}
+            	}*/
             	
             }
-            else
+           /* else
             {
                 //Messagio Errore
             	JOptionPane.showMessageDialog(null," The shop already exists ! "," ERROR",JOptionPane.ERROR_MESSAGE);
 
-            }
+            }*/	
 
             //chiudiamo il result set generato dalla query
             rs.close();
@@ -151,6 +157,10 @@ public class ShopDAO
 
         try
         {
+<<<<<<< HEAD
+=======
+
+>>>>>>> stash
             connection = DriverManager.getConnection(URL,USER,PSW);
 
             statement = connection.createStatement(ResultSet.TYPE_SCROLL_INSENSITIVE,ResultSet.CONCUR_READ_ONLY);

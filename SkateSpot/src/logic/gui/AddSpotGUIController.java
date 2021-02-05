@@ -35,6 +35,8 @@ public class AddSpotGUIController
                 bean.control(type.getText(), description.getText());//finisce di passare i dati necessari (sonalCloud non accetta pi� di 7 parametri per costruttore)
                 if (bean.check()) {
                     AddSpotController.getInstance().createSpot(bean);
+                    HomeGuiController.getAddSpotStage().close();
+                    HomeMain.getStage().show();
                 }
          }
         

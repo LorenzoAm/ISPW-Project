@@ -14,6 +14,8 @@ public class ShopBean
 	private String street="";
 	private String number="";
 	private String alert;
+	
+	public ShopBean() {}
 
 	public ShopBean(String name,String city,String partitaIVA,String municipality,String area,String description)
 	{

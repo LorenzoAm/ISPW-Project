@@ -1,17 +1,16 @@
 
-5logic.entities.Shop#getPartitaIVA()Ljava/lang/String;P
-FC:/Users/loren/git/ISPW-Project/SkateSpot/src/logic/entities/Shop.javaG G("1*â
+/logic.entities.Shop#getNome()Ljava/lang/String;P
+FC:/Users/loren/git/ISPW-Project/SkateSpot/src/logic/entities/Shop.javaL L("1*Ü
 1P
-FC:/Users/loren/git/ISPW-Project/SkateSpot/src/logic/entities/Shop.javaI I(œ
-™
+FC:/Users/loren/git/ISPW-Project/SkateSpot/src/logic/entities/Shop.javaN N(–
+“
 P
-FC:/Users/loren/git/ISPW-Project/SkateSpot/src/logic/entities/Shop.javaI I(
-%0java.lang.String"__id*'*%
-logic.entities.Shop"
-
-partitaIVA"l
+FC:/Users/loren/git/ISPW-Project/SkateSpot/src/logic/entities/Shop.javaN N(
+%0java.lang.String"__id*!*
+logic.entities.Shop"
+nome"l
 P
-FC:/Users/loren/git/ISPW-Project/SkateSpot/src/logic/entities/Shop.javaI I(
+FC:/Users/loren/git/ISPW-Project/SkateSpot/src/logic/entities/Shop.javaN N(
 
 %0java.lang.StringB
 logic.entities.Shop

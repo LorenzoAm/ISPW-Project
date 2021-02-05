@@ -1,16 +1,16 @@
 
-/logic.entities.Spot#getTipo()Ljava/lang/String;P
-FC:/Users/loren/git/ISPW-Project/SkateSpot/src/logic/entities/Spot.javaV V("1*Ü
+1logic.entities.Spot#getComune()Ljava/lang/String;P
+FC:/Users/loren/git/ISPW-Project/SkateSpot/src/logic/entities/Spot.java` `("1*Þ
 1P
-FC:/Users/loren/git/ISPW-Project/SkateSpot/src/logic/entities/Spot.javaX X(–
-“
+FC:/Users/loren/git/ISPW-Project/SkateSpot/src/logic/entities/Spot.javab b(˜
+•
 P
-FC:/Users/loren/git/ISPW-Project/SkateSpot/src/logic/entities/Spot.javaX X(
-%0java.lang.String"__id*!*
-logic.entities.Spot"
-tipo"l
+FC:/Users/loren/git/ISPW-Project/SkateSpot/src/logic/entities/Spot.javab b(
+%0java.lang.String"__id*#*!
+logic.entities.Spot"
+comune"l
 P
-FC:/Users/loren/git/ISPW-Project/SkateSpot/src/logic/entities/Spot.javaX X(
+FC:/Users/loren/git/ISPW-Project/SkateSpot/src/logic/entities/Spot.javab b(
 
 %0java.lang.StringB
 logic.entities.Spot

@@ -7,7 +7,8 @@ public class LoginBean
     private String email;
     private String password;
 
-
+    public LoginBean() {}
+    
     public LoginBean(String email, String password)
     {
         setEmail(email);
