@@ -19,7 +19,6 @@
 	<classpathentry kind="con" path="org.eclipse.jst.j2ee.internal.web.container"/>
 	<classpathentry kind="con" path="org.eclipse.jst.j2ee.internal.module.container"/>
 	<classpathentry kind="con" path="org.eclipse.jdt.USER_LIBRARY/JavaFx"/>
-	<classpathentry kind="lib" path="C:/Program Files/mysql-connector-java-5.1.46/lib/mysql-connector-java-5.1.46-bin.jar"/>
 	<classpathentry kind="lib" path="D:/Programmi/JavaStuff/MySqlConnector/mysql-connector-java-8.0.22/mysql-connector-java-8.0.22.jar"/>
 	<classpathentry kind="output" path="build/classes"/>
 </classpath>

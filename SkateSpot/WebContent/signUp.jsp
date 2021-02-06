@@ -1,5 +1,9 @@
 <%@ page language="java" contentType="text/html; charset=ISO-8859-1"
     pageEncoding="ISO-8859-1"%>   
+<%@page import="java.util.Date" %>
+<%@page import="java.text.SimpleDateFormat" %>
+<%@page import="java.time.LocalDate" %>
+<%@page import="java.time.ZoneId" %>
 <%@page import="logic.beans.SignUpBean" %>
 <%@page import="logic.controllers.SignUpController" %>
 
@@ -16,9 +20,19 @@
 	<%
  	if(request.getParameter("signUp")!=null)
  	{
- 		if(signUpBean.check())
+ 		SignUpBean bean= new SignUpBean(request.getParameter("name"),request.getParameter("surname"),request.getParameter("username"),request.getParameter("email"),request.getParameter("password"),request.getParameter("confirmPassword"));
+ 		if(request.getParameter("data")!=null)
  		{
- 			SignUpController.getInstance().signUp(signUpBean);
+ 			String data = request.getParameter("data");
+ 			SimpleDateFormat dateFormat = new SimpleDateFormat("yyyy-MM-dd");
+ 			Date realDate = dateFormat.parse(data);
+ 			LocalDate dateInLocalType=realDate.toInstant().atZone(ZoneId.systemDefault()).toLocalDate();
+ 			bean.control(dateInLocalType,request.getParameter("gender"),request.getParameter("typeOfAccount"));
+ 			
+ 		}
+ 		if(bean.check())
+ 		{
+ 			SignUpController.getInstance().signUp(bean);
  		%>
  			<jsp:forward page="index.jsp"/>
  		<% 
@@ -42,28 +56,28 @@
 		<h1>Create a new account</h1> <br>
 		<form action="" method="get">
   			<label >Name: </label>
-  			<input type="text" id="name" name="name">
+  			<input type="text" id="name" name="name" required>
   			<label>Surname: </label>
-  			<input type="text" id="surname" name="surname"><br><br>
+  			<input type="text" id="surname" name="surname" required><br><br>
   			<label >Username: </label>
-  			<input type="text" id="username" name="username"><br><br>
+  			<input type="text" id="username" name="username" required><br><br>
   			<label >Email: </label>
-  			<input type="text" id="email" name="email"><br><br>
+  			<input type="text" id="email" name="email" required><br><br>
   			<label >New password: </label>
-  			<input type="password" id="password" name="password"><br><br>
+  			<input type="password" id="password" name="password" required><br><br>
   			<label >Confirm password: </label>
-  			<input type="password" id="confirmPassword" name="confirmPassword"><br><br>
+  			<input type="password" id="confirmPassword" name="confirmPassword" required><br><br>
   			<label >Date of birth: </label>
-  			<input type="date" id="data" name="data"><br><br>
+  			<input type="date" id="data" name="data" required><br><br>
   			<label>Gender:</label><br>
-  			<input type="radio" id="maleButton" name="gender">
+  			<input type="radio" id="maleButton" name="gender" value="M" required>
   			<label>Male</label><br>
-  			<input type="radio" id="femaleButton" name="gender">
+  			<input type="radio" id="femaleButton" name="gender" value="F">
   			<label>Female</label><br><br>
   			<label>Type of account :</label> <br>
-  			<input type="radio" id="skaterButton" name="typeOfAccount">
+  			<input type="radio" id="skaterButton" name="typeOfAccount" value="Skater" required>
   			<label>Skater(free)</label><br>
-  			<input type="radio" id="ownerButton" name="typeOfAccount">
+  			<input type="radio" id="ownerButton" name="typeOfAccount" value="Owner">
   			<label>Shop owner</label><br><br><br>
   			<input type="submit" value="Sign up" name="signUp">
   			<input type="reset" value="reset all">
