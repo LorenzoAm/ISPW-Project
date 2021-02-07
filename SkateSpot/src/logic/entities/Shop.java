@@ -16,7 +16,7 @@ public class Shop
 
 
 
-    public Shop(String partitaIVA,String nome,String descrizione,String indirizzo,String zona,String comune,String username,Date data )
+    public Shop(String partitaIVA,String nome,String descrizione,String indirizzo,String zona,String comune,String username )
     {
         setPartitaIVA(partitaIVA);
         setNome(nome);
@@ -25,7 +25,6 @@ public class Shop
         setZona(zona);
         setComune(comune);
         setUsername(username);
-        setData(data);
     }
 
     public void setPartitaIVA(String partitaIVA)

@@ -1,5 +1,7 @@
 package logic.gui;
 
+import javax.swing.JOptionPane;
+
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.scene.control.Button;
@@ -94,6 +96,10 @@ public class SignUpGuiController
 						HomeGuiController.getSignUpStage().close();      //viene chiusa la schermata di login e riaperta la home
 						HomeMain.getStage().show();
 					}
+				}
+				else
+				{
+					JOptionPane.showMessageDialog(null, "Data insert is incorrect:\nName and surname must containt only alphabetics character;\nUsername must contain only alphanumerical characters;\nEmail must be in the form username@domain;\nPassword and confirm password must match;\nYou must be at least 10 years old.");
 				}
 		}
     }	

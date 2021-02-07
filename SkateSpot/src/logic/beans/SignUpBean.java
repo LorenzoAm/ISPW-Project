@@ -8,6 +8,8 @@ import java.util.Date;
 import java.util.Locale;
 import java.util.TimeZone;
 
+import javax.swing.JOptionPane;
+
 public class SignUpBean
 {
 	private String name;
@@ -124,122 +126,119 @@ public class SignUpBean
 	
 	public boolean check()
 	{
-		if(checkName()&&checkSurname()&&checkUsername()&&checkEmail()&&checkPassword()&&checkDate()&&checkGender()&&checkTypeOfAccount())
-		{
-			//JOptionPane.showMessageDialog(null, "data entered correctly.");
-			return true;
-		}
-		else
-		{
-			//JOptionPane.showMessageDialog(null, alert);
-			return false;
-		}
+		return (checkName()&&checkSurname()&&checkUsername()&&checkEmail()&&checkPassword()&&checkDate()&&checkGender()&&checkTypeOfAccount());
 	}
 	
 	private boolean checkName()
 	{
-		
-		if ( !(name.equals("")) && (name.matches(match)) ) 
-		{ 
-		       return true;
-		}
-		else
-		{
-			//alert+="\nThe name entered is not valid, it should contain only alphabetic characters.";
-			return false;
-		}
+		return( !(name.equals("")) && (name.matches(match)) );
 	}
 	private boolean checkSurname()
 	{
-		if ( !(surname.equals("")) && (surname.matches(match)) ) 
-		{ 
-		       return true;
-		}
-		else
-		{
-			//alert+="\nThe surname entered is not valid, it should contain only alphabetic characters and numbers.";
-			return false;
-		}
+		return( !(surname.equals("")) && (surname.matches(match)) );
 	}
 	private boolean checkUsername()
 	{
-		if ( !(username.equals("")) && (username.matches("^[a-zA-Z0-9]*$")) ) 
-		{ 
-		       return true;
-		}
-		else
-		{
-			//alert+="\nThe username entered is not valid, it should contain only alphabetic characters.";
-			return false;
-		}
+		return( !(username.equals("")) && (username.matches("^[a-zA-Z0-9]*$")) );
 	}
 	private boolean checkPassword()
 	{
 		if(password.length()>7)
 		{
-			if(password.equals(confirmPassword))
-			{
-				return true;
-			}
-			else
-			{
-				//alert+="\nPasswords entered do not coincide.";
-				return false;
-			}
+			return(password.equals(confirmPassword));
 		}
 		else
 		{
-			//alert+="\nThe password must be at least 8 characters long.";
 			return false;
 		}
 	}
 	private boolean checkEmail()
-	{
-		if(email.contains("@"))
-		{
-			String[] emailSplit = email.split("@");
-			if(emailSplit.length==2)
-			{
-				if(!emailSplit[0].equals(""))
-				{
-					if(emailSplit[1].contains("."))
-					{
-						String[] emailSplit2 = emailSplit[1].split("\\.");
-						if(( (!emailSplit2[0].equals("")) && (emailSplit2[0].matches(match)) ) && ( (!emailSplit2[1].equals("")) && (emailSplit2[1].matches(match)) ))
-						{
-							return true;
-						}
-						else
-						{
-							//alert+="\nThe email entered is incorrect, the email domain does not exist.";
-							return false;
-						}
-					}
-					else
-					{
-						//alert+="\nThe email entered is incorrect, the email domain does not exist.";
-						return false;
-					}
-				}
-				else
-				{
-					//alert+="\nThe email entered is incorrect, the username of the email can contain only alphanumeric characters.";
-					return false;					
-				}
-			}
-			else
-			{
-				//alert+="\nThe email entered is incorrect, too many @ entered.";
-				return false;
-			}
-		}
-		else
-		{
-			//alert+="\nThe email entered is incorrect, @ absent.";
-			return false;
-		}
-	}
-	//ERRORE SE IL CAMPO E' VUOTO
+    {
+        if(email.equals(""))
+        {
+            return false;
+        }
+        else
+        {
+            return this.checkAtEmail();
+
+        }
+    }
+    
+    private boolean checkAtEmail()
+    {
+    	if(email.contains("@"))
+        {
+             String[] splittedEmail = email.split("@",-1);
+             return this.checkSplittedEmail(splittedEmail);
+        }
+        else
+        {
+            return false;
+        }
+    }
+    
+    private boolean checkSplittedEmail(String[] splittedEmail)
+    {
+    	if((splittedEmail.length)==2)
+        {
+            return this.checkEmailIntegrity(splittedEmail);
+        }
+        else
+        {
+            return false;
+        }
+    }
+    
+    private boolean checkEmailIntegrity(String[] splittedEmail)
+    {
+    	if((!splittedEmail[0].equals(""))&&(!splittedEmail[1].equals("")))
+        {
+            return this.checkDotDomain(splittedEmail[1]);
+        }
+        else
+        {
+            return false;
+        }
+    }
+    
+    private boolean checkDotDomain(String splittedEmail)
+    {
+    	if(splittedEmail.contains("."))
+        {
+            String[] splittedEmail2 = splittedEmail.split("\\.",-1);
+            return this.checkDomain(splittedEmail2);
+        }
+        else
+        {
+            return false;
+        }
+    }
+    
+    private boolean checkDomain(String[] splittedEmail2)
+    {
+    	if ((splittedEmail2.length) == 2)
+        {
+            return this.checkDomain2(splittedEmail2);
+        }
+        else
+        {
+            return false;
+        }
+    }
+    
+    private boolean checkDomain2(String[] splittedEmail2)
+    {
+    	if((!splittedEmail2[0].equals(""))&&(splittedEmail2[0].matches("^[a-zA-Z]*$"))&&(!splittedEmail2[1].equals(""))&&(splittedEmail2[1].matches("^[a-zA-Z]*$")))
+        {
+            return true;
+        }
+        else
+        {
+            return false;
+        }
+    }
+	
 	private boolean checkDate()
 	{
 		if(data==null)
@@ -252,39 +251,15 @@ public class SignUpBean
 		 Calendar calendar = Calendar.getInstance(TimeZone.getTimeZone("Europe/Rome"),Locale.ITALY);
 		 calendar.add(Calendar.YEAR, -10);
 		 Date today = calendar.getTime();
-		 if(date.before(today))
-		 {
-			 return true;
-		 }
-		 else
-		 {
-			 //alert+="\nYou must be at least 10 years old to use the software.";
-			 return false;
-		 }
+		 return(date.before(today));
 	}
 	private boolean checkGender()
 	{
-		if(gender.equals("M")||gender.equals("F"))
-		{
-			 return true;
-		}
-		else
-		{
-			//alert+="\nGender not selected.";
-			 return false;
-		}
+		return(gender.equals("M")||gender.equals("F"));
 	}
 	private boolean checkTypeOfAccount()
 	{
-		if(typeOfAccount.equals("Skater")||typeOfAccount.equals("Owner"))
-		{
-			 return true;
-		}
-		else
-		{
-			//alert+="\nType of account not selected.";
-			 return false;
-		}
+		return(typeOfAccount.equals("Skater")||typeOfAccount.equals("Owner"));
 	}
 	
 }

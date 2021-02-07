@@ -66,7 +66,6 @@ public class LoginBean
     {
         if(email.equals(""))
         {
-            JOptionPane.showMessageDialog(null," you must insert an email address ");
             return false;
         }
         else
@@ -85,7 +84,6 @@ public class LoginBean
         }
         else
         {
-            JOptionPane.showMessageDialog(null," the email address must contain the character '@' ");
             return false;
         }
     }
@@ -98,7 +96,6 @@ public class LoginBean
         }
         else
         {
-            JOptionPane.showMessageDialog(null," the email address must contain only one character '@' ");
             return false;
         }
     }
@@ -111,7 +108,6 @@ public class LoginBean
         }
         else
         {
-            JOptionPane.showMessageDialog(null," wrong email username or/and email domain ");
             return false;
         }
     }
@@ -125,7 +121,6 @@ public class LoginBean
         }
         else
         {
-            JOptionPane.showMessageDialog(null," the email domain must contain the character '.' ");
             return false;
         }
     }
@@ -138,7 +133,6 @@ public class LoginBean
         }
         else
         {
-            JOptionPane.showMessageDialog(null," the email domain must contain only one character '.' ");
             return false;
         }
     }
@@ -151,7 +145,6 @@ public class LoginBean
         }
         else
         {
-            JOptionPane.showMessageDialog(null," the email domain does not exist ");
             return false;
         }
     }

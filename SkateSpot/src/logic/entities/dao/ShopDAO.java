@@ -98,7 +98,8 @@ public class ShopDAO
             {
                 String indirizzo = rs.getString("Via")+", "+rs.getInt("Civico")+", "+rs.getString("Citta");
                 String username=UserDAO.getUsername(rs.getInt("CodiceProprietario"));
-                shop = new Shop(rs.getString("PartitaIVA"),rs.getString("Nome"),rs.getString("Descrizione"),indirizzo,rs.getString("Zona"),rs.getString("Comune"),username,rs.getDate("DataInserimento"));
+                shop = new Shop(rs.getString("PartitaIVA"),rs.getString("Nome"),rs.getString("Descrizione"),indirizzo,rs.getString("Zona"),rs.getString("Comune"),username);
+                shop.setData(rs.getDate("DataInserimento"));
                 shops.add(shop);
             }
         }
@@ -151,7 +152,8 @@ public class ShopDAO
             {
                 String indirizzo = rs.getString("S.Via")+", "+rs.getInt("S.Civico")+", "+rs.getString("S.Citta");
                 String username=UserDAO.getUsername(rs.getInt("S.CodiceProprietario"));
-                shop = new Shop(rs.getString("S.PartitaIVA"),rs.getString("S.Nome"),rs.getString("S.Descrizione"),indirizzo,rs.getString("S.Zona"),rs.getString("S.Comune"),username,rs.getDate("S.DataInserimento"));
+                shop = new Shop(rs.getString("PartitaIVA"),rs.getString("Nome"),rs.getString("Descrizione"),indirizzo,rs.getString("Zona"),rs.getString("Comune"),username);
+                shop.setData(rs.getDate("DataInserimento"));
                 shops.add(shop);
             }
         }
