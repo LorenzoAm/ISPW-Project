@@ -1,46 +1,0 @@
-
-%logic.beans.SignUpBean#checkGender()ZU
-IC:/Users/loren/git/ISPW-Project/SkateSpot/src/logic/beans/SignUpBean.javaâ â("4*ª
-2U
-IC:/Users/loren/git/ISPW-Project/SkateSpot/src/logic/beans/SignUpBean.javaç ç("_
-U
-IC:/Users/loren/git/ISPW-Project/SkateSpot/src/logic/beans/SignUpBean.javaç ç(
-""*‹
-3U
-IC:/Users/loren/git/ISPW-Project/SkateSpot/src/logic/beans/SignUpBean.javaã ã(†
-ù
-U
-IC:/Users/loren/git/ISPW-Project/SkateSpot/src/logic/beans/SignUpBean.javaã ã(
-%2java.lang.String"__id*&*$
-logic.beans.SignUpBean"
-gender‘—
-U
-IC:/Users/loren/git/ISPW-Project/SkateSpot/src/logic/beans/SignUpBean.javaã ã(+
-%3boolean",java.lang.String#equals(Ljava/lang/Object;)Z*
-
-%2java.lang.String*
-F2equals(Ljava/lang/Object;)*
-2
-1*‹
-4U
-IC:/Users/loren/git/ISPW-Project/SkateSpot/src/logic/beans/SignUpBean.javaã ã(†
-ù
-U
-IC:/Users/loren/git/ISPW-Project/SkateSpot/src/logic/beans/SignUpBean.javaã ã(
-%0java.lang.String"__id*&*$
-logic.beans.SignUpBean"
-gender‘—
-U
-IC:/Users/loren/git/ISPW-Project/SkateSpot/src/logic/beans/SignUpBean.javaã ã(
-%1boolean",java.lang.String#equals(Ljava/lang/Object;)Z*
-
-%0java.lang.String*
-M2equals(Ljava/lang/Object;)*
-2
-3*ª
-1U
-IC:/Users/loren/git/ISPW-Project/SkateSpot/src/logic/beans/SignUpBean.javaí í("_
-U
-IC:/Users/loren/git/ISPW-Project/SkateSpot/src/logic/beans/SignUpBean.javaí í(
-""B
-logic.beans.SignUpBean

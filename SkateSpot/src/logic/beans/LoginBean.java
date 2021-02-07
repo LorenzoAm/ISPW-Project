@@ -75,6 +75,7 @@ public class LoginBean
 
         }
     }
+    
     private boolean checkAtEmail()
     {
     	if(email.contains("@"))
@@ -88,6 +89,7 @@ public class LoginBean
             return false;
         }
     }
+    
     private boolean checkSplittedEmail(String[] splittedEmail)
     {
     	if((splittedEmail.length)==2)
@@ -127,6 +129,7 @@ public class LoginBean
             return false;
         }
     }
+    
     private boolean checkDomain(String[] splittedEmail2)
     {
     	if ((splittedEmail2.length) == 2)

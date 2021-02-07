@@ -1,64 +1,16 @@
 
-!logic.beans.JoinSpotBean#check()ZU
-KC:/Users/loren/git/ISPW-Project/SkateSpot/src/logic/beans/JoinSpotBean.java3 3("5*º
-2U
-KC:/Users/loren/git/ISPW-Project/SkateSpot/src/logic/beans/JoinSpotBean.java7 7(ü
-ù
-U
-KC:/Users/loren/git/ISPW-Project/SkateSpot/src/logic/beans/JoinSpotBean.java7 7(J
-
-%3void"Rjavax.swing.JOptionPane#showMessageDialog(Ljava/awt/Component;Ljava/lang/Object;)V*"
-javax.swing.JOptionPane*
-""*
-data entered correctly."_
-U
-KC:/Users/loren/git/ISPW-Project/SkateSpot/src/logic/beans/JoinSpotBean.java8 8(
-""*“
-3U
-KC:/Users/loren/git/ISPW-Project/SkateSpot/src/logic/beans/JoinSpotBean.java5) 5(2®
-«
-U
-KC:/Users/loren/git/ISPW-Project/SkateSpot/src/logic/beans/JoinSpotBean.java5) 5(4
-%2boolean"%logic.beans.JoinSpotBean#checkCity()Z*
-logic.beans.JoinSpotBean*
-2
-1*•
-4U
-KC:/Users/loren/git/ISPW-Project/SkateSpot/src/logic/beans/JoinSpotBean.java5 5(%°
-­
-U
-KC:/Users/loren/git/ISPW-Project/SkateSpot/src/logic/beans/JoinSpotBean.java5 5('
-%1boolean"'logic.beans.JoinSpotBean#checkNumber()Z*
-logic.beans.JoinSpotBean*
-3
-1*•
-5U
-KC:/Users/loren/git/ISPW-Project/SkateSpot/src/logic/beans/JoinSpotBean.java5 5(°
-­
-U
-KC:/Users/loren/git/ISPW-Project/SkateSpot/src/logic/beans/JoinSpotBean.java5 5(
-%0boolean"'logic.beans.JoinSpotBean#checkStreet()Z*
-logic.beans.JoinSpotBean*
-4
-1*Û
-1U
-KC:/Users/loren/git/ISPW-Project/SkateSpot/src/logic/beans/JoinSpotBean.java< <(¡
-ž
-U
-KC:/Users/loren/git/ISPW-Project/SkateSpot/src/logic/beans/JoinSpotBean.java<0 <(5
-%4java.lang.String"__id*'*%
-logic.beans.JoinSpotBean"
-alertù
-ö
-U
-KC:/Users/loren/git/ISPW-Project/SkateSpot/src/logic/beans/JoinSpotBean.java< <(6
-
-%5void"Rjavax.swing.JOptionPane#showMessageDialog(Ljava/awt/Component;Ljava/lang/Object;)V*"
-javax.swing.JOptionPane*
-""*
-
-%4java.lang.String"_
-U
-KC:/Users/loren/git/ISPW-Project/SkateSpot/src/logic/beans/JoinSpotBean.java= =(
-""B
-logic.beans.JoinSpotBean
+Iorg.apache.jsp.WebContent.joinSpot_jsp#getPackageImports()Ljava/util/Set;q
+gC:\Users\Andrei\git\ISPW-Project\SkateSpot\.scannerwork\jsp\org\apache\jsp\WebContent\joinSpot_jsp.java+) +(:"1*Ÿ
+1q
+gC:\Users\Andrei\git\ISPW-Project\SkateSpot\.scannerwork\jsp\org\apache\jsp\WebContent\joinSpot_jsp.java, ,(!™
+–
+q
+gC:\Users\Andrei\git\ISPW-Project\SkateSpot\.scannerwork\jsp\org\apache\jsp\WebContent\joinSpot_jsp.java, ,(!
+%0java.util.Set"__id*
+"""Š
+q
+gC:\Users\Andrei\git\ISPW-Project\SkateSpot\.scannerwork\jsp\org\apache\jsp\WebContent\joinSpot_jsp.java, ,("
+
+%0java.util.Set:
+%jsp_contextB*(
+&org.apache.jsp.WebContent.joinSpot_jsp

@@ -1,16 +1,16 @@
 
-0logic.entities.User#getEmail()Ljava/lang/String;P
-FC:/Users/loren/git/ISPW-Project/SkateSpot/src/logic/entities/User.javaJ J("1*›
-1P
-FC:/Users/loren/git/ISPW-Project/SkateSpot/src/logic/entities/User.javaL L(ó
-î
-P
-FC:/Users/loren/git/ISPW-Project/SkateSpot/src/logic/entities/User.javaL L(
-%0java.lang.String"__id*"* 
-logic.entities.User"
-email"l
-P
-FC:/Users/loren/git/ISPW-Project/SkateSpot/src/logic/entities/User.javaL L(
-
-%0java.lang.StringB
-logic.entities.User
+Lorg.apache.jsp.WebContent.viewMyShops_jsp#getPackageImports()Ljava/util/Set;t
+jC:\Users\Andrei\git\ISPW-Project\SkateSpot\.scannerwork\jsp\org\apache\jsp\WebContent\viewMyShops_jsp.java+) +(:"1*®
+1t
+jC:\Users\Andrei\git\ISPW-Project\SkateSpot\.scannerwork\jsp\org\apache\jsp\WebContent\viewMyShops_jsp.java, ,(!ú
+ô
+t
+jC:\Users\Andrei\git\ISPW-Project\SkateSpot\.scannerwork\jsp\org\apache\jsp\WebContent\viewMyShops_jsp.java, ,(!
+%0java.util.Set"__id*
+"""ç
+t
+jC:\Users\Andrei\git\ISPW-Project\SkateSpot\.scannerwork\jsp\org\apache\jsp\WebContent\viewMyShops_jsp.java, ,("
+
+%0java.util.Set:
+%jsp_contextB-+
+)org.apache.jsp.WebContent.viewMyShops_jsp

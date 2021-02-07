@@ -1,7 +1,0 @@
-organization=lorenzoam
-projectKey=LorenzoAm_ISPW-Project
-serverUrl=https://sonarcloud.io
-serverVersion=8.0.0.17032
-dashboardUrl=https://sonarcloud.io/dashboard?id=LorenzoAm_ISPW-Project
-ceTaskId=AXdzWqqEst5mxKvOjv5J
-ceTaskUrl=https://sonarcloud.io/api/ce/task?id=AXdzWqqEst5mxKvOjv5J

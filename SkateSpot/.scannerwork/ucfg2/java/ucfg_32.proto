@@ -1,48 +1,59 @@
 
-Xlogic.controllers.ViewShopController#getInstance()Llogic/controllers/ViewShopController;a
-WC:/Users/loren/git/ISPW-Project/SkateSpot/src/logic/controllers/ViewShopController.java" (-"3*Æ
-2a
-WC:/Users/loren/git/ISPW-Project/SkateSpot/src/logic/controllers/ViewShopController.java (&¸µ
-a
-WC:/Users/loren/git/ISPW-Project/SkateSpot/src/logic/controllers/ViewShopController.java ($*
-%1$logic.controllers.ViewShopController"$logic.controllers.ViewShopControllerÊ
-Ç
-a
-WC:/Users/loren/git/ISPW-Project/SkateSpot/src/logic/controllers/ViewShopController.java (&
-%2".logic.controllers.ViewShopController#<init>()V*,
-*
-%1$logic.controllers.ViewShopControllerÐ
-Í
-a
-WC:/Users/loren/git/ISPW-Project/SkateSpot/src/logic/controllers/ViewShopController.java (&4&
-$logic.controllers.ViewShopController"
-
-instance"__id*,
-*
-%1$logic.controllers.ViewShopController*
-1*Á
-3a
-WC:/Users/loren/git/ISPW-Project/SkateSpot/src/logic/controllers/ViewShopController.java (Ð
-Í
-a
-WC:/Users/loren/git/ISPW-Project/SkateSpot/src/logic/controllers/ViewShopController.java (*
-%0$logic.controllers.ViewShopController"__id*6*4&
-$logic.controllers.ViewShopController"
-
-instance*
+dorg.apache.jsp.WebContent.viewSpots_jsp#_jsp_getInstanceManager()Lorg/apache/tomcat/InstanceManager;r
+hC:\Users\Andrei\git\ISPW-Project\SkateSpot\.scannerwork\jsp\org\apache\jsp\WebContent\viewSpots_jsp.java>+ >(B"5*—
+2r
+hC:\Users\Andrei\git\ISPW-Project\SkateSpot\.scannerwork\jsp\org\apache\jsp\WebContent\viewSpots_jsp.javaB! B($¢Ÿ
+r
+hC:\Users\Andrei\git\ISPW-Project\SkateSpot\.scannerwork\jsp\org\apache\jsp\WebContent\viewSpots_jsp.javaBe B(w!
+%2javax.servlet.ServletConfig"Ejavax.servlet.Servlet#getServletConfig()Ljavax/servlet/ServletConfig;*+)
+'org.apache.jsp.WebContent.viewSpots_jsp2getServletConfig()ƒ
+€
+r
+hC:\Users\Andrei\git\ISPW-Project\SkateSpot\.scannerwork\jsp\org\apache\jsp\WebContent\viewSpots_jsp.javaB! B(x'
+%3!org.apache.tomcat.InstanceManager"…org.apache.jasper.runtime.InstanceManagerFactory#getInstanceManager(Ljavax/servlet/ServletConfig;)Lorg/apache/tomcat/InstanceManager;*4"2
+0org.apache.jasper.runtime.InstanceManagerFactory*#
+!
+%2javax.servlet.ServletConfigí
+ê
+r
+hC:\Users\Andrei\git\ISPW-Project\SkateSpot\.scannerwork\jsp\org\apache\jsp\WebContent\viewSpots_jsp.javaB
+ B(xC)
+'org.apache.jsp.WebContent.viewSpots_jsp"
+_jsp_instancemanager"__id*)
+'
+%3!org.apache.tomcat.InstanceManager*
+1*ï
+3r
+hC:\Users\Andrei\git\ISPW-Project\SkateSpot\.scannerwork\jsp\org\apache\jsp\WebContent\viewSpots_jsp.javaA A( í
+ê
+r
+hC:\Users\Andrei\git\ISPW-Project\SkateSpot\.scannerwork\jsp\org\apache\jsp\WebContent\viewSpots_jsp.javaA A( '
+%1!org.apache.tomcat.InstanceManager"__id*E*C)
+'org.apache.jsp.WebContent.viewSpots_jsp"
+_jsp_instancemanager*
 2
-1*Í
-1a
-WC:/Users/loren/git/ISPW-Project/SkateSpot/src/logic/controllers/ViewShopController.java	 (Ð
-Í
-a
-WC:/Users/loren/git/ISPW-Project/SkateSpot/src/logic/controllers/ViewShopController.java	 (*
-%3$logic.controllers.ViewShopController"__id*6*4&
-$logic.controllers.ViewShopController"
-
-instance"‘
-a
-WC:/Users/loren/git/ISPW-Project/SkateSpot/src/logic/controllers/ViewShopController.java (,
-*
-%3$logic.controllers.ViewShopControllerB("&
-$logic.controllers.ViewShopController
+1*ï
+5r
+hC:\Users\Andrei\git\ISPW-Project\SkateSpot\.scannerwork\jsp\org\apache\jsp\WebContent\viewSpots_jsp.java? ?(í
+ê
+r
+hC:\Users\Andrei\git\ISPW-Project\SkateSpot\.scannerwork\jsp\org\apache\jsp\WebContent\viewSpots_jsp.java? ?('
+%0!org.apache.tomcat.InstanceManager"__id*E*C)
+'org.apache.jsp.WebContent.viewSpots_jsp"
+_jsp_instancemanager*
+3
+1*‰
+1r
+hC:\Users\Andrei\git\ISPW-Project\SkateSpot\.scannerwork\jsp\org\apache\jsp\WebContent\viewSpots_jsp.javaF F(í
+ê
+r
+hC:\Users\Andrei\git\ISPW-Project\SkateSpot\.scannerwork\jsp\org\apache\jsp\WebContent\viewSpots_jsp.javaF F('
+%4!org.apache.tomcat.InstanceManager"__id*E*C)
+'org.apache.jsp.WebContent.viewSpots_jsp"
+_jsp_instancemanager"Ÿ
+r
+hC:\Users\Andrei\git\ISPW-Project\SkateSpot\.scannerwork\jsp\org\apache\jsp\WebContent\viewSpots_jsp.javaF F( )
+'
+%4!org.apache.tomcat.InstanceManager:
+%jsp_contextB+)
+'org.apache.jsp.WebContent.viewSpots_jsp
