@@ -71,59 +71,85 @@ public class LoginBean
         }
         else
         {
-            if(email.contains("@"))
-            {
-                 String[] splittedEmail = email.split("@",-1);
-                 if((splittedEmail.length)==2)
-                 {
-                     if((!splittedEmail[0].equals(""))&&(!splittedEmail[1].equals("")))
-                     {
-                         if(splittedEmail[1].contains("."))
-                         {
-                             String[] splittedEmail2 = splittedEmail[1].split("\\.",-1);
-                             if ((splittedEmail2.length) == 2)
-                             {
-                                 if((!splittedEmail2[0].equals(""))&&(splittedEmail2[0].matches("^[a-zA-Z]*$"))&&(!splittedEmail2[1].equals(""))&&(splittedEmail2[1].matches("^[a-zA-Z]*$")))
-                                 {
-                                     return true;
-                                 }
-                                 else
-                                 {
-                                     JOptionPane.showMessageDialog(null," the email domain does not exist ");
-                                     return false;
-                                 }
-                             }
-                             else
-                             {
-                                 JOptionPane.showMessageDialog(null," the email domain must contain only one character '.' ");
-                                 return false;
-                             }
-                         }
-                         else
-                         {
-                             JOptionPane.showMessageDialog(null," the email domain must contain the character '.' ");
-                             return false;
-                         }
-                     }
-                     else
-                     {
-                         JOptionPane.showMessageDialog(null," wrong email username or/and email domain ");
-                         return false;
-                     }
+            return this.checkAtEmail();
 
-                 }
-                 else
-                 {
-                     JOptionPane.showMessageDialog(null," the email address must contain only one character '@' ");
-                     return false;
-                 }
-            }
-            else
-            {
-                JOptionPane.showMessageDialog(null," the email address must contain the character '@' ");
-                return false;
-            }
-
+        }
+    }
+    private boolean checkAtEmail()
+    {
+    	if(email.contains("@"))
+        {
+             String[] splittedEmail = email.split("@",-1);
+             return this.checkSplittedEmail(splittedEmail);
+        }
+        else
+        {
+            JOptionPane.showMessageDialog(null," the email address must contain the character '@' ");
+            return false;
+        }
+    }
+    private boolean checkSplittedEmail(String[] splittedEmail)
+    {
+    	if((splittedEmail.length)==2)
+        {
+            return this.checkEmailIntegrity(splittedEmail);
+        }
+        else
+        {
+            JOptionPane.showMessageDialog(null," the email address must contain only one character '@' ");
+            return false;
+        }
+    }
+    
+    private boolean checkEmailIntegrity(String[] splittedEmail)
+    {
+    	if((!splittedEmail[0].equals(""))&&(!splittedEmail[1].equals("")))
+        {
+            return this.checkDotDomain(splittedEmail[1]);
+        }
+        else
+        {
+            JOptionPane.showMessageDialog(null," wrong email username or/and email domain ");
+            return false;
+        }
+    }
+    
+    private boolean checkDotDomain(String splittedEmail)
+    {
+    	if(splittedEmail.contains("."))
+        {
+            String[] splittedEmail2 = splittedEmail.split("\\.",-1);
+            return this.checkDomain(splittedEmail2);
+        }
+        else
+        {
+            JOptionPane.showMessageDialog(null," the email domain must contain the character '.' ");
+            return false;
+        }
+    }
+    private boolean checkDomain(String[] splittedEmail2)
+    {
+    	if ((splittedEmail2.length) == 2)
+        {
+            return this.checkDomain2(splittedEmail2);
+        }
+        else
+        {
+            JOptionPane.showMessageDialog(null," the email domain must contain only one character '.' ");
+            return false;
+        }
+    }
+    
+    private boolean checkDomain2(String[] splittedEmail2)
+    {
+    	if((!splittedEmail2[0].equals(""))&&(splittedEmail2[0].matches("^[a-zA-Z]*$"))&&(!splittedEmail2[1].equals(""))&&(splittedEmail2[1].matches("^[a-zA-Z]*$")))
+        {
+            return true;
+        }
+        else
+        {
+            JOptionPane.showMessageDialog(null," the email domain does not exist ");
+            return false;
         }
     }
 

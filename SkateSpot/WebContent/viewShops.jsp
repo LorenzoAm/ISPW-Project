@@ -24,9 +24,7 @@
 		shops = ViewShopController.getInstance().getList();
 		if(shops==null)
 		{
-			%>
-			<p>There is no shop in our database</p>
-			<%!
+			//out.println("There is no dhop in our Data Base");
 		}
 		else
 		{
@@ -71,14 +69,14 @@
 	{
 		SimpleDateFormat sdf; 
 		
-		request.setAttribute("name",shops.get(i).getNome());
-		request.setAttribute("address",shops.get(i).getIndirizzo());
-		request.setAttribute("area",shops.get(i).getZona());
-		request.setAttribute("municipality",shops.get(i).getComune());
-		request.setAttribute("username",shops.get(i).getUsername());
-		String date = new SimpleDateFormat("dd-MM-yyyy").format(shops.get(i).getData());
-		request.setAttribute("data",date);
-		request.setAttribute("descrizione",shops.get(i).getDescrizione());
+		//application.setAttribute("name",shops.get(i).getNome());
+		//request.setAttribute("address",shops.get(i).getIndirizzo());
+		//request.setAttribute("area",shops.get(i).getZona());
+		//request.setAttribute("municipality",shops.get(i).getComune());
+		//request.setAttribute("username",shops.get(i).getUsername());
+		//String date = new SimpleDateFormat("dd-MM-yyyy").format(shops.get(i).getData());
+		//request.setAttribute("data",date);
+		//request.setAttribute("descrizione",shops.get(i).getDescrizione());
 	}
 	
 	
