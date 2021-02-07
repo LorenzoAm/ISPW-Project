@@ -6,6 +6,7 @@
 <%@page import="java.time.ZoneId" %>
 <%@page import="logic.beans.SignUpBean" %>
 <%@page import="logic.controllers.SignUpController" %>
+<%@page import="logic.exception.ExistingEmailException" %>
 
 <jsp:useBean id="signUpBean" scope="request" class="logic.beans.SignUpBean"/>
 <jsp:setProperty name="signUpBean" property="*"/>
@@ -32,17 +33,21 @@
  		}
  		if(bean.check())
  		{
- 			SignUpController.getInstance().signUp(bean);
+ 			try
+ 			{
+ 				SignUpController.getInstance().signUp(bean);
  		%>
  			<jsp:forward page="index.jsp"/>
  		<% 
+ 			}
+ 			catch(ExistingEmailException e)
+ 			{
+ 				%>
+ 	 			<jsp:forward page="signUpException.jsp"/>
+ 	 		<%
+ 			}
  		}
- 		else
- 		{
- 			%>
- 				<p>entered data aren't correct</p>
- 			<%
- 		}
+ 		
  	}
  %>
 	<div>
