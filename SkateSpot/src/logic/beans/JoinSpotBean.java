@@ -1,13 +1,11 @@
 package logic.beans;
 
-import javax.swing.*;
 
 public class JoinSpotBean
 {
     private String street;
     private String number;
     private String city;
-    private String alert;
     
     public JoinSpotBean() {}
 
@@ -50,55 +48,26 @@ public class JoinSpotBean
 
     public boolean check()
     {
-        if(checkStreet()&&checkNumber()&&checkCity())
-        {
-            JOptionPane.showMessageDialog(null, "data entered correctly.");
-            return true;
-        }
-        else
-        {
-            JOptionPane.showMessageDialog(null, alert);
-            return false;
-        }
+        return(checkStreet()&&checkNumber()&&checkCity());
+        
     }
 
     private boolean checkCity()
     {
-        if (city.equals("")) 
-        {
-        	alert+="\nThe name of the city wasn't entered.";
-            return false;
-        }
-        else
-        {
-            return true;
-        }
+        return(!city.equals(""));
+        
     }
 
     private boolean checkStreet()
     {
-        if (!street.equals("")) 
-        {
-            return true;
-        }
-        else
-        {
-            alert+="\nThe street wasn't entered.";
-            return false;
-        }
+        return(!street.equals(""));
+        
     }
 
     private boolean checkNumber()
     {
-        if ( (!number.equals("")) && (number.matches("^[0-9]*$")))
-        {
-            return true;
-        }
-        else
-        {
-            alert+="\nThe number wasn't correct.";
-            return false;
-        }
+        return( (!number.equals("")) && (number.matches("^[0-9]*$")));
+        
     }
 
 

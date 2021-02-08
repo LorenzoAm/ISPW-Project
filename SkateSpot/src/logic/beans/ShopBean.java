@@ -1,19 +1,19 @@
 package logic.beans;
 
-import javax.swing.JOptionPane;
 
 
 public class ShopBean 
 {
-	private String name="";
-	private String city="";
-	private String partitaIVA="";
-	private String municipality="";
-	private String area="";
-	private String description="";
-	private String street="";
-	private String number="";
-	private String alert;
+	private String name;
+	private String city;
+	private String partitaIVA;
+	private String municipality;
+	private String area;
+	private String description;
+	private String street;
+	private String number;
+	private static final String MATCH="^[a-zA-Z' ']*$";
+	private static final String MATCH2="^[0-9]*$";
 	
 	public ShopBean() {}
 
@@ -34,14 +34,8 @@ public class ShopBean
 
 	public void setName(String name)
 	{
-		if ( !name.equals("")) 
-		{ 
+		 
 			this.name=name;
-		}
-		else
-		{
-			alert+="\nThe name of the shop wasn't entered.";
-		}
 		
 	}
 	public String getName()
@@ -50,14 +44,9 @@ public class ShopBean
 	}
 	public void setCity(String city)
 	{
-		if ( !city.equals("")) 
-		{ 
+		 
 			this.city=city;
-		}
-		else
-		{
-			alert+="\nThe name of the city wasn't entered.";
-		}		
+				
 	}
 	public String getCity()
 	{
@@ -65,14 +54,8 @@ public class ShopBean
 	}
 	public void setPartitaIVA(String partitaIVA)
 	{
-		if ( !(partitaIVA.equals("")) && (partitaIVA.matches("^[0-9]*$")) && (partitaIVA.length()== 11))
-		{ 
 			this.partitaIVA=partitaIVA;
-		}
-		else
-		{
-			alert+="\nThe VAT number isn't correct.";
-		}		
+				
 	}
 	public String getPartitaIVA()
 	{
@@ -80,14 +63,7 @@ public class ShopBean
 	}
 	public void setMunicipality(String municipality)
 	{
-		if ( !municipality.equals("")) 
-		{ 
-			this.municipality=municipality;
-		}
-		else
-		{
-			alert+="\nThe municipality wasn't entered.";
-		}		
+			this.municipality=municipality;		
 	}
 	public String getMunicipality()
 	{
@@ -95,29 +71,15 @@ public class ShopBean
 	}
 	public void setArea(String area)
 	{
-		if ( !area.equals("")) 
-		{ 
-			this.area=area;
-		}
-		else
-		{
-			alert+="\nThe area wasn't entered.";
-		}		
+			this.area=area;	
 	}
 	public String getArea()
 	{
 		return area;
 	}
 	public void setDescription(String description)
-	{
-		if ( !description.equals("")) 
-		{ 
+	{ 
 			this.description=description;
-		}
-		else
-		{
-			alert+="\nThe description wasn't entered.";
-		}
 		
 	}
 	public String getDescription()
@@ -126,14 +88,8 @@ public class ShopBean
 	}
 	public void setStreet(String street)
 	{
-		if ( !street.equals("")) 
-		{ 
+		 
 			this.street=street;
-		}
-		else
-		{
-			alert+="\nThe street wasn't entered.";
-		}
 		
 	}
 	public String getStreet()
@@ -141,15 +97,8 @@ public class ShopBean
 		return street;
 	}
 	public void setNumber(String number)
-	{
-		if ( !(number.equals("")) && (number.matches("^[0-9]*$"))) 
-		{ 
+	{ 
 			this.number=number;
-		}
-		else
-		{
-			alert+="\nThe number wasn't correct.";
-		}
 		
 	}
 	public String getNumber()
@@ -159,16 +108,8 @@ public class ShopBean
 	
 	public boolean check()
 	{
-		if(!name.equals("")&&!city.equals("")&&!partitaIVA.equals("")&&!municipality.equals("")&&!area.equals("")&&!description.equals("")&&!street.equals("")&&!number.equals(""))
-		{
-			JOptionPane.showMessageDialog(null, "data entered correctly.");
-			return true;
-		}
-		else
-		{
-			JOptionPane.showMessageDialog(null, alert);
-			return false;
-		}
+		return(!name.equals("")&&name.matches(MATCH)&&!city.equals("")&&city.matches(MATCH)&&!partitaIVA.equals("")&&partitaIVA.matches(MATCH2)&&(partitaIVA.length()==11)&&!municipality.equals("")&&municipality.matches(MATCH)&&!area.equals("")&&area.matches(MATCH)&&!description.equals("")&&description.matches(MATCH)&&!street.equals("")&&street.matches(MATCH)&&!number.equals("")&&number.matches(MATCH2));
+		
 		
 	}
 }

@@ -35,10 +35,10 @@ public class JoinSpotGUIController
                 JoinSpotBean bean = new JoinSpotBean(street.getText(), number.getText(), city.getText());
                 if (bean.check()) 
                 {
-                	try {
-                    JoinSpotController.getInstance().joinSpot(bean); //richiamiamo login sull'istanza singleton passando i dati verificati dalla bean
-                    if(UserContainer.getInstance().getSpot()!=null)
-                    	JOptionPane.showMessageDialog(null," You've joined "+UserContainer.getInstance().getSpot().getNome()+", enjoy your session!","INFORMATION",JOptionPane.INFORMATION_MESSAGE);
+                	try 
+                	{
+                		JoinSpotController.getInstance().joinSpot(bean); //richiamiamo login sull'istanza singleton passando i dati verificati dalla bean
+                		JOptionPane.showMessageDialog(null," You've joined "+UserContainer.getInstance().getSpot().getNome()+", enjoy your session!","INFORMATION",JOptionPane.INFORMATION_MESSAGE);
                 	}
                 	catch(FullSpotException | SpotNotFoundException e)
                 	{

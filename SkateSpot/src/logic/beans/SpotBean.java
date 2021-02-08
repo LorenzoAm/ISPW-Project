@@ -1,7 +1,7 @@
 package logic.beans;
 
 
-import javax.swing.*;
+
 
 public class SpotBean
 {
@@ -13,7 +13,8 @@ public class SpotBean
     private String area;
     private String type;
     private String description;
-    private String alert;
+    private static final String MATCH="^[a-zA-Z' ']*$";
+	private static final String MATCH2="^[0-9]*$";
     
     public SpotBean() {}
 
@@ -116,119 +117,55 @@ public class SpotBean
 
     public boolean check()
     {
-        if(checkName()&&checkStreet()&&checkNumber()&&checkCity()&&checkMunicipality()&&checkArea()&&checkType()&&checkDescription())
-        {
-            JOptionPane.showMessageDialog(null, "data entered correctly.");
-            return true;
-        }
-        else
-        {
-            JOptionPane.showMessageDialog(null, alert);
-            return false;
-        }
+        return(checkName()&&checkStreet()&&checkNumber()&&checkCity()&&checkMunicipality()&&checkArea()&&checkType()&&checkDescription());
+       
+        
     }
 
     private boolean checkType()
     {
-        if ( !name.equals(""))
-        {
-            return true;
-        }
-        else
-        {
-            alert+="\nThe type of the spot wasn't entered.";
-            return false;
-        }
+        return( !type.equals("")&&type.matches(MATCH));
     }
 
     private boolean checkName()
     {
-        if ( !name.equals(""))
-        {
-            return true;
-        }
-        else
-        {
-            alert+="\nThe name of the spot wasn't entered.";
-            return false;
-        }
+        return( !name.equals("")&&name.matches(MATCH));
+       
     }
 
     private boolean checkCity()
     {
-        if ( !city.equals(""))
-        {
-            return true;
-        }
-        else
-        {
-            alert+="\nThe name of the city wasn't entered.";
-            return false;
-        }
+        return( !city.equals("")&&city.matches(MATCH));
+        
     }
 
     private boolean checkMunicipality()
     {
-        if ( !municipality.equals(""))
-        {
-            return true;
-        }
-        else
-        {
-            alert+="\nThe municipality wasn't entered.";
-            return false;
-        }
+        return( !municipality.equals("")&&municipality.matches(MATCH));
+        
     }
 
     private boolean checkArea()
     {
-        if ( !area.equals(""))
-        {
-            return true;
-        }
-        else
-        {
-            alert+="\nThe area wasn't entered.";
-            return false;
-        }
+        return( !area.equals("")&&area.matches(MATCH));
+        
     }
 
     private boolean checkDescription()
     {
-        if ( !description.equals(""))
-        {
-            return true;
-        }
-        else
-        {
-            alert+="\nThe description wasn't entered.";
-            return false;
-        }
+        return( !description.equals("")&&description.matches(MATCH));
+        
     }
 
     private boolean checkStreet()
     {
-        if ( !street.equals(""))
-        {
-            return true;
-        }
-        else
-        {
-            alert+="\nThe street wasn't entered.";
-            return false;
-        }
+        return( !street.equals("")&&street.matches(MATCH));
+        
     }
 
     private boolean checkNumber()
     {
-        if ( !(number.equals("")) && (number.matches("^[0-9]*$")))
-        {
-            return true;
-        }
-        else
-        {
-            alert+="\nThe number wasn't correct.";
-            return false;
-        }
+        return( !(number.equals("")) && (number.matches(MATCH2)));
+        
     }
 }

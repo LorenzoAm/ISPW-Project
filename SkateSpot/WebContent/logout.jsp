@@ -4,16 +4,19 @@
 <html lang="it">
 <head>
 <meta charset="ISO-8859-1">
-<title>Sign Up Exception</title>
+<title>Insert title here</title>
 </head>
-<body>
+
 	<div>
-		<h1 id = "title" >SkateSpot</h1>
-		<a href="signUp.jsp">
-			<img src="images/back_icon.png" alt="BACK" />
+		<h1 id = "title" >Logout</h1>
+		<a href="index.jsp">
+			<img src="images/home_icon.png" alt="Home"/>
 		</a>
-	</div> 
+	</div>
+	<h2> Logout completed, see you soon !</h2>
+	
 	<br><br>
-	<h2>The entered email address is already in use !</h2>
+<body>
+
 </body>
 </html>

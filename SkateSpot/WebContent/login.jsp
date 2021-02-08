@@ -6,6 +6,7 @@
 <jsp:useBean id="loginBean" scope="request" class="logic.beans.LoginBean"/>
 <jsp:setProperty name="loginBean" property="*"/>
 
+
 <!DOCTYPE html>
 <html lang="it">
 <head>
@@ -13,13 +14,14 @@
 <title>Login</title>
 </head>
 <body>
-
+	
 	<%
-		if(request.getParameter("sign")!=null)
+		if(request.getParameter("login")!=null)
 		{
-			if(loginBean.check())
+			LoginBean bean = new LoginBean(request.getParameter("email"),request.getParameter("password"));
+			if(bean.check())
 			{
-				LoginController.getInstance().login(loginBean);
+				LoginController.getInstance().login(bean);
 				%>
 					<jsp:forward page="loginCheck.jsp"/>
 					
@@ -28,9 +30,10 @@
 			else
 			{
 				%>
-				  <p> Wrong email or password, try again! </p>
+				 <p>Wrong email or password </p>
 				<%
 			}
+			
 		}
 	%>
 	<div>
@@ -44,11 +47,11 @@
 		<h1>Enter your data</h1> <br>
 		<form action="" method="get">
   			<label >Email: </label>
-  			<input type="text" id="email" name="email"><br><br>
+  			<input type="text" id="email" name="email" required><br><br>
   			<label>Password: </label>
-  			<input type="password" id="password" name="password"/>
+  			<input type="password" id="password" name="password" required>
   			<br><br><br>
-  			<input type="submit" value="Sign in" name="sign"/>
+  			<input type="submit" value="Sign in" name="login"/>
   			<input type="reset" value="Reset all" name="reset"/>
 		</form>
 	</div>

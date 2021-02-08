@@ -20,8 +20,10 @@ public class SignUpBean
 	private String gender;
 	private String typeOfAccount;
 	private LocalDate data;
-	private String match="^[a-zA-Z]*$";
-	//private String alert
+	private static final String MATCH="^[a-zA-Z' ']*$";
+	private static final String MATCH2="^[a-zA-Z0-9]*$";
+	
+
 	
 	public SignUpBean() {}
 
@@ -130,15 +132,15 @@ public class SignUpBean
 	
 	private boolean checkName()
 	{
-		return( !(name.equals("")) && (name.matches(match)) );
+		return( !(name.equals("")) && (name.matches(MATCH)) );
 	}
 	private boolean checkSurname()
 	{
-		return( !(surname.equals("")) && (surname.matches(match)) );
+		return( !(surname.equals("")) && (surname.matches(MATCH)) );
 	}
 	private boolean checkUsername()
 	{
-		return( !(username.equals("")) && (username.matches("^[a-zA-Z0-9]*$")) );
+		return( !(username.equals("")) && (username.matches(MATCH2)) );
 	}
 	private boolean checkPassword()
 	{
@@ -228,7 +230,7 @@ public class SignUpBean
     
     private boolean checkDomain2(String[] splittedEmail2)
     {
-    	if((!splittedEmail2[0].equals(""))&&(splittedEmail2[0].matches("^[a-zA-Z]*$"))&&(!splittedEmail2[1].equals(""))&&(splittedEmail2[1].matches("^[a-zA-Z]*$")))
+    	if((!splittedEmail2[0].equals(""))&&(splittedEmail2[0].matches(MATCH))&&(!splittedEmail2[1].equals(""))&&(splittedEmail2[1].matches(MATCH)))
         {
             return true;
         }
@@ -242,7 +244,6 @@ public class SignUpBean
 	{
 		if(data==null)
 		{
-			//alert+="\nYou must insert your birth date.";
 			return false;
 		}
 		 Instant instant = Instant.from(data.atStartOfDay(ZoneId.systemDefault()));

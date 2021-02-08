@@ -2,6 +2,8 @@ package logic.gui;
 
 import java.io.IOException;
 
+import javax.swing.JOptionPane;
+
 import javafx.fxml.FXML;
 import javafx.scene.control.Button;
 import javafx.scene.control.TextField;
@@ -49,6 +51,10 @@ public class addShopGuiController
 						PremiumAreaGuiController.getAddShopStage().close(); //chiudiamo la finestra di inserimento spot
 						HomeGuiController.getPremiumAreaStage().show();		//riapriamo l'area premium
 					}
+				}
+				else
+				{
+					JOptionPane.showMessageDialog(null,"Entered data are not correct !\n - VAT number must be 11 numeric characters long \n - street number must be a number \n - all the other fields must contain only alphabetic characters","ERROR",JOptionPane.ERROR_MESSAGE);
 				}
 		}
     }

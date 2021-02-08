@@ -204,7 +204,8 @@ public class UserDAO
     {
         Connection connection = null; //interface
         Statement statement = null;
-        int updatedNumber,code;
+        int updatedNumber;
+        int code;
 
         try
         {

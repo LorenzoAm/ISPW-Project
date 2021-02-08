@@ -4,16 +4,16 @@
 <html lang="it">
 <head>
 <meta charset="ISO-8859-1">
-<title>Sign Up Exception</title>
+<title>Join Spot Check</title>
 </head>
 <body>
 	<div>
 		<h1 id = "title" >SkateSpot</h1>
-		<a href="signUp.jsp">
-			<img src="images/back_icon.png" alt="BACK" />
+		<a href="index.jsp">
+			<img src="images/home_icon.png" alt="HOME"/>
 		</a>
 	</div> 
 	<br><br>
-	<h2>The entered email address is already in use !</h2>
+	<h2> You have joined the spot! Enjoy your session!</h2>
 </body>
 </html>

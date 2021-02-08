@@ -37,7 +37,7 @@
  			{
  				SignUpController.getInstance().signUp(bean);
  		%>
- 			<jsp:forward page="index.jsp"/>
+ 			<jsp:forward page="signUpCheck.jsp"/>
  		<% 
  			}
  			catch(ExistingEmailException e)
@@ -46,6 +46,12 @@
  	 			<jsp:forward page="signUpException.jsp"/>
  	 		<%
  			}
+ 		}
+ 		else
+ 		{
+ 			%>
+ 			 <p> Wrong data entered! </p>
+ 			<%
  		}
  		
  	}

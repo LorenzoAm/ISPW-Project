@@ -139,14 +139,8 @@ public class LoginBean
     
     private boolean checkDomain2(String[] splittedEmail2)
     {
-    	if((!splittedEmail2[0].equals(""))&&(splittedEmail2[0].matches("^[a-zA-Z]*$"))&&(!splittedEmail2[1].equals(""))&&(splittedEmail2[1].matches("^[a-zA-Z]*$")))
-        {
-            return true;
-        }
-        else
-        {
-            return false;
-        }
+    	return((!splittedEmail2[0].equals(""))&&(splittedEmail2[0].matches("^[a-zA-Z]*$"))&&(!splittedEmail2[1].equals(""))&&(splittedEmail2[1].matches("^[a-zA-Z]*$")));
+        
     }
 
 }

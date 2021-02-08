@@ -4,16 +4,16 @@
 <html lang="it">
 <head>
 <meta charset="ISO-8859-1">
-<title>Sign Up Exception</title>
+<title>Full Spot Exception</title>
 </head>
 <body>
 	<div>
 		<h1 id = "title" >SkateSpot</h1>
-		<a href="signUp.jsp">
-			<img src="images/back_icon.png" alt="BACK" />
+		<a href="joinSpot.jsp">
+			<img src="images/back_icon.png" alt="BACK"/>
 		</a>
 	</div> 
 	<br><br>
-	<h2>The entered email address is already in use !</h2>
+	<h2> Sorry this spot is full at the moment !</h2>
 </body>
 </html>

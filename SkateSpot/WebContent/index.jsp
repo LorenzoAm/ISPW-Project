@@ -1,31 +1,6 @@
 <%@ page language="java" contentType="text/html; charset=ISO-8859-1" pageEncoding="ISO-8859-1"%>
  <%@ page import="logic.controllers.UserContainer"%>   
     
-    <%
-    	if(request.getParameter("loginLogout")!=null)
-    	{
-    		if(UserContainer.getInstance()==null)
-    		{
-    	
-    %>
-         <jsp:forward page="login.jsp"/>
-    <%
-    		}
-    		else
-    		{
-    			//TODO logout 
-    		}
-    	}
-    
-    	if(request.getParameter("signUp")!=null)
-    	{
-    		%>
-            <jsp:forward page="signUp.jsp"/>
-       <%
-    	}
-    
-    
-   	%>
     
 <!DOCTYPE html>
 <html lang="it">
@@ -38,6 +13,7 @@
 	<div>
 		<h1 id="title">SkateSpot</h1>
 	</div>
+	
 	<% 
 	if(request.getParameter("premium")!=null)
     	{
@@ -49,6 +25,12 @@
     					<jsp:forward page="premiumArea.jsp"/>
     				<%
     			}
+    			else
+    			{
+    				%>
+					<p>You must have an Owner Account in order to access the premium area! </p>
+					<%
+    			}
     		}
     		else
     		{
@@ -57,44 +39,8 @@
 				<%
     		}
     	}
+	%>
 	
-	if(request.getParameter("addSpot")!=null)
-	{
-		if(UserContainer.getInstance()!=null)
-		{
-			%>
-			  <jsp:forward page="addSpot.jsp"/>
-			<% 
-		}
-		else
-		{
-			%>
-			<p>You must be logged in the system in order to add a new spot! </p>
-			<%
-		}
-	}
-	
-	if(request.getParameter("joinLeaveSpot")!=null)
-	{
-		if(UserContainer.getInstance()!=null)
-		{
-			if(UserContainer.getInstance().getSpot()==null)
-			{
-				%>
-					<jsp:forward page="joinSpot.jsp"/>
-				<%
-			}
-		}
-		else
-		{
-			%>
-			<p>You must be logged in the system in order to join or leave a spot! </p>
-			<%
-		}
-	}
-	
-	
-   %>
 	<div>
 		<table>
 			<tr>
@@ -125,9 +71,9 @@
 					<table>
 						<tr>
 							<td>
-							<form>
-								<input type="submit" value="LOGIN-LOGOUT"  name="loginLogout"/>
-							</form>
+							<a href="loginLogout.jsp">
+								<img src="images/login_logout.png" alt="LOGIN-LOGOUT" />
+							</a>
 							</td>
 						</tr>
 						<tr>
@@ -137,9 +83,9 @@
 						</tr>
 						<tr>
 							<td>
-								<form>
-									<input type="submit" value="SIGN UP" name="signUp" />
-								</form>
+								<a href="signUp.jsp">
+									<img src="images/sign_up.png" alt="SIGN UP" />
+								</a>
 							</td>
 						</tr>
 					</table>
@@ -149,9 +95,14 @@
 				</td>
 			</tr>	
 		</table>
-		<form><input type="submit" value="Add spot" name="addSpot"/></form>
-		<br>
-		<form><input type="submit" value="Join-leave spot" name="joinLeaveSpot"/></form>
+		
+		<a href="addSpotControl.jsp">
+			Add Spot
+		</a>
+		<br><br>
+		<a href="joinLeaveSpot.jsp">
+			Join-Leave Spot
+		</a>
 		
 	</div>
 	
