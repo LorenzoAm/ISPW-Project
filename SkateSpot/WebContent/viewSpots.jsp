@@ -24,7 +24,7 @@
 	{
 		setLabels();
 	}
-	funtion next()
+	function next()
 	{
 		setLabels();
 	}
