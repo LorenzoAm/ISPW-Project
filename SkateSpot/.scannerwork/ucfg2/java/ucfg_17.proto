@@ -1,74 +1,45 @@
 
-[org.apache.jsp.WebContent.login_jsp#_jsp_getExpressionFactory()Ljavax/el/ExpressionFactory;n
-dC:\Users\Andrei\git\ISPW-Project\SkateSpot\.scannerwork\jsp\org\apache\jsp\WebContent\login_jsp.java3$ 3(="5*¬
-2n
-dC:\Users\Andrei\git\ISPW-Project\SkateSpot\.scannerwork\jsp\org\apache\jsp\WebContent\login_jsp.java7" 7(.¥
-¢
-n
-dC:\Users\Andrei\git\ISPW-Project\SkateSpot\.scannerwork\jsp\org\apache\jsp\WebContent\login_jsp.java7" 7(."
-%2javax.servlet.jsp.JspFactory"__id*
-""š—
-n
-dC:\Users\Andrei\git\ISPW-Project\SkateSpot\.scannerwork\jsp\org\apache\jsp\WebContent\login_jsp.java7H 7(Z!
-%3javax.servlet.ServletConfig"Ejavax.servlet.Servlet#getServletConfig()Ljavax/servlet/ServletConfig;*'%
-#org.apache.jsp.WebContent.login_jsp2getServletConfig() 
-n
-dC:\Users\Andrei\git\ISPW-Project\SkateSpot\.scannerwork\jsp\org\apache\jsp\WebContent\login_jsp.java7H 7(n"
-%4javax.servlet.ServletContext"Mjavax.servlet.ServletConfig#getServletContext()Ljavax/servlet/ServletContext;*#
+9logic.beans.LoginBean#checkDotDomain(Ljava/lang/String;)ZR
+HC:/Users/loren/git/ISPW-Project/SkateSpot/src/logic/beans/LoginBean.javas s(""3*Â
+2R
+HC:/Users/loren/git/ISPW-Project/SkateSpot/src/logic/beans/LoginBean.javaw& w(3ƒ€
+R
+HC:/Users/loren/git/ISPW-Project/SkateSpot/src/logic/beans/LoginBean.javaw& w(C
+%1java.lang.String[]">java.lang.String#split(Ljava/lang/String;I)[Ljava/lang/String;*#
 !
-%3javax.servlet.ServletConfig2getServletContext()¨¥
-n
-dC:\Users\Andrei\git\ISPW-Project\SkateSpot\.scannerwork\jsp\org\apache\jsp\WebContent\login_jsp.java7" 7(o-
-%5'javax.servlet.jsp.JspApplicationContext"~javax.servlet.jsp.JspFactory#getJspApplicationContext(Ljavax/servlet/ServletContext;)Ljavax/servlet/jsp/JspApplicationContext;*$
-"
-%2javax.servlet.jsp.JspFactory*$
-"
-%4javax.servlet.ServletContext28getJspApplicationContext(Ljavax/servlet/ServletContext;)»¸
-o
-dC:\Users\Andrei\git\ISPW-Project\SkateSpot\.scannerwork\jsp\org\apache\jsp\WebContent\login_jsp.java7" 7(† 
-%6javax.el.ExpressionFactory"Zjavax.servlet.jsp.JspApplicationContext#getExpressionFactory()Ljavax/el/ExpressionFactory;*/
--
-%5'javax.servlet.jsp.JspApplicationContext2getExpressionFactory()à
-Ý
-o
-dC:\Users\Andrei\git\ISPW-Project\SkateSpot\.scannerwork\jsp\org\apache\jsp\WebContent\login_jsp.java7
- 7(†@%
-#org.apache.jsp.WebContent.login_jsp"
-_el_expressionfactory"__id*"
- 
-%6javax.el.ExpressionFactory*
-1*Ý
-3n
-dC:\Users\Andrei\git\ISPW-Project\SkateSpot\.scannerwork\jsp\org\apache\jsp\WebContent\login_jsp.java6 6(!ß
-Ü
-n
-dC:\Users\Andrei\git\ISPW-Project\SkateSpot\.scannerwork\jsp\org\apache\jsp\WebContent\login_jsp.java6 6(! 
-%1javax.el.ExpressionFactory"__id*B*@%
-#org.apache.jsp.WebContent.login_jsp"
-_el_expressionfactory*
+splittedEmailjava.lang.String*
+\\.*
+""2split(Ljava/lang/String;I)Ÿ
+œ
+R
+HC:/Users/loren/git/ISPW-Project/SkateSpot/src/logic/beans/LoginBean.javaw w(D$
+splittedEmail2java.lang.String[]"__id*
+
+%1java.lang.String[]â
+ß
+R
+HC:/Users/loren/git/ISPW-Project/SkateSpot/src/logic/beans/LoginBean.javax x(3
+%2boolean"7logic.beans.LoginBean#checkDomain([Ljava/lang/String;)Z*
+logic.beans.LoginBean*&
+$
+splittedEmail2java.lang.String[]"\
+R
+HC:/Users/loren/git/ISPW-Project/SkateSpot/src/logic/beans/LoginBean.javax x(4
+""*Î
+3R
+HC:/Users/loren/git/ISPW-Project/SkateSpot/src/logic/beans/LoginBean.javau u(ìé
+R
+HC:/Users/loren/git/ISPW-Project/SkateSpot/src/logic/beans/LoginBean.javau u(#
+%0boolean"4java.lang.String#contains(Ljava/lang/CharSequence;)Z*#
+!
+splittedEmailjava.lang.String*
+.2"contains(Ljava/lang/CharSequence;)*
 2
-1*Ý
-5n
-dC:\Users\Andrei\git\ISPW-Project\SkateSpot\.scannerwork\jsp\org\apache\jsp\WebContent\login_jsp.java4 4(ß
-Ü
-n
-dC:\Users\Andrei\git\ISPW-Project\SkateSpot\.scannerwork\jsp\org\apache\jsp\WebContent\login_jsp.java4 4( 
-%0javax.el.ExpressionFactory"__id*B*@%
-#org.apache.jsp.WebContent.login_jsp"
-_el_expressionfactory*
-3
-1*ì
-1n
-dC:\Users\Andrei\git\ISPW-Project\SkateSpot\.scannerwork\jsp\org\apache\jsp\WebContent\login_jsp.java; ;( ß
-Ü
-n
-dC:\Users\Andrei\git\ISPW-Project\SkateSpot\.scannerwork\jsp\org\apache\jsp\WebContent\login_jsp.java; ;(  
-%7javax.el.ExpressionFactory"__id*B*@%
-#org.apache.jsp.WebContent.login_jsp"
-_el_expressionfactory"”
-n
-dC:\Users\Andrei\git\ISPW-Project\SkateSpot\.scannerwork\jsp\org\apache\jsp\WebContent\login_jsp.java; ;(!"
- 
-%7javax.el.ExpressionFactory:
-%jsp_contextB'%
-#org.apache.jsp.WebContent.login_jsp
+1*µ
+1R
+HC:/Users/loren/git/ISPW-Project/SkateSpot/src/logic/beans/LoginBean.java| |("\
+R
+HC:/Users/loren/git/ISPW-Project/SkateSpot/src/logic/beans/LoginBean.java| |(
+"":!
+splittedEmailjava.lang.StringB
+logic.beans.LoginBean

@@ -1,16 +1,16 @@
 
-Forg.apache.jsp.WebContent.addSpot_jsp#getClassImports()Ljava/util/Set;p
-fC:\Users\Andrei\git\ISPW-Project\SkateSpot\.scannerwork\jsp\org\apache\jsp\WebContent\addSpot_jsp.java/) /(8"1*œ
-1p
-fC:\Users\Andrei\git\ISPW-Project\SkateSpot\.scannerwork\jsp\org\apache\jsp\WebContent\addSpot_jsp.java0 0( ˜
-•
-p
-fC:\Users\Andrei\git\ISPW-Project\SkateSpot\.scannerwork\jsp\org\apache\jsp\WebContent\addSpot_jsp.java0 0( 
-%0java.util.Set"__id*
-"""‰
-p
-fC:\Users\Andrei\git\ISPW-Project\SkateSpot\.scannerwork\jsp\org\apache\jsp\WebContent\addSpot_jsp.java0 0(!
-
-%0java.util.Set:
-%jsp_contextB)'
-%org.apache.jsp.WebContent.addSpot_jsp
+/logic.entities.Shop#getZona()Ljava/lang/String;P
+FC:/Users/loren/git/ISPW-Project/SkateSpot/src/logic/entities/Shop.java_ _("1*Ü
+1P
+FC:/Users/loren/git/ISPW-Project/SkateSpot/src/logic/entities/Shop.javaa a(–
+“
+P
+FC:/Users/loren/git/ISPW-Project/SkateSpot/src/logic/entities/Shop.javaa a(
+%0java.lang.String"__id*!*
+logic.entities.Shop"
+zona"l
+P
+FC:/Users/loren/git/ISPW-Project/SkateSpot/src/logic/entities/Shop.javaa a(
+
+%0java.lang.StringB
+logic.entities.Shop

@@ -1,0 +1,20 @@
+SMAP
+addSpotControl_jsp.java
+JSP
+*S JSP
+*F
++ 0 addSpotControl.jsp
+WebContent/addSpotControl.jsp
+*L
+2,4:118,0
+5,4:119
+8,2:123,0
+9:124,4
+10:128,0
+11,4:130
+14,2:134,0
+15:135,4
+16:139,0
+17,2:141
+18,11:143,0
+*E

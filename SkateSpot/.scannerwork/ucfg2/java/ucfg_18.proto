@@ -1,59 +1,22 @@
 
-`org.apache.jsp.WebContent.login_jsp#_jsp_getInstanceManager()Lorg/apache/tomcat/InstanceManager;n
-dC:\Users\Andrei\git\ISPW-Project\SkateSpot\.scannerwork\jsp\org\apache\jsp\WebContent\login_jsp.java>+ >(B"5*ÿ
-2n
-dC:\Users\Andrei\git\ISPW-Project\SkateSpot\.scannerwork\jsp\org\apache\jsp\WebContent\login_jsp.javaB! B($š—
-n
-dC:\Users\Andrei\git\ISPW-Project\SkateSpot\.scannerwork\jsp\org\apache\jsp\WebContent\login_jsp.javaBe B(w!
-%2javax.servlet.ServletConfig"Ejavax.servlet.Servlet#getServletConfig()Ljavax/servlet/ServletConfig;*'%
-#org.apache.jsp.WebContent.login_jsp2getServletConfig()ÿ
-ü
-n
-dC:\Users\Andrei\git\ISPW-Project\SkateSpot\.scannerwork\jsp\org\apache\jsp\WebContent\login_jsp.javaB! B(x'
-%3!org.apache.tomcat.InstanceManager"…org.apache.jasper.runtime.InstanceManagerFactory#getInstanceManager(Ljavax/servlet/ServletConfig;)Lorg/apache/tomcat/InstanceManager;*4"2
-0org.apache.jasper.runtime.InstanceManagerFactory*#
-!
-%2javax.servlet.ServletConfigå
+7logic.beans.LoginBean#checkDomain([Ljava/lang/String;)ZT
+HC:/Users/loren/git/ISPW-Project/SkateSpot/src/logic/beans/LoginBean.java€ €("2"1*¡
+2T
+HC:/Users/loren/git/ISPW-Project/SkateSpot/src/logic/beans/LoginBean.java„ „(å
 â
-n
-dC:\Users\Andrei\git\ISPW-Project\SkateSpot\.scannerwork\jsp\org\apache\jsp\WebContent\login_jsp.javaB
- B(x?%
-#org.apache.jsp.WebContent.login_jsp"
-_jsp_instancemanager"__id*)
-'
-%3!org.apache.tomcat.InstanceManager*
-1*ã
-3n
-dC:\Users\Andrei\git\ISPW-Project\SkateSpot\.scannerwork\jsp\org\apache\jsp\WebContent\login_jsp.javaA A( å
-â
-n
-dC:\Users\Andrei\git\ISPW-Project\SkateSpot\.scannerwork\jsp\org\apache\jsp\WebContent\login_jsp.javaA A( '
-%1!org.apache.tomcat.InstanceManager"__id*A*?%
-#org.apache.jsp.WebContent.login_jsp"
-_jsp_instancemanager*
-2
-1*ã
-5n
-dC:\Users\Andrei\git\ISPW-Project\SkateSpot\.scannerwork\jsp\org\apache\jsp\WebContent\login_jsp.java? ?(å
-â
-n
-dC:\Users\Andrei\git\ISPW-Project\SkateSpot\.scannerwork\jsp\org\apache\jsp\WebContent\login_jsp.java? ?('
-%0!org.apache.tomcat.InstanceManager"__id*A*?%
-#org.apache.jsp.WebContent.login_jsp"
-_jsp_instancemanager*
-3
-1*ù
-1n
-dC:\Users\Andrei\git\ISPW-Project\SkateSpot\.scannerwork\jsp\org\apache\jsp\WebContent\login_jsp.javaF F(å
-â
-n
-dC:\Users\Andrei\git\ISPW-Project\SkateSpot\.scannerwork\jsp\org\apache\jsp\WebContent\login_jsp.javaF F('
-%4!org.apache.tomcat.InstanceManager"__id*A*?%
-#org.apache.jsp.WebContent.login_jsp"
-_jsp_instancemanager"›
-n
-dC:\Users\Andrei\git\ISPW-Project\SkateSpot\.scannerwork\jsp\org\apache\jsp\WebContent\login_jsp.javaF F( )
-'
-%4!org.apache.tomcat.InstanceManager:
-%jsp_contextB'%
-#org.apache.jsp.WebContent.login_jsp
+T
+HC:/Users/loren/git/ISPW-Project/SkateSpot/src/logic/beans/LoginBean.java„ „(4
+%0boolean"8logic.beans.LoginBean#checkDomain2([Ljava/lang/String;)Z*
+logic.beans.LoginBean*&
+$
+splittedEmail2java.lang.String[]"^
+T
+HC:/Users/loren/git/ISPW-Project/SkateSpot/src/logic/beans/LoginBean.java„ „(5
+""*¹
+1T
+HC:/Users/loren/git/ISPW-Project/SkateSpot/src/logic/beans/LoginBean.javaˆ ˆ("^
+T
+HC:/Users/loren/git/ISPW-Project/SkateSpot/src/logic/beans/LoginBean.javaˆ ˆ(
+"":$
+splittedEmail2java.lang.String[]B
+logic.beans.LoginBean

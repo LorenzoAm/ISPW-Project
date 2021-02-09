@@ -1,16 +1,16 @@
 
-Lorg.apache.jsp.WebContent.premiumArea_jsp#getPackageImports()Ljava/util/Set;t
-jC:\Users\Andrei\git\ISPW-Project\SkateSpot\.scannerwork\jsp\org\apache\jsp\WebContent\premiumArea_jsp.java+) +(:"1*®
-1t
-jC:\Users\Andrei\git\ISPW-Project\SkateSpot\.scannerwork\jsp\org\apache\jsp\WebContent\premiumArea_jsp.java, ,(!ú
-ô
-t
-jC:\Users\Andrei\git\ISPW-Project\SkateSpot\.scannerwork\jsp\org\apache\jsp\WebContent\premiumArea_jsp.java, ,(!
-%0java.util.Set"__id*
-"""ç
-t
-jC:\Users\Andrei\git\ISPW-Project\SkateSpot\.scannerwork\jsp\org\apache\jsp\WebContent\premiumArea_jsp.java, ,("
-
-%0java.util.Set:
-%jsp_contextB-+
-)org.apache.jsp.WebContent.premiumArea_jsp
+2logic.entities.User#getCognome()Ljava/lang/String;P
+FC:/Users/loren/git/ISPW-Project/SkateSpot/src/logic/entities/User.java^ ^("1*ﬂ
+1P
+FC:/Users/loren/git/ISPW-Project/SkateSpot/src/logic/entities/User.java` `(ô
+ñ
+P
+FC:/Users/loren/git/ISPW-Project/SkateSpot/src/logic/entities/User.java` `(
+%0java.lang.String"__id*$*"
+logic.entities.User"	
+cognome"l
+P
+FC:/Users/loren/git/ISPW-Project/SkateSpot/src/logic/entities/User.java` `(
+
+%0java.lang.StringB
+logic.entities.User

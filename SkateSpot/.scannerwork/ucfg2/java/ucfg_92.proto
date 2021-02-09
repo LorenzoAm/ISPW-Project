@@ -1,0 +1,45 @@
+
+:logic.beans.SignUpBean#checkDotDomain(Ljava/lang/String;)ZU
+IC:/Users/loren/git/ISPW-Project/SkateSpot/src/logic/beans/SignUpBean.javaÎ Î(""3*Ó
+2U
+IC:/Users/loren/git/ISPW-Project/SkateSpot/src/logic/beans/SignUpBean.javaÒ& Ò(3†ƒ
+U
+IC:/Users/loren/git/ISPW-Project/SkateSpot/src/logic/beans/SignUpBean.javaÒ& Ò(C
+%1java.lang.String[]">java.lang.String#split(Ljava/lang/String;I)[Ljava/lang/String;*#
+!
+splittedEmailjava.lang.String*
+\\.*
+""2split(Ljava/lang/String;I)¢
+Ÿ
+U
+IC:/Users/loren/git/ISPW-Project/SkateSpot/src/logic/beans/SignUpBean.javaÒ Ò(D$
+splittedEmail2java.lang.String[]"__id*
+
+%1java.lang.String[]ç
+ä
+U
+IC:/Users/loren/git/ISPW-Project/SkateSpot/src/logic/beans/SignUpBean.javaÓ Ó(3
+%2boolean"8logic.beans.SignUpBean#checkDomain([Ljava/lang/String;)Z*
+logic.beans.SignUpBean*&
+$
+splittedEmail2java.lang.String[]"_
+U
+IC:/Users/loren/git/ISPW-Project/SkateSpot/src/logic/beans/SignUpBean.javaÓ Ó(4
+""*Ô
+3U
+IC:/Users/loren/git/ISPW-Project/SkateSpot/src/logic/beans/SignUpBean.javaÐ Ð(ïì
+U
+IC:/Users/loren/git/ISPW-Project/SkateSpot/src/logic/beans/SignUpBean.javaÐ Ð(#
+%0boolean"4java.lang.String#contains(Ljava/lang/CharSequence;)Z*#
+!
+splittedEmailjava.lang.String*
+.2"contains(Ljava/lang/CharSequence;)*
+2
+1*»
+1U
+IC:/Users/loren/git/ISPW-Project/SkateSpot/src/logic/beans/SignUpBean.java× ×("_
+U
+IC:/Users/loren/git/ISPW-Project/SkateSpot/src/logic/beans/SignUpBean.java× ×(
+"":!
+splittedEmailjava.lang.StringB
+logic.beans.SignUpBean

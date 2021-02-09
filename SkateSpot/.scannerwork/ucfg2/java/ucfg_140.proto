@@ -1,0 +1,101 @@
+
+logic.beans.SpotBean#check()ZQ
+GC:/Users/loren/git/ISPW-Project/SkateSpot/src/logic/beans/SpotBean.javav v("15*â
+2R
+GC:/Users/loren/git/ISPW-Project/SkateSpot/src/logic/beans/SpotBean.javaxv x(Ü™
+ß
+R
+GC:/Users/loren/git/ISPW-Project/SkateSpot/src/logic/beans/SpotBean.javaxv x(à
+%7boolean"(logic.beans.SpotBean#checkDescription()Z*
+logic.beans.SpotBean*
+1*ó
+14Q
+GC:/Users/loren/git/ISPW-Project/SkateSpot/src/logic/beans/SpotBean.javax x('§
+°
+Q
+GC:/Users/loren/git/ISPW-Project/SkateSpot/src/logic/beans/SpotBean.javax x()
+%1boolean"#logic.beans.SpotBean#checkStreet()Z*
+logic.beans.SpotBean*
+2
+4
+6
+8
+10
+12
+1*ô
+15Q
+GC:/Users/loren/git/ISPW-Project/SkateSpot/src/logic/beans/SpotBean.javax x(¢
+ü
+Q
+GC:/Users/loren/git/ISPW-Project/SkateSpot/src/logic/beans/SpotBean.javax x(
+%0boolean"!logic.beans.SpotBean#checkName()Z*
+logic.beans.SpotBean*
+2
+14
+4
+6
+8
+10
+12
+1*É
+4Q
+GC:/Users/loren/git/ISPW-Project/SkateSpot/src/logic/beans/SpotBean.javaxi x(r¢
+ü
+Q
+GC:/Users/loren/git/ISPW-Project/SkateSpot/src/logic/beans/SpotBean.javaxi x(t
+%6boolean"!logic.beans.SpotBean#checkType()Z*
+logic.beans.SpotBean*
+2
+1*Ü
+6Q
+GC:/Users/loren/git/ISPW-Project/SkateSpot/src/logic/beans/SpotBean.javax\ x(e¢
+ü
+Q
+GC:/Users/loren/git/ISPW-Project/SkateSpot/src/logic/beans/SpotBean.javax\ x(g
+%5boolean"!logic.beans.SpotBean#checkArea()Z*
+logic.beans.SpotBean*	
+2
+4
+1*ë
+8Q
+GC:/Users/loren/git/ISPW-Project/SkateSpot/src/logic/beans/SpotBean.javaxG x(X™
+ß
+Q
+GC:/Users/loren/git/ISPW-Project/SkateSpot/src/logic/beans/SpotBean.javaxG x(Z
+%4boolean")logic.beans.SpotBean#checkMunicipality()Z*
+logic.beans.SpotBean*
+2
+4
+6
+1*ç
+10Q
+GC:/Users/loren/git/ISPW-Project/SkateSpot/src/logic/beans/SpotBean.javax: x(C¢
+ü
+Q
+GC:/Users/loren/git/ISPW-Project/SkateSpot/src/logic/beans/SpotBean.javax: x(E
+%3boolean"!logic.beans.SpotBean#checkCity()Z*
+logic.beans.SpotBean*
+2
+4
+6
+8
+1*ì
+12Q
+GC:/Users/loren/git/ISPW-Project/SkateSpot/src/logic/beans/SpotBean.javax+ x(6§
+°
+Q
+GC:/Users/loren/git/ISPW-Project/SkateSpot/src/logic/beans/SpotBean.javax+ x(8
+%2boolean"#logic.beans.SpotBean#checkNumber()Z*
+logic.beans.SpotBean*
+2
+4
+6
+8
+10
+1*µ
+1R
+GC:/Users/loren/git/ISPW-Project/SkateSpot/src/logic/beans/SpotBean.javax x(ä"\
+R
+GC:/Users/loren/git/ISPW-Project/SkateSpot/src/logic/beans/SpotBean.javax x(ä
+""B
+logic.beans.SpotBean

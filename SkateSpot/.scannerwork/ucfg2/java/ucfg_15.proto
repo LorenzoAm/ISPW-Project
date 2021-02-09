@@ -1,16 +1,22 @@
 
-Forg.apache.jsp.WebContent.login_jsp#getPackageImports()Ljava/util/Set;n
-dC:\Users\Andrei\git\ISPW-Project\SkateSpot\.scannerwork\jsp\org\apache\jsp\WebContent\login_jsp.java+) +(:"1*–
-1n
-dC:\Users\Andrei\git\ISPW-Project\SkateSpot\.scannerwork\jsp\org\apache\jsp\WebContent\login_jsp.java, ,(!–
-“
-n
-dC:\Users\Andrei\git\ISPW-Project\SkateSpot\.scannerwork\jsp\org\apache\jsp\WebContent\login_jsp.java, ,(!
-%0java.util.Set"__id*
-"""‡
-n
-dC:\Users\Andrei\git\ISPW-Project\SkateSpot\.scannerwork\jsp\org\apache\jsp\WebContent\login_jsp.java, ,("
-
-%0java.util.Set:
-%jsp_contextB'%
-#org.apache.jsp.WebContent.login_jsp
+>logic.beans.LoginBean#checkSplittedEmail([Ljava/lang/String;)ZR
+HC:/Users/loren/git/ISPW-Project/SkateSpot/src/logic/beans/LoginBean.java[ [(&"2"1*¡
+2R
+HC:/Users/loren/git/ISPW-Project/SkateSpot/src/logic/beans/LoginBean.java_ _(é
+æ
+R
+HC:/Users/loren/git/ISPW-Project/SkateSpot/src/logic/beans/LoginBean.java_ _(:
+%0boolean"?logic.beans.LoginBean#checkEmailIntegrity([Ljava/lang/String;)Z*
+logic.beans.LoginBean*%
+#
+splittedEmailjava.lang.String[]"\
+R
+HC:/Users/loren/git/ISPW-Project/SkateSpot/src/logic/beans/LoginBean.java_ _(;
+""*µ
+1R
+HC:/Users/loren/git/ISPW-Project/SkateSpot/src/logic/beans/LoginBean.javac c("\
+R
+HC:/Users/loren/git/ISPW-Project/SkateSpot/src/logic/beans/LoginBean.javac c(
+"":#
+splittedEmailjava.lang.String[]B
+logic.beans.LoginBean

@@ -1,16 +1,16 @@
 
-Jorg.apache.jsp.WebContent.premiumArea_jsp#getClassImports()Ljava/util/Set;t
-jC:\Users\Andrei\git\ISPW-Project\SkateSpot\.scannerwork\jsp\org\apache\jsp\WebContent\premiumArea_jsp.java/) /(8"1*®
-1t
-jC:\Users\Andrei\git\ISPW-Project\SkateSpot\.scannerwork\jsp\org\apache\jsp\WebContent\premiumArea_jsp.java0 0( ú
-ô
-t
-jC:\Users\Andrei\git\ISPW-Project\SkateSpot\.scannerwork\jsp\org\apache\jsp\WebContent\premiumArea_jsp.java0 0( 
-%0java.util.Set"__id*
-"""ç
-t
-jC:\Users\Andrei\git\ISPW-Project\SkateSpot\.scannerwork\jsp\org\apache\jsp\WebContent\premiumArea_jsp.java0 0(!
-
-%0java.util.Set:
-%jsp_contextB-+
-)org.apache.jsp.WebContent.premiumArea_jsp
+6logic.entities.User#getDataDiNascita()Ljava/util/Date;P
+FC:/Users/loren/git/ISPW-Project/SkateSpot/src/logic/entities/User.javac c( "1*·
+1P
+FC:/Users/loren/git/ISPW-Project/SkateSpot/src/logic/entities/User.javae e(ù
+ö
+P
+FC:/Users/loren/git/ISPW-Project/SkateSpot/src/logic/entities/User.javae e(
+%0java.util.Date"__id***(
+logic.entities.User"
+dataDiNascita"j
+P
+FC:/Users/loren/git/ISPW-Project/SkateSpot/src/logic/entities/User.javae e(
+
+%0java.util.DateB
+logic.entities.User
