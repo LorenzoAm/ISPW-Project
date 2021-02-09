@@ -1,5 +1,11 @@
 <%@ page language="java" contentType="text/html; charset=ISO-8859-1"
     pageEncoding="ISO-8859-1"%>
+    
+<%@ page import="java.util.ArrayList"%>
+<%@ page import="logic.entities.Spot"%>
+<%@ page import="logic.controllers.ViewSpotController"%>
+<%@ page import="java.text.SimpleDateFormat"%>
+
 <!DOCTYPE html>
 <html lang="it">
 <head>
@@ -7,6 +13,56 @@
 <title>View Spots</title>
 </head>
 <body>
+<%
+	ArrayList<Spot> spots;
+	spots=ViewSpotController.getInstance().getList();
+	SimpleDateFormat sdf = new SimpleDateFormat("yyyy-MM-dd");
+	int i=0;
+%>
+<script type="text/javascript">
+	function previous()
+	{
+		setLabels();
+	}
+	funtion next()
+	{
+		setLabels();
+	}
+	function setLabels()
+	{
+		var nome = document.getElementById("name");
+		var s="<%=spots.get(i).getNome()%>";
+		nome.innerHTML=s;
+		
+		var numero = document.getElementById("number");
+	    s="<%=String.valueOf(spots.get(i).getNumeroDiSkater())%>";
+		numero.innerHTML=s;
+		
+		var indirizzo = document.getElementById("address");
+		s="<%=spots.get(i).getIndirizzo()%>";
+		indirizzo.innerHTML=s;
+		
+		var zona = document.getElementById("area");
+		s="<%=spots.get(i).getZona()%>";
+		zona.innerHTML=s;
+		
+		var municipio = document.getElementById("municipality");
+		s="<%=spots.get(i).getComune()%>";
+		municipio.innerHTML=s;
+		
+		var descrizione = document.getElementById("description");
+		s="<%=spots.get(i).getDescrizione()%>";
+		descrizione.innerHTML=s;
+		
+		var username = document.getElementById("username");
+		s="<%=spots.get(i).getUsername()%>";
+		username.innerHTML=s;
+		
+		var data = document.getElementById("data");
+		s="<%=sdf.format(spots.get(i).getData())%>";
+		data.innerHTML=s;
+	}
+</script>
 	<div>
 		<h1 id = "title" >SkateSpot</h1>
 		<a href="index.jsp">
@@ -16,27 +72,27 @@
 	
 	<div>
 		<h1>Spot details</h1> <br><br>
-		<label>Spot name : </label>
-		<label> name </label> <br><br>
+		<label >Spot name : </label>
+		<label id="name"> Nome </label> <br><br>
 		<label>Number of skater : </label>
-		<label> Number </label> <br><br>
+		<label id="number"> Number </label> <br><br>
 		<label>Address : </label>
-		<label> Address </label> <br><br>
+		<label id="address"> Address </label> <br><br>
 		<label>Area : </label>
-		<label> Area </label> <br><br>
+		<label id="area"> Area </label> <br><br>
 		<label>Municipality : </label>
-		<label> Municipality </label> <br><br>
+		<label id="municipality"> Municipality </label> <br><br>
 		<label> Type :</label>
-		<label> Type </label><br><br>
+		<label id="type"> Type </label><br><br>
 		<label> Description :</label>
-		<label> Description </label><br><br>
+		<label id="description"> Description </label><br><br>
 		<label> Added by :</label>
-		<label> Username </label><br><br>
+		<label id="username"> Username </label><br><br>
 		<label> On :</label>
-		<label> Date </label>
+		<label id="data"> Date </label>
 		<br><br><br>
-		<input type="button" value="PREVIOUS"/>
-		<input type="button" value="NEXT"/>
+		<input type="button" value="PREVIOUS" onClick="previous()"/>
+		<input type="button" value="NEXT" onClick="next()"/>
 		
 	</div>
 </body>
