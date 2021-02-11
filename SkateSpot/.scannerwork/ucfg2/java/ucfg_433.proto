@@ -1,0 +1,59 @@
+
+gorg.apache.jsp.WebContent.addSpotCheck_jsp#_jsp_getInstanceManager()Lorg/apache/tomcat/InstanceManager;t
+jC:\Users\loren\git\ISPW-Project\SkateSpot\.scannerwork\jsp\org\apache\jsp\WebContent\addSpotCheck_jsp.java>+ >(B"5*¥
+2t
+jC:\Users\loren\git\ISPW-Project\SkateSpot\.scannerwork\jsp\org\apache\jsp\WebContent\addSpotCheck_jsp.javaB! B($§¤
+t
+jC:\Users\loren\git\ISPW-Project\SkateSpot\.scannerwork\jsp\org\apache\jsp\WebContent\addSpotCheck_jsp.javaBe B(w!
+%2javax.servlet.ServletConfig"Ejavax.servlet.Servlet#getServletConfig()Ljavax/servlet/ServletConfig;*.,
+*org.apache.jsp.WebContent.addSpotCheck_jsp2getServletConfig()…
+‚
+t
+jC:\Users\loren\git\ISPW-Project\SkateSpot\.scannerwork\jsp\org\apache\jsp\WebContent\addSpotCheck_jsp.javaB! B(x'
+%3!org.apache.tomcat.InstanceManager"…org.apache.jasper.runtime.InstanceManagerFactory#getInstanceManager(Ljavax/servlet/ServletConfig;)Lorg/apache/tomcat/InstanceManager;*4"2
+0org.apache.jasper.runtime.InstanceManagerFactory*#
+!
+%2javax.servlet.ServletConfigò
+ï
+t
+jC:\Users\loren\git\ISPW-Project\SkateSpot\.scannerwork\jsp\org\apache\jsp\WebContent\addSpotCheck_jsp.javaB
+ B(xF,
+*org.apache.jsp.WebContent.addSpotCheck_jsp"
+_jsp_instancemanager"__id*)
+'
+%3!org.apache.tomcat.InstanceManager*
+1*ö
+3t
+jC:\Users\loren\git\ISPW-Project\SkateSpot\.scannerwork\jsp\org\apache\jsp\WebContent\addSpotCheck_jsp.javaA A( ò
+ï
+t
+jC:\Users\loren\git\ISPW-Project\SkateSpot\.scannerwork\jsp\org\apache\jsp\WebContent\addSpotCheck_jsp.javaA A( '
+%1!org.apache.tomcat.InstanceManager"__id*H*F,
+*org.apache.jsp.WebContent.addSpotCheck_jsp"
+_jsp_instancemanager*
+2
+1*ö
+5t
+jC:\Users\loren\git\ISPW-Project\SkateSpot\.scannerwork\jsp\org\apache\jsp\WebContent\addSpotCheck_jsp.java? ?(ò
+ï
+t
+jC:\Users\loren\git\ISPW-Project\SkateSpot\.scannerwork\jsp\org\apache\jsp\WebContent\addSpotCheck_jsp.java? ?('
+%0!org.apache.tomcat.InstanceManager"__id*H*F,
+*org.apache.jsp.WebContent.addSpotCheck_jsp"
+_jsp_instancemanager*
+3
+1*’
+1t
+jC:\Users\loren\git\ISPW-Project\SkateSpot\.scannerwork\jsp\org\apache\jsp\WebContent\addSpotCheck_jsp.javaF F(ò
+ï
+t
+jC:\Users\loren\git\ISPW-Project\SkateSpot\.scannerwork\jsp\org\apache\jsp\WebContent\addSpotCheck_jsp.javaF F('
+%4!org.apache.tomcat.InstanceManager"__id*H*F,
+*org.apache.jsp.WebContent.addSpotCheck_jsp"
+_jsp_instancemanager"¡
+t
+jC:\Users\loren\git\ISPW-Project\SkateSpot\.scannerwork\jsp\org\apache\jsp\WebContent\addSpotCheck_jsp.javaF F( )
+'
+%4!org.apache.tomcat.InstanceManager:
+%jsp_contextB.,
+*org.apache.jsp.WebContent.addSpotCheck_jsp

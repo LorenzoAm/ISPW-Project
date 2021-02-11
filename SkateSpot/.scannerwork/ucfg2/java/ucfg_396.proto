@@ -1,0 +1,475 @@
+
+Ñorg.apache.jsp.WebContent.joinSpot_jsp#_jspService(Ljavax/servlet/http/HttpServletRequest;Ljavax/servlet/http/HttpServletResponse;)Vp
+fC:\Users\loren\git\ISPW-Project\SkateSpot\.scannerwork\jsp\org\apache\jsp\WebContent\joinSpot_jsp.javaW W("startingBlock*˘
+46I
+AC:/Users/loren/git/ISPW-Project/SkateSpot/WebContent/joinSpot.jsp
+ 
+(/°û
+I
+AC:/Users/loren/git/ISPW-Project/SkateSpot/WebContent/joinSpot.jsp
+ 
+(/
+%35java.lang.Object"Pjavax.servlet.jsp.JspContext#findAttribute(Ljava/lang/String;)Ljava/lang/Object;*5
+3
+_jspx_page_contextjavax.servlet.jsp.PageContext*
+
+joinBean2!findAttribute(Ljava/lang/String;)*
+45*¡
+68p
+fC:\Users\loren\git\ISPW-Project\SkateSpot\.scannerwork\jsp\org\apache\jsp\WebContent\joinSpot_jsp.javar r(¬ø
+p
+fC:\Users\loren\git\ISPW-Project\SkateSpot\.scannerwork\jsp\org\apache\jsp\WebContent\joinSpot_jsp.javar r(>
+%12void"Ajavax.servlet.ServletResponse#setContentType(Ljava/lang/String;)V*4
+2
+response&javax.servlet.http.HttpServletResponse*!
+text/html; charset=ISO-8859-12"setContentType(Ljava/lang/String;)*
+67*◊
+47r
+fC:\Users\loren\git\ISPW-Project\SkateSpot\.scannerwork\jsp\org\apache\jsp\WebContent\joinSpot_jsp.javaä ä(	÷”
+r
+fC:\Users\loren\git\ISPW-Project\SkateSpot\.scannerwork\jsp\org\apache\jsp\WebContent\joinSpot_jsp.javaä ä(
+%34void"java.io.Writer#write(I)V*$
+"
+outjavax.servlet.jsp.JspWriter*
+""2write(I)*
+46*≈
+69p
+fC:\Users\loren\git\ISPW-Project\SkateSpot\.scannerwork\jsp\org\apache\jsp\WebContent\joinSpot_jsp.javag g(4±
+Æ
+p
+fC:\Users\loren\git\ISPW-Project\SkateSpot\.scannerwork\jsp\org\apache\jsp\WebContent\joinSpot_jsp.javag g(4,
+pageContextjavax.servlet.jsp.PageContext"__id*
+""ß
+§
+p
+fC:\Users\loren\git\ISPW-Project\SkateSpot\.scannerwork\jsp\org\apache\jsp\WebContent\joinSpot_jsp.javak k(+"
+outjavax.servlet.jsp.JspWriter"__id*
+""≠
+™
+p
+fC:\Users\loren\git\ISPW-Project\SkateSpot\.scannerwork\jsp\org\apache\jsp\WebContent\joinSpot_jsp.javam m(1(
+	_jspx_outjavax.servlet.jsp.JspWriter"__id*
+""∏
+µ
+p
+fC:\Users\loren\git\ISPW-Project\SkateSpot\.scannerwork\jsp\org\apache\jsp\WebContent\joinSpot_jsp.javan n(<3
+_jspx_page_contextjavax.servlet.jsp.PageContext"__id*
+""*
+68*◊
+48r
+fC:\Users\loren\git\ISPW-Project\SkateSpot\.scannerwork\jsp\org\apache\jsp\WebContent\joinSpot_jsp.javaâ â(	÷”
+r
+fC:\Users\loren\git\ISPW-Project\SkateSpot\.scannerwork\jsp\org\apache\jsp\WebContent\joinSpot_jsp.javaâ â(
+%33void"java.io.Writer#write(I)V*$
+"
+outjavax.servlet.jsp.JspWriter*
+""2write(I)*
+47*»
+49I
+AC:/Users/loren/git/ISPW-Project/SkateSpot/WebContent/joinSpot.jsp	 	(Mg
+e
+I
+AC:/Users/loren/git/ISPW-Project/SkateSpot/WebContent/joinSpot.jsp	 	(M
+
+%31int"__id*
+""á
+Ñ
+I
+AC:/Users/loren/git/ISPW-Project/SkateSpot/WebContent/joinSpot.jsp	 	(M
+%32"__mapSet*
+
+%jsp_context*
+
+joinBean*
+""*
+48*∑
+28K
+AC:/Users/loren/git/ISPW-Project/SkateSpot/WebContent/joinSpot.jsp (›⁄
+K
+AC:/Users/loren/git/ISPW-Project/SkateSpot/WebContent/joinSpot.jsp (
+%44void")java.io.Writer#write(Ljava/lang/String;)V*$
+"
+outjavax.servlet.jsp.JspWriter*
+\r\n\t\t\t\t\t2write(Ljava/lang/String;)*
+16*®
+29K
+AC:/Users/loren/git/ISPW-Project/SkateSpot/WebContent/joinSpot.jsp (-"U
+K
+AC:/Users/loren/git/ISPW-Project/SkateSpot/WebContent/joinSpot.jsp (-
+""*Ë
+70p
+fC:\Users\loren\git\ISPW-Project\SkateSpot\.scannerwork\jsp\org\apache\jsp\WebContent\joinSpot_jsp.javaa a(ÍÁ
+p
+fC:\Users\loren\git\ISPW-Project\SkateSpot\.scannerwork\jsp\org\apache\jsp\WebContent\joinSpot_jsp.javaa a(>
+
+%9void"Wjavax.servlet.http.HttpServletResponse#setHeader(Ljava/lang/String;Ljava/lang/String;)V*4
+2
+response&javax.servlet.http.HttpServletResponse*	
+Allow*
+GET, HEAD, POST, OPTIONS2/setHeader(Ljava/lang/String;Ljava/lang/String;)è
+å
+p
+fC:\Users\loren\git\ISPW-Project\SkateSpot\.scannerwork\jsp\org\apache\jsp\WebContent\joinSpot_jsp.javab b(D
+
+%10int"__id*
+""ÙÒ
+q
+fC:\Users\loren\git\ISPW-Project\SkateSpot\.scannerwork\jsp\org\apache\jsp\WebContent\joinSpot_jsp.javab b(à
+%11void"Fjavax.servlet.http.HttpServletResponse#sendError(ILjava/lang/String;)V*4
+2
+response&javax.servlet.http.HttpServletResponse*
+
+
+%10int*CA
+?JSPs only permit GET, POST or HEAD. Jasper also permits OPTIONS2sendError(ILjava/lang/String;)"z
+p
+fC:\Users\loren\git\ISPW-Project\SkateSpot\.scannerwork\jsp\org\apache\jsp\WebContent\joinSpot_jsp.javac c(
+""*ˇ
+71p
+fC:\Users\loren\git\ISPW-Project\SkateSpot\.scannerwork\jsp\org\apache\jsp\WebContent\joinSpot_jsp.java`J `(P¸˘
+p
+fC:\Users\loren\git\ISPW-Project\SkateSpot\.scannerwork\jsp\org\apache\jsp\WebContent\joinSpot_jsp.java`J `(e
+%8boolean",java.lang.String#equals(Ljava/lang/Object;)Z*
+HEAD*"
+ 
+_jspx_methodjava.lang.String2equals(Ljava/lang/Object;)*
+69
+70*ˇ
+72p
+fC:\Users\loren\git\ISPW-Project\SkateSpot\.scannerwork\jsp\org\apache\jsp\WebContent\joinSpot_jsp.java`* `(0¸˘
+p
+fC:\Users\loren\git\ISPW-Project\SkateSpot\.scannerwork\jsp\org\apache\jsp\WebContent\joinSpot_jsp.java`* `(E
+%7boolean",java.lang.String#equals(Ljava/lang/Object;)Z*
+POST*"
+ 
+_jspx_methodjava.lang.String2equals(Ljava/lang/Object;)*
+69
+71*˛
+73p
+fC:\Users\loren\git\ISPW-Project\SkateSpot\.scannerwork\jsp\org\apache\jsp\WebContent\joinSpot_jsp.java` `(˚¯
+p
+fC:\Users\loren\git\ISPW-Project\SkateSpot\.scannerwork\jsp\org\apache\jsp\WebContent\joinSpot_jsp.java` `(%
+%6boolean",java.lang.String#equals(Ljava/lang/Object;)Z*
+GET*"
+ 
+_jspx_methodjava.lang.String2equals(Ljava/lang/Object;)*
+69
+72*ﬂ
+74p
+fC:\Users\loren\git\ISPW-Project\SkateSpot\.scannerwork\jsp\org\apache\jsp\WebContent\joinSpot_jsp.java] ](ÍÁ
+p
+fC:\Users\loren\git\ISPW-Project\SkateSpot\.scannerwork\jsp\org\apache\jsp\WebContent\joinSpot_jsp.java] ](>
+
+%5void"Wjavax.servlet.http.HttpServletResponse#setHeader(Ljava/lang/String;Ljava/lang/String;)V*4
+2
+response&javax.servlet.http.HttpServletResponse*	
+Allow*
+GET, HEAD, POST, OPTIONS2/setHeader(Ljava/lang/String;Ljava/lang/String;)"z
+p
+fC:\Users\loren\git\ISPW-Project\SkateSpot\.scannerwork\jsp\org\apache\jsp\WebContent\joinSpot_jsp.java^ ^(
+""*ﬁ
+30K
+AC:/Users/loren/git/ISPW-Project/SkateSpot/WebContent/joinSpot.jsp (-ÑÅ
+K
+AC:/Users/loren/git/ISPW-Project/SkateSpot/WebContent/joinSpot.jsp (
+%43void":javax.servlet.jsp.PageContext#forward(Ljava/lang/String;)V*5
+3
+_jspx_page_contextjavax.servlet.jsp.PageContext*
+joinSpotCheck.jsp2forward(Ljava/lang/String;)*
+29*“
+75p
+fC:\Users\loren\git\ISPW-Project\SkateSpot\.scannerwork\jsp\org\apache\jsp\WebContent\joinSpot_jsp.java[, [(3ìê
+p
+fC:\Users\loren\git\ISPW-Project\SkateSpot\.scannerwork\jsp\org\apache\jsp\WebContent\joinSpot_jsp.java[, [(?
+%3java.lang.String"Cjavax.servlet.http.HttpServletRequest#getMethod()Ljava/lang/String;*2
+0
+request%javax.servlet.http.HttpServletRequest2getMethod()∑
+¥
+p
+fC:\Users\loren\git\ISPW-Project\SkateSpot\.scannerwork\jsp\org\apache\jsp\WebContent\joinSpot_jsp.java[ [(@ 
+_jspx_methodjava.lang.String"__id*
+
+%3java.lang.Stringˇ¸
+p
+fC:\Users\loren\git\ISPW-Project\SkateSpot\.scannerwork\jsp\org\apache\jsp\WebContent\joinSpot_jsp.java\
+ \((
+%4boolean",java.lang.String#equals(Ljava/lang/Object;)Z*	
+OPTIONS*"
+ 
+_jspx_methodjava.lang.String2equals(Ljava/lang/Object;)*
+73
+74*˙
+76p
+fC:\Users\loren\git\ISPW-Project\SkateSpot\.scannerwork\jsp\org\apache\jsp\WebContent\joinSpot_jsp.javaZ	 Z(ß
+§
+p
+fC:\Users\loren\git\ISPW-Project\SkateSpot\.scannerwork\jsp\org\apache\jsp\WebContent\joinSpot_jsp.javaZ	 Z(+"
+%0javax.servlet.DispatcherType"__id*
+""≤Ø
+p
+fC:\Users\loren\git\ISPW-Project\SkateSpot\.scannerwork\jsp\org\apache\jsp\WebContent\joinSpot_jsp.javaZ3 Z(N"
+%1javax.servlet.DispatcherType"Njavax.servlet.ServletRequest#getDispatcherType()Ljavax/servlet/DispatcherType;*2
+0
+request%javax.servlet.http.HttpServletRequest2getDispatcherType()òï
+p
+fC:\Users\loren\git\ISPW-Project\SkateSpot\.scannerwork\jsp\org\apache\jsp\WebContent\joinSpot_jsp.javaZ	 Z(O
+%2boolean"*java.lang.Enum#equals(Ljava/lang/Object;)Z*$
+"
+%0javax.servlet.DispatcherType*$
+"
+%1javax.servlet.DispatcherType2equals(Ljava/lang/Object;)*
+69
+75*Ω
+32K
+AC:/Users/loren/git/ISPW-Project/SkateSpot/WebContent/joinSpot.jsp (-ﬂ‹
+K
+AC:/Users/loren/git/ISPW-Project/SkateSpot/WebContent/joinSpot.jsp (-
+%42void")java.io.Writer#write(Ljava/lang/String;)V*$
+"
+outjavax.servlet.jsp.JspWriter*
+\r\n\t\t\t\t\t\t2write(Ljava/lang/String;)*
+28
+30*
+56K
+AC:/Users/loren/git/ISPW-Project/SkateSpot/WebContent/joinSpot.jsp	2 	(Jñ
+ì
+I
+AC:/Users/loren/git/ISPW-Project/SkateSpot/WebContent/joinSpot.jsp	 	(M
+%24java.lang.Object"Yjava.beans.Beans#instantiate(Ljava/lang/ClassLoader;Ljava/lang/String;)Ljava/lang/Object;*"
+java.beans.Beans*
+
+%23java.lang.ClassLoader*
+logic.beans.JoinSpotBean*
+49*©
+57I
+AC:/Users/loren/git/ISPW-Project/SkateSpot/WebContent/joinSpot.jsp	 	(M—Œ
+I
+AC:/Users/loren/git/ISPW-Project/SkateSpot/WebContent/joinSpot.jsp	 	(M
+%23java.lang.ClassLoader"7java.lang.Class#getClassLoader()Ljava/lang/ClassLoader;*
+
+%22java.lang.Class2getClassLoader()*
+56*§
+58I
+AC:/Users/loren/git/ISPW-Project/SkateSpot/WebContent/joinSpot.jsp	 	(MÃ…
+I
+AC:/Users/loren/git/ISPW-Project/SkateSpot/WebContent/joinSpot.jsp	 	(M
+%22java.lang.Class",java.lang.Object#getClass()Ljava/lang/Class;**(
+&org.apache.jsp.WebContent.joinSpot_jsp2
+getClass()*
+57*œ
+16K
+AC:/Users/loren/git/ISPW-Project/SkateSpot/WebContent/joinSpot.jsp3 J(ˆÛ
+K
+AC:/Users/loren/git/ISPW-Project/SkateSpot/WebContent/joinSpot.jsp3 J(
+%52void")java.io.Writer#write(Ljava/lang/String;)V*$
+"
+outjavax.servlet.jsp.JspWriter*™ß
+§\r\n\t<div>\r\n\t\t<h1 id = \"title\" >SkateSpot</h1>\r\n\t\t<a href=\"index.jsp\">\r\n\t\t\t<img src=\"images/home_icon.png\" alt=\"Home\"/>\r\n\t\t</a>\r\n\t</div>\r\n\t\r\n\t<div>\r\n\t\t<h1>Enter the spot location</h1> <br>\r\n\t\t<form action=\"\" method=\"get\">\r\n  \t\t\t<label >Street: </label>\r\n  \t\t\t<input type=\"text\" id=\"street\" name=\"street\" required><br><br>\r\n  \t\t\t<label>Street number: </label>\r\n  \t\t\t<input type=\"text\" id=\"number\" name=\"number\" required><br><br>\r\n  \t\t\t<label >City: </label>\r\n  \t\t\t<input type=\"text\" id=\"city\" name=\"city\" required><br><br><br>\r\n  \t\t\t\r\n  \t\t\t<input type=\"submit\" value=\"Join Spot\" name=\"join\">\r\n  \t\t\t<input type=\"reset\" value=\"reset all\">\r\n\t\t</form>\r\n\t</div>\r\n</body>\r\n</html>2write(Ljava/lang/String;)*
+1*¯
+39K
+AC:/Users/loren/git/ISPW-Project/SkateSpot/WebContent/joinSpot.jsp( (/öó
+K
+AC:/Users/loren/git/ISPW-Project/SkateSpot/WebContent/joinSpot.jsp0 (<
+%41java.lang.String"Ojavax.servlet.ServletRequest#getParameter(Ljava/lang/String;)Ljava/lang/String;*2
+0
+request%javax.servlet.http.HttpServletRequest*
+city2 getParameter(Ljava/lang/String;)*
+17
+32*ﬁ
+17K
+AC:/Users/loren/git/ISPW-Project/SkateSpot/WebContent/joinSpot.jsp. 0(ÑÅ
+K
+AC:/Users/loren/git/ISPW-Project/SkateSpot/WebContent/joinSpot.jsp. 0(
+%51void")java.io.Writer#write(Ljava/lang/String;)V*$
+"
+outjavax.servlet.jsp.JspWriter*97
+5\r\n\t\t\t\t\t<p>Wrong data entered !</p>\r\n\t\t\t\t2write(Ljava/lang/String;)*
+16*ë
+0 "â
+r
+fC:\Users\loren\git\ISPW-Project\SkateSpot\.scannerwork\jsp\org\apache\jsp\WebContent\joinSpot_jsp.java– –(
+implicit return*ñ
+1r
+fC:\Users\loren\git\ISPW-Project\SkateSpot\.scannerwork\jsp\org\apache\jsp\WebContent\joinSpot_jsp.javaŒ Œ(™
+ß
+r
+fC:\Users\loren\git\ISPW-Project\SkateSpot\.scannerwork\jsp\org\apache\jsp\WebContent\joinSpot_jsp.javaŒ Œ(#
+%60javax.servlet.jsp.JspFactory"__id*
+""ÍÁ
+r
+fC:\Users\loren\git\ISPW-Project\SkateSpot\.scannerwork\jsp\org\apache\jsp\WebContent\joinSpot_jsp.javaŒ Œ(9
+%61void"Qjavax.servlet.jsp.JspFactory#releasePageContext(Ljavax/servlet/jsp/PageContext;)V*%
+#
+%60javax.servlet.jsp.JspFactory*5
+3
+_jspx_page_contextjavax.servlet.jsp.PageContext23releasePageContext(Ljavax/servlet/jsp/PageContext;)*
+0*£
+startingBlockq
+fC:\Users\loren\git\ISPW-Project\SkateSpot\.scannerwork\jsp\org\apache\jsp\WebContent\joinSpot_jsp.javaW W(Öòï
+p
+fC:\Users\loren\git\ISPW-Project\SkateSpot\.scannerwork\jsp\org\apache\jsp\WebContent\joinSpot_jsp.javaW W(
+%jsp_context"java.util.HashMap*
+76*÷
+61I
+AC:/Users/loren/git/ISPW-Project/SkateSpot/WebContent/joinSpot.jsp	 	(Mg
+e
+I
+AC:/Users/loren/git/ISPW-Project/SkateSpot/WebContent/joinSpot.jsp	 	(M
+
+%20int"__id*
+""ë
+é
+I
+AC:/Users/loren/git/ISPW-Project/SkateSpot/WebContent/joinSpot.jsp	 	(M
+%21java.lang.Object"__mapGet*
+
+%jsp_context*
+
+joinBean*
+58
+48*ˆ
+40K
+AC:/Users/loren/git/ISPW-Project/SkateSpot/WebContent/joinSpot.jsp( (/úô
+K
+AC:/Users/loren/git/ISPW-Project/SkateSpot/WebContent/joinSpot.jsp0 (<
+%40java.lang.String"Ojavax.servlet.ServletRequest#getParameter(Ljava/lang/String;)Ljava/lang/String;*2
+0
+request%javax.servlet.http.HttpServletRequest*
+
+number2 getParameter(Ljava/lang/String;)*
+39*Ñ
+62p
+fC:\Users\loren\git\ISPW-Project\SkateSpot\.scannerwork\jsp\org\apache\jsp\WebContent\joinSpot_jsp.javay y( ≈
+¬
+p
+fC:\Users\loren\git\ISPW-Project\SkateSpot\.scannerwork\jsp\org\apache\jsp\WebContent\joinSpot_jsp.javay y( "
+outjavax.servlet.jsp.JspWriter"__id*$
+"
+%18javax.servlet.jsp.JspWriterÀ
+»
+p
+fC:\Users\loren\git\ISPW-Project\SkateSpot\.scannerwork\jsp\org\apache\jsp\WebContent\joinSpot_jsp.javaz z((
+	_jspx_outjavax.servlet.jsp.JspWriter"__id*$
+"
+outjavax.servlet.jsp.JspWriterÔÏ
+K
+AC:/Users/loren/git/ISPW-Project/SkateSpot/WebContent/joinSpot.jsp 	(M
+%19void")java.io.Writer#write(Ljava/lang/String;)V*$
+"
+outjavax.servlet.jsp.JspWriter*$"
+ \r\n    \r\n\r\n\r\n\r\n\r\n\r\n2write(Ljava/lang/String;)*
+61*ˆ
+41K
+AC:/Users/loren/git/ISPW-Project/SkateSpot/WebContent/joinSpot.jsp( (/úô
+K
+AC:/Users/loren/git/ISPW-Project/SkateSpot/WebContent/joinSpot.jsp0 (<
+%39java.lang.String"Ojavax.servlet.ServletRequest#getParameter(Ljava/lang/String;)Ljava/lang/String;*2
+0
+request%javax.servlet.http.HttpServletRequest*
+
+street2 getParameter(Ljava/lang/String;)*
+40*ñ
+63p
+fC:\Users\loren\git\ISPW-Project\SkateSpot\.scannerwork\jsp\org\apache\jsp\WebContent\joinSpot_jsp.javax x((óî
+p
+fC:\Users\loren\git\ISPW-Project\SkateSpot\.scannerwork\jsp\org\apache\jsp\WebContent\joinSpot_jsp.javay y( "
+%18javax.servlet.jsp.JspWriter"Bjavax.servlet.jsp.JspContext#getOut()Ljavax/servlet/jsp/JspWriter;*.
+,
+pageContextjavax.servlet.jsp.PageContext2getOut()*
+62*•
+64p
+fC:\Users\loren\git\ISPW-Project\SkateSpot\.scannerwork\jsp\org\apache\jsp\WebContent\joinSpot_jsp.javaw w(-¶£
+p
+fC:\Users\loren\git\ISPW-Project\SkateSpot\.scannerwork\jsp\org\apache\jsp\WebContent\joinSpot_jsp.javax x((%
+%17javax.servlet.http.HttpSession"Jjavax.servlet.jsp.PageContext#getSession()Ljavax/servlet/http/HttpSession;*.
+,
+pageContextjavax.servlet.jsp.PageContext2getSession()*
+63*¯
+43K
+AC:/Users/loren/git/ISPW-Project/SkateSpot/WebContent/joinSpot.jsp (öó
+K
+AC:/Users/loren/git/ISPW-Project/SkateSpot/WebContent/joinSpot.jsp (
+%38java.lang.String"Ojavax.servlet.ServletRequest#getParameter(Ljava/lang/String;)Ljava/lang/String;*2
+0
+request%javax.servlet.http.HttpServletRequest*
+join2 getParameter(Ljava/lang/String;)*
+16
+41*´
+65p
+fC:\Users\loren\git\ISPW-Project\SkateSpot\.scannerwork\jsp\org\apache\jsp\WebContent\joinSpot_jsp.javav v(3¨©
+p
+fC:\Users\loren\git\ISPW-Project\SkateSpot\.scannerwork\jsp\org\apache\jsp\WebContent\joinSpot_jsp.javaw w(-"
+%16javax.servlet.ServletConfig"Mjavax.servlet.jsp.PageContext#getServletConfig()Ljavax/servlet/ServletConfig;*.
+,
+pageContextjavax.servlet.jsp.PageContext2getServletConfig()*
+64*≥
+44I
+AC:/Users/loren/git/ISPW-Project/SkateSpot/WebContent/joinSpot.jsp (€ÿ
+I
+AC:/Users/loren/git/ISPW-Project/SkateSpot/WebContent/joinSpot.jsp (
+%37void")java.io.Writer#write(Ljava/lang/String;)V*$
+"
+outjavax.servlet.jsp.JspWriter*ëé
+ã\r\n<!DOCTYPE html>\r\n<html lang=\"it\">\r\n<head>\r\n<meta charset=\"ISO-8859-1\">\r\n<title>Join Spot</title>\r\n</head>\r\n<body>\r\n\t2write(Ljava/lang/String;)*
+43*Ê
+66p
+fC:\Users\loren\git\ISPW-Project\SkateSpot\.scannerwork\jsp\org\apache\jsp\WebContent\joinSpot_jsp.javas t( —
+Œ
+p
+fC:\Users\loren\git\ISPW-Project\SkateSpot\.scannerwork\jsp\org\apache\jsp\WebContent\joinSpot_jsp.javas t( ,
+pageContextjavax.servlet.jsp.PageContext"__id*&
+$
+%14javax.servlet.jsp.PageContext‡
+›
+p
+fC:\Users\loren\git\ISPW-Project\SkateSpot\.scannerwork\jsp\org\apache\jsp\WebContent\joinSpot_jsp.javau u(&3
+_jspx_page_contextjavax.servlet.jsp.PageContext"__id*.
+,
+pageContextjavax.servlet.jsp.PageContext∞≠
+p
+fC:\Users\loren\git\ISPW-Project\SkateSpot\.scannerwork\jsp\org\apache\jsp\WebContent\joinSpot_jsp.javav v(3#
+%15javax.servlet.ServletContext"Ojavax.servlet.jsp.PageContext#getServletContext()Ljavax/servlet/ServletContext;*.
+,
+pageContextjavax.servlet.jsp.PageContext2getServletContext()*
+65*û
+45I
+AC:/Users/loren/git/ISPW-Project/SkateSpot/WebContent/joinSpot.jsp
+ 
+(/∆
+√
+I
+AC:/Users/loren/git/ISPW-Project/SkateSpot/WebContent/joinSpot.jsp
+ 
+(/
+%36void"iorg.apache.jasper.runtime.JspRuntimeLibrary#introspect(Ljava/lang/Object;Ljavax/servlet/ServletRequest;)V*/"-
++org.apache.jasper.runtime.JspRuntimeLibrary*
+
+%35java.lang.Object*2
+0
+request%javax.servlet.http.HttpServletRequest*
+44*‘
+67p
+fC:\Users\loren\git\ISPW-Project\SkateSpot\.scannerwork\jsp\org\apache\jsp\WebContent\joinSpot_jsp.javas s( ®
+•
+p
+fC:\Users\loren\git\ISPW-Project\SkateSpot\.scannerwork\jsp\org\apache\jsp\WebContent\joinSpot_jsp.javas s( #
+%13javax.servlet.jsp.JspFactory"__id*
+""™ß
+p
+fC:\Users\loren\git\ISPW-Project\SkateSpot\.scannerwork\jsp\org\apache\jsp\WebContent\joinSpot_jsp.javas t( $
+%14javax.servlet.jsp.PageContext"µjavax.servlet.jsp.JspFactory#getPageContext(Ljavax/servlet/Servlet;Ljavax/servlet/ServletRequest;Ljavax/servlet/ServletResponse;Ljava/lang/String;ZIZ)Ljavax/servlet/jsp/PageContext;*%
+#
+%13javax.servlet.jsp.JspFactory**(
+&org.apache.jsp.WebContent.joinSpot_jsp*2
+0
+request%javax.servlet.http.HttpServletRequest*4
+2
+response&javax.servlet.http.HttpServletResponse*
+""*
+""*2Ä@*
+""2ygetPageContext(Ljavax/servlet/Servlet;Ljavax/servlet/ServletRequest;Ljavax/servlet/ServletResponse;Ljava/lang/String;ZIZ)*
+66:
+%jsp_context:0
+request%javax.servlet.http.HttpServletRequest:2
+response&javax.servlet.http.HttpServletResponseB*(
+&org.apache.jsp.WebContent.joinSpot_jsp

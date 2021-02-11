@@ -1,0 +1,10 @@
+SMAP
+joinLeaveSpotDenied_jsp.java
+JSP
+*S JSP
+*F
++ 0 joinLeaveSpotDenied.jsp
+WebContent/joinLeaveSpotDenied.jsp
+*L
+2,18:116,0
+*E

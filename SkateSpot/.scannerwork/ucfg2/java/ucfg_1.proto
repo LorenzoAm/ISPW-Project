@@ -1,16 +1,14 @@
 
-Gorg.apache.jsp.WebContent.signUp_jsp#getPackageImports()Ljava/util/Set;o
-eC:\Users\Andrei\git\ISPW-Project\SkateSpot\.scannerwork\jsp\org\apache\jsp\WebContent\signUp_jsp.java7) 7(:"1*™
-1o
-eC:\Users\Andrei\git\ISPW-Project\SkateSpot\.scannerwork\jsp\org\apache\jsp\WebContent\signUp_jsp.java8 8(!—
-”
-o
-eC:\Users\Andrei\git\ISPW-Project\SkateSpot\.scannerwork\jsp\org\apache\jsp\WebContent\signUp_jsp.java8 8(!
-%0java.util.Set"__id*
-"""ˆ
-o
-eC:\Users\Andrei\git\ISPW-Project\SkateSpot\.scannerwork\jsp\org\apache\jsp\WebContent\signUp_jsp.java8 8("
-
-%0java.util.Set:
-%jsp_contextB(&
-$org.apache.jsp.WebContent.signUp_jsp
+Clogic.exception.ExistingEmailException#toString()Ljava/lang/String;c
+YC:/Users/loren/git/ISPW-Project/SkateSpot/src/logic/exception/ExistingEmailException.java ("1*Ú
+1c
+YC:/Users/loren/git/ISPW-Project/SkateSpot/src/logic/exception/ExistingEmailException.java	 (îë
+c
+YC:/Users/loren/git/ISPW-Project/SkateSpot/src/logic/exception/ExistingEmailException.java	 (
+%0java.lang.String"2java.lang.Throwable#getMessage()Ljava/lang/String;**(
+&logic.exception.ExistingEmailException2getMessage()"
+c
+YC:/Users/loren/git/ISPW-Project/SkateSpot/src/logic/exception/ExistingEmailException.java (
+
+%0java.lang.StringB*(
+&logic.exception.ExistingEmailException

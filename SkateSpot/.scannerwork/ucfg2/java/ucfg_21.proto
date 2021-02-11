@@ -1,17 +1,16 @@
 
-Dorg.apache.jsp.WebContent.addShop_jsp#getDependants()Ljava/util/Map;p
-fC:\Users\Andrei\git\ISPW-Project\SkateSpot\.scannerwork\jsp\org\apache\jsp\WebContent\addShop_jsp.java'8 '(E"1*Õ
-1p
-fC:\Users\Andrei\git\ISPW-Project\SkateSpot\.scannerwork\jsp\org\apache\jsp\WebContent\addShop_jsp.java( ((Ñ
-Î
-p
-fC:\Users\Andrei\git\ISPW-Project\SkateSpot\.scannerwork\jsp\org\apache\jsp\WebContent\addShop_jsp.java( ((
-%0java.util.Map"__id*?*='
-%org.apache.jsp.WebContent.addShop_jsp"
-_jspx_dependants"‰
-p
-fC:\Users\Andrei\git\ISPW-Project\SkateSpot\.scannerwork\jsp\org\apache\jsp\WebContent\addShop_jsp.java( ((
-
-%0java.util.Map:
-%jsp_contextB)'
-%org.apache.jsp.WebContent.addShop_jsp
+Blogic.exception.ExistingShopException#toString()Ljava/lang/String;b
+XC:/Users/loren/git/ISPW-Project/SkateSpot/src/logic/exception/ExistingShopException.java ("1*Ö
+1b
+XC:/Users/loren/git/ISPW-Project/SkateSpot/src/logic/exception/ExistingShopException.java
+ (ìé
+b
+XC:/Users/loren/git/ISPW-Project/SkateSpot/src/logic/exception/ExistingShopException.java
+ (
+%0java.lang.String"2java.lang.Throwable#getMessage()Ljava/lang/String;*)'
+%logic.exception.ExistingShopException2getMessage()"~
+b
+XC:/Users/loren/git/ISPW-Project/SkateSpot/src/logic/exception/ExistingShopException.java (
+
+%0java.lang.StringB)'
+%logic.exception.ExistingShopException

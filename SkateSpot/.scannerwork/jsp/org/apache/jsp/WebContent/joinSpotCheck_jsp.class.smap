@@ -1,0 +1,10 @@
+SMAP
+joinSpotCheck_jsp.java
+JSP
+*S JSP
+*F
++ 0 joinSpotCheck.jsp
+WebContent/joinSpotCheck.jsp
+*L
+2,18:116,0
+*E

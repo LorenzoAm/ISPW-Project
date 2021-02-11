@@ -1,0 +1,103 @@
+
+logic.beans.SignUpBean#check()ZU
+IC:/Users/loren/git/ISPW-Project/SkateSpot/src/logic/beans/SignUpBean.java€ €("15*—
+2V
+IC:/Users/loren/git/ISPW-Project/SkateSpot/src/logic/beans/SignUpBean.java‚s ‚(…´
+±
+V
+IC:/Users/loren/git/ISPW-Project/SkateSpot/src/logic/beans/SignUpBean.java‚s ‚(‡
+%7boolean",logic.beans.SignUpBean#checkTypeOfAccount()Z*
+logic.beans.SignUpBean*
+1*¤
+14U
+IC:/Users/loren/git/ISPW-Project/SkateSpot/src/logic/beans/SignUpBean.java‚ ‚(#­
+ª
+U
+IC:/Users/loren/git/ISPW-Project/SkateSpot/src/logic/beans/SignUpBean.java‚ ‚(%
+%1boolean"&logic.beans.SignUpBean#checkSurname()Z*
+logic.beans.SignUpBean*
+2
+4
+6
+8
+10
+12
+1*¥
+15U
+IC:/Users/loren/git/ISPW-Project/SkateSpot/src/logic/beans/SignUpBean.java‚
+ ‚(ª
+§
+U
+IC:/Users/loren/git/ISPW-Project/SkateSpot/src/logic/beans/SignUpBean.java‚
+ ‚(
+%0boolean"#logic.beans.SignUpBean#checkName()Z*
+logic.beans.SignUpBean*
+2
+14
+4
+6
+8
+10
+12
+1*‘
+4U
+IC:/Users/loren/git/ISPW-Project/SkateSpot/src/logic/beans/SignUpBean.java‚d ‚(o¬
+©
+U
+IC:/Users/loren/git/ISPW-Project/SkateSpot/src/logic/beans/SignUpBean.java‚d ‚(q
+%6boolean"%logic.beans.SignUpBean#checkGender()Z*
+logic.beans.SignUpBean*
+2
+1*’
+6U
+IC:/Users/loren/git/ISPW-Project/SkateSpot/src/logic/beans/SignUpBean.java‚W ‚(`ª
+§
+U
+IC:/Users/loren/git/ISPW-Project/SkateSpot/src/logic/beans/SignUpBean.java‚W ‚(b
+%5boolean"#logic.beans.SignUpBean#checkDate()Z*
+logic.beans.SignUpBean*	
+2
+4
+1*™
+8U
+IC:/Users/loren/git/ISPW-Project/SkateSpot/src/logic/beans/SignUpBean.java‚F ‚(S®
+«
+U
+IC:/Users/loren/git/ISPW-Project/SkateSpot/src/logic/beans/SignUpBean.java‚F ‚(U
+%4boolean"'logic.beans.SignUpBean#checkPassword()Z*
+logic.beans.SignUpBean*
+2
+4
+6
+1*š
+10U
+IC:/Users/loren/git/ISPW-Project/SkateSpot/src/logic/beans/SignUpBean.java‚8 ‚(B«
+¨
+U
+IC:/Users/loren/git/ISPW-Project/SkateSpot/src/logic/beans/SignUpBean.java‚8 ‚(D
+%3boolean"$logic.beans.SignUpBean#checkEmail()Z*
+logic.beans.SignUpBean*
+2
+4
+6
+8
+1*¡
+12U
+IC:/Users/loren/git/ISPW-Project/SkateSpot/src/logic/beans/SignUpBean.java‚' ‚(4®
+«
+U
+IC:/Users/loren/git/ISPW-Project/SkateSpot/src/logic/beans/SignUpBean.java‚' ‚(6
+%2boolean"'logic.beans.SignUpBean#checkUsername()Z*
+logic.beans.SignUpBean*
+2
+4
+6
+8
+10
+1*½
+1V
+IC:/Users/loren/git/ISPW-Project/SkateSpot/src/logic/beans/SignUpBean.java‚ ‚(‰"`
+V
+IC:/Users/loren/git/ISPW-Project/SkateSpot/src/logic/beans/SignUpBean.java‚ ‚(‰
+""B
+logic.beans.SignUpBean

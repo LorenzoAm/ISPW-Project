@@ -1,17 +1,56 @@
 
-Borg.apache.jsp.WebContent.login_jsp#getDependants()Ljava/util/Map;n
-dC:\Users\Andrei\git\ISPW-Project\SkateSpot\.scannerwork\jsp\org\apache\jsp\WebContent\login_jsp.java'8 '(E"1*Í
-1n
-dC:\Users\Andrei\git\ISPW-Project\SkateSpot\.scannerwork\jsp\org\apache\jsp\WebContent\login_jsp.java( ((Í
-Ê
-n
-dC:\Users\Andrei\git\ISPW-Project\SkateSpot\.scannerwork\jsp\org\apache\jsp\WebContent\login_jsp.java( ((
-%0java.util.Map"__id*=*;%
-#org.apache.jsp.WebContent.login_jsp"
-_jspx_dependants"‡
-n
-dC:\Users\Andrei\git\ISPW-Project\SkateSpot\.scannerwork\jsp\org\apache\jsp\WebContent\login_jsp.java( ((
-
-%0java.util.Map:
-%jsp_contextB'%
-#org.apache.jsp.WebContent.login_jsp
+%logic.beans.LoginBean#checkAtEmail()ZR
+HC:/Users/loren/git/ISPW-Project/SkateSpot/src/logic/beans/LoginBean.javaN N( "3*Ø
+2R
+HC:/Users/loren/git/ISPW-Project/SkateSpot/src/logic/beans/LoginBean.javaR& R(+›
+˜
+R
+HC:/Users/loren/git/ISPW-Project/SkateSpot/src/logic/beans/LoginBean.javaR& R(+
+%2java.lang.String"__id*$*"
+logic.beans.LoginBean"
+emailöó
+R
+HC:/Users/loren/git/ISPW-Project/SkateSpot/src/logic/beans/LoginBean.javaR& R(9
+%3java.lang.String[]">java.lang.String#split(Ljava/lang/String;I)[Ljava/lang/String;*
+
+%2java.lang.String*
+@*
+""2split(Ljava/lang/String;I)ž
+›
+R
+HC:/Users/loren/git/ISPW-Project/SkateSpot/src/logic/beans/LoginBean.javaR R(:#
+splittedEmailjava.lang.String[]"__id*
+
+%3java.lang.String[]è
+å
+R
+HC:/Users/loren/git/ISPW-Project/SkateSpot/src/logic/beans/LoginBean.javaS S(:
+%4boolean">logic.beans.LoginBean#checkSplittedEmail([Ljava/lang/String;)Z*
+logic.beans.LoginBean*%
+#
+splittedEmailjava.lang.String[]"\
+R
+HC:/Users/loren/git/ISPW-Project/SkateSpot/src/logic/beans/LoginBean.javaS S(;
+""*á
+3R
+HC:/Users/loren/git/ISPW-Project/SkateSpot/src/logic/beans/LoginBean.javaP P(›
+˜
+R
+HC:/Users/loren/git/ISPW-Project/SkateSpot/src/logic/beans/LoginBean.javaP P(
+%0java.lang.String"__id*$*"
+logic.beans.LoginBean"
+emailáÞ
+R
+HC:/Users/loren/git/ISPW-Project/SkateSpot/src/logic/beans/LoginBean.javaP P(
+%1boolean"4java.lang.String#contains(Ljava/lang/CharSequence;)Z*
+
+%0java.lang.String*
+@2"contains(Ljava/lang/CharSequence;)*
+2
+1*µ
+1R
+HC:/Users/loren/git/ISPW-Project/SkateSpot/src/logic/beans/LoginBean.javaW W("\
+R
+HC:/Users/loren/git/ISPW-Project/SkateSpot/src/logic/beans/LoginBean.javaW W(
+""B
+logic.beans.LoginBean

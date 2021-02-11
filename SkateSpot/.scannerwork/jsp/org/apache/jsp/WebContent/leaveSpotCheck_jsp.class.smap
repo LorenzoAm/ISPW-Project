@@ -1,0 +1,10 @@
+SMAP
+leaveSpotCheck_jsp.java
+JSP
+*S JSP
+*F
++ 0 leaveSpotCheck.jsp
+WebContent/leaveSpotCheck.jsp
+*L
+2,18:116,0
+*E

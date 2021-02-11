@@ -1,0 +1,41 @@
+
+,logic.beans.SignUpBean#checkTypeOfAccount()ZU
+IC:/Users/loren/git/ISPW-Project/SkateSpot/src/logic/beans/SignUpBean.java„ „(#"3*ä
+2U
+IC:/Users/loren/git/ISPW-Project/SkateSpot/src/logic/beans/SignUpBean.java†) †(6§
+¤
+U
+IC:/Users/loren/git/ISPW-Project/SkateSpot/src/logic/beans/SignUpBean.java†) †(6
+%2java.lang.String"__id*-*+
+logic.beans.SignUpBean"
+typeOfAccountØÕ
+U
+IC:/Users/loren/git/ISPW-Project/SkateSpot/src/logic/beans/SignUpBean.java†) †(F
+%3boolean",java.lang.String#equals(Ljava/lang/Object;)Z*
+
+%2java.lang.String*	
+Owner2equals(Ljava/lang/Object;)*
+1*è
+3U
+IC:/Users/loren/git/ISPW-Project/SkateSpot/src/logic/beans/SignUpBean.java†	 †(§
+¤
+U
+IC:/Users/loren/git/ISPW-Project/SkateSpot/src/logic/beans/SignUpBean.java†	 †(
+%0java.lang.String"__id*-*+
+logic.beans.SignUpBean"
+typeOfAccountÙÖ
+U
+IC:/Users/loren/git/ISPW-Project/SkateSpot/src/logic/beans/SignUpBean.java†	 †('
+%1boolean",java.lang.String#equals(Ljava/lang/Object;)Z*
+
+%0java.lang.String*
+
+Skater2equals(Ljava/lang/Object;)*
+2
+1*»
+1U
+IC:/Users/loren/git/ISPW-Project/SkateSpot/src/logic/beans/SignUpBean.java† †(H"_
+U
+IC:/Users/loren/git/ISPW-Project/SkateSpot/src/logic/beans/SignUpBean.java† †(H
+""B
+logic.beans.SignUpBean

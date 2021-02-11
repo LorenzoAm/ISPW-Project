@@ -1,0 +1,56 @@
+
+&logic.beans.SignUpBean#checkAtEmail()ZU
+IC:/Users/loren/git/ISPW-Project/SkateSpot/src/logic/beans/SignUpBean.java© ©( "3*í
+2U
+IC:/Users/loren/git/ISPW-Project/SkateSpot/src/logic/beans/SignUpBean.java­& ­(+Ÿ
+œ
+U
+IC:/Users/loren/git/ISPW-Project/SkateSpot/src/logic/beans/SignUpBean.java­& ­(+
+%2java.lang.String"__id*%*#
+logic.beans.SignUpBean"
+emailùö
+U
+IC:/Users/loren/git/ISPW-Project/SkateSpot/src/logic/beans/SignUpBean.java­& ­(9
+%3java.lang.String[]">java.lang.String#split(Ljava/lang/String;I)[Ljava/lang/String;*
+
+%2java.lang.String*
+@*
+""2split(Ljava/lang/String;I)¡
+ž
+U
+IC:/Users/loren/git/ISPW-Project/SkateSpot/src/logic/beans/SignUpBean.java­ ­(:#
+splittedEmailjava.lang.String[]"__id*
+
+%3java.lang.String[]í
+ê
+U
+IC:/Users/loren/git/ISPW-Project/SkateSpot/src/logic/beans/SignUpBean.java® ®(:
+%4boolean"?logic.beans.SignUpBean#checkSplittedEmail([Ljava/lang/String;)Z*
+logic.beans.SignUpBean*%
+#
+splittedEmailjava.lang.String[]"_
+U
+IC:/Users/loren/git/ISPW-Project/SkateSpot/src/logic/beans/SignUpBean.java® ®(;
+""*ë
+3U
+IC:/Users/loren/git/ISPW-Project/SkateSpot/src/logic/beans/SignUpBean.java« «(Ÿ
+œ
+U
+IC:/Users/loren/git/ISPW-Project/SkateSpot/src/logic/beans/SignUpBean.java« «(
+%0java.lang.String"__id*%*#
+logic.beans.SignUpBean"
+emailäá
+U
+IC:/Users/loren/git/ISPW-Project/SkateSpot/src/logic/beans/SignUpBean.java« «(
+%1boolean"4java.lang.String#contains(Ljava/lang/CharSequence;)Z*
+
+%0java.lang.String*
+@2"contains(Ljava/lang/CharSequence;)*
+2
+1*»
+1U
+IC:/Users/loren/git/ISPW-Project/SkateSpot/src/logic/beans/SignUpBean.java² ²("_
+U
+IC:/Users/loren/git/ISPW-Project/SkateSpot/src/logic/beans/SignUpBean.java² ²(
+""B
+logic.beans.SignUpBean

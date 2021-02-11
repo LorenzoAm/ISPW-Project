@@ -1,74 +1,16 @@
 
-]org.apache.jsp.WebContent.addSpot_jsp#_jsp_getExpressionFactory()Ljavax/el/ExpressionFactory;p
-fC:\Users\Andrei\git\ISPW-Project\SkateSpot\.scannerwork\jsp\org\apache\jsp\WebContent\addSpot_jsp.java3$ 3(="5*¾
-2p
-fC:\Users\Andrei\git\ISPW-Project\SkateSpot\.scannerwork\jsp\org\apache\jsp\WebContent\addSpot_jsp.java7" 7(.§
-¤
-p
-fC:\Users\Andrei\git\ISPW-Project\SkateSpot\.scannerwork\jsp\org\apache\jsp\WebContent\addSpot_jsp.java7" 7(."
-%2javax.servlet.jsp.JspFactory"__id*
-""ž›
-p
-fC:\Users\Andrei\git\ISPW-Project\SkateSpot\.scannerwork\jsp\org\apache\jsp\WebContent\addSpot_jsp.java7H 7(Z!
-%3javax.servlet.ServletConfig"Ejavax.servlet.Servlet#getServletConfig()Ljavax/servlet/ServletConfig;*)'
-%org.apache.jsp.WebContent.addSpot_jsp2getServletConfig()¢Ÿ
-p
-fC:\Users\Andrei\git\ISPW-Project\SkateSpot\.scannerwork\jsp\org\apache\jsp\WebContent\addSpot_jsp.java7H 7(n"
-%4javax.servlet.ServletContext"Mjavax.servlet.ServletConfig#getServletContext()Ljavax/servlet/ServletContext;*#
-!
-%3javax.servlet.ServletConfig2getServletContext()ª§
-p
-fC:\Users\Andrei\git\ISPW-Project\SkateSpot\.scannerwork\jsp\org\apache\jsp\WebContent\addSpot_jsp.java7" 7(o-
-%5'javax.servlet.jsp.JspApplicationContext"~javax.servlet.jsp.JspFactory#getJspApplicationContext(Ljavax/servlet/ServletContext;)Ljavax/servlet/jsp/JspApplicationContext;*$
-"
-%2javax.servlet.jsp.JspFactory*$
-"
-%4javax.servlet.ServletContext28getJspApplicationContext(Ljavax/servlet/ServletContext;)½º
-q
-fC:\Users\Andrei\git\ISPW-Project\SkateSpot\.scannerwork\jsp\org\apache\jsp\WebContent\addSpot_jsp.java7" 7(† 
-%6javax.el.ExpressionFactory"Zjavax.servlet.jsp.JspApplicationContext#getExpressionFactory()Ljavax/el/ExpressionFactory;*/
--
-%5'javax.servlet.jsp.JspApplicationContext2getExpressionFactory()ä
-á
-q
-fC:\Users\Andrei\git\ISPW-Project\SkateSpot\.scannerwork\jsp\org\apache\jsp\WebContent\addSpot_jsp.java7
- 7(†B'
-%org.apache.jsp.WebContent.addSpot_jsp"
-_el_expressionfactory"__id*"
- 
-%6javax.el.ExpressionFactory*
-1*ã
-3p
-fC:\Users\Andrei\git\ISPW-Project\SkateSpot\.scannerwork\jsp\org\apache\jsp\WebContent\addSpot_jsp.java6 6(!ã
-à
-p
-fC:\Users\Andrei\git\ISPW-Project\SkateSpot\.scannerwork\jsp\org\apache\jsp\WebContent\addSpot_jsp.java6 6(! 
-%1javax.el.ExpressionFactory"__id*D*B'
-%org.apache.jsp.WebContent.addSpot_jsp"
-_el_expressionfactory*
-2
-1*ã
-5p
-fC:\Users\Andrei\git\ISPW-Project\SkateSpot\.scannerwork\jsp\org\apache\jsp\WebContent\addSpot_jsp.java4 4(ã
-à
-p
-fC:\Users\Andrei\git\ISPW-Project\SkateSpot\.scannerwork\jsp\org\apache\jsp\WebContent\addSpot_jsp.java4 4( 
-%0javax.el.ExpressionFactory"__id*D*B'
-%org.apache.jsp.WebContent.addSpot_jsp"
-_el_expressionfactory*
-3
-1*ô
-1p
-fC:\Users\Andrei\git\ISPW-Project\SkateSpot\.scannerwork\jsp\org\apache\jsp\WebContent\addSpot_jsp.java; ;( ã
-à
-p
-fC:\Users\Andrei\git\ISPW-Project\SkateSpot\.scannerwork\jsp\org\apache\jsp\WebContent\addSpot_jsp.java; ;(  
-%7javax.el.ExpressionFactory"__id*D*B'
-%org.apache.jsp.WebContent.addSpot_jsp"
-_el_expressionfactory"–
-p
-fC:\Users\Andrei\git\ISPW-Project\SkateSpot\.scannerwork\jsp\org\apache\jsp\WebContent\addSpot_jsp.java; ;(!"
- 
-%7javax.el.ExpressionFactory:
-%jsp_contextB)'
-%org.apache.jsp.WebContent.addSpot_jsp
+1logic.entities.Shop#getComune()Ljava/lang/String;P
+FC:/Users/loren/git/ISPW-Project/SkateSpot/src/logic/entities/Shop.javad d("1*Þ
+1P
+FC:/Users/loren/git/ISPW-Project/SkateSpot/src/logic/entities/Shop.javaf f(˜
+•
+P
+FC:/Users/loren/git/ISPW-Project/SkateSpot/src/logic/entities/Shop.javaf f(
+%0java.lang.String"__id*#*!
+logic.entities.Shop"
+comune"l
+P
+FC:/Users/loren/git/ISPW-Project/SkateSpot/src/logic/entities/Shop.javaf f(
+
+%0java.lang.StringB
+logic.entities.Shop
