@@ -22,10 +22,12 @@
 <script type="text/javascript">
 	function previous()
 	{
+		<%i--;%>
 		setLabels();
 	}
 	function next()
 	{
+		<%i++;%>
 		setLabels();
 	}
 	function setLabels()
