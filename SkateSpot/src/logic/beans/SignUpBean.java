@@ -20,7 +20,7 @@ public class SignUpBean
 	private String gender;
 	private String typeOfAccount;
 	private LocalDate data;
-	private static final String MATCH="^[a-zA-Z' ']*$";
+	private static final String MATCH="^[a-zA-Z]*$";
 	private static final String MATCH2="^[a-zA-Z0-9]*$";
 	
 
@@ -230,14 +230,7 @@ public class SignUpBean
     
     private boolean checkDomain2(String[] splittedEmail2)
     {
-    	if((!splittedEmail2[0].equals(""))&&(splittedEmail2[0].matches(MATCH))&&(!splittedEmail2[1].equals(""))&&(splittedEmail2[1].matches(MATCH)))
-        {
-            return true;
-        }
-        else
-        {
-            return false;
-        }
+    	return((!splittedEmail2[0].equals(""))&&(splittedEmail2[0].matches(MATCH))&&(!splittedEmail2[1].equals(""))&&(splittedEmail2[1].matches(MATCH)));
     }
 	
 	private boolean checkDate()

@@ -13,7 +13,7 @@ public class SpotBean
     private String area;
     private String type;
     private String description;
-    private static final String MATCH="^[a-zA-Z' ']*$";
+    private static final String MATCH="^[a-zA-Z]*$";
 	private static final String MATCH2="^[0-9]*$";
     
     public SpotBean() {}

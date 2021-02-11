@@ -12,7 +12,7 @@ public class ShopBean
 	private String description;
 	private String street;
 	private String number;
-	private static final String MATCH="^[a-zA-Z' ']*$";
+	private static final String MATCH="^[a-zA-Z]*$";
 	private static final String MATCH2="^[0-9]*$";
 	
 	public ShopBean() {}

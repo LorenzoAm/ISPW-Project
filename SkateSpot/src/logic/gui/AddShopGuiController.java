@@ -12,7 +12,7 @@ import logic.beans.ShopBean;
 import logic.controllers.AddShopController;
 import logic.exception.ExistingShopException;
 
-public class addShopGuiController 
+public class AddShopGuiController 
 {
 	@FXML private TextField name;
 	@FXML private TextField city;
