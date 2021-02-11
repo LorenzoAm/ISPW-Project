@@ -26,7 +26,8 @@ public class ViewSpotGuiController
 	@FXML private Label data;
 	@FXML private Label descrizione;
 	ArrayList<Spot> spots;
-	private int i=0;	
+	private int i=0;
+	private int first=1;
 	
 	public void handle(MouseEvent mouseEvent) throws IOException
     {	
@@ -59,17 +60,25 @@ public class ViewSpotGuiController
 		}
 		else
 		{
-			if(i>=spots.size())
+			if(first==1)
 			{
-				i=0;
+				setLabels();
+				first=0;
 			}
-			if(i<0)
+			else
 			{
-				i=spots.size()-1;
+				i++;
+				if(i==spots.size())
+				{
+					i=0;
+					setLabels();
+				}
+				else
+				{
+					setLabels();
+				}
 			}
-			this.setLabels();
 		}
-		i++;
 	}
 	public void previousSpot()
 	{
@@ -80,17 +89,26 @@ public class ViewSpotGuiController
 		}
 		else
 		{
-			if(i>=spots.size())
+			if(first==1)
 			{
-				i=spots.size()-2;
+				setLabels();
+				first=0;
 			}
-			if(i<0)
+			else
 			{
-				i=spots.size()-1;
+				i--;
+				if(i<0)
+				{
+					i=spots.size()-1;
+					this.setLabels();
+				}
+				else
+				{
+					this.setLabels();
+				}	
+		
 			}
-			this.setLabels();
 		}
-		i--;
 	}
 	
 	public void setLabels()

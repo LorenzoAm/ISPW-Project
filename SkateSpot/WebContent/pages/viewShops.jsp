@@ -15,72 +15,128 @@
 <title>View Shops</title>
 </head>
 <body>
-<%!
+<%
 	ArrayList<Shop> shops;
+	shops=ViewShopController.getInstance().getList();
+	SimpleDateFormat sdf = new SimpleDateFormat("yyyy-MM-dd");
+	int dim=shops.size();
+	//utilizzo array paralleli per memorizzare lel informazioni e accedervi dal client
+	String[] nomi= new String[dim];
+	String[] indirizzi= new String[dim];
+	String[] zone= new String[dim];
+	String[] municipi= new String[dim];
+	String[] descrizioni= new String[dim];
+	String[] username= new String[dim];
+	String[] date= new String[dim];
+	for(int i=0;i<dim;i++)
+	{
+		nomi[i]=shops.get(i).getNome();
+		indirizzi[i]=shops.get(i).getIndirizzo();
+		zone[i]=shops.get(i).getZona();
+		municipi[i]=shops.get(i).getComune();
+		descrizioni[i]=shops.get(i).getComune();
+		username[i]=shops.get(i).getUsername();
+		date[i]=sdf.format(shops.get(i).getData());		
+	}
 	int i=0;
 	
-	public void nextShop()
+%>
+<script type="text/javascript">
+	var i=0;
+	var first=1;
+	
+	var nomiJ= new Array();
+	
+	var numeriJ=new Array();
+	
+	var indirizziJ=new Array();
+	
+	var zoneJ=new Array();
+	
+	var municipiJ=new Array();
+	
+	var descrizioniJ=new Array();
+	
+	var usernameJ=new Array();
+	
+	var dateJ=new Array();
+	
+	<%for(int j=0; j<dim; j++){%>
+	nomiJ[<%=j%>] = "<%=nomi[j]%>";
+	indirizziJ[<%=j%>] = "<%=indirizzi[j]%>";
+	zoneJ[<%=j%>] = "<%=zone[j]%>";
+	municipiJ[<%=j%>] = "<%=municipi[j]%>";
+	descrizioniJ[<%=j%>] = "<%=descrizioni[j]%>";
+	usernameJ[<%=j%>] = "<%=username[j]%>";
+	dateJ[<%=j%>] = "<%=date[j]%>";
+	<%}%>
+	
+	function previous()
 	{
-		shops = ViewShopController.getInstance().getList();
-		if(shops==null)
+		if(first==1)
 		{
-			//out.println("There is no dhop in our Data Base");
+			setLabels();
+			first=0;
 		}
 		else
 		{
-			if(i>=shops.size())
+			i--;
+			if(i<0)
+			{
+				i=<%=dim%>-1;
+				setLabels();
+			}
+			else
+			{
+				setLabels();
+			}	
+		}
+	}
+	function next()
+	{
+		if(first==1)
+		{
+			setLabels();
+			first=0;
+		}
+		else
+		{
+			i++;
+			if(i==<%=dim%>)
 			{
 				i=0;
+				setLabels();
 			}
-			if(i<0)
+			else
 			{
-				i=shops.size()-1;
+				setLabels();
 			}
-			this.setLabels();
 		}
-		i++;
 	}
-	
-	public void previousShop()
+	function setLabels()
 	{
-		shops = ViewShopController.getInstance().getList();
-		if(shops==null)
-		{
-			%>
-			<p>There is no shop in our database</p>
-			<%!
-		}
-		else
-		{
-			if(i>=shops.size())
-			{
-				i=shops.size()-2;
-			}
-			if(i<0)
-			{
-				i=shops.size()-1;
-			}
-			this.setLabels();
-		}
-		i--;
-	}
-	
-	public void setLabels()
-	{
-		SimpleDateFormat sdf; 
+		var nome = document.getElementById("name");
+		nome.innerHTML=nomiJ[i];
 		
-		//application.setAttribute("name",shops.get(i).getNome());
-		//request.setAttribute("address",shops.get(i).getIndirizzo());
-		//request.setAttribute("area",shops.get(i).getZona());
-		//request.setAttribute("municipality",shops.get(i).getComune());
-		//request.setAttribute("username",shops.get(i).getUsername());
-		//String date = new SimpleDateFormat("dd-MM-yyyy").format(shops.get(i).getData());
-		//request.setAttribute("data",date);
-		//request.setAttribute("descrizione",shops.get(i).getDescrizione());
+		var indirizzo = document.getElementById("address");
+		indirizzo.innerHTML=indirizziJ[i];
+		
+		var zona = document.getElementById("area");
+		zona.innerHTML=zoneJ[i];
+		
+		var municipio = document.getElementById("municipality");
+		municipio.innerHTML=municipiJ[i];
+		
+		var descrizione = document.getElementById("description");
+		descrizione.innerHTML=descrizioniJ[i];
+		
+		var username = document.getElementById("owner");
+		username.innerHTML=usernameJ[i];
+		
+		var data = document.getElementById("date");
+		data.innerHTML=dateJ[i];
 	}
-	
-	
-%>
+</script>
 	<div>
 		<h1 id = "title" >SkateSpot</h1>
 		<a href="index.jsp">
@@ -91,21 +147,21 @@
 	<div>
 		<h1>Shop details</h1> <br><br>
 		<label>Shop name : </label>
-		<label for="name" id="name"> Name </label> <br><br>
+		<label id="name"> Name </label> <br><br>
 		<label>Address : </label>
-		<label for="address" id="address"> Address </label> <br><br>
+		<label id="address"> Address </label> <br><br>
 		<label>Area : </label>
-		<label for="area" id="area"> Area </label> <br><br>
+		<label id="area"> Area </label> <br><br>
 		<label>Municipality : </label>
-		<label for="municipality" id="municipality"> Municipality </label> <br><br>
+		<label id="municipality"> Municipality </label> <br><br>
 		<label>Description : </label>
-		<label for="description" id="description"> Description </label> <br><br>
+		<label id="description"> Description </label> <br><br>
 		<label> Added by :</label>
-		<label for="owner" id="owner"> Owner </label><br><br>
+		<label id="owner"> Owner </label><br><br>
 		<label> On :</label>
-		<label for="date" id="date"> Date </label><br><br><br>
-		<input type="submit" value="PREVIOUS" onClick="previousShop()"/>
-		<input type="submit" value="NEXT" onClick="nextShop()"/>
+		<label id="date"> Date </label><br><br><br>
+		<input type="submit" value="PREVIOUS" onClick="previous()"/>
+		<input type="submit" value="NEXT" onClick="next()"/>
 		
 	</div>
 	

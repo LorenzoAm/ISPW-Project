@@ -23,7 +23,8 @@ public class ViewMyShopsGuiController
 	@FXML private Label data;
 	@FXML private Label descrizione;
 	ArrayList<Shop> shops;
-	private int i=0;	
+	private int i=0;
+	private int first=1;
 	
 	public void handle(MouseEvent mouseEvent) throws IOException
     {	
@@ -56,17 +57,25 @@ public class ViewMyShopsGuiController
 		}
 		else
 		{
-			if(i>=shops.size())
+			if(first==1)
 			{
-				i=0;
+				setLabels();
+				first=0;
 			}
-			if(i<0)
+			else
 			{
-				i=shops.size()-1;
+				i++;
+				if(i==shops.size())
+				{
+					i=0;
+					setLabels();
+				}
+				else
+				{
+					setLabels();
+				}
 			}
-			this.setLabels();
 		}
-		i++;
 	}
 	public void previousShop()
 	{
@@ -77,17 +86,26 @@ public class ViewMyShopsGuiController
 		}
 		else
 		{
-			if(i>=shops.size())
+			if(first==1)
 			{
-				i=shops.size()-2;
+				setLabels();
+				first=0;
 			}
-			if(i<0)
+			else
 			{
-				i=shops.size()-1;
+				i--;
+				if(i<0)
+				{
+					i=shops.size()-1;
+					this.setLabels();
+				}
+				else
+				{
+					this.setLabels();
+				}	
+		
 			}
-			this.setLabels();
 		}
-		i--;
 	}
 	public void setLabels()
 	{
