@@ -8,7 +8,11 @@
 </head>
 <body>
 	<div>
-		<table>
+		<table summary="intestazione pagina">
+			<tr>
+				<th id="vuoto per sonar">
+				</th>
+			</tr>
 			<tr>
 				<td>
 					<img alt="SKATESPOT" src="../images/SkateSpot.png"/>
@@ -39,7 +43,11 @@
 	
 	<br><br><br>
 	
-	<table>
+	<table summary="scelta operazioni">
+		<tr>
+				<th id="richiesto sonar">
+				</th>
+		</tr>
 		<tr>
 			<td>
 				<a href="addShop.jsp">

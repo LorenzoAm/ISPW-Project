@@ -8,6 +8,7 @@ import logic.entities.dao.SpotDAO;
 public class ViewSpotController 
 {
 	private static ViewSpotController instance;
+	private ArrayList<Spot> spots= new ArrayList<Spot>();
 	
 	public static ViewSpotController getInstance()
 	{
@@ -18,6 +19,7 @@ public class ViewSpotController
 	
 	public ArrayList<Spot> getList()
 	{
-		return SpotDAO.getSpots();
+		spots=SpotDAO.getSpots();
+		return spots;
 	}
 }

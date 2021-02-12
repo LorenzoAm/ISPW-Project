@@ -42,9 +42,9 @@
 	%>
 	
 	<div>
-		<table>
+		<table summary="intestazione sito">
 			<tr>
-				<th>
+				<th id="Titolo">
 					<p></p>
 				</th>
 				<td >
@@ -68,7 +68,11 @@
 					<img src="../images/blank.png" alt="SPACE"/>
 				</td>
 				<td>
-					<table>
+					<table summary="menu a tendina">
+						<tr>
+							<th id="vuoto, richiesto da sonar">
+							</th>
+						</tr>
 						<tr>
 							<td>
 							<a href="loginLogout.jsp">
@@ -106,9 +110,9 @@
 		
 	</div>
 	
-	<table>
+	<table summary="impostazione home">
 		<tr>
-		<th>
+		<th id="vuoto, per sonar">
 		</th>
 			<td>
 				<img src="../images/blank.png" alt="SPACE"/>
@@ -126,9 +130,9 @@
 	</table>
 	
 	<div id="view-sect">
-		<table>
+		<table summary="scelta operazione">
 			<tr>
-			<th>
+			<th id="richiesto sonar">
 			</th>
 				<td>
 					<a href="viewSpots.jsp">

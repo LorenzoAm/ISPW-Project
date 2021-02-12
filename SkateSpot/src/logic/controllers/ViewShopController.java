@@ -8,6 +8,7 @@ import logic.entities.dao.ShopDAO;
 public class ViewShopController 
 {
 	private static ViewShopController instance;
+	private ArrayList<Shop> shops= new ArrayList<Shop>();
 	
 	public static ViewShopController getInstance()
 	{
@@ -18,6 +19,7 @@ public class ViewShopController
 	
 	public ArrayList<Shop> getList()
 	{
-		return ShopDAO.getShops();
+		shops=ShopDAO.getMyShops();
+		return shops;
 	}
 }
