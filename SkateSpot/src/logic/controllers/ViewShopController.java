@@ -19,7 +19,7 @@ public class ViewShopController
 	
 	public ArrayList<Shop> getList()
 	{
-		shops=ShopDAO.getMyShops();
+		shops=ShopDAO.getShops();
 		return shops;
 	}
 }

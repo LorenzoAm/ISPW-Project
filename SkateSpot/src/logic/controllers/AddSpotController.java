@@ -24,7 +24,7 @@ public class AddSpotController
     {
         Integer code = UserDAO.findCodeUser(UserContainer.getInstance().getEmail(),UserContainer.getInstance().getPassword());
         LocalDate date = LocalDate.now();
-        SpotDAO.createSpot(bean.getName(),bean.getStreet(),bean.getNumber(),bean.getCity(),bean.getMunicipality(),code,date);
         SpotDAO.addValues(bean.getType(), bean.getArea(), bean.getDescription());
+        SpotDAO.createSpot(bean.getName(),bean.getStreet(),bean.getNumber(),bean.getCity(),bean.getMunicipality(),code,date);       
     }
 }
