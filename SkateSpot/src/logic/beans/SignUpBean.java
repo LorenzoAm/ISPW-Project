@@ -21,7 +21,6 @@ public class SignUpBean
 	private String typeOfAccount;
 	private LocalDate data;
 	private static final String MATCH="^[a-zA-Z]*$";
-	private static final String MATCH2="^[a-zA-Z0-9]*$";
 	
 
 	
@@ -132,15 +131,15 @@ public class SignUpBean
 	
 	private boolean checkName()
 	{
-		return( !(name.equals("")) && (name.matches(MATCH)) );
+		return( !(name.equals("")));
 	}
 	private boolean checkSurname()
 	{
-		return( !(surname.equals("")) && (surname.matches(MATCH)) );
+		return( !(surname.equals("")));
 	}
 	private boolean checkUsername()
 	{
-		return( !(username.equals("")) && (username.matches(MATCH2)) );
+		return( !(username.equals("")));
 	}
 	private boolean checkPassword()
 	{

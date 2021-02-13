@@ -12,7 +12,6 @@ public class ShopBean
 	private String description;
 	private String street;
 	private String number;
-	private static final String MATCH="^[a-zA-Z]*$";
 	private static final String MATCH2="^[0-9]*$";
 	
 	public ShopBean() {}
@@ -108,7 +107,7 @@ public class ShopBean
 	
 	public boolean check()
 	{
-		return(!name.equals("")&&name.matches(MATCH)&&!city.equals("")&&city.matches(MATCH)&&!partitaIVA.equals("")&&partitaIVA.matches(MATCH2)&&(partitaIVA.length()==11)&&!municipality.equals("")&&municipality.matches(MATCH)&&!area.equals("")&&area.matches(MATCH)&&!description.equals("")&&description.matches(MATCH)&&!street.equals("")&&street.matches(MATCH)&&!number.equals("")&&number.matches(MATCH2));
+		return(!name.equals("")&&!city.equals("")&&!partitaIVA.equals("")&&partitaIVA.matches(MATCH2)&&(partitaIVA.length()==11)&&!municipality.equals("")&&!area.equals("")&&!description.equals("")&&!street.equals("")&&!number.equals("")&&number.matches(MATCH2));
 		
 		
 	}
