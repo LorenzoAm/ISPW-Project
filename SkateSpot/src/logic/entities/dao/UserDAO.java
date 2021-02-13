@@ -84,6 +84,8 @@ public class UserDAO
 
         return user;
     }
+    
+    
 
     // metodo utilizzato per il sign up
     public static void createUser(String name,String surname,String username,String email,String password,LocalDate data,String gender,String typeOfAccount) throws ExistingEmailException
@@ -206,26 +208,33 @@ public class UserDAO
     {
         Connection connection = null; 
         Statement statement = null;
-        int updatedNumber;
-        int code;
+        Integer updatedNumber;
+        Integer code;
 
         try
         {
-
+        	
+            
             connection=DriverManager.getConnection(URL,USER,PSW);
             //creazione ed esecuzione query
             statement=connection.createStatement(ResultSet.TYPE_SCROLL_INSENSITIVE,ResultSet.CONCUR_READ_ONLY);
-            String query = "SELECT S.Codice,S.NumeroDiSkater FROM spot S JOIN utente U ON U.CodiceSpot = S.Codice WHERE U.Email ='"+email+"' AND U.Password = '"+password+"'";
-            ResultSet rs = statement.executeQuery(query);
-            updatedNumber = rs.getInt("S.NumeroDiSkater")-1;
-            code = rs.getInt("S.Codice");
+            String q ="SELECT S.Codice,S.NumeroDiSkater FROM spot S JOIN utente U ON S.Codice=U.CodiceSpot WHERE U.Email = '"+email+"' AND U.Password = '"+password+"'; ";
+            ResultSet rs = statement.executeQuery(q);
+            
+            if(rs.next())
+            {
+            
+            
+            	code = rs.getInt("S.Codice");
+            	updatedNumber = rs.getInt("S.NumeroDiSkater")-1;
+            
+            	q = "UPDATE spot SET NumeroDiSkater = "+updatedNumber+" WHERE Codice = "+code+"";
+            	statement.executeUpdate(q);
 
-            query = "UPDATE utente SET CodiceSpot = NULL WHERE Email = '" + email + "' AND Password = '" + password + "';";
-            statement.executeUpdate(query);
-
-               
-            query = "UPDATE spot SET NumeroDiSkater = '"+updatedNumber+"' WHERE Codice = '"+code+"';";
-            statement.executeUpdate(query);
+            	q = "UPDATE utente SET CodiceSpot = NULL WHERE Email = '" + email + "' AND Password = '" + password + "';";
+            	statement.executeUpdate(q);
+            
+            }
 
             rs.close();
         }
