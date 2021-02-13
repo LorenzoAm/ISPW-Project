@@ -55,6 +55,4 @@ public class SeleniumTestSignUp {
 	{		
 		UserDAO.deleteUser(email,password);		
 	}
-			
-
 }

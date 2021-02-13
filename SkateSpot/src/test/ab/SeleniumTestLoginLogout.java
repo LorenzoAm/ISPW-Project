@@ -18,13 +18,15 @@ import logic.controllers.SignUpController;
 import logic.entities.dao.UserDAO;
 import logic.exception.ExistingEmailException;
 
-public class SeleniumTestLogin {
+public class SeleniumTestLoginLogout {
 	static final String email="prova.selenium@gmail.com";
 	static final String password="password";
 	static final String street="provaselenium";
 	static final String number="1";
 	static final String city="provaselenium";
 	static final String prova="Welcome back Prova !";
+	static final String prova2="Logout completed, see you soon !";
+	
 	@Before
 	public void init()
 	{
@@ -60,7 +62,13 @@ public class SeleniumTestLogin {
 		//verifico
 		WebElement txtBoxContent = driver.findElement(By.xpath("/html/body/h2"));
 		assertEquals(prova,txtBoxContent.getText());
-		
+		//torno homepage
+		driver.findElement(By.xpath("/html/body/div/a/img")).click();
+		//eseguo logout
+		driver.findElement(By.xpath("/html/body/div[2]/table/tbody/tr/td[7]/table/tbody/tr[2]/td/a/img")).click();
+		//verifico logout eseguito
+		WebElement txtBoxContent2 = driver.findElement(By.xpath("/html/body/h2"));
+		assertEquals(prova2,txtBoxContent2.getText());
 		driver.close();
 	}
 	@After
