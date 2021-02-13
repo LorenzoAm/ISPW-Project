@@ -20,7 +20,7 @@ public class BeanUserTest
 	}
 	
 	@Test
-	public void joinSpotBean()
+	public void TestJoinSpotBean()
 	{
 		JoinSpotBean bean = new JoinSpotBean("street","12","city");
 		assertEquals(true,bean.check());
