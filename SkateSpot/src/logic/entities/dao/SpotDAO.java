@@ -144,6 +144,7 @@ public class SpotDAO
         }
 
     }
+    
     public static ArrayList<Spot> getSpots()
     {
     	Connection connection = null;
@@ -197,7 +198,58 @@ public class SpotDAO
         }
         return spots;
     }
+    public static int NumberOfSkaters(String street,String city,int number )
+    {
+    	Connection connection = null; //interface
+        Statement statement = null;
+        int numberSkaters=0;
+        try
+        {
+
+            //apertura della connessione
+            connection=DriverManager.getConnection(URL,USER,PSW);
+            //creazione ed esecuzione query
+            statement=connection.createStatement(ResultSet.TYPE_SCROLL_INSENSITIVE,ResultSet.CONCUR_READ_ONLY);
+            String query = "SELECT NumeroDiSkater FROM spot WHERE Via = '"+street+"' AND Civico = '"+number+"' AND Citta = '"+city+"';";
+            ResultSet rs = statement.executeQuery(query);
+            if(rs.first())
+            {
+                numberSkaters=rs.getInt("NumeroDiSkater");
+                rs.close();
+            }
+
+        }
+        catch(SQLException e)
+        {
+            e.printStackTrace();
+        }
+        finally  //chiudiamo statement e connessione
+        {
+            try
+            {
+                if(statement != null)
+                    statement.close();
+            }
+            catch (SQLException e)
+            {
+                e.printStackTrace();
+            }
+
+            try
+            {
+                if(connection != null)
+                    connection.close();
+            }
+            catch(SQLException e)
+            {
+                e.printStackTrace();
+            }
+
+           return numberSkaters;
+        }
+
     
+    }
     public static void deleteSpot(String street,String city,int number)  //metodo utilizzato per il login
     {
         Connection connection = null; //interface
