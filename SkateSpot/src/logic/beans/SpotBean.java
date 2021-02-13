@@ -13,8 +13,7 @@ public class SpotBean
     private String area;
     private String type;
     private String description;
-    private static final String MATCH="^[a-zA-Z]*$";
-	private static final String MATCH2="^[0-9]*$";
+    
     
     public SpotBean() {}
 
@@ -124,48 +123,48 @@ public class SpotBean
 
     private boolean checkType()
     {
-        return( !type.equals("")&&type.matches(MATCH));
+        return( !type.equals(""));
     }
 
     private boolean checkName()
     {
-        return( !name.equals("")&&name.matches(MATCH));
+        return( !name.equals(""));
        
     }
 
     private boolean checkCity()
     {
-        return( !city.equals("")&&city.matches(MATCH));
+        return( !city.equals(""));
         
     }
 
     private boolean checkMunicipality()
     {
-        return( !municipality.equals("")&&municipality.matches(MATCH));
+        return( !municipality.equals(""));
         
     }
 
     private boolean checkArea()
     {
-        return( !area.equals("")&&area.matches(MATCH));
+        return( !area.equals(""));
         
     }
 
     private boolean checkDescription()
     {
-        return( !description.equals("")&&description.matches(MATCH));
+        return( !description.equals(""));
         
     }
 
     private boolean checkStreet()
     {
-        return( !street.equals("")&&street.matches(MATCH));
+        return( !street.equals(""));
         
     }
 
     private boolean checkNumber()
     {
-        return( !(number.equals("")) && (number.matches(MATCH2)));
+        return( !(number.equals("")) && (number.matches("^[0-9]*$")));
         
     }
 }
