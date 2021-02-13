@@ -9,6 +9,7 @@ import logic.exception.SpotNotFoundException;
 
 import java.sql.*;
 import java.time.LocalDate;
+import java.time.ZoneId;
 
 public class UserDAO
 {
@@ -38,7 +39,8 @@ public class UserDAO
            
             if (rs.first()) //la query non ha prodotto risultati
             {
-            	user = new User(rs.getString("Email"),rs.getString("Username"),rs.getString("Password"),rs.getString("Nome"),rs.getString("Cognome"),rs.getDate("DataDiNascita"),rs.getString("Sesso"),rs.getString("Tipo"));
+            	LocalDate date = rs.getDate("DataDiNascita").toInstant().atZone(ZoneId.systemDefault()).toLocalDate();
+            	user = new User(rs.getString("Email"),rs.getString("Username"),rs.getString("Password"),rs.getString("Nome"),rs.getString("Cognome"),date,rs.getString("Sesso"),rs.getString("Tipo"));
                 Integer spotCode = rs.getInt("CodiceSpot");   //se l'utente ha un riferimento ad uno spot si crea lo spot
 
                 if(spotCode != null)
