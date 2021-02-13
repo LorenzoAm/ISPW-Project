@@ -1,6 +1,6 @@
 package logic.entities;
 
-import java.time.LocalDate;
+import java.util.Date;
 
 
 public class User
@@ -10,12 +10,12 @@ public class User
     private String password;
     private String nome;
     private String cognome;
-    private LocalDate dataDiNascita;
+    private Date dataDiNascita;
     private String sesso;
     private String tipo;
     private Spot spot;      //riferimento allo spot in cui l'utente sta facendo skate
 
-    public User(String email, String username, String password, String nome, String cognome, LocalDate dataDiNascita, String sesso,String Tipo)
+    public User(String email, String username, String password, String nome, String cognome, Date dataDiNascita, String sesso)
     {
         setEmail(email);
         setUsername(username);
@@ -52,7 +52,7 @@ public class User
         this.cognome=cognome;
     }
 
-    public void setDataDiNascita(LocalDate dataDiNascita)
+    public void setDataDiNascita(Date dataDiNascita)
     {
         this.dataDiNascita=dataDiNascita;
     }
@@ -97,7 +97,7 @@ public class User
         return cognome;
     }
 
-    public LocalDate getDataDiNascita()
+    public Date getDataDiNascita()
     {
         return dataDiNascita;
     }

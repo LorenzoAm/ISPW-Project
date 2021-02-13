@@ -6,10 +6,9 @@ import logic.entities.User;
 import logic.exception.ExistingEmailException;
 import logic.exception.FullSpotException;
 import logic.exception.SpotNotFoundException;
-
 import java.sql.*;
 import java.time.LocalDate;
-import java.time.ZoneId;
+
 
 public class UserDAO
 {
@@ -39,8 +38,9 @@ public class UserDAO
            
             if (rs.first()) //la query non ha prodotto risultati
             {
-            	LocalDate date = rs.getDate("DataDiNascita").toInstant().atZone(ZoneId.systemDefault()).toLocalDate();
-            	user = new User(rs.getString("Email"),rs.getString("Username"),rs.getString("Password"),rs.getString("Nome"),rs.getString("Cognome"),date,rs.getString("Sesso"),rs.getString("Tipo"));
+            	
+            	user = new User(rs.getString("Email"),rs.getString("Username"),rs.getString("Password"),rs.getString("Nome"),rs.getString("Cognome"),rs.getDate("DataDiNascita"),rs.getString("Sesso"));
+            	user.setTipo(rs.getString("Tipo"));
                 Integer spotCode = rs.getInt("CodiceSpot");   //se l'utente ha un riferimento ad uno spot si crea lo spot
 
                 if(spotCode != null)
@@ -204,7 +204,7 @@ public class UserDAO
 
     public static void leaveSpot(String email,String password)
     {
-        Connection connection = null; //interface
+        Connection connection = null; 
         Statement statement = null;
         int updatedNumber;
         int code;
