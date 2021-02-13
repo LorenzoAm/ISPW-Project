@@ -14,7 +14,8 @@
 			<img src="../images/home_icon.png" alt="Home"/>
 		</a>
 	</div>
-	<h2> Welcome back !</h2>
+	
+	<h2> Welcome back <%out.println(UserContainer.getInstance().getNome());%>!</h2>
 	
 	<br><br>
 	<% 

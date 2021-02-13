@@ -85,6 +85,53 @@ public class UserDAO
         return user;
     }
     
+    public static void deleteUser(String email,String password)  //metodo utilizzato per il login
+    {
+        Connection connection = null; //interface
+        Statement statement = null;
+
+        try
+        {
+
+            //apertura della connessione
+            connection=DriverManager.getConnection(URL,USER,PSW);
+            //creazione ed esecuzione query
+            statement=connection.createStatement(ResultSet.TYPE_SCROLL_INSENSITIVE,ResultSet.CONCUR_READ_ONLY);
+            String query = "DELETE FROM utente WHERE Email = '"+email+"' AND Password = '"+password+"';";
+            statement.executeUpdate(query);
+
+        }
+        catch(SQLException e)
+        {
+            e.printStackTrace();
+        }
+        finally  //chiudiamo statement e connessione
+        {
+            try
+            {
+                if(statement != null)
+                    statement.close();
+            }
+            catch (SQLException e)
+            {
+                e.printStackTrace();
+            }
+
+            try
+            {
+                if(connection != null)
+                    connection.close();
+            }
+            catch(SQLException e)
+            {
+                e.printStackTrace();
+            }
+
+            
+        }
+
+    }
+    
     
 
     // metodo utilizzato per il sign up
