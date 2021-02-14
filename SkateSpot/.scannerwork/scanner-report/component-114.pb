@@ -1,0 +1,1 @@
+r 2jspX­hr WebContent/pages/viewMyShops.jsp

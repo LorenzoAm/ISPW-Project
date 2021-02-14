@@ -1,16 +1,16 @@
 
-2logic.beans.ShopBean#getStreet()Ljava/lang/String;Q
-GC:/Users/loren/git/ISPW-Project/SkateSpot/src/logic/beans/ShopBean.java_ _("1*â
+0logic.beans.ShopBean#getCity()Ljava/lang/String;Q
+GC:/Users/loren/git/ISPW-Project/SkateSpot/src/logic/beans/ShopBean.java2 2("1*à
 1Q
-GC:/Users/loren/git/ISPW-Project/SkateSpot/src/logic/beans/ShopBean.javaa	 a(š
-—
+GC:/Users/loren/git/ISPW-Project/SkateSpot/src/logic/beans/ShopBean.java4	 4(˜
+•
 Q
-GC:/Users/loren/git/ISPW-Project/SkateSpot/src/logic/beans/ShopBean.javaa	 a(
-%0java.lang.String"__id*$*"
-logic.beans.ShopBean"
-street"m
+GC:/Users/loren/git/ISPW-Project/SkateSpot/src/logic/beans/ShopBean.java4	 4(
+%0java.lang.String"__id*"* 
+logic.beans.ShopBean"
+city"m
 Q
-GC:/Users/loren/git/ISPW-Project/SkateSpot/src/logic/beans/ShopBean.javaa a(
+GC:/Users/loren/git/ISPW-Project/SkateSpot/src/logic/beans/ShopBean.java4 4(
 
 %0java.lang.StringB
 logic.beans.ShopBean

@@ -1,16 +1,17 @@
 
-Norg.apache.jsp.WebContent.addSpotDenied_jsp#getPackageImports()Ljava/util/Set;u
-kC:\Users\loren\git\ISPW-Project\SkateSpot\.scannerwork\jsp\org\apache\jsp\WebContent\addSpotDenied_jsp.java+) +(:"1*´
+Jorg.apache.jsp.WebContent.pages.addShop_jsp#getDependants()Ljava/util/Map;u
+kC:\Users\loren\git\ISPW-Project\SkateSpot\.scannerwork\jsp\org\apache\jsp\WebContent\pages\addShop_jsp.java-8 -(E"1*Í
 1u
-kC:\Users\loren\git\ISPW-Project\SkateSpot\.scannerwork\jsp\org\apache\jsp\WebContent\addSpotDenied_jsp.java, ,(!ù
-ö
+kC:\Users\loren\git\ISPW-Project\SkateSpot\.scannerwork\jsp\org\apache\jsp\WebContent\pages\addShop_jsp.java. .(‹
+Ÿ
 u
-kC:\Users\loren\git\ISPW-Project\SkateSpot\.scannerwork\jsp\org\apache\jsp\WebContent\addSpotDenied_jsp.java, ,(!
-%0java.util.Set"__id*
-"""é
+kC:\Users\loren\git\ISPW-Project\SkateSpot\.scannerwork\jsp\org\apache\jsp\WebContent\pages\addShop_jsp.java. .(
+%0java.util.Map"__id*E*C-
++org.apache.jsp.WebContent.pages.addShop_jsp"
+_jspx_dependants"é
 u
-kC:\Users\loren\git\ISPW-Project\SkateSpot\.scannerwork\jsp\org\apache\jsp\WebContent\addSpotDenied_jsp.java, ,("
+kC:\Users\loren\git\ISPW-Project\SkateSpot\.scannerwork\jsp\org\apache\jsp\WebContent\pages\addShop_jsp.java. .(
 
-%0java.util.Set:
+%0java.util.Map:
 %jsp_contextB/-
-+org.apache.jsp.WebContent.addSpotDenied_jsp
++org.apache.jsp.WebContent.pages.addShop_jsp

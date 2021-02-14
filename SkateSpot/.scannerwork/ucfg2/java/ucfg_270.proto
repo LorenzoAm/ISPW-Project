@@ -1,16 +1,17 @@
 
-Lorg.apache.jsp.WebContent.premiumArea_jsp#getPackageImports()Ljava/util/Set;s
-iC:\Users\loren\git\ISPW-Project\SkateSpot\.scannerwork\jsp\org\apache\jsp\WebContent\premiumArea_jsp.java+) +(:"1*•
-1s
-iC:\Users\loren\git\ISPW-Project\SkateSpot\.scannerwork\jsp\org\apache\jsp\WebContent\premiumArea_jsp.java, ,(!õ
-ò
-s
-iC:\Users\loren\git\ISPW-Project\SkateSpot\.scannerwork\jsp\org\apache\jsp\WebContent\premiumArea_jsp.java, ,(!
-%0java.util.Set"__id*
-"""å
-s
-iC:\Users\loren\git\ISPW-Project\SkateSpot\.scannerwork\jsp\org\apache\jsp\WebContent\premiumArea_jsp.java, ,("
+Iorg.apache.jsp.WebContent.pages.signUp_jsp#getDependants()Ljava/util/Map;t
+jC:\Users\loren\git\ISPW-Project\SkateSpot\.scannerwork\jsp\org\apache\jsp\WebContent\pages\signUp_jsp.java58 5(E"1*Ê
+1t
+jC:\Users\loren\git\ISPW-Project\SkateSpot\.scannerwork\jsp\org\apache\jsp\WebContent\pages\signUp_jsp.java6 6(⁄
+◊
+t
+jC:\Users\loren\git\ISPW-Project\SkateSpot\.scannerwork\jsp\org\apache\jsp\WebContent\pages\signUp_jsp.java6 6(
+%0java.util.Map"__id*D*B,
+*org.apache.jsp.WebContent.pages.signUp_jsp"
+_jspx_dependants"ç
+t
+jC:\Users\loren\git\ISPW-Project\SkateSpot\.scannerwork\jsp\org\apache\jsp\WebContent\pages\signUp_jsp.java6 6(
 
-%0java.util.Set:
-%jsp_contextB-+
-)org.apache.jsp.WebContent.premiumArea_jsp
+%0java.util.Map:
+%jsp_contextB.,
+*org.apache.jsp.WebContent.pages.signUp_jsp

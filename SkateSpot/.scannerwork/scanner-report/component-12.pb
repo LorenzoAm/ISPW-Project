@@ -1,0 +1,1 @@
+ 2javaXKhr!src/logic/beans/JoinSpotBean.java

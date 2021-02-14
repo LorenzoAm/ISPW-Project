@@ -1,16 +1,17 @@
 
-Norg.apache.jsp.WebContent.joinSpotCheck_jsp#getPackageImports()Ljava/util/Set;u
-kC:\Users\loren\git\ISPW-Project\SkateSpot\.scannerwork\jsp\org\apache\jsp\WebContent\joinSpotCheck_jsp.java+) +(:"1*´
-1u
-kC:\Users\loren\git\ISPW-Project\SkateSpot\.scannerwork\jsp\org\apache\jsp\WebContent\joinSpotCheck_jsp.java, ,(!ù
-ö
-u
-kC:\Users\loren\git\ISPW-Project\SkateSpot\.scannerwork\jsp\org\apache\jsp\WebContent\joinSpotCheck_jsp.java, ,(!
-%0java.util.Set"__id*
-"""é
-u
-kC:\Users\loren\git\ISPW-Project\SkateSpot\.scannerwork\jsp\org\apache\jsp\WebContent\joinSpotCheck_jsp.java, ,("
+Norg.apache.jsp.WebContent.pages.signUpCheck_jsp#getDependants()Ljava/util/Map;y
+oC:\Users\loren\git\ISPW-Project\SkateSpot\.scannerwork\jsp\org\apache\jsp\WebContent\pages\signUpCheck_jsp.java'8 '(E"1*˙
+1y
+oC:\Users\loren\git\ISPW-Project\SkateSpot\.scannerwork\jsp\org\apache\jsp\WebContent\pages\signUpCheck_jsp.java( ((‰
+·
+y
+oC:\Users\loren\git\ISPW-Project\SkateSpot\.scannerwork\jsp\org\apache\jsp\WebContent\pages\signUpCheck_jsp.java( ((
+%0java.util.Map"__id*I*G1
+/org.apache.jsp.WebContent.pages.signUpCheck_jsp"
+_jspx_dependants"í
+y
+oC:\Users\loren\git\ISPW-Project\SkateSpot\.scannerwork\jsp\org\apache\jsp\WebContent\pages\signUpCheck_jsp.java( ((
 
-%0java.util.Set:
-%jsp_contextB/-
-+org.apache.jsp.WebContent.joinSpotCheck_jsp
+%0java.util.Map:
+%jsp_contextB31
+/org.apache.jsp.WebContent.pages.signUpCheck_jsp

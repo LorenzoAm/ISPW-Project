@@ -1,48 +1,56 @@
 
-Zlogic.controllers.LeaveSpotController#getInstance()Llogic/controllers/LeaveSpotController;b
-XC:/Users/loren/git/ISPW-Project/SkateSpot/src/logic/controllers/LeaveSpotController.java& (1"3*Ð
-2b
-XC:/Users/loren/git/ISPW-Project/SkateSpot/src/logic/controllers/LeaveSpotController.java (0»¸
-b
-XC:/Users/loren/git/ISPW-Project/SkateSpot/src/logic/controllers/LeaveSpotController.java (.+
-%1%logic.controllers.LeaveSpotController"%logic.controllers.LeaveSpotControllerÍ
-Ê
-b
-XC:/Users/loren/git/ISPW-Project/SkateSpot/src/logic/controllers/LeaveSpotController.java (0
-%2"/logic.controllers.LeaveSpotController#<init>()V*-
-+
-%1%logic.controllers.LeaveSpotControllerÓ
-Ð
-b
-XC:/Users/loren/git/ISPW-Project/SkateSpot/src/logic/controllers/LeaveSpotController.java (05'
-%logic.controllers.LeaveSpotController"
-
-instance"__id*-
-+
-%1%logic.controllers.LeaveSpotController*
-1*Å
-3b
-XC:/Users/loren/git/ISPW-Project/SkateSpot/src/logic/controllers/LeaveSpotController.java (Ó
-Ð
-b
-XC:/Users/loren/git/ISPW-Project/SkateSpot/src/logic/controllers/LeaveSpotController.java (+
-%0%logic.controllers.LeaveSpotController"__id*7*5'
-%logic.controllers.LeaveSpotController"
-
-instance*
+&logic.beans.SignUpBean#checkAtEmail()ZU
+IC:/Users/loren/git/ISPW-Project/SkateSpot/src/logic/beans/SignUpBean.java¨ ¨( "3*í
+2U
+IC:/Users/loren/git/ISPW-Project/SkateSpot/src/logic/beans/SignUpBean.java¬& ¬(+Ÿ
+œ
+U
+IC:/Users/loren/git/ISPW-Project/SkateSpot/src/logic/beans/SignUpBean.java¬& ¬(+
+%2java.lang.String"__id*%*#
+logic.beans.SignUpBean"
+emailùö
+U
+IC:/Users/loren/git/ISPW-Project/SkateSpot/src/logic/beans/SignUpBean.java¬& ¬(9
+%3java.lang.String[]">java.lang.String#split(Ljava/lang/String;I)[Ljava/lang/String;*
+
+%2java.lang.String*
+@*
+""2split(Ljava/lang/String;I)¡
+ž
+U
+IC:/Users/loren/git/ISPW-Project/SkateSpot/src/logic/beans/SignUpBean.java¬ ¬(:#
+splittedEmailjava.lang.String[]"__id*
+
+%3java.lang.String[]í
+ê
+U
+IC:/Users/loren/git/ISPW-Project/SkateSpot/src/logic/beans/SignUpBean.java­ ­(:
+%4boolean"?logic.beans.SignUpBean#checkSplittedEmail([Ljava/lang/String;)Z*
+logic.beans.SignUpBean*%
+#
+splittedEmailjava.lang.String[]"_
+U
+IC:/Users/loren/git/ISPW-Project/SkateSpot/src/logic/beans/SignUpBean.java­ ­(;
+""*ë
+3U
+IC:/Users/loren/git/ISPW-Project/SkateSpot/src/logic/beans/SignUpBean.javaª ª(Ÿ
+œ
+U
+IC:/Users/loren/git/ISPW-Project/SkateSpot/src/logic/beans/SignUpBean.javaª ª(
+%0java.lang.String"__id*%*#
+logic.beans.SignUpBean"
+emailäá
+U
+IC:/Users/loren/git/ISPW-Project/SkateSpot/src/logic/beans/SignUpBean.javaª ª(
+%1boolean"4java.lang.String#contains(Ljava/lang/CharSequence;)Z*
+
+%0java.lang.String*
+@2"contains(Ljava/lang/CharSequence;)*
 2
-1*Ó
-1b
-XC:/Users/loren/git/ISPW-Project/SkateSpot/src/logic/controllers/LeaveSpotController.java (Ó
-Ð
-b
-XC:/Users/loren/git/ISPW-Project/SkateSpot/src/logic/controllers/LeaveSpotController.java (+
-%3%logic.controllers.LeaveSpotController"__id*7*5'
-%logic.controllers.LeaveSpotController"
-
-instance"“
-b
-XC:/Users/loren/git/ISPW-Project/SkateSpot/src/logic/controllers/LeaveSpotController.java (-
-+
-%3%logic.controllers.LeaveSpotControllerB)"'
-%logic.controllers.LeaveSpotController
+1*»
+1U
+IC:/Users/loren/git/ISPW-Project/SkateSpot/src/logic/beans/SignUpBean.java± ±("_
+U
+IC:/Users/loren/git/ISPW-Project/SkateSpot/src/logic/beans/SignUpBean.java± ±(
+""B
+logic.beans.SignUpBean

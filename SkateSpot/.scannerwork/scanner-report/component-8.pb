@@ -1,0 +1,1 @@
+ 2xmlXhr7.settings/org.eclipse.wst.common.project.facet.core.xml

@@ -1,16 +1,16 @@
 
-6logic.beans.JoinSpotBean#getStreet()Ljava/lang/String;U
-KC:/Users/loren/git/ISPW-Project/SkateSpot/src/logic/beans/JoinSpotBean.java" "("1*ò
-1U
-KC:/Users/loren/git/ISPW-Project/SkateSpot/src/logic/beans/JoinSpotBean.java$ $(¢
-Ÿ
-U
-KC:/Users/loren/git/ISPW-Project/SkateSpot/src/logic/beans/JoinSpotBean.java$ $(
-%0java.lang.String"__id*(*&
-logic.beans.JoinSpotBean"
-street"q
-U
-KC:/Users/loren/git/ISPW-Project/SkateSpot/src/logic/beans/JoinSpotBean.java$ $(
+2logic.beans.ShopBean#getNumber()Ljava/lang/String;Q
+GC:/Users/loren/git/ISPW-Project/SkateSpot/src/logic/beans/ShopBean.javag g("1*â
+1Q
+GC:/Users/loren/git/ISPW-Project/SkateSpot/src/logic/beans/ShopBean.javai	 i(š
+—
+Q
+GC:/Users/loren/git/ISPW-Project/SkateSpot/src/logic/beans/ShopBean.javai	 i(
+%0java.lang.String"__id*$*"
+logic.beans.ShopBean"
+number"m
+Q
+GC:/Users/loren/git/ISPW-Project/SkateSpot/src/logic/beans/ShopBean.javai i(
 
-%0java.lang.StringB
-logic.beans.JoinSpotBean
+%0java.lang.StringB
+logic.beans.ShopBean

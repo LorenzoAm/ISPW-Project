@@ -1,0 +1,1 @@
+$ 2javaXhr.src/logic/exception/ExistingSpotException.java

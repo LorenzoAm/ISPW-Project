@@ -1,59 +1,74 @@
 
-forg.apache.jsp.WebContent.loginLogout_jsp#_jsp_getInstanceManager()Lorg/apache/tomcat/InstanceManager;s
-iC:\Users\loren\git\ISPW-Project\SkateSpot\.scannerwork\jsp\org\apache\jsp\WebContent\loginLogout_jsp.javaB+ B(B"5*Ÿ
-2s
-iC:\Users\loren\git\ISPW-Project\SkateSpot\.scannerwork\jsp\org\apache\jsp\WebContent\loginLogout_jsp.javaF! F($¥¢
-s
-iC:\Users\loren\git\ISPW-Project\SkateSpot\.scannerwork\jsp\org\apache\jsp\WebContent\loginLogout_jsp.javaFe F(w!
-%2javax.servlet.ServletConfig"Ejavax.servlet.Servlet#getServletConfig()Ljavax/servlet/ServletConfig;*-+
-)org.apache.jsp.WebContent.loginLogout_jsp2getServletConfig()„
-
-s
-iC:\Users\loren\git\ISPW-Project\SkateSpot\.scannerwork\jsp\org\apache\jsp\WebContent\loginLogout_jsp.javaF! F(x'
-%3!org.apache.tomcat.InstanceManager"…org.apache.jasper.runtime.InstanceManagerFactory#getInstanceManager(Ljavax/servlet/ServletConfig;)Lorg/apache/tomcat/InstanceManager;*4"2
-0org.apache.jasper.runtime.InstanceManagerFactory*#
+dorg.apache.jsp.WebContent.pages.joinSpot_jsp#_jsp_getExpressionFactory()Ljavax/el/ExpressionFactory;v
+lC:\Users\loren\git\ISPW-Project\SkateSpot\.scannerwork\jsp\org\apache\jsp\WebContent\pages\joinSpot_jsp.java;$ ;(="5*ö
+2v
+lC:\Users\loren\git\ISPW-Project\SkateSpot\.scannerwork\jsp\org\apache\jsp\WebContent\pages\joinSpot_jsp.java?" ?(.­
+ª
+v
+lC:\Users\loren\git\ISPW-Project\SkateSpot\.scannerwork\jsp\org\apache\jsp\WebContent\pages\joinSpot_jsp.java?" ?(."
+%2javax.servlet.jsp.JspFactory"__id*
+""«¨
+v
+lC:\Users\loren\git\ISPW-Project\SkateSpot\.scannerwork\jsp\org\apache\jsp\WebContent\pages\joinSpot_jsp.java?H ?(Z!
+%3javax.servlet.ServletConfig"Ejavax.servlet.Servlet#getServletConfig()Ljavax/servlet/ServletConfig;*0.
+,org.apache.jsp.WebContent.pages.joinSpot_jsp2getServletConfig()¨¥
+v
+lC:\Users\loren\git\ISPW-Project\SkateSpot\.scannerwork\jsp\org\apache\jsp\WebContent\pages\joinSpot_jsp.java?H ?(n"
+%4javax.servlet.ServletContext"Mjavax.servlet.ServletConfig#getServletContext()Ljavax/servlet/ServletContext;*#
 !
-%2javax.servlet.ServletConfigð
+%3javax.servlet.ServletConfig2getServletContext()°­
+v
+lC:\Users\loren\git\ISPW-Project\SkateSpot\.scannerwork\jsp\org\apache\jsp\WebContent\pages\joinSpot_jsp.java?" ?(o-
+%5'javax.servlet.jsp.JspApplicationContext"~javax.servlet.jsp.JspFactory#getJspApplicationContext(Ljavax/servlet/ServletContext;)Ljavax/servlet/jsp/JspApplicationContext;*$
+"
+%2javax.servlet.jsp.JspFactory*$
+"
+%4javax.servlet.ServletContext28getJspApplicationContext(Ljavax/servlet/ServletContext;)ÃÀ
+w
+lC:\Users\loren\git\ISPW-Project\SkateSpot\.scannerwork\jsp\org\apache\jsp\WebContent\pages\joinSpot_jsp.java?" ?(† 
+%6javax.el.ExpressionFactory"Zjavax.servlet.jsp.JspApplicationContext#getExpressionFactory()Ljavax/el/ExpressionFactory;*/
+-
+%5'javax.servlet.jsp.JspApplicationContext2getExpressionFactory()ñ
+î
+w
+lC:\Users\loren\git\ISPW-Project\SkateSpot\.scannerwork\jsp\org\apache\jsp\WebContent\pages\joinSpot_jsp.java?
+ ?(†I.
+,org.apache.jsp.WebContent.pages.joinSpot_jsp"
+_el_expressionfactory"__id*"
+ 
+%6javax.el.ExpressionFactory*
+1*ö
+3v
+lC:\Users\loren\git\ISPW-Project\SkateSpot\.scannerwork\jsp\org\apache\jsp\WebContent\pages\joinSpot_jsp.java> >(!ð
 í
-s
-iC:\Users\loren\git\ISPW-Project\SkateSpot\.scannerwork\jsp\org\apache\jsp\WebContent\loginLogout_jsp.javaF
- F(xE+
-)org.apache.jsp.WebContent.loginLogout_jsp"
-_jsp_instancemanager"__id*)
-'
-%3!org.apache.tomcat.InstanceManager*
-1*ó
-3s
-iC:\Users\loren\git\ISPW-Project\SkateSpot\.scannerwork\jsp\org\apache\jsp\WebContent\loginLogout_jsp.javaE E( ð
-í
-s
-iC:\Users\loren\git\ISPW-Project\SkateSpot\.scannerwork\jsp\org\apache\jsp\WebContent\loginLogout_jsp.javaE E( '
-%1!org.apache.tomcat.InstanceManager"__id*G*E+
-)org.apache.jsp.WebContent.loginLogout_jsp"
-_jsp_instancemanager*
+v
+lC:\Users\loren\git\ISPW-Project\SkateSpot\.scannerwork\jsp\org\apache\jsp\WebContent\pages\joinSpot_jsp.java> >(! 
+%1javax.el.ExpressionFactory"__id*K*I.
+,org.apache.jsp.WebContent.pages.joinSpot_jsp"
+_el_expressionfactory*
 2
-1*ó
-5s
-iC:\Users\loren\git\ISPW-Project\SkateSpot\.scannerwork\jsp\org\apache\jsp\WebContent\loginLogout_jsp.javaC C(ð
+1*ö
+5v
+lC:\Users\loren\git\ISPW-Project\SkateSpot\.scannerwork\jsp\org\apache\jsp\WebContent\pages\joinSpot_jsp.java< <(ð
 í
-s
-iC:\Users\loren\git\ISPW-Project\SkateSpot\.scannerwork\jsp\org\apache\jsp\WebContent\loginLogout_jsp.javaC C('
-%0!org.apache.tomcat.InstanceManager"__id*G*E+
-)org.apache.jsp.WebContent.loginLogout_jsp"
-_jsp_instancemanager*
+v
+lC:\Users\loren\git\ISPW-Project\SkateSpot\.scannerwork\jsp\org\apache\jsp\WebContent\pages\joinSpot_jsp.java< <( 
+%0javax.el.ExpressionFactory"__id*K*I.
+,org.apache.jsp.WebContent.pages.joinSpot_jsp"
+_el_expressionfactory*
 3
-1*Ž
-1s
-iC:\Users\loren\git\ISPW-Project\SkateSpot\.scannerwork\jsp\org\apache\jsp\WebContent\loginLogout_jsp.javaJ J(ð
+1*
+1v
+lC:\Users\loren\git\ISPW-Project\SkateSpot\.scannerwork\jsp\org\apache\jsp\WebContent\pages\joinSpot_jsp.javaC C( ð
 í
-s
-iC:\Users\loren\git\ISPW-Project\SkateSpot\.scannerwork\jsp\org\apache\jsp\WebContent\loginLogout_jsp.javaJ J('
-%4!org.apache.tomcat.InstanceManager"__id*G*E+
-)org.apache.jsp.WebContent.loginLogout_jsp"
-_jsp_instancemanager" 
-s
-iC:\Users\loren\git\ISPW-Project\SkateSpot\.scannerwork\jsp\org\apache\jsp\WebContent\loginLogout_jsp.javaJ J( )
-'
-%4!org.apache.tomcat.InstanceManager:
-%jsp_contextB-+
-)org.apache.jsp.WebContent.loginLogout_jsp
+v
+lC:\Users\loren\git\ISPW-Project\SkateSpot\.scannerwork\jsp\org\apache\jsp\WebContent\pages\joinSpot_jsp.javaC C(  
+%7javax.el.ExpressionFactory"__id*K*I.
+,org.apache.jsp.WebContent.pages.joinSpot_jsp"
+_el_expressionfactory"œ
+v
+lC:\Users\loren\git\ISPW-Project\SkateSpot\.scannerwork\jsp\org\apache\jsp\WebContent\pages\joinSpot_jsp.javaC C(!"
+ 
+%7javax.el.ExpressionFactory:
+%jsp_contextB0.
+,org.apache.jsp.WebContent.pages.joinSpot_jsp

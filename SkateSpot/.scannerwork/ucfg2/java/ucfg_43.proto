@@ -1,14 +1,17 @@
 
->logic.exception.FullSpotException#toString()Ljava/lang/String;^
-TC:/Users/loren/git/ISPW-Project/SkateSpot/src/logic/exception/FullSpotException.java ("1*Æ
-1^
-TC:/Users/loren/git/ISPW-Project/SkateSpot/src/logic/exception/FullSpotException.java	 (äá
-^
-TC:/Users/loren/git/ISPW-Project/SkateSpot/src/logic/exception/FullSpotException.java	 (
-%0java.lang.String"2java.lang.Throwable#getMessage()Ljava/lang/String;*%#
-!logic.exception.FullSpotException2getMessage()"z
-^
-TC:/Users/loren/git/ISPW-Project/SkateSpot/src/logic/exception/FullSpotException.java (
+3logic.entities.User#getPassword()Ljava/lang/String;P
+FC:/Users/loren/git/ISPW-Project/SkateSpot/src/logic/entities/User.javaP P("1*à
+1P
+FC:/Users/loren/git/ISPW-Project/SkateSpot/src/logic/entities/User.javaR R(š
+—
+P
+FC:/Users/loren/git/ISPW-Project/SkateSpot/src/logic/entities/User.javaR R(
+%0java.lang.String"__id*%*#
+logic.entities.User"
+
+password"l
+P
+FC:/Users/loren/git/ISPW-Project/SkateSpot/src/logic/entities/User.javaR R(
 
-%0java.lang.StringB%#
-!logic.exception.FullSpotException
+%0java.lang.StringB
+logic.entities.User

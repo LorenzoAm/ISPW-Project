@@ -1,17 +1,849 @@
 
-Jorg.apache.jsp.WebContent.joinSpotCheck_jsp#getDependants()Ljava/util/Map;u
-kC:\Users\loren\git\ISPW-Project\SkateSpot\.scannerwork\jsp\org\apache\jsp\WebContent\joinSpotCheck_jsp.java'8 '(E"1*Í
-1u
-kC:\Users\loren\git\ISPW-Project\SkateSpot\.scannerwork\jsp\org\apache\jsp\WebContent\joinSpotCheck_jsp.java( ((‹
-Ÿ
-u
-kC:\Users\loren\git\ISPW-Project\SkateSpot\.scannerwork\jsp\org\apache\jsp\WebContent\joinSpotCheck_jsp.java( ((
-%0java.util.Map"__id*E*C-
-+org.apache.jsp.WebContent.joinSpotCheck_jsp"
-_jspx_dependants"é
-u
-kC:\Users\loren\git\ISPW-Project\SkateSpot\.scannerwork\jsp\org\apache\jsp\WebContent\joinSpotCheck_jsp.java( ((
-
-%0java.util.Map:
-%jsp_contextB/-
-+org.apache.jsp.WebContent.joinSpotCheck_jsp
+çorg.apache.jsp.WebContent.pages.viewMyShops_jsp#_jspService(Ljavax/servlet/http/HttpServletRequest;Ljavax/servlet/http/HttpServletResponse;)Vy
+oC:\Users\loren\git\ISPW-Project\SkateSpot\.scannerwork\jsp\org\apache\jsp\WebContent\pages\viewMyShops_jsp.java] ]("92*Ñ
+24T
+JC:/Users/loren/git/ISPW-Project/SkateSpot/WebContent/pages/viewMyShops.jspJ J( §
+°
+T
+JC:/Users/loren/git/ISPW-Project/SkateSpot/WebContent/pages/viewMyShops.jspJ J( 
+%71java.lang.String"
+__arrayGet*
+
+datejava.lang.String[]*
+""˙˜
+T
+JC:/Users/loren/git/ISPW-Project/SkateSpot/WebContent/pages/viewMyShops.jspJ J( 
+%72void"6javax.servlet.jsp.JspWriter#print(Ljava/lang/String;)V*$
+"
+outjavax.servlet.jsp.JspWriter*
+
+%71java.lang.String2print(Ljava/lang/String;)*
+23*˝
+69T
+JC:/Users/loren/git/ISPW-Project/SkateSpot/WebContent/pages/viewMyShops.jsp# #(!ö
+ó
+T
+JC:/Users/loren/git/ISPW-Project/SkateSpot/WebContent/pages/viewMyShops.jsp# #(!
+%29"
+__arraySet*
+
+nomijava.lang.String[]*
+""*
+""*
+67*è
+25{
+oC:\Users\loren\git\ISPW-Project\SkateSpot\.scannerwork\jsp\org\apache\jsp\WebContent\pages\viewMyShops_jsp.javaπ π(	ÖÇ
+{
+oC:\Users\loren\git\ISPW-Project\SkateSpot\.scannerwork\jsp\org\apache\jsp\WebContent\pages\viewMyShops_jsp.javaπ π(
+%70void")java.io.Writer#write(Ljava/lang/String;)V*$
+"
+outjavax.servlet.jsp.JspWriter*
+
+] = \"2write(Ljava/lang/String;)*
+24*®
+26T
+JC:/Users/loren/git/ISPW-Project/SkateSpot/WebContent/pages/viewMyShops.jspJ J( ≈¬
+T
+JC:/Users/loren/git/ISPW-Project/SkateSpot/WebContent/pages/viewMyShops.jspJ
+ J(
+%69void"%javax.servlet.jsp.JspWriter#print(I)V*$
+"
+outjavax.servlet.jsp.JspWriter*
+""2print(I)*
+25* 
+27T
+JC:/Users/loren/git/ISPW-Project/SkateSpot/WebContent/pages/viewMyShops.jspJ J( Á‰
+T
+JC:/Users/loren/git/ISPW-Project/SkateSpot/WebContent/pages/viewMyShops.jspJ J( 
+%68void")java.io.Writer#write(Ljava/lang/String;)V*$
+"
+outjavax.servlet.jsp.JspWriter*
+\";\r\n\tdateJ[2write(Ljava/lang/String;)*
+26*à
+28T
+JC:/Users/loren/git/ISPW-Project/SkateSpot/WebContent/pages/viewMyShops.jspI I((®
+•
+T
+JC:/Users/loren/git/ISPW-Project/SkateSpot/WebContent/pages/viewMyShops.jspI I((
+%66java.lang.String"
+__arrayGet* 
+
+usernamejava.lang.String[]*
+""˙˜
+T
+JC:/Users/loren/git/ISPW-Project/SkateSpot/WebContent/pages/viewMyShops.jspI I((
+%67void"6javax.servlet.jsp.JspWriter#print(Ljava/lang/String;)V*$
+"
+outjavax.servlet.jsp.JspWriter*
+
+%66java.lang.String2print(Ljava/lang/String;)*
+27*è
+29{
+oC:\Users\loren\git\ISPW-Project\SkateSpot\.scannerwork\jsp\org\apache\jsp\WebContent\pages\viewMyShops_jsp.javaµ µ(	ÖÇ
+{
+oC:\Users\loren\git\ISPW-Project\SkateSpot\.scannerwork\jsp\org\apache\jsp\WebContent\pages\viewMyShops_jsp.javaµ µ(
+%65void")java.io.Writer#write(Ljava/lang/String;)V*$
+"
+outjavax.servlet.jsp.JspWriter*
+
+] = \"2write(Ljava/lang/String;)*
+28*Ç
+73T
+JC:/Users/loren/git/ISPW-Project/SkateSpot/WebContent/pages/viewMyShops.jsp (àÖ
+T
+JC:/Users/loren/git/ISPW-Project/SkateSpot/WebContent/pages/viewMyShops.jsp ( 
+%22java.lang.String[]"java.lang.String[]ò
+ï
+T
+JC:/Users/loren/git/ISPW-Project/SkateSpot/WebContent/pages/viewMyShops.jsp
+ (
+nomijava.lang.String[]"__id*
+
+%22java.lang.String[]àÖ
+T
+JC:/Users/loren/git/ISPW-Project/SkateSpot/WebContent/pages/viewMyShops.jsp (%
+%23java.lang.String[]"java.lang.String[]ù
+ö
+T
+JC:/Users/loren/git/ISPW-Project/SkateSpot/WebContent/pages/viewMyShops.jsp
+ (
+	indirizzijava.lang.String[]"__id*
+
+%23java.lang.String[]àÖ
+T
+JC:/Users/loren/git/ISPW-Project/SkateSpot/WebContent/pages/viewMyShops.jsp ( 
+%24java.lang.String[]"java.lang.String[]ò
+ï
+T
+JC:/Users/loren/git/ISPW-Project/SkateSpot/WebContent/pages/viewMyShops.jsp
+ (
+zonejava.lang.String[]"__id*
+
+%24java.lang.String[]àÖ
+T
+JC:/Users/loren/git/ISPW-Project/SkateSpot/WebContent/pages/viewMyShops.jsp ($
+%25java.lang.String[]"java.lang.String[]ú
+ô
+T
+JC:/Users/loren/git/ISPW-Project/SkateSpot/WebContent/pages/viewMyShops.jsp
+ (
+municipijava.lang.String[]"__id*
+
+%25java.lang.String[]àÖ
+T
+JC:/Users/loren/git/ISPW-Project/SkateSpot/WebContent/pages/viewMyShops.jsp ('
+%26java.lang.String[]"java.lang.String[]ü
+ú
+T
+JC:/Users/loren/git/ISPW-Project/SkateSpot/WebContent/pages/viewMyShops.jsp
+ (!
+descrizionijava.lang.String[]"__id*
+
+%26java.lang.String[]àÖ
+T
+JC:/Users/loren/git/ISPW-Project/SkateSpot/WebContent/pages/viewMyShops.jsp ($
+%27java.lang.String[]"java.lang.String[]ú
+ô
+T
+JC:/Users/loren/git/ISPW-Project/SkateSpot/WebContent/pages/viewMyShops.jsp
+ (
+usernamejava.lang.String[]"__id*
+
+%27java.lang.String[]àÖ
+T
+JC:/Users/loren/git/ISPW-Project/SkateSpot/WebContent/pages/viewMyShops.jsp   ( 
+%28java.lang.String[]"java.lang.String[]ò
+ï
+T
+JC:/Users/loren/git/ISPW-Project/SkateSpot/WebContent/pages/viewMyShops.jsp 
+  (
+datejava.lang.String[]"__id*
+
+%28java.lang.String[]*
+69
+54*ä
+74T
+JC:/Users/loren/git/ISPW-Project/SkateSpot/WebContent/pages/viewMyShops.jsp (ß
+§
+T
+JC:/Users/loren/git/ISPW-Project/SkateSpot/WebContent/pages/viewMyShops.jsp (!
+sdfjava.text.SimpleDateFormat"__id*#
+!
+%20java.text.SimpleDateFormat*
+73*®
+30T
+JC:/Users/loren/git/ISPW-Project/SkateSpot/WebContent/pages/viewMyShops.jspI I((≈¬
+T
+JC:/Users/loren/git/ISPW-Project/SkateSpot/WebContent/pages/viewMyShops.jspI I(
+%64void"%javax.servlet.jsp.JspWriter#print(I)V*$
+"
+outjavax.servlet.jsp.JspWriter*
+""2print(I)*
+29*À
+75T
+JC:/Users/loren/git/ISPW-Project/SkateSpot/WebContent/pages/viewMyShops.jsp (5òï
+T
+JC:/Users/loren/git/ISPW-Project/SkateSpot/WebContent/pages/viewMyShops.jsp (!
+%20java.text.SimpleDateFormat"java.text.SimpleDateFormatÕ
+ 
+T
+JC:/Users/loren/git/ISPW-Project/SkateSpot/WebContent/pages/viewMyShops.jsp (;
+%21"6java.text.SimpleDateFormat#<init>(Ljava/lang/String;)V*#
+!
+%20java.text.SimpleDateFormat*
+
+yyyy-MM-dd*
+74*Œ
+31T
+JC:/Users/loren/git/ISPW-Project/SkateSpot/WebContent/pages/viewMyShops.jspI I((ÎË
+T
+JC:/Users/loren/git/ISPW-Project/SkateSpot/WebContent/pages/viewMyShops.jspI I((
+%63void")java.io.Writer#write(Ljava/lang/String;)V*$
+"
+outjavax.servlet.jsp.JspWriter*
+\";\r\n\tusernameJ[2write(Ljava/lang/String;)*
+30*ã
+32T
+JC:/Users/loren/git/ISPW-Project/SkateSpot/WebContent/pages/viewMyShops.jspH H(.´
+®
+T
+JC:/Users/loren/git/ISPW-Project/SkateSpot/WebContent/pages/viewMyShops.jspH H(.
+%61java.lang.String"
+__arrayGet*#
+!
+descrizionijava.lang.String[]*
+""˙˜
+T
+JC:/Users/loren/git/ISPW-Project/SkateSpot/WebContent/pages/viewMyShops.jspH H(.
+%62void"6javax.servlet.jsp.JspWriter#print(Ljava/lang/String;)V*$
+"
+outjavax.servlet.jsp.JspWriter*
+
+%61java.lang.String2print(Ljava/lang/String;)*
+31*è
+33{
+oC:\Users\loren\git\ISPW-Project\SkateSpot\.scannerwork\jsp\org\apache\jsp\WebContent\pages\viewMyShops_jsp.java± ±(	ÖÇ
+{
+oC:\Users\loren\git\ISPW-Project\SkateSpot\.scannerwork\jsp\org\apache\jsp\WebContent\pages\viewMyShops_jsp.java± ±(
+%60void")java.io.Writer#write(Ljava/lang/String;)V*$
+"
+outjavax.servlet.jsp.JspWriter*
+
+] = \"2write(Ljava/lang/String;)*
+32*“
+78y
+oC:\Users\loren\git\ISPW-Project\SkateSpot\.scannerwork\jsp\org\apache\jsp\WebContent\pages\viewMyShops_jsp.java ( Œ
+À
+y
+oC:\Users\loren\git\ISPW-Project\SkateSpot\.scannerwork\jsp\org\apache\jsp\WebContent\pages\viewMyShops_jsp.java ( "
+outjavax.servlet.jsp.JspWriter"__id*$
+"
+%18javax.servlet.jsp.JspWriter÷
+”
+{
+oC:\Users\loren\git\ISPW-Project\SkateSpot\.scannerwork\jsp\org\apache\jsp\WebContent\pages\viewMyShops_jsp.javaÄ Ä((
+	_jspx_outjavax.servlet.jsp.JspWriter"__id*$
+"
+outjavax.servlet.jsp.JspWriter†ù
+T
+JC:/Users/loren/git/ISPW-Project/SkateSpot/WebContent/pages/viewMyShops.jsp (
+%19void")java.io.Writer#write(Ljava/lang/String;)V*$
+"
+outjavax.servlet.jsp.JspWriter*À»
+≈\r\n    \r\n\r\n\r\n\r\n    \r\n\r\n\r\n    \r\n    \r\n<!DOCTYPE html>\r\n<html lang=\"it\">\r\n<head>\r\n<meta charset=\"ISO-8859-1\">\r\n<title>View My Shops</title>\r\n</head>\r\n<body>\r\n\r\n2write(Ljava/lang/String;)*
+75*®
+34T
+JC:/Users/loren/git/ISPW-Project/SkateSpot/WebContent/pages/viewMyShops.jspH H(.≈¬
+T
+JC:/Users/loren/git/ISPW-Project/SkateSpot/WebContent/pages/viewMyShops.jspH H(
+%59void"%javax.servlet.jsp.JspWriter#print(I)V*$
+"
+outjavax.servlet.jsp.JspWriter*
+""2print(I)*
+33*®
+79y
+oC:\Users\loren\git\ISPW-Project\SkateSpot\.scannerwork\jsp\org\apache\jsp\WebContent\pages\viewMyShops_jsp.java~ ~((†ù
+y
+oC:\Users\loren\git\ISPW-Project\SkateSpot\.scannerwork\jsp\org\apache\jsp\WebContent\pages\viewMyShops_jsp.java ( "
+%18javax.servlet.jsp.JspWriter"Bjavax.servlet.jsp.JspContext#getOut()Ljavax/servlet/jsp/JspWriter;*.
+,
+pageContextjavax.servlet.jsp.PageContext2getOut()*
+78*—
+35T
+JC:/Users/loren/git/ISPW-Project/SkateSpot/WebContent/pages/viewMyShops.jspH H(.ÓÎ
+T
+JC:/Users/loren/git/ISPW-Project/SkateSpot/WebContent/pages/viewMyShops.jspH H(.
+%58void")java.io.Writer#write(Ljava/lang/String;)V*$
+"
+outjavax.servlet.jsp.JspWriter*
+\";\r\n\tdescrizioniJ[2write(Ljava/lang/String;)*
+34*à
+36T
+JC:/Users/loren/git/ISPW-Project/SkateSpot/WebContent/pages/viewMyShops.jspG G((®
+•
+T
+JC:/Users/loren/git/ISPW-Project/SkateSpot/WebContent/pages/viewMyShops.jspG G((
+%56java.lang.String"
+__arrayGet* 
+
+municipijava.lang.String[]*
+""˙˜
+T
+JC:/Users/loren/git/ISPW-Project/SkateSpot/WebContent/pages/viewMyShops.jspG G((
+%57void"6javax.servlet.jsp.JspWriter#print(Ljava/lang/String;)V*$
+"
+outjavax.servlet.jsp.JspWriter*
+
+%56java.lang.String2print(Ljava/lang/String;)*
+35*è
+37{
+oC:\Users\loren\git\ISPW-Project\SkateSpot\.scannerwork\jsp\org\apache\jsp\WebContent\pages\viewMyShops_jsp.java≠ ≠(	ÖÇ
+{
+oC:\Users\loren\git\ISPW-Project\SkateSpot\.scannerwork\jsp\org\apache\jsp\WebContent\pages\viewMyShops_jsp.java≠ ≠(
+%55void")java.io.Writer#write(Ljava/lang/String;)V*$
+"
+outjavax.servlet.jsp.JspWriter*
+
+] = \"2write(Ljava/lang/String;)*
+36*®
+38T
+JC:/Users/loren/git/ISPW-Project/SkateSpot/WebContent/pages/viewMyShops.jspG G((≈¬
+T
+JC:/Users/loren/git/ISPW-Project/SkateSpot/WebContent/pages/viewMyShops.jspG G(
+%54void"%javax.servlet.jsp.JspWriter#print(I)V*$
+"
+outjavax.servlet.jsp.JspWriter*
+""2print(I)*
+37*Œ
+39T
+JC:/Users/loren/git/ISPW-Project/SkateSpot/WebContent/pages/viewMyShops.jspG G((ÎË
+T
+JC:/Users/loren/git/ISPW-Project/SkateSpot/WebContent/pages/viewMyShops.jspG G((
+%53void")java.io.Writer#write(Ljava/lang/String;)V*$
+"
+outjavax.servlet.jsp.JspWriter*
+\";\r\n\tmunicipiJ[2write(Ljava/lang/String;)*
+38*∑
+80y
+oC:\Users\loren\git\ISPW-Project\SkateSpot\.scannerwork\jsp\org\apache\jsp\WebContent\pages\viewMyShops_jsp.java} }(-Ø¨
+y
+oC:\Users\loren\git\ISPW-Project\SkateSpot\.scannerwork\jsp\org\apache\jsp\WebContent\pages\viewMyShops_jsp.java~ ~((%
+%17javax.servlet.http.HttpSession"Jjavax.servlet.jsp.PageContext#getSession()Ljavax/servlet/http/HttpSession;*.
+,
+pageContextjavax.servlet.jsp.PageContext2getSession()*
+79*Ω
+81y
+oC:\Users\loren\git\ISPW-Project\SkateSpot\.scannerwork\jsp\org\apache\jsp\WebContent\pages\viewMyShops_jsp.java| |(3µ≤
+y
+oC:\Users\loren\git\ISPW-Project\SkateSpot\.scannerwork\jsp\org\apache\jsp\WebContent\pages\viewMyShops_jsp.java} }(-"
+%16javax.servlet.ServletConfig"Mjavax.servlet.jsp.PageContext#getServletConfig()Ljavax/servlet/ServletConfig;*.
+,
+pageContextjavax.servlet.jsp.PageContext2getServletConfig()*
+80*ä
+82y
+oC:\Users\loren\git\ISPW-Project\SkateSpot\.scannerwork\jsp\org\apache\jsp\WebContent\pages\viewMyShops_jsp.javay z( ⁄
+◊
+y
+oC:\Users\loren\git\ISPW-Project\SkateSpot\.scannerwork\jsp\org\apache\jsp\WebContent\pages\viewMyShops_jsp.javay z( ,
+pageContextjavax.servlet.jsp.PageContext"__id*&
+$
+%14javax.servlet.jsp.PageContextÈ
+Ê
+y
+oC:\Users\loren\git\ISPW-Project\SkateSpot\.scannerwork\jsp\org\apache\jsp\WebContent\pages\viewMyShops_jsp.java{ {(&3
+_jspx_page_contextjavax.servlet.jsp.PageContext"__id*.
+,
+pageContextjavax.servlet.jsp.PageContextπ∂
+y
+oC:\Users\loren\git\ISPW-Project\SkateSpot\.scannerwork\jsp\org\apache\jsp\WebContent\pages\viewMyShops_jsp.java| |(3#
+%15javax.servlet.ServletContext"Ojavax.servlet.jsp.PageContext#getServletContext()Ljavax/servlet/ServletContext;*.
+,
+pageContextjavax.servlet.jsp.PageContext2getServletContext()*
+81*¯
+83y
+oC:\Users\loren\git\ISPW-Project\SkateSpot\.scannerwork\jsp\org\apache\jsp\WebContent\pages\viewMyShops_jsp.javay y( ±
+Æ
+y
+oC:\Users\loren\git\ISPW-Project\SkateSpot\.scannerwork\jsp\org\apache\jsp\WebContent\pages\viewMyShops_jsp.javay y( #
+%13javax.servlet.jsp.JspFactory"__id*
+""ºπ
+y
+oC:\Users\loren\git\ISPW-Project\SkateSpot\.scannerwork\jsp\org\apache\jsp\WebContent\pages\viewMyShops_jsp.javay z( $
+%14javax.servlet.jsp.PageContext"µjavax.servlet.jsp.JspFactory#getPageContext(Ljavax/servlet/Servlet;Ljavax/servlet/ServletRequest;Ljavax/servlet/ServletResponse;Ljava/lang/String;ZIZ)Ljavax/servlet/jsp/PageContext;*%
+#
+%13javax.servlet.jsp.JspFactory*31
+/org.apache.jsp.WebContent.pages.viewMyShops_jsp*2
+0
+request%javax.servlet.http.HttpServletRequest*4
+2
+response&javax.servlet.http.HttpServletResponse*
+""*
+""*2Ä@*
+""2ygetPageContext(Ljavax/servlet/Servlet;Ljavax/servlet/ServletRequest;Ljavax/servlet/ServletResponse;Ljava/lang/String;ZIZ)*
+82*”
+84y
+oC:\Users\loren\git\ISPW-Project\SkateSpot\.scannerwork\jsp\org\apache\jsp\WebContent\pages\viewMyShops_jsp.javax x(À»
+y
+oC:\Users\loren\git\ISPW-Project\SkateSpot\.scannerwork\jsp\org\apache\jsp\WebContent\pages\viewMyShops_jsp.javax x(>
+%12void"Ajavax.servlet.ServletResponse#setContentType(Ljava/lang/String;)V*4
+2
+response&javax.servlet.http.HttpServletResponse*!
+text/html; charset=ISO-8859-12"setContentType(Ljava/lang/String;)*
+83*Ñ
+40T
+JC:/Users/loren/git/ISPW-Project/SkateSpot/WebContent/pages/viewMyShops.jspF F( §
+°
+T
+JC:/Users/loren/git/ISPW-Project/SkateSpot/WebContent/pages/viewMyShops.jspF F( 
+%51java.lang.String"
+__arrayGet*
+
+zonejava.lang.String[]*
+""˙˜
+T
+JC:/Users/loren/git/ISPW-Project/SkateSpot/WebContent/pages/viewMyShops.jspF F( 
+%52void"6javax.servlet.jsp.JspWriter#print(Ljava/lang/String;)V*$
+"
+outjavax.servlet.jsp.JspWriter*
+
+%51java.lang.String2print(Ljava/lang/String;)*
+39*Ú
+85y
+oC:\Users\loren\git\ISPW-Project\SkateSpot\.scannerwork\jsp\org\apache\jsp\WebContent\pages\viewMyShops_jsp.javam m(4∫
+∑
+y
+oC:\Users\loren\git\ISPW-Project\SkateSpot\.scannerwork\jsp\org\apache\jsp\WebContent\pages\viewMyShops_jsp.javam m(4,
+pageContextjavax.servlet.jsp.PageContext"__id*
+""∞
+≠
+y
+oC:\Users\loren\git\ISPW-Project\SkateSpot\.scannerwork\jsp\org\apache\jsp\WebContent\pages\viewMyShops_jsp.javaq q(+"
+outjavax.servlet.jsp.JspWriter"__id*
+""∂
+≥
+y
+oC:\Users\loren\git\ISPW-Project\SkateSpot\.scannerwork\jsp\org\apache\jsp\WebContent\pages\viewMyShops_jsp.javas s(1(
+	_jspx_outjavax.servlet.jsp.JspWriter"__id*
+""¡
+æ
+y
+oC:\Users\loren\git\ISPW-Project\SkateSpot\.scannerwork\jsp\org\apache\jsp\WebContent\pages\viewMyShops_jsp.javat t(<3
+_jspx_page_contextjavax.servlet.jsp.PageContext"__id*
+""*
+84*è
+41{
+oC:\Users\loren\git\ISPW-Project\SkateSpot\.scannerwork\jsp\org\apache\jsp\WebContent\pages\viewMyShops_jsp.java© ©(	ÖÇ
+{
+oC:\Users\loren\git\ISPW-Project\SkateSpot\.scannerwork\jsp\org\apache\jsp\WebContent\pages\viewMyShops_jsp.java© ©(
+%50void")java.io.Writer#write(Ljava/lang/String;)V*$
+"
+outjavax.servlet.jsp.JspWriter*
+
+] = \"2write(Ljava/lang/String;)*
+40*ñ	
+86y
+oC:\Users\loren\git\ISPW-Project\SkateSpot\.scannerwork\jsp\org\apache\jsp\WebContent\pages\viewMyShops_jsp.javag g(Û
+y
+oC:\Users\loren\git\ISPW-Project\SkateSpot\.scannerwork\jsp\org\apache\jsp\WebContent\pages\viewMyShops_jsp.javag g(>
+
+%9void"Wjavax.servlet.http.HttpServletResponse#setHeader(Ljava/lang/String;Ljava/lang/String;)V*4
+2
+response&javax.servlet.http.HttpServletResponse*	
+Allow*
+GET, HEAD, POST, OPTIONS2/setHeader(Ljava/lang/String;Ljava/lang/String;)ò
+ï
+y
+oC:\Users\loren\git\ISPW-Project\SkateSpot\.scannerwork\jsp\org\apache\jsp\WebContent\pages\viewMyShops_jsp.javah h(D
+
+%10int"__id*
+""˝˙
+z
+oC:\Users\loren\git\ISPW-Project\SkateSpot\.scannerwork\jsp\org\apache\jsp\WebContent\pages\viewMyShops_jsp.javah h(à
+%11void"Fjavax.servlet.http.HttpServletResponse#sendError(ILjava/lang/String;)V*4
+2
+response&javax.servlet.http.HttpServletResponse*
+
+
+%10int*CA
+?JSPs only permit GET, POST or HEAD. Jasper also permits OPTIONS2sendError(ILjava/lang/String;)"É
+y
+oC:\Users\loren\git\ISPW-Project\SkateSpot\.scannerwork\jsp\org\apache\jsp\WebContent\pages\viewMyShops_jsp.javai i(
+""*®
+42T
+JC:/Users/loren/git/ISPW-Project/SkateSpot/WebContent/pages/viewMyShops.jspF F( ≈¬
+T
+JC:/Users/loren/git/ISPW-Project/SkateSpot/WebContent/pages/viewMyShops.jspF
+ F(
+%49void"%javax.servlet.jsp.JspWriter#print(I)V*$
+"
+outjavax.servlet.jsp.JspWriter*
+""2print(I)*
+41*ë
+87y
+oC:\Users\loren\git\ISPW-Project\SkateSpot\.scannerwork\jsp\org\apache\jsp\WebContent\pages\viewMyShops_jsp.javafJ f(PÖÇ
+y
+oC:\Users\loren\git\ISPW-Project\SkateSpot\.scannerwork\jsp\org\apache\jsp\WebContent\pages\viewMyShops_jsp.javafJ f(e
+%8boolean",java.lang.String#equals(Ljava/lang/Object;)Z*
+HEAD*"
+ 
+_jspx_methodjava.lang.String2equals(Ljava/lang/Object;)*
+85
+86* 
+43T
+JC:/Users/loren/git/ISPW-Project/SkateSpot/WebContent/pages/viewMyShops.jspF F( Á‰
+T
+JC:/Users/loren/git/ISPW-Project/SkateSpot/WebContent/pages/viewMyShops.jspF F( 
+%48void")java.io.Writer#write(Ljava/lang/String;)V*$
+"
+outjavax.servlet.jsp.JspWriter*
+\";\r\n\tzoneJ[2write(Ljava/lang/String;)*
+42*ë
+88y
+oC:\Users\loren\git\ISPW-Project\SkateSpot\.scannerwork\jsp\org\apache\jsp\WebContent\pages\viewMyShops_jsp.javaf* f(0ÖÇ
+y
+oC:\Users\loren\git\ISPW-Project\SkateSpot\.scannerwork\jsp\org\apache\jsp\WebContent\pages\viewMyShops_jsp.javaf* f(E
+%7boolean",java.lang.String#equals(Ljava/lang/Object;)Z*
+POST*"
+ 
+_jspx_methodjava.lang.String2equals(Ljava/lang/Object;)*
+85
+87*â
+44T
+JC:/Users/loren/git/ISPW-Project/SkateSpot/WebContent/pages/viewMyShops.jspE E(*©
+¶
+T
+JC:/Users/loren/git/ISPW-Project/SkateSpot/WebContent/pages/viewMyShops.jspE E(*
+%46java.lang.String"
+__arrayGet*!
+
+	indirizzijava.lang.String[]*
+""˙˜
+T
+JC:/Users/loren/git/ISPW-Project/SkateSpot/WebContent/pages/viewMyShops.jspE E(*
+%47void"6javax.servlet.jsp.JspWriter#print(Ljava/lang/String;)V*$
+"
+outjavax.servlet.jsp.JspWriter*
+
+%46java.lang.String2print(Ljava/lang/String;)*
+43*ê
+89y
+oC:\Users\loren\git\ISPW-Project\SkateSpot\.scannerwork\jsp\org\apache\jsp\WebContent\pages\viewMyShops_jsp.javaf f(ÑÅ
+y
+oC:\Users\loren\git\ISPW-Project\SkateSpot\.scannerwork\jsp\org\apache\jsp\WebContent\pages\viewMyShops_jsp.javaf f(%
+%6boolean",java.lang.String#equals(Ljava/lang/Object;)Z*
+GET*"
+ 
+_jspx_methodjava.lang.String2equals(Ljava/lang/Object;)*
+85
+88*è
+45{
+oC:\Users\loren\git\ISPW-Project\SkateSpot\.scannerwork\jsp\org\apache\jsp\WebContent\pages\viewMyShops_jsp.java• •(	ÖÇ
+{
+oC:\Users\loren\git\ISPW-Project\SkateSpot\.scannerwork\jsp\org\apache\jsp\WebContent\pages\viewMyShops_jsp.java• •(
+%45void")java.io.Writer#write(Ljava/lang/String;)V*$
+"
+outjavax.servlet.jsp.JspWriter*
+
+] = \"2write(Ljava/lang/String;)*
+44*®
+46T
+JC:/Users/loren/git/ISPW-Project/SkateSpot/WebContent/pages/viewMyShops.jspE E(*≈¬
+T
+JC:/Users/loren/git/ISPW-Project/SkateSpot/WebContent/pages/viewMyShops.jspE E(
+%44void"%javax.servlet.jsp.JspWriter#print(I)V*$
+"
+outjavax.servlet.jsp.JspWriter*
+""2print(I)*
+45*œ
+47T
+JC:/Users/loren/git/ISPW-Project/SkateSpot/WebContent/pages/viewMyShops.jspE E(*ÏÈ
+T
+JC:/Users/loren/git/ISPW-Project/SkateSpot/WebContent/pages/viewMyShops.jspE E(*
+%43void")java.io.Writer#write(Ljava/lang/String;)V*$
+"
+outjavax.servlet.jsp.JspWriter*
+\";\r\n\tindirizziJ[2write(Ljava/lang/String;)*
+46*Ñ
+48T
+JC:/Users/loren/git/ISPW-Project/SkateSpot/WebContent/pages/viewMyShops.jspD D( §
+°
+T
+JC:/Users/loren/git/ISPW-Project/SkateSpot/WebContent/pages/viewMyShops.jspD D( 
+%41java.lang.String"
+__arrayGet*
+
+nomijava.lang.String[]*
+""˙˜
+T
+JC:/Users/loren/git/ISPW-Project/SkateSpot/WebContent/pages/viewMyShops.jspD D( 
+%42void"6javax.servlet.jsp.JspWriter#print(Ljava/lang/String;)V*$
+"
+outjavax.servlet.jsp.JspWriter*
+
+%41java.lang.String2print(Ljava/lang/String;)*
+47*è
+49{
+oC:\Users\loren\git\ISPW-Project\SkateSpot\.scannerwork\jsp\org\apache\jsp\WebContent\pages\viewMyShops_jsp.java° °(	ÖÇ
+{
+oC:\Users\loren\git\ISPW-Project\SkateSpot\.scannerwork\jsp\org\apache\jsp\WebContent\pages\viewMyShops_jsp.java° °(
+%40void")java.io.Writer#write(Ljava/lang/String;)V*$
+"
+outjavax.servlet.jsp.JspWriter*
+
+] = \"2write(Ljava/lang/String;)*
+48*˚
+90y
+oC:\Users\loren\git\ISPW-Project\SkateSpot\.scannerwork\jsp\org\apache\jsp\WebContent\pages\viewMyShops_jsp.javac c(Û
+y
+oC:\Users\loren\git\ISPW-Project\SkateSpot\.scannerwork\jsp\org\apache\jsp\WebContent\pages\viewMyShops_jsp.javac c(>
+
+%5void"Wjavax.servlet.http.HttpServletResponse#setHeader(Ljava/lang/String;Ljava/lang/String;)V*4
+2
+response&javax.servlet.http.HttpServletResponse*	
+Allow*
+GET, HEAD, POST, OPTIONS2/setHeader(Ljava/lang/String;Ljava/lang/String;)"É
+y
+oC:\Users\loren\git\ISPW-Project\SkateSpot\.scannerwork\jsp\org\apache\jsp\WebContent\pages\viewMyShops_jsp.javad d(
+""*ˆ
+91y
+oC:\Users\loren\git\ISPW-Project\SkateSpot\.scannerwork\jsp\org\apache\jsp\WebContent\pages\viewMyShops_jsp.javaa, a(3úô
+y
+oC:\Users\loren\git\ISPW-Project\SkateSpot\.scannerwork\jsp\org\apache\jsp\WebContent\pages\viewMyShops_jsp.javaa, a(?
+%3java.lang.String"Cjavax.servlet.http.HttpServletRequest#getMethod()Ljava/lang/String;*2
+0
+request%javax.servlet.http.HttpServletRequest2getMethod()¿
+Ω
+y
+oC:\Users\loren\git\ISPW-Project\SkateSpot\.scannerwork\jsp\org\apache\jsp\WebContent\pages\viewMyShops_jsp.javaa a(@ 
+_jspx_methodjava.lang.String"__id*
+
+%3java.lang.StringàÖ
+y
+oC:\Users\loren\git\ISPW-Project\SkateSpot\.scannerwork\jsp\org\apache\jsp\WebContent\pages\viewMyShops_jsp.javab
+ b((
+%4boolean",java.lang.String#equals(Ljava/lang/Object;)Z*	
+OPTIONS*"
+ 
+_jspx_methodjava.lang.String2equals(Ljava/lang/Object;)*
+90
+89*û
+92y
+oC:\Users\loren\git\ISPW-Project\SkateSpot\.scannerwork\jsp\org\apache\jsp\WebContent\pages\viewMyShops_jsp.java`	 `(∞
+≠
+y
+oC:\Users\loren\git\ISPW-Project\SkateSpot\.scannerwork\jsp\org\apache\jsp\WebContent\pages\viewMyShops_jsp.java`	 `(+"
+%0javax.servlet.DispatcherType"__id*
+""ª∏
+y
+oC:\Users\loren\git\ISPW-Project\SkateSpot\.scannerwork\jsp\org\apache\jsp\WebContent\pages\viewMyShops_jsp.java`3 `(N"
+%1javax.servlet.DispatcherType"Njavax.servlet.ServletRequest#getDispatcherType()Ljavax/servlet/DispatcherType;*2
+0
+request%javax.servlet.http.HttpServletRequest2getDispatcherType()°û
+y
+oC:\Users\loren\git\ISPW-Project\SkateSpot\.scannerwork\jsp\org\apache\jsp\WebContent\pages\viewMyShops_jsp.java`	 `(O
+%2boolean"*java.lang.Enum#equals(Ljava/lang/Object;)Z*$
+"
+%0javax.servlet.DispatcherType*$
+"
+%1javax.servlet.DispatcherType2equals(Ljava/lang/Object;)*
+91
+85*®
+50T
+JC:/Users/loren/git/ISPW-Project/SkateSpot/WebContent/pages/viewMyShops.jspD D( ≈¬
+T
+JC:/Users/loren/git/ISPW-Project/SkateSpot/WebContent/pages/viewMyShops.jspD
+ D(
+%39void"%javax.servlet.jsp.JspWriter#print(I)V*$
+"
+outjavax.servlet.jsp.JspWriter*
+""2print(I)*
+49*«
+51T
+JC:/Users/loren/git/ISPW-Project/SkateSpot/WebContent/pages/viewMyShops.jspD D( ‰·
+T
+JC:/Users/loren/git/ISPW-Project/SkateSpot/WebContent/pages/viewMyShops.jspD D( 
+%38void")java.io.Writer#write(Ljava/lang/String;)V*$
+"
+outjavax.servlet.jsp.JspWriter*
+\r\n\tnomiJ[2write(Ljava/lang/String;)*
+50*º
+54T
+JC:/Users/loren/git/ISPW-Project/SkateSpot/WebContent/pages/viewMyShops.jsp+ +(	’“
+R
+JC:/Users/loren/git/ISPW-Project/SkateSpot/WebContent/pages/viewMyShops.jsp- C(
+%37void")java.io.Writer#write(Ljava/lang/String;)V*$
+"
+outjavax.servlet.jsp.JspWriter*Çˇ
+¸\r\n\r\n<script type=\"text/javascript\">\r\n\tvar i=0;\r\n\tvar first=1;\r\n\t\r\n\tvar nomiJ= new Array();\r\n\t\r\n\tvar numeriJ=new Array();\r\n\t\r\n\tvar indirizziJ=new Array();\r\n\t\r\n\tvar zoneJ=new Array();\r\n\t\r\n\tvar municipiJ=new Array();\r\n\t\r\n\tvar descrizioniJ=new Array();\r\n\t\r\n\tvar usernameJ=new Array();\r\n\t\r\n\tvar dateJ=new Array();\r\n\t\r\n\t2write(Ljava/lang/String;)*
+51
+21*Ç
+56T
+JC:/Users/loren/git/ISPW-Project/SkateSpot/WebContent/pages/viewMyShops.jsp) )(/õ
+ò
+T
+JC:/Users/loren/git/ISPW-Project/SkateSpot/WebContent/pages/viewMyShops.jsp) )(/
+%36"
+__arraySet*
+
+datejava.lang.String[]*
+""*
+
+%35*
+69
+54*À
+57T
+JC:/Users/loren/git/ISPW-Project/SkateSpot/WebContent/pages/viewMyShops.jsp) )(ËÂ
+T
+JC:/Users/loren/git/ISPW-Project/SkateSpot/WebContent/pages/viewMyShops.jsp) )(
+%35"?java.text.DateFormat#format(Ljava/util/Date;)Ljava/lang/String;*#
+!
+sdfjava.text.SimpleDateFormat*
+""2format(Ljava/util/Date;)*
+56*Å
+59T
+JC:/Users/loren/git/ISPW-Project/SkateSpot/WebContent/pages/viewMyShops.jsp( (()û
+õ
+T
+JC:/Users/loren/git/ISPW-Project/SkateSpot/WebContent/pages/viewMyShops.jsp( (()
+%34"
+__arraySet* 
+
+usernamejava.lang.String[]*
+""*
+""*
+57*‚
+16{
+oC:\Users\loren\git\ISPW-Project\SkateSpot\.scannerwork\jsp\org\apache\jsp\WebContent\pages\viewMyShops_jsp.java¬ ¬(	Ÿ÷
+|
+oC:\Users\loren\git\ISPW-Project\SkateSpot\.scannerwork\jsp\org\apache\jsp\WebContent\pages\viewMyShops_jsp.java¬ ¬(Ë
+%79void")java.io.Writer#write(Ljava/lang/String;)V*$
+"
+outjavax.servlet.jsp.JspWriter*‹Ÿ
+÷\t\t<label>Address : </label>\r\n\t\t<label id=\"address\"> Address </label> <br><br>\r\n\t\t<label>Area : </label>\r\n\t\t<label id=\"area\"> Area </label> <br><br>\r\n\t\t<label>Municipality : </label>\r\n\t\t<label id=\"municipality\"> Municipality </label> <br><br>\r\n\t\t<label>Description : </label>\r\n\t\t<label id=\"description\"> Description </label> <br><br>\r\n\t\t<label> Added by :</label>\r\n\t\t<label id=\"owner\"> Owner </label><br><br>\r\n\t\t<label> On :</label>\r\n\t\t<label id=\"date\"> Date </label><br><br><br>\r\n\t\t<input type=\"submit\" value=\"PREVIOUS\" onClick=\"previous()\"/>\r\n\t\t<input type=\"submit\" value=\"NEXT\" onClick=\"next()\"/>\r\n\t\t\r\n\t</div>\t\t\r\n\r\n</body>\r\n</html>2write(Ljava/lang/String;)*
+1*ñ
+17U
+JC:/Users/loren/git/ISPW-Project/SkateSpot/WebContent/pages/viewMyShops.jspm ≠(≤Ø
+U
+JC:/Users/loren/git/ISPW-Project/SkateSpot/WebContent/pages/viewMyShops.jspm ≠(
+%78void")java.io.Writer#write(Ljava/lang/String;)V*$
+"
+outjavax.servlet.jsp.JspWriter*‹	Ÿ	
+÷	)\r\n\t\t\t{\r\n\t\t\t\ti=0;\r\n\t\t\t\tsetLabels();\r\n\t\t\t}\r\n\t\t\telse\r\n\t\t\t{\r\n\t\t\t\tsetLabels();\r\n\t\t\t}\r\n\t\t}\r\n\t}\r\n\tfunction setLabels()\r\n\t{\r\n\t\tvar nome = document.getElementById(\"name\");\r\n\t\tnome.innerHTML=nomiJ[i];\r\n\t\t\r\n\t\tvar indirizzo = document.getElementById(\"address\");\r\n\t\tindirizzo.innerHTML=indirizziJ[i];\r\n\t\t\r\n\t\tvar zona = document.getElementById(\"area\");\r\n\t\tzona.innerHTML=zoneJ[i];\r\n\t\t\r\n\t\tvar municipio = document.getElementById(\"municipality\");\r\n\t\tmunicipio.innerHTML=municipiJ[i];\r\n\t\t\r\n\t\tvar descrizione = document.getElementById(\"description\");\r\n\t\tdescrizione.innerHTML=descrizioniJ[i];\r\n\t\t\r\n\t\tvar username = document.getElementById(\"owner\");\r\n\t\tusername.innerHTML=usernameJ[i];\r\n\t\t\r\n\t\tvar data = document.getElementById(\"date\");\r\n\t\tdata.innerHTML=dateJ[i];\r\n\t}\r\n</script>\r\n\r\n\t<div>\r\n\t\t<h1 id = \"title\" >SkateSpot</h1>\r\n\t\t<a href=\"premiumArea.jsp\">\r\n\t\t\t<img src=\"../images/back_icon.png\" alt=\"BACK\"/>\r\n\t\t</a>\r\n\t</div>\r\n\t\r\n\t<div>\r\n\t\t<h1>Shop details</h1> <br><br>\r\n\t\t<label>Shop name : </label>\r\n\t\t<label id=\"name\"> Name </label> <br><br>\r\n2write(Ljava/lang/String;)*
+16*®
+18T
+JC:/Users/loren/git/ISPW-Project/SkateSpot/WebContent/pages/viewMyShops.jspl l(≈¬
+T
+JC:/Users/loren/git/ISPW-Project/SkateSpot/WebContent/pages/viewMyShops.jspl l(
+%77void"%javax.servlet.jsp.JspWriter#print(I)V*$
+"
+outjavax.servlet.jsp.JspWriter*
+""2print(I)*
+17*œ
+19T
+JC:/Users/loren/git/ISPW-Project/SkateSpot/WebContent/pages/viewMyShops.jspZ l(ÏÈ
+T
+JC:/Users/loren/git/ISPW-Project/SkateSpot/WebContent/pages/viewMyShops.jspZ l(
+%76void")java.io.Writer#write(Ljava/lang/String;)V*$
+"
+outjavax.servlet.jsp.JspWriter*óî
+ë-1;\r\n\t\t\t\tsetLabels();\r\n\t\t\t}\r\n\t\t\telse\r\n\t\t\t{\r\n\t\t\t\tsetLabels();\r\n\t\t\t}\t\r\n\t\t}\r\n\t}\r\n\tfunction next()\r\n\t{\r\n\t\tif(first==1)\r\n\t\t{\r\n\t\t\tsetLabels();\r\n\t\t\tfirst=0;\r\n\t\t}\r\n\t\telse\r\n\t\t{\r\n\t\t\ti++;\r\n\t\t\tif(i==2write(Ljava/lang/String;)*
+18*ö
+0 "í
+{
+oC:\Users\loren\git\ISPW-Project\SkateSpot\.scannerwork\jsp\org\apache\jsp\WebContent\pages\viewMyShops_jsp.java‘ ‘(
+implicit return*±
+1{
+oC:\Users\loren\git\ISPW-Project\SkateSpot\.scannerwork\jsp\org\apache\jsp\WebContent\pages\viewMyShops_jsp.java“ “(≥
+∞
+{
+oC:\Users\loren\git\ISPW-Project\SkateSpot\.scannerwork\jsp\org\apache\jsp\WebContent\pages\viewMyShops_jsp.java“ “(#
+%87javax.servlet.jsp.JspFactory"__id*
+""Û
+{
+oC:\Users\loren\git\ISPW-Project\SkateSpot\.scannerwork\jsp\org\apache\jsp\WebContent\pages\viewMyShops_jsp.java“ “(9
+%88void"Qjavax.servlet.jsp.JspFactory#releasePageContext(Ljavax/servlet/jsp/PageContext;)V*%
+#
+%87javax.servlet.jsp.JspFactory*5
+3
+_jspx_page_contextjavax.servlet.jsp.PageContext23releasePageContext(Ljavax/servlet/jsp/PageContext;)*
+0*Ñ
+61T
+JC:/Users/loren/git/ISPW-Project/SkateSpot/WebContent/pages/viewMyShops.jsp' '(*°
+û
+T
+JC:/Users/loren/git/ISPW-Project/SkateSpot/WebContent/pages/viewMyShops.jsp' '(*
+%33"
+__arraySet*#
+!
+descrizionijava.lang.String[]*
+""*
+""*
+59*Å
+63T
+JC:/Users/loren/git/ISPW-Project/SkateSpot/WebContent/pages/viewMyShops.jsp& &('û
+õ
+T
+JC:/Users/loren/git/ISPW-Project/SkateSpot/WebContent/pages/viewMyShops.jsp& &('
+%32"
+__arraySet* 
+
+municipijava.lang.String[]*
+""*
+""*
+61*®
+20T
+JC:/Users/loren/git/ISPW-Project/SkateSpot/WebContent/pages/viewMyShops.jspY Y(≈¬
+T
+JC:/Users/loren/git/ISPW-Project/SkateSpot/WebContent/pages/viewMyShops.jspY	 Y(
+%75void"%javax.servlet.jsp.JspWriter#print(I)V*$
+"
+outjavax.servlet.jsp.JspWriter*
+""2print(I)*
+19*ˇ
+21T
+JC:/Users/loren/git/ISPW-Project/SkateSpot/WebContent/pages/viewMyShops.jspL Y(úô
+T
+JC:/Users/loren/git/ISPW-Project/SkateSpot/WebContent/pages/viewMyShops.jspL Y(
+%74void")java.io.Writer#write(Ljava/lang/String;)V*$
+"
+outjavax.servlet.jsp.JspWriter*«ƒ
+¡\r\n\t\r\n\tfunction previous()\r\n\t{\r\n\t\tif(first==1)\r\n\t\t{\r\n\t\t\tsetLabels();\r\n\t\t\tfirst=0;\r\n\t\t}\r\n\t\telse\r\n\t\t{\r\n\t\t\ti--;\r\n\t\t\tif(i<0)\r\n\t\t\t{\r\n\t\t\t\ti=2write(Ljava/lang/String;)*
+20*˝
+65T
+JC:/Users/loren/git/ISPW-Project/SkateSpot/WebContent/pages/viewMyShops.jsp% %(!ö
+ó
+T
+JC:/Users/loren/git/ISPW-Project/SkateSpot/WebContent/pages/viewMyShops.jsp% %(!
+%31"
+__arraySet*
+
+zonejava.lang.String[]*
+""*
+""*
+63*Ç
+67T
+JC:/Users/loren/git/ISPW-Project/SkateSpot/WebContent/pages/viewMyShops.jsp$ $(+ü
+ú
+T
+JC:/Users/loren/git/ISPW-Project/SkateSpot/WebContent/pages/viewMyShops.jsp$ $(+
+%30"
+__arraySet*!
+
+	indirizzijava.lang.String[]*
+""*
+""*
+65*»
+23T
+JC:/Users/loren/git/ISPW-Project/SkateSpot/WebContent/pages/viewMyShops.jspK K(·ﬁ
+T
+JC:/Users/loren/git/ISPW-Project/SkateSpot/WebContent/pages/viewMyShops.jspK K(
+%73void")java.io.Writer#write(Ljava/lang/String;)V*$
+"
+outjavax.servlet.jsp.JspWriter*
+	\";\r\n\t2write(Ljava/lang/String;)*
+51
+21:
+%jsp_context:0
+request%javax.servlet.http.HttpServletRequest:2
+response&javax.servlet.http.HttpServletResponseB31
+/org.apache.jsp.WebContent.pages.viewMyShops_jsp

@@ -1,0 +1,1 @@
+ 2javaXrhrsrc/logic/beans/ShopBean.java

@@ -12,10 +12,29 @@ public class ShopDAO
     private static final String USER = "root";
     private static final String PSW = "PASSWORD";
     private static final String URL = "jdbc:mysql://localhost:3306/skate_spot";
-
+    private static String area;
+    private static Integer code;
+    private static LocalDate date;
 
     private ShopDAO( ) {}
-    public static void createShop(String partitaIVA, String name, String description, String city, String street, String number, String municipality, String area, Integer code, LocalDate date) throws ExistingShopException
+    
+    public static void setArea(String sArea)
+    {
+    	area = sArea;
+    }
+    
+    public static void setCode(Integer sCode)
+    {
+    	code = sCode;
+    }
+    
+    public static void setDate(LocalDate sDate)
+    {
+    	date = sDate;
+    }
+    
+   
+    public static void createShop(String partitaIVA, String name, String description, String city, String street, String number, String municipality) throws ExistingShopException
 	{
     	Connection connection = null; //interface
         Statement statement = null;
@@ -83,7 +102,7 @@ public class ShopDAO
     	Connection connection = null;
         Statement statement = null;
         Shop shop = null;
-        ArrayList<Shop> shops = new ArrayList<Shop>();
+        ArrayList<Shop> shops = new ArrayList<>();
 
         try
         {

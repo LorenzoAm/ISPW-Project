@@ -1,16 +1,17 @@
 
-Horg.apache.jsp.WebContent.addSpot_jsp#getPackageImports()Ljava/util/Set;o
-eC:\Users\loren\git\ISPW-Project\SkateSpot\.scannerwork\jsp\org\apache\jsp\WebContent\addSpot_jsp.java1) 1(:"1*ô
-1o
-eC:\Users\loren\git\ISPW-Project\SkateSpot\.scannerwork\jsp\org\apache\jsp\WebContent\addSpot_jsp.java2 2(!ó
-î
-o
-eC:\Users\loren\git\ISPW-Project\SkateSpot\.scannerwork\jsp\org\apache\jsp\WebContent\addSpot_jsp.java2 2(!
-%0java.util.Set"__id*
-"""à
-o
-eC:\Users\loren\git\ISPW-Project\SkateSpot\.scannerwork\jsp\org\apache\jsp\WebContent\addSpot_jsp.java2 2("
+Vorg.apache.jsp.WebContent.pages.joinLeaveSpotDenied_jsp#getDependants()Ljava/util/Map;Å
+wC:\Users\loren\git\ISPW-Project\SkateSpot\.scannerwork\jsp\org\apache\jsp\WebContent\pages\joinLeaveSpotDenied_jsp.java'8 '(E"1*ù
+1Å
+wC:\Users\loren\git\ISPW-Project\SkateSpot\.scannerwork\jsp\org\apache\jsp\WebContent\pages\joinLeaveSpotDenied_jsp.java( ((ı
+Ú
+Å
+wC:\Users\loren\git\ISPW-Project\SkateSpot\.scannerwork\jsp\org\apache\jsp\WebContent\pages\joinLeaveSpotDenied_jsp.java( ((
+%0java.util.Map"__id*Q*O9
+7org.apache.jsp.WebContent.pages.joinLeaveSpotDenied_jsp"
+_jspx_dependants"õ
+Å
+wC:\Users\loren\git\ISPW-Project\SkateSpot\.scannerwork\jsp\org\apache\jsp\WebContent\pages\joinLeaveSpotDenied_jsp.java( ((
 
-%0java.util.Set:
-%jsp_contextB)'
-%org.apache.jsp.WebContent.addSpot_jsp
+%0java.util.Map:
+%jsp_contextB;9
+7org.apache.jsp.WebContent.pages.joinLeaveSpotDenied_jsp

@@ -1,74 +1,16 @@
 
-korg.apache.jsp.WebContent.spotNotFoundException_jsp#_jsp_getExpressionFactory()Ljavax/el/ExpressionFactory;}
-sC:\Users\loren\git\ISPW-Project\SkateSpot\.scannerwork\jsp\org\apache\jsp\WebContent\spotNotFoundException_jsp.java3$ 3(="5*µ
-2}
-sC:\Users\loren\git\ISPW-Project\SkateSpot\.scannerwork\jsp\org\apache\jsp\WebContent\spotNotFoundException_jsp.java7" 7(.´
-±
-}
-sC:\Users\loren\git\ISPW-Project\SkateSpot\.scannerwork\jsp\org\apache\jsp\WebContent\spotNotFoundException_jsp.java7" 7(."
-%2javax.servlet.jsp.JspFactory"__id*
-""¹¶
-}
-sC:\Users\loren\git\ISPW-Project\SkateSpot\.scannerwork\jsp\org\apache\jsp\WebContent\spotNotFoundException_jsp.java7H 7(Z!
-%3javax.servlet.ServletConfig"Ejavax.servlet.Servlet#getServletConfig()Ljavax/servlet/ServletConfig;*75
-3org.apache.jsp.WebContent.spotNotFoundException_jsp2getServletConfig()¯¬
-}
-sC:\Users\loren\git\ISPW-Project\SkateSpot\.scannerwork\jsp\org\apache\jsp\WebContent\spotNotFoundException_jsp.java7H 7(n"
-%4javax.servlet.ServletContext"Mjavax.servlet.ServletConfig#getServletContext()Ljavax/servlet/ServletContext;*#
-!
-%3javax.servlet.ServletConfig2getServletContext()·´
-}
-sC:\Users\loren\git\ISPW-Project\SkateSpot\.scannerwork\jsp\org\apache\jsp\WebContent\spotNotFoundException_jsp.java7" 7(o-
-%5'javax.servlet.jsp.JspApplicationContext"~javax.servlet.jsp.JspFactory#getJspApplicationContext(Ljavax/servlet/ServletContext;)Ljavax/servlet/jsp/JspApplicationContext;*$
-"
-%2javax.servlet.jsp.JspFactory*$
-"
-%4javax.servlet.ServletContext28getJspApplicationContext(Ljavax/servlet/ServletContext;)ÊÇ
-~
-sC:\Users\loren\git\ISPW-Project\SkateSpot\.scannerwork\jsp\org\apache\jsp\WebContent\spotNotFoundException_jsp.java7" 7(† 
-%6javax.el.ExpressionFactory"Zjavax.servlet.jsp.JspApplicationContext#getExpressionFactory()Ljavax/el/ExpressionFactory;*/
--
-%5'javax.servlet.jsp.JspApplicationContext2getExpressionFactory()ÿ
-ü
-~
-sC:\Users\loren\git\ISPW-Project\SkateSpot\.scannerwork\jsp\org\apache\jsp\WebContent\spotNotFoundException_jsp.java7
- 7(†P5
-3org.apache.jsp.WebContent.spotNotFoundException_jsp"
-_el_expressionfactory"__id*"
- 
-%6javax.el.ExpressionFactory*
-1*‹
-3}
-sC:\Users\loren\git\ISPW-Project\SkateSpot\.scannerwork\jsp\org\apache\jsp\WebContent\spotNotFoundException_jsp.java6 6(!þ
-û
-}
-sC:\Users\loren\git\ISPW-Project\SkateSpot\.scannerwork\jsp\org\apache\jsp\WebContent\spotNotFoundException_jsp.java6 6(! 
-%1javax.el.ExpressionFactory"__id*R*P5
-3org.apache.jsp.WebContent.spotNotFoundException_jsp"
-_el_expressionfactory*
-2
-1*‹
-5}
-sC:\Users\loren\git\ISPW-Project\SkateSpot\.scannerwork\jsp\org\apache\jsp\WebContent\spotNotFoundException_jsp.java4 4(þ
-û
-}
-sC:\Users\loren\git\ISPW-Project\SkateSpot\.scannerwork\jsp\org\apache\jsp\WebContent\spotNotFoundException_jsp.java4 4( 
-%0javax.el.ExpressionFactory"__id*R*P5
-3org.apache.jsp.WebContent.spotNotFoundException_jsp"
-_el_expressionfactory*
-3
-1*©
-1}
-sC:\Users\loren\git\ISPW-Project\SkateSpot\.scannerwork\jsp\org\apache\jsp\WebContent\spotNotFoundException_jsp.java; ;( þ
-û
-}
-sC:\Users\loren\git\ISPW-Project\SkateSpot\.scannerwork\jsp\org\apache\jsp\WebContent\spotNotFoundException_jsp.java; ;(  
-%7javax.el.ExpressionFactory"__id*R*P5
-3org.apache.jsp.WebContent.spotNotFoundException_jsp"
-_el_expressionfactory"£
-}
-sC:\Users\loren\git\ISPW-Project\SkateSpot\.scannerwork\jsp\org\apache\jsp\WebContent\spotNotFoundException_jsp.java; ;(!"
- 
-%7javax.el.ExpressionFactory:
-%jsp_contextB75
-3org.apache.jsp.WebContent.spotNotFoundException_jsp
+Porg.apache.jsp.WebContent.pages.viewMyShops_jsp#getClassImports()Ljava/util/Set;y
+oC:\Users\loren\git\ISPW-Project\SkateSpot\.scannerwork\jsp\org\apache\jsp\WebContent\pages\viewMyShops_jsp.java=) =(8"1*·
+1y
+oC:\Users\loren\git\ISPW-Project\SkateSpot\.scannerwork\jsp\org\apache\jsp\WebContent\pages\viewMyShops_jsp.java> >( ¡
+ž
+y
+oC:\Users\loren\git\ISPW-Project\SkateSpot\.scannerwork\jsp\org\apache\jsp\WebContent\pages\viewMyShops_jsp.java> >( 
+%0java.util.Set"__id*
+"""’
+y
+oC:\Users\loren\git\ISPW-Project\SkateSpot\.scannerwork\jsp\org\apache\jsp\WebContent\pages\viewMyShops_jsp.java> >(!
+
+%0java.util.Set:
+%jsp_contextB31
+/org.apache.jsp.WebContent.pages.viewMyShops_jsp

@@ -1,0 +1,125 @@
+package logic.gui;
+
+import java.io.IOException;
+import java.text.SimpleDateFormat;
+import java.util.ArrayList;
+
+import javax.swing.JOptionPane;
+
+import javafx.fxml.FXML;
+import javafx.scene.control.Button;
+import javafx.scene.control.Label;
+import javafx.scene.input.MouseEvent;
+import logic.controllers.ViewMyShopsController;
+import logic.entities.Shop;
+
+public class ViewMyShopsGuiController 
+{
+	@FXML private Label nome;
+	@FXML private Label indirizzo;
+	@FXML private Label zona;
+	@FXML private Label comune;
+	@FXML private Label username;
+	@FXML private Label data;
+	@FXML private Label descrizione;
+	ArrayList<Shop> shops;
+	private int i=0;
+	private int first=1;
+	
+	public void handle(MouseEvent mouseEvent) throws IOException
+    {	
+        Button button = (Button) mouseEvent.getSource();
+        String value = button.getText();
+        switch(value)
+        {
+            case "":            //home button clicked --> re-open home window
+            	PremiumAreaGuiController.getViewShopStage().close();
+                HomeGuiController.getPremiumAreaStage().show();
+                break;
+               
+            case "NEXT":
+            	nextShop();
+            	break;
+            	
+            case "PREVIOUS":
+            	previousShop();
+            	break;
+            default:
+            	break;
+        } 
+    }
+	public void nextShop()
+	{
+		shops = ViewMyShopsController.getInstance().getList();
+		if(shops==null)
+		{
+			JOptionPane.showMessageDialog(null,"ERROR! No shop was found!","WARNING",JOptionPane.WARNING_MESSAGE);
+		}
+		else
+		{
+			if(first==1)
+			{
+				setLabels();
+				first=0;
+			}
+			else
+			{
+				i++;
+				if(i==shops.size())
+				{
+					i=0;
+					setLabels();
+				}
+				else
+				{
+					setLabels();
+				}
+			}
+		}
+	}
+	public void previousShop()
+	{
+		shops = ViewMyShopsController.getInstance().getList();
+		if(shops==null)
+		{
+			JOptionPane.showMessageDialog(null,"ERROR! No shop was found!","WARNING",JOptionPane.WARNING_MESSAGE);
+		}
+		else
+		{
+			if(first==1)
+			{
+				setLabels();
+				first=0;
+			}
+			else
+			{
+				i--;
+				if(i<0)
+				{
+					i=shops.size()-1;
+					this.setLabels();
+				}
+				else
+				{
+					this.setLabels();
+				}	
+		
+			}
+		}
+	}
+	public void setLabels()
+	{
+		SimpleDateFormat sdf;
+		
+		nome.setText(shops.get(i).getNome());
+		indirizzo.setText(shops.get(i).getIndirizzo());
+		zona.setText(shops.get(i).getZona());
+		comune.setText(shops.get(i).getComune());
+		username.setText(shops.get(i).getUsername());
+		sdf=new SimpleDateFormat();
+		data.setText(sdf.format(shops.get(i).getData()));
+		descrizione.setText(shops.get(i).getDescrizione());
+		descrizione.setWrapText(true);
+	}
+
+}

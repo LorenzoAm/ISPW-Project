@@ -1,16 +1,17 @@
 
-Lorg.apache.jsp.WebContent.loginLogout_jsp#getPackageImports()Ljava/util/Set;s
-iC:\Users\loren\git\ISPW-Project\SkateSpot\.scannerwork\jsp\org\apache\jsp\WebContent\loginLogout_jsp.java/) /(:"1*•
-1s
-iC:\Users\loren\git\ISPW-Project\SkateSpot\.scannerwork\jsp\org\apache\jsp\WebContent\loginLogout_jsp.java0 0(!õ
-ò
-s
-iC:\Users\loren\git\ISPW-Project\SkateSpot\.scannerwork\jsp\org\apache\jsp\WebContent\loginLogout_jsp.java0 0(!
-%0java.util.Set"__id*
-"""å
-s
-iC:\Users\loren\git\ISPW-Project\SkateSpot\.scannerwork\jsp\org\apache\jsp\WebContent\loginLogout_jsp.java0 0("
+Korg.apache.jsp.WebContent.pages.joinSpot_jsp#getDependants()Ljava/util/Map;v
+lC:\Users\loren\git\ISPW-Project\SkateSpot\.scannerwork\jsp\org\apache\jsp\WebContent\pages\joinSpot_jsp.java/8 /(E"1*Ó
+1v
+lC:\Users\loren\git\ISPW-Project\SkateSpot\.scannerwork\jsp\org\apache\jsp\WebContent\pages\joinSpot_jsp.java0 0(ﬁ
+€
+v
+lC:\Users\loren\git\ISPW-Project\SkateSpot\.scannerwork\jsp\org\apache\jsp\WebContent\pages\joinSpot_jsp.java0 0(
+%0java.util.Map"__id*F*D.
+,org.apache.jsp.WebContent.pages.joinSpot_jsp"
+_jspx_dependants"è
+v
+lC:\Users\loren\git\ISPW-Project\SkateSpot\.scannerwork\jsp\org\apache\jsp\WebContent\pages\joinSpot_jsp.java0 0(
 
-%0java.util.Set:
-%jsp_contextB-+
-)org.apache.jsp.WebContent.loginLogout_jsp
+%0java.util.Map:
+%jsp_contextB0.
+,org.apache.jsp.WebContent.pages.joinSpot_jsp

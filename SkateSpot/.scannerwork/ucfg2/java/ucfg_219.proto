@@ -1,16 +1,311 @@
 
-Oorg.apache.jsp.WebContent.addSpotControl_jsp#getPackageImports()Ljava/util/Set;v
-lC:\Users\loren\git\ISPW-Project\SkateSpot\.scannerwork\jsp\org\apache\jsp\WebContent\addSpotControl_jsp.java-) -(:"1*Æ
-1v
-lC:\Users\loren\git\ISPW-Project\SkateSpot\.scannerwork\jsp\org\apache\jsp\WebContent\addSpotControl_jsp.java. .(!û
-õ
-v
-lC:\Users\loren\git\ISPW-Project\SkateSpot\.scannerwork\jsp\org\apache\jsp\WebContent\addSpotControl_jsp.java. .(!
-%0java.util.Set"__id*
-"""è
-v
-lC:\Users\loren\git\ISPW-Project\SkateSpot\.scannerwork\jsp\org\apache\jsp\WebContent\addSpotControl_jsp.java. .("
-
-%0java.util.Set:
-%jsp_contextB0.
-,org.apache.jsp.WebContent.addSpotControl_jsp
+©logic.entities.dao.UserDAO#createUser(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/time/LocalDate;Ljava/lang/String;)VY
+MC:/Users/loren/git/ISPW-Project/SkateSpot/src/logic/entities/dao/UserDAO.javaë ë(!"19*≥
+13Y
+MC:/Users/loren/git/ISPW-Project/SkateSpot/src/logic/entities/dao/UserDAO.java¢ ¢(sÄ
+˝
+Y
+MC:/Users/loren/git/ISPW-Project/SkateSpot/src/logic/entities/dao/UserDAO.java¢ ¢(y
+%11java.lang.String"__concat*`^
+\INSERT INTO utente (Email,Username,Password,Nome,Cognome,DataDiNascita,Sesso,Tipo) VALUES ('*
+
+emailjava.lang.String•
+¢
+Y
+MC:/Users/loren/git/ISPW-Project/SkateSpot/src/logic/entities/dao/UserDAO.java¢ ¢(
+%12java.lang.String"__concat*
+
+%11java.lang.String*
+','Ω
+∫
+Z
+MC:/Users/loren/git/ISPW-Project/SkateSpot/src/logic/entities/dao/UserDAO.java¢ ¢(à
+%13java.lang.String"__concat*
+
+%12java.lang.String*
+
+usernamejava.lang.String¶
+£
+Z
+MC:/Users/loren/git/ISPW-Project/SkateSpot/src/logic/entities/dao/UserDAO.java¢ ¢(é
+%14java.lang.String"__concat*
+
+%13java.lang.String*
+','Ω
+∫
+Z
+MC:/Users/loren/git/ISPW-Project/SkateSpot/src/logic/entities/dao/UserDAO.java¢ ¢(ó
+%15java.lang.String"__concat*
+
+%14java.lang.String*
+
+passwordjava.lang.String¶
+£
+Z
+MC:/Users/loren/git/ISPW-Project/SkateSpot/src/logic/entities/dao/UserDAO.java¢ ¢(ù
+%16java.lang.String"__concat*
+
+%15java.lang.String*
+','π
+∂
+Z
+MC:/Users/loren/git/ISPW-Project/SkateSpot/src/logic/entities/dao/UserDAO.java¢ ¢(¢
+%17java.lang.String"__concat*
+
+%16java.lang.String*
+
+namejava.lang.String¶
+£
+Z
+MC:/Users/loren/git/ISPW-Project/SkateSpot/src/logic/entities/dao/UserDAO.java¢ ¢(®
+%18java.lang.String"__concat*
+
+%17java.lang.String*
+','º
+π
+Z
+MC:/Users/loren/git/ISPW-Project/SkateSpot/src/logic/entities/dao/UserDAO.java¢ ¢(∞
+%19java.lang.String"__concat*
+
+%18java.lang.String*
+
+surnamejava.lang.String¶
+£
+Z
+MC:/Users/loren/git/ISPW-Project/SkateSpot/src/logic/entities/dao/UserDAO.java¢ ¢(∂
+%20java.lang.String"__concat*
+
+%19java.lang.String*
+','º
+π
+Z
+MC:/Users/loren/git/ISPW-Project/SkateSpot/src/logic/entities/dao/UserDAO.java¢ ¢(ª
+%21java.lang.String"__concat*
+
+%20java.lang.String*
+
+datajava.time.LocalDate¶
+£
+Z
+MC:/Users/loren/git/ISPW-Project/SkateSpot/src/logic/entities/dao/UserDAO.java¢ ¢(¡
+%22java.lang.String"__concat*
+
+%21java.lang.String*
+','ª
+∏
+Z
+MC:/Users/loren/git/ISPW-Project/SkateSpot/src/logic/entities/dao/UserDAO.java¢ ¢(»
+%23java.lang.String"__concat*
+
+%22java.lang.String*
+
+genderjava.lang.String¶
+£
+Z
+MC:/Users/loren/git/ISPW-Project/SkateSpot/src/logic/entities/dao/UserDAO.java¢ ¢(Œ
+%24java.lang.String"__concat*
+
+%23java.lang.String*
+','©
+¶
+[
+MC:/Users/loren/git/ISPW-Project/SkateSpot/src/logic/entities/dao/UserDAO.java¢œ ¢(”
+%25java.lang.String"__id*(*&
+logic.entities.dao.UserDAO"
+type∏
+µ
+Z
+MC:/Users/loren/git/ISPW-Project/SkateSpot/src/logic/entities/dao/UserDAO.java¢ ¢(”
+%26java.lang.String"__concat*
+
+%24java.lang.String*
+
+%25java.lang.String¶
+£
+Z
+MC:/Users/loren/git/ISPW-Project/SkateSpot/src/logic/entities/dao/UserDAO.java¢ ¢(Ÿ
+%27java.lang.String"__concat*
+
+%26java.lang.String*
+');õ
+ò
+Z
+MC:/Users/loren/git/ISPW-Project/SkateSpot/src/logic/entities/dao/UserDAO.java¢ ¢(Ÿ
+queryjava.lang.String"__id*
+
+%27java.lang.StringÑÅ
+Y
+MC:/Users/loren/git/ISPW-Project/SkateSpot/src/logic/entities/dao/UserDAO.java£ £(+
+
+%28int"5java.sql.Statement#executeUpdate(Ljava/lang/String;)I*!
+
+	statementjava.sql.Statement*
+
+queryjava.lang.String2!executeUpdate(Ljava/lang/String;)*
+10*ù
+2Y
+MC:/Users/loren/git/ISPW-Project/SkateSpot/src/logic/entities/dao/UserDAO.java¬ ¬(∑¥
+Y
+MC:/Users/loren/git/ISPW-Project/SkateSpot/src/logic/entities/dao/UserDAO.java¬ ¬(&
+%33void"java.sql.Connection#close()V*#
+!
+
+connectionjava.sql.Connection2close()*
+0*æ
+15Y
+MC:/Users/loren/git/ISPW-Project/SkateSpot/src/logic/entities/dao/UserDAO.javaù ù(9ö
+ó
+Y
+MC:/Users/loren/git/ISPW-Project/SkateSpot/src/logic/entities/dao/UserDAO.javaù ù(9
+rsjava.sql.ResultSet"__id*
+
+%9java.sql.ResultSet∞≠
+Y
+MC:/Users/loren/git/ISPW-Project/SkateSpot/src/logic/entities/dao/UserDAO.javaü ü(
+%10boolean"java.sql.ResultSet#first()Z*
+
+rsjava.sql.ResultSet2first()*
+13
+2
+6
+0*∫
+16Y
+MC:/Users/loren/git/ISPW-Project/SkateSpot/src/logic/entities/dao/UserDAO.javaõ õ(n°
+û
+Y
+MC:/Users/loren/git/ISPW-Project/SkateSpot/src/logic/entities/dao/UserDAO.javaõ õ(n
+	statementjava.sql.Statement"__id*
+
+%6java.sql.Statement«
+ƒ
+Y
+MC:/Users/loren/git/ISPW-Project/SkateSpot/src/logic/entities/dao/UserDAO.javaú ú(G
+%7java.lang.String"__concat*(&
+$SELECT * FROM utente WHERE Email = '*
+
+emailjava.lang.String¢
+ü
+Y
+MC:/Users/loren/git/ISPW-Project/SkateSpot/src/logic/entities/dao/UserDAO.javaú ú(L
+%8java.lang.String"__concat*
+
+%7java.lang.String*
+';ô
+ñ
+Y
+MC:/Users/loren/git/ISPW-Project/SkateSpot/src/logic/entities/dao/UserDAO.javaú ú(M
+queryjava.lang.String"__id*
+
+%8java.lang.String£†
+Y
+MC:/Users/loren/git/ISPW-Project/SkateSpot/src/logic/entities/dao/UserDAO.javaù ù(8
+%9java.sql.ResultSet"Gjava.sql.Statement#executeQuery(Ljava/lang/String;)Ljava/sql/ResultSet;*!
+
+	statementjava.sql.Statement*
+
+queryjava.lang.String2 executeQuery(Ljava/lang/String;)*
+15*à
+17Y
+MC:/Users/loren/git/ISPW-Project/SkateSpot/src/logic/entities/dao/UserDAO.javaô ô(@§
+°
+Y
+MC:/Users/loren/git/ISPW-Project/SkateSpot/src/logic/entities/dao/UserDAO.javaô ô(@!
+
+connectionjava.sql.Connection"__id*
+
+%3java.sql.Connectionv
+t
+Y
+MC:/Users/loren/git/ISPW-Project/SkateSpot/src/logic/entities/dao/UserDAO.javaõ1 õ(R	
+%4int"__id*
+""v
+t
+Y
+MC:/Users/loren/git/ISPW-Project/SkateSpot/src/logic/entities/dao/UserDAO.javaõS õ(m	
+%5int"__id*
+""âÜ
+Y
+MC:/Users/loren/git/ISPW-Project/SkateSpot/src/logic/entities/dao/UserDAO.javaõ õ(n
+%6java.sql.Statement";java.sql.Connection#createStatement(II)Ljava/sql/Statement;*#
+!
+
+connectionjava.sql.Connection*
+	
+%4int*
+	
+%5int2createStatement(II)*
+16*ù
+6Y
+MC:/Users/loren/git/ISPW-Project/SkateSpot/src/logic/entities/dao/UserDAO.java∏ ∏(¥±
+Y
+MC:/Users/loren/git/ISPW-Project/SkateSpot/src/logic/entities/dao/UserDAO.java∏ ∏(%
+%31void"java.sql.Statement#close()V*!
+
+	statementjava.sql.Statement2close()*
+2
+0*”
+18Y
+MC:/Users/loren/git/ISPW-Project/SkateSpot/src/logic/entities/dao/UserDAO.javaô ô($Ñ
+Å
+Y
+MC:/Users/loren/git/ISPW-Project/SkateSpot/src/logic/entities/dao/UserDAO.javaô3 ô(6
+%0java.lang.String"__id*
+""Ñ
+Å
+Y
+MC:/Users/loren/git/ISPW-Project/SkateSpot/src/logic/entities/dao/UserDAO.javaô7 ô(;
+%1java.lang.String"__id*
+""Ñ
+Å
+Y
+MC:/Users/loren/git/ISPW-Project/SkateSpot/src/logic/entities/dao/UserDAO.javaô< ô(?
+%2java.lang.String"__id*
+""÷
+”
+Y
+MC:/Users/loren/git/ISPW-Project/SkateSpot/src/logic/entities/dao/UserDAO.javaô ô(@
+%3java.sql.Connection"qjava.sql.DriverManager#getConnection(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Ljava/sql/Connection;*"
+java.sql.DriverManager*
+
+%0java.lang.String*
+
+%1java.lang.String*
+
+%2java.lang.String*
+17*á
+19Y
+MC:/Users/loren/git/ISPW-Project/SkateSpot/src/logic/entities/dao/UserDAO.javaì ì(!è
+å
+Y
+MC:/Users/loren/git/ISPW-Project/SkateSpot/src/logic/entities/dao/UserDAO.javaì ì("!
+
+connectionjava.sql.Connection"__id*
+""ç
+ä
+Y
+MC:/Users/loren/git/ISPW-Project/SkateSpot/src/logic/entities/dao/UserDAO.javaî î(#
+	statementjava.sql.Statement"__id*
+""*
+18*ö
+10Y
+MC:/Users/loren/git/ISPW-Project/SkateSpot/src/logic/entities/dao/UserDAO.java¨ ¨(≠™
+Y
+MC:/Users/loren/git/ISPW-Project/SkateSpot/src/logic/entities/dao/UserDAO.java¨ ¨(
+%29void"java.sql.ResultSet#close()V*
+
+rsjava.sql.ResultSet2close()*	
+2
+6
+0*w
+0 "p
+Y
+MC:/Users/loren/git/ISPW-Project/SkateSpot/src/logic/entities/dao/UserDAO.javaÀ À(
+implicit return:
+namejava.lang.String:
+surnamejava.lang.String:
+usernamejava.lang.String:
+emailjava.lang.String:
+passwordjava.lang.String:
+datajava.time.LocalDate:
+genderjava.lang.StringB"
+logic.entities.dao.UserDAO

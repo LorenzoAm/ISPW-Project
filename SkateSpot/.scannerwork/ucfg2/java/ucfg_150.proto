@@ -1,48 +1,101 @@
 
-Vlogic.controllers.AddSpotController#getInstance()Llogic/controllers/AddSpotController;`
-VC:/Users/loren/git/ISPW-Project/SkateSpot/src/logic/controllers/AddSpotController.java$ (/"3*º
-2`
-VC:/Users/loren/git/ISPW-Project/SkateSpot/src/logic/controllers/AddSpotController.java (.µ≤
-`
-VC:/Users/loren/git/ISPW-Project/SkateSpot/src/logic/controllers/AddSpotController.java (,)
-%1#logic.controllers.AddSpotController"#logic.controllers.AddSpotController«
-ƒ
-`
-VC:/Users/loren/git/ISPW-Project/SkateSpot/src/logic/controllers/AddSpotController.java (.
-%2"-logic.controllers.AddSpotController#<init>()V*+
-)
-%1#logic.controllers.AddSpotControllerÕ
- 
-`
-VC:/Users/loren/git/ISPW-Project/SkateSpot/src/logic/controllers/AddSpotController.java (.3%
-#logic.controllers.AddSpotController"
-
-instance"__id*+
-)
-%1#logic.controllers.AddSpotController*
-1*Ω
-3`
-VC:/Users/loren/git/ISPW-Project/SkateSpot/src/logic/controllers/AddSpotController.java (Õ
- 
-`
-VC:/Users/loren/git/ISPW-Project/SkateSpot/src/logic/controllers/AddSpotController.java ()
-%0#logic.controllers.AddSpotController"__id*5*3%
-#logic.controllers.AddSpotController"
-
-instance*
+logic.beans.SpotBean#check()ZQ
+GC:/Users/loren/git/ISPW-Project/SkateSpot/src/logic/beans/SpotBean.javau u("15*â
+2R
+GC:/Users/loren/git/ISPW-Project/SkateSpot/src/logic/beans/SpotBean.javawv w(Ü™
+ß
+R
+GC:/Users/loren/git/ISPW-Project/SkateSpot/src/logic/beans/SpotBean.javawv w(à
+%7boolean"(logic.beans.SpotBean#checkDescription()Z*
+logic.beans.SpotBean*
+1*ó
+14Q
+GC:/Users/loren/git/ISPW-Project/SkateSpot/src/logic/beans/SpotBean.javaw w('§
+°
+Q
+GC:/Users/loren/git/ISPW-Project/SkateSpot/src/logic/beans/SpotBean.javaw w()
+%1boolean"#logic.beans.SpotBean#checkStreet()Z*
+logic.beans.SpotBean*
 2
-1*«
-1`
-VC:/Users/loren/git/ISPW-Project/SkateSpot/src/logic/controllers/AddSpotController.java (Õ
- 
-`
-VC:/Users/loren/git/ISPW-Project/SkateSpot/src/logic/controllers/AddSpotController.java ()
-%3#logic.controllers.AddSpotController"__id*5*3%
-#logic.controllers.AddSpotController"
-
-instance"è
-`
-VC:/Users/loren/git/ISPW-Project/SkateSpot/src/logic/controllers/AddSpotController.java (+
-)
-%3#logic.controllers.AddSpotControllerB'"%
-#logic.controllers.AddSpotController
+4
+6
+8
+10
+12
+1*ô
+15Q
+GC:/Users/loren/git/ISPW-Project/SkateSpot/src/logic/beans/SpotBean.javaw w(¢
+ü
+Q
+GC:/Users/loren/git/ISPW-Project/SkateSpot/src/logic/beans/SpotBean.javaw w(
+%0boolean"!logic.beans.SpotBean#checkName()Z*
+logic.beans.SpotBean*
+2
+14
+4
+6
+8
+10
+12
+1*É
+4Q
+GC:/Users/loren/git/ISPW-Project/SkateSpot/src/logic/beans/SpotBean.javawi w(r¢
+ü
+Q
+GC:/Users/loren/git/ISPW-Project/SkateSpot/src/logic/beans/SpotBean.javawi w(t
+%6boolean"!logic.beans.SpotBean#checkType()Z*
+logic.beans.SpotBean*
+2
+1*Ü
+6Q
+GC:/Users/loren/git/ISPW-Project/SkateSpot/src/logic/beans/SpotBean.javaw\ w(e¢
+ü
+Q
+GC:/Users/loren/git/ISPW-Project/SkateSpot/src/logic/beans/SpotBean.javaw\ w(g
+%5boolean"!logic.beans.SpotBean#checkArea()Z*
+logic.beans.SpotBean*	
+2
+4
+1*ë
+8Q
+GC:/Users/loren/git/ISPW-Project/SkateSpot/src/logic/beans/SpotBean.javawG w(X™
+ß
+Q
+GC:/Users/loren/git/ISPW-Project/SkateSpot/src/logic/beans/SpotBean.javawG w(Z
+%4boolean")logic.beans.SpotBean#checkMunicipality()Z*
+logic.beans.SpotBean*
+2
+4
+6
+1*ç
+10Q
+GC:/Users/loren/git/ISPW-Project/SkateSpot/src/logic/beans/SpotBean.javaw: w(C¢
+ü
+Q
+GC:/Users/loren/git/ISPW-Project/SkateSpot/src/logic/beans/SpotBean.javaw: w(E
+%3boolean"!logic.beans.SpotBean#checkCity()Z*
+logic.beans.SpotBean*
+2
+4
+6
+8
+1*ì
+12Q
+GC:/Users/loren/git/ISPW-Project/SkateSpot/src/logic/beans/SpotBean.javaw+ w(6§
+°
+Q
+GC:/Users/loren/git/ISPW-Project/SkateSpot/src/logic/beans/SpotBean.javaw+ w(8
+%2boolean"#logic.beans.SpotBean#checkNumber()Z*
+logic.beans.SpotBean*
+2
+4
+6
+8
+10
+1*µ
+1R
+GC:/Users/loren/git/ISPW-Project/SkateSpot/src/logic/beans/SpotBean.javaw w(ä"\
+R
+GC:/Users/loren/git/ISPW-Project/SkateSpot/src/logic/beans/SpotBean.javaw w(ä
+""B
+logic.beans.SpotBean

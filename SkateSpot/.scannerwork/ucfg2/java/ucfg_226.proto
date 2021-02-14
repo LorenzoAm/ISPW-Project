@@ -1,17 +1,48 @@
 
-Jorg.apache.jsp.WebContent.joinLeaveSpot_jsp#getDependants()Ljava/util/Map;u
-kC:\Users\loren\git\ISPW-Project\SkateSpot\.scannerwork\jsp\org\apache\jsp\WebContent\joinLeaveSpot_jsp.java+8 +(E"1*ê
-1u
-kC:\Users\loren\git\ISPW-Project\SkateSpot\.scannerwork\jsp\org\apache\jsp\WebContent\joinLeaveSpot_jsp.java, ,(Ü
-Ù
-u
-kC:\Users\loren\git\ISPW-Project\SkateSpot\.scannerwork\jsp\org\apache\jsp\WebContent\joinLeaveSpot_jsp.java, ,(
-%0java.util.Map"__id*E*C-
-+org.apache.jsp.WebContent.joinLeaveSpot_jsp"
-_jspx_dependants"Ž
-u
-kC:\Users\loren\git\ISPW-Project\SkateSpot\.scannerwork\jsp\org\apache\jsp\WebContent\joinLeaveSpot_jsp.java, ,(
-
-%0java.util.Map:
-%jsp_contextB/-
-+org.apache.jsp.WebContent.joinLeaveSpot_jsp
+Xlogic.controllers.JoinSpotController#getInstance()Llogic/controllers/JoinSpotController;a
+WC:/Users/loren/git/ISPW-Project/SkateSpot/src/logic/controllers/JoinSpotController.java% (0"3*Æ
+2a
+WC:/Users/loren/git/ISPW-Project/SkateSpot/src/logic/controllers/JoinSpotController.java (/¸µ
+a
+WC:/Users/loren/git/ISPW-Project/SkateSpot/src/logic/controllers/JoinSpotController.java (-*
+%1$logic.controllers.JoinSpotController"$logic.controllers.JoinSpotControllerÊ
+Ç
+a
+WC:/Users/loren/git/ISPW-Project/SkateSpot/src/logic/controllers/JoinSpotController.java (/
+%2".logic.controllers.JoinSpotController#<init>()V*,
+*
+%1$logic.controllers.JoinSpotControllerÐ
+Í
+a
+WC:/Users/loren/git/ISPW-Project/SkateSpot/src/logic/controllers/JoinSpotController.java (/4&
+$logic.controllers.JoinSpotController"
+
+instance"__id*,
+*
+%1$logic.controllers.JoinSpotController*
+1*Á
+3a
+WC:/Users/loren/git/ISPW-Project/SkateSpot/src/logic/controllers/JoinSpotController.java (Ð
+Í
+a
+WC:/Users/loren/git/ISPW-Project/SkateSpot/src/logic/controllers/JoinSpotController.java (*
+%0$logic.controllers.JoinSpotController"__id*6*4&
+$logic.controllers.JoinSpotController"
+
+instance*
+2
+1*Í
+1a
+WC:/Users/loren/git/ISPW-Project/SkateSpot/src/logic/controllers/JoinSpotController.java (Ð
+Í
+a
+WC:/Users/loren/git/ISPW-Project/SkateSpot/src/logic/controllers/JoinSpotController.java (*
+%3$logic.controllers.JoinSpotController"__id*6*4&
+$logic.controllers.JoinSpotController"
+
+instance"‘
+a
+WC:/Users/loren/git/ISPW-Project/SkateSpot/src/logic/controllers/JoinSpotController.java (,
+*
+%3$logic.controllers.JoinSpotControllerB("&
+$logic.controllers.JoinSpotController

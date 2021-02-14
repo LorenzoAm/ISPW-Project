@@ -1,16 +1,16 @@
 
-Jorg.apache.jsp.WebContent.loginLogout_jsp#getClassImports()Ljava/util/Set;s
-iC:\Users\loren\git\ISPW-Project\SkateSpot\.scannerwork\jsp\org\apache\jsp\WebContent\loginLogout_jsp.java3) 3(8"1*•
-1s
-iC:\Users\loren\git\ISPW-Project\SkateSpot\.scannerwork\jsp\org\apache\jsp\WebContent\loginLogout_jsp.java4 4( õ
-ò
-s
-iC:\Users\loren\git\ISPW-Project\SkateSpot\.scannerwork\jsp\org\apache\jsp\WebContent\loginLogout_jsp.java4 4( 
+Oorg.apache.jsp.WebContent.pages.joinSpot_jsp#getPackageImports()Ljava/util/Set;v
+lC:\Users\loren\git\ISPW-Project\SkateSpot\.scannerwork\jsp\org\apache\jsp\WebContent\pages\joinSpot_jsp.java3) 3(:"1*Æ
+1v
+lC:\Users\loren\git\ISPW-Project\SkateSpot\.scannerwork\jsp\org\apache\jsp\WebContent\pages\joinSpot_jsp.java4 4(!û
+õ
+v
+lC:\Users\loren\git\ISPW-Project\SkateSpot\.scannerwork\jsp\org\apache\jsp\WebContent\pages\joinSpot_jsp.java4 4(!
 %0java.util.Set"__id*
-"""å
-s
-iC:\Users\loren\git\ISPW-Project\SkateSpot\.scannerwork\jsp\org\apache\jsp\WebContent\loginLogout_jsp.java4 4(!
+"""è
+v
+lC:\Users\loren\git\ISPW-Project\SkateSpot\.scannerwork\jsp\org\apache\jsp\WebContent\pages\joinSpot_jsp.java4 4("
 
 %0java.util.Set:
-%jsp_contextB-+
-)org.apache.jsp.WebContent.loginLogout_jsp
+%jsp_contextB0.
+,org.apache.jsp.WebContent.pages.joinSpot_jsp

@@ -1,22 +1,16 @@
 
-?logic.beans.SignUpBean#checkSplittedEmail([Ljava/lang/String;)ZU
-IC:/Users/loren/git/ISPW-Project/SkateSpot/src/logic/beans/SignUpBean.java¶ ¶(&"2"1*¬
-2U
-IC:/Users/loren/git/ISPW-Project/SkateSpot/src/logic/beans/SignUpBean.javaº º(î
-ë
-U
-IC:/Users/loren/git/ISPW-Project/SkateSpot/src/logic/beans/SignUpBean.javaº º(:
-%0boolean"@logic.beans.SignUpBean#checkEmailIntegrity([Ljava/lang/String;)Z*
-logic.beans.SignUpBean*%
-#
-splittedEmailjava.lang.String[]"_
-U
-IC:/Users/loren/git/ISPW-Project/SkateSpot/src/logic/beans/SignUpBean.javaº º(;
-""*»
-1U
-IC:/Users/loren/git/ISPW-Project/SkateSpot/src/logic/beans/SignUpBean.java¾ ¾("_
-U
-IC:/Users/loren/git/ISPW-Project/SkateSpot/src/logic/beans/SignUpBean.java¾ ¾(
-"":#
-splittedEmailjava.lang.String[]B
+4logic.beans.SignUpBean#getGender()Ljava/lang/String;S
+IC:/Users/loren/git/ISPW-Project/SkateSpot/src/logic/beans/SignUpBean.javap p("1*ê
+1S
+IC:/Users/loren/git/ISPW-Project/SkateSpot/src/logic/beans/SignUpBean.javar	 r(ž
+›
+S
+IC:/Users/loren/git/ISPW-Project/SkateSpot/src/logic/beans/SignUpBean.javar	 r(
+%0java.lang.String"__id*&*$
+logic.beans.SignUpBean"
+gender"o
+S
+IC:/Users/loren/git/ISPW-Project/SkateSpot/src/logic/beans/SignUpBean.javar r(
+
+%0java.lang.StringB
 logic.beans.SignUpBean

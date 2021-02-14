@@ -1,74 +1,48 @@
 
-_org.apache.jsp.WebContent.viewShops_jsp#_jsp_getExpressionFactory()Ljavax/el/ExpressionFactory;s
-gC:\Users\loren\git\ISPW-Project\SkateSpot\.scannerwork\jsp\org\apache\jsp\WebContent\viewShops_jsp.java‚$ ‚(="5*×
-2s
-gC:\Users\loren\git\ISPW-Project\SkateSpot\.scannerwork\jsp\org\apache\jsp\WebContent\viewShops_jsp.java†" †(.ª
-§
-s
-gC:\Users\loren\git\ISPW-Project\SkateSpot\.scannerwork\jsp\org\apache\jsp\WebContent\viewShops_jsp.java†" †(."
-%2javax.servlet.jsp.JspFactory"__id*
-""£ 
-s
-gC:\Users\loren\git\ISPW-Project\SkateSpot\.scannerwork\jsp\org\apache\jsp\WebContent\viewShops_jsp.java†H †(Z!
-%3javax.servlet.ServletConfig"Ejavax.servlet.Servlet#getServletConfig()Ljavax/servlet/ServletConfig;*+)
-'org.apache.jsp.WebContent.viewShops_jsp2getServletConfig()¥¢
-s
-gC:\Users\loren\git\ISPW-Project\SkateSpot\.scannerwork\jsp\org\apache\jsp\WebContent\viewShops_jsp.java†H †(n"
-%4javax.servlet.ServletContext"Mjavax.servlet.ServletConfig#getServletContext()Ljavax/servlet/ServletContext;*#
-!
-%3javax.servlet.ServletConfig2getServletContext()­ª
-s
-gC:\Users\loren\git\ISPW-Project\SkateSpot\.scannerwork\jsp\org\apache\jsp\WebContent\viewShops_jsp.java†" †(o-
-%5'javax.servlet.jsp.JspApplicationContext"~javax.servlet.jsp.JspFactory#getJspApplicationContext(Ljavax/servlet/ServletContext;)Ljavax/servlet/jsp/JspApplicationContext;*$
-"
-%2javax.servlet.jsp.JspFactory*$
-"
-%4javax.servlet.ServletContext28getJspApplicationContext(Ljavax/servlet/ServletContext;)À½
-t
-gC:\Users\loren\git\ISPW-Project\SkateSpot\.scannerwork\jsp\org\apache\jsp\WebContent\viewShops_jsp.java†" †(† 
-%6javax.el.ExpressionFactory"Zjavax.servlet.jsp.JspApplicationContext#getExpressionFactory()Ljavax/el/ExpressionFactory;*/
+^logic.controllers.ViewMyShopsController#getInstance()Llogic/controllers/ViewMyShopsController;d
+ZC:/Users/loren/git/ISPW-Project/SkateSpot/src/logic/controllers/ViewMyShopsController.java% (0"3*ä
+2d
+ZC:/Users/loren/git/ISPW-Project/SkateSpot/src/logic/controllers/ViewMyShopsController.java ()Á¾
+d
+ZC:/Users/loren/git/ISPW-Project/SkateSpot/src/logic/controllers/ViewMyShopsController.java ('-
+%1'logic.controllers.ViewMyShopsController"'logic.controllers.ViewMyShopsControllerÓ
+Ð
+d
+ZC:/Users/loren/git/ISPW-Project/SkateSpot/src/logic/controllers/ViewMyShopsController.java ()
+%2"1logic.controllers.ViewMyShopsController#<init>()V*/
 -
-%5'javax.servlet.jsp.JspApplicationContext2getExpressionFactory()é
-æ
-t
-gC:\Users\loren\git\ISPW-Project\SkateSpot\.scannerwork\jsp\org\apache\jsp\WebContent\viewShops_jsp.java†
- †(†D)
-'org.apache.jsp.WebContent.viewShops_jsp"
-_el_expressionfactory"__id*"
- 
-%6javax.el.ExpressionFactory*
-1*ë
-3s
-gC:\Users\loren\git\ISPW-Project\SkateSpot\.scannerwork\jsp\org\apache\jsp\WebContent\viewShops_jsp.java… …(!è
-å
-s
-gC:\Users\loren\git\ISPW-Project\SkateSpot\.scannerwork\jsp\org\apache\jsp\WebContent\viewShops_jsp.java… …(! 
-%1javax.el.ExpressionFactory"__id*F*D)
-'org.apache.jsp.WebContent.viewShops_jsp"
-_el_expressionfactory*
+%1'logic.controllers.ViewMyShopsControllerÙ
+Ö
+d
+ZC:/Users/loren/git/ISPW-Project/SkateSpot/src/logic/controllers/ViewMyShopsController.java ()7)
+'logic.controllers.ViewMyShopsController"
+
+instance"__id*/
+-
+%1'logic.controllers.ViewMyShopsController*
+1*Í
+3d
+ZC:/Users/loren/git/ISPW-Project/SkateSpot/src/logic/controllers/ViewMyShopsController.java (Ù
+Ö
+d
+ZC:/Users/loren/git/ISPW-Project/SkateSpot/src/logic/controllers/ViewMyShopsController.java (-
+%0'logic.controllers.ViewMyShopsController"__id*9*7)
+'logic.controllers.ViewMyShopsController"
+
+instance*
 2
-1*ë
-5s
-gC:\Users\loren\git\ISPW-Project\SkateSpot\.scannerwork\jsp\org\apache\jsp\WebContent\viewShops_jsp.javaƒ ƒ(è
-å
-s
-gC:\Users\loren\git\ISPW-Project\SkateSpot\.scannerwork\jsp\org\apache\jsp\WebContent\viewShops_jsp.javaƒ ƒ( 
-%0javax.el.ExpressionFactory"__id*F*D)
-'org.apache.jsp.WebContent.viewShops_jsp"
-_el_expressionfactory*
-3
-1*ÿ
-1s
-gC:\Users\loren\git\ISPW-Project\SkateSpot\.scannerwork\jsp\org\apache\jsp\WebContent\viewShops_jsp.javaŠ Š( è
-å
-s
-gC:\Users\loren\git\ISPW-Project\SkateSpot\.scannerwork\jsp\org\apache\jsp\WebContent\viewShops_jsp.javaŠ Š(  
-%7javax.el.ExpressionFactory"__id*F*D)
-'org.apache.jsp.WebContent.viewShops_jsp"
-_el_expressionfactory"™
-s
-gC:\Users\loren\git\ISPW-Project\SkateSpot\.scannerwork\jsp\org\apache\jsp\WebContent\viewShops_jsp.javaŠ Š(!"
- 
-%7javax.el.ExpressionFactory:
-%jsp_contextB+)
-'org.apache.jsp.WebContent.viewShops_jsp
+1*ß
+1d
+ZC:/Users/loren/git/ISPW-Project/SkateSpot/src/logic/controllers/ViewMyShopsController.java	 (Ù
+Ö
+d
+ZC:/Users/loren/git/ISPW-Project/SkateSpot/src/logic/controllers/ViewMyShopsController.java	 (-
+%3'logic.controllers.ViewMyShopsController"__id*9*7)
+'logic.controllers.ViewMyShopsController"
+
+instance"—
+d
+ZC:/Users/loren/git/ISPW-Project/SkateSpot/src/logic/controllers/ViewMyShopsController.java (/
+-
+%3'logic.controllers.ViewMyShopsControllerB+")
+'logic.controllers.ViewMyShopsController

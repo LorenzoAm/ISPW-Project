@@ -1,0 +1,10 @@
+SMAP
+addSpotDenied_jsp.java
+JSP
+*S JSP
+*F
++ 0 addSpotDenied.jsp
+WebContent/pages/addSpotDenied.jsp
+*L
+2,18:116,0
+*E

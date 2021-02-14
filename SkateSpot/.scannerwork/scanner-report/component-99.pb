@@ -1,0 +1,1 @@
+c 2jspXhr(WebContent/pages/joinLeaveSpotDenied.jsp

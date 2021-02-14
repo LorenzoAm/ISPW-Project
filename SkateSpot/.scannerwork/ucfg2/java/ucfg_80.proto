@@ -1,16 +1,17 @@
 
-4logic.beans.SignUpBean#getGender()Ljava/lang/String;S
-IC:/Users/loren/git/ISPW-Project/SkateSpot/src/logic/beans/SignUpBean.javaq q("1*Í
+6logic.beans.SignUpBean#getUsername()Ljava/lang/String;S
+IC:/Users/loren/git/ISPW-Project/SkateSpot/src/logic/beans/SignUpBean.javaC C("1*Ï
 1S
-IC:/Users/loren/git/ISPW-Project/SkateSpot/src/logic/beans/SignUpBean.javas	 s(û
-õ
+IC:/Users/loren/git/ISPW-Project/SkateSpot/src/logic/beans/SignUpBean.javaE	 E(†
+ù
 S
-IC:/Users/loren/git/ISPW-Project/SkateSpot/src/logic/beans/SignUpBean.javas	 s(
-%0java.lang.String"__id*&*$
-logic.beans.SignUpBean"
-gender"o
+IC:/Users/loren/git/ISPW-Project/SkateSpot/src/logic/beans/SignUpBean.javaE	 E(
+%0java.lang.String"__id*(*&
+logic.beans.SignUpBean"
+
+username"o
 S
-IC:/Users/loren/git/ISPW-Project/SkateSpot/src/logic/beans/SignUpBean.javas s(
+IC:/Users/loren/git/ISPW-Project/SkateSpot/src/logic/beans/SignUpBean.javaE E(
 
 %0java.lang.StringB
 logic.beans.SignUpBean

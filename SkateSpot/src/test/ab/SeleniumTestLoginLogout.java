@@ -19,18 +19,18 @@ import logic.entities.dao.UserDAO;
 import logic.exception.ExistingEmailException;
 
 public class SeleniumTestLoginLogout {
-	static final String email="prova.selenium@gmail.com";
-	static final String password="password";
-	static final String street="provaselenium";
-	static final String number="1";
-	static final String city="provaselenium";
-	static final String prova="Welcome back Prova !";
-	static final String prova2="Logout completed, see you soon !";
+	static final String EMAIL="prova.selenium@gmail.com";
+	static final String PASSWORD="password";
+	static final String STREET="provaselenium";
+	static final String NUMBER="1";
+	static final String CITY="provaselenium";
+	static final String PROVA="Welcome back Prova !";
+	static final String PROVA2="Logout completed, see you soon !";
 	
 	@Before
 	public void init()
 	{
-		SignUpBean bean= new SignUpBean("Prova","Selenium","provaselenium",email,password,password);
+		SignUpBean bean= new SignUpBean("Prova","Selenium",STREET,EMAIL,PASSWORD,PASSWORD);
 		DateTimeFormatter formatter = DateTimeFormatter.ofPattern("d/MM/yyyy");
 		String date = "16/08/2000";
 		//convert String to LocalDate
@@ -56,25 +56,25 @@ public class SeleniumTestLoginLogout {
 		//apro login
 		driver.findElement(By.xpath("/html/body/div[2]/table/tbody/tr/td[7]/table/tbody/tr[2]/td/a/img")).click();
 		//inserisco daati
-		driver.findElement(By.xpath("//*[@id=\"email\"]")).sendKeys(email);
-		driver.findElement(By.xpath("//*[@id=\"password\"]")).sendKeys(password);
+		driver.findElement(By.xpath("//*[@id=\"email\"]")).sendKeys(EMAIL);
+		driver.findElement(By.xpath("//*[@id=\"password\"]")).sendKeys(PASSWORD);
 		driver.findElement(By.xpath("/html/body/div[2]/form/input[3]")).click();
 		//verifico
 		WebElement txtBoxContent = driver.findElement(By.xpath("/html/body/h2"));
-		assertEquals(prova,txtBoxContent.getText());
+		assertEquals(PROVA,txtBoxContent.getText());
 		//torno homepage
 		driver.findElement(By.xpath("/html/body/div/a/img")).click();
 		//eseguo logout
 		driver.findElement(By.xpath("/html/body/div[2]/table/tbody/tr/td[7]/table/tbody/tr[2]/td/a/img")).click();
 		//verifico logout eseguito
 		WebElement txtBoxContent2 = driver.findElement(By.xpath("/html/body/h2"));
-		assertEquals(prova2,txtBoxContent2.getText());
+		assertEquals(PROVA2,txtBoxContent2.getText());
 		driver.close();
 	}
 	@After
 	public void tearDown() 
 	{		
-		UserDAO.deleteUser(email,password);		
+		UserDAO.deleteUser(EMAIL,PASSWORD);		
 	}
 			
 

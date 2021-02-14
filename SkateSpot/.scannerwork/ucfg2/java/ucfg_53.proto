@@ -1,17 +1,14 @@
 
-5logic.entities.Shop#getPartitaIVA()Ljava/lang/String;P
-FC:/Users/loren/git/ISPW-Project/SkateSpot/src/logic/entities/Shop.javaF F("1*â
-1P
-FC:/Users/loren/git/ISPW-Project/SkateSpot/src/logic/entities/Shop.javaH H(œ
-™
-P
-FC:/Users/loren/git/ISPW-Project/SkateSpot/src/logic/entities/Shop.javaH H(
-%0java.lang.String"__id*'*%
-logic.entities.Shop"
-
-partitaIVA"l
-P
-FC:/Users/loren/git/ISPW-Project/SkateSpot/src/logic/entities/Shop.javaH H(
+>logic.exception.FullSpotException#toString()Ljava/lang/String;^
+TC:/Users/loren/git/ISPW-Project/SkateSpot/src/logic/exception/FullSpotException.java ("1*Æ
+1^
+TC:/Users/loren/git/ISPW-Project/SkateSpot/src/logic/exception/FullSpotException.java	 (äá
+^
+TC:/Users/loren/git/ISPW-Project/SkateSpot/src/logic/exception/FullSpotException.java	 (
+%0java.lang.String"2java.lang.Throwable#getMessage()Ljava/lang/String;*%#
+!logic.exception.FullSpotException2getMessage()"z
+^
+TC:/Users/loren/git/ISPW-Project/SkateSpot/src/logic/exception/FullSpotException.java (
 
-%0java.lang.StringB
-logic.entities.Shop
+%0java.lang.StringB%#
+!logic.exception.FullSpotException

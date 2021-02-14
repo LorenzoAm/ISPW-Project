@@ -1,16 +1,16 @@
 
-;logic.beans.SignUpBean#getTypeOfAccount()Ljava/lang/String;S
-IC:/Users/loren/git/ISPW-Project/SkateSpot/src/logic/beans/SignUpBean.java{ {("1*Ò
+3logic.beans.SignUpBean#getEmail()Ljava/lang/String;S
+IC:/Users/loren/git/ISPW-Project/SkateSpot/src/logic/beans/SignUpBean.javaL L("1*È
 1S
-IC:/Users/loren/git/ISPW-Project/SkateSpot/src/logic/beans/SignUpBean.java}	 }(•
-¢
+IC:/Users/loren/git/ISPW-Project/SkateSpot/src/logic/beans/SignUpBean.javaN	 N(ù
+ö
 S
-IC:/Users/loren/git/ISPW-Project/SkateSpot/src/logic/beans/SignUpBean.java}	 }(
-%0java.lang.String"__id*-*+
-logic.beans.SignUpBean"
-typeOfAccount"o
+IC:/Users/loren/git/ISPW-Project/SkateSpot/src/logic/beans/SignUpBean.javaN	 N(
+%0java.lang.String"__id*%*#
+logic.beans.SignUpBean"
+email"o
 S
-IC:/Users/loren/git/ISPW-Project/SkateSpot/src/logic/beans/SignUpBean.java} }(
+IC:/Users/loren/git/ISPW-Project/SkateSpot/src/logic/beans/SignUpBean.javaN N(
 
 %0java.lang.StringB
 logic.beans.SignUpBean

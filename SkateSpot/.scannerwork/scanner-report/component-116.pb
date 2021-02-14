@@ -1,0 +1,1 @@
+t 2jspX²hrWebContent/pages/viewSpots.jsp

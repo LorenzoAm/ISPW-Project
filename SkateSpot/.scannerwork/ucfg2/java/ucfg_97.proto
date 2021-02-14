@@ -1,41 +1,54 @@
 
-,logic.beans.SignUpBean#checkTypeOfAccount()ZU
-IC:/Users/loren/git/ISPW-Project/SkateSpot/src/logic/beans/SignUpBean.javaÑ Ñ(#"3*‰
+'logic.beans.SignUpBean#checkPassword()ZU
+IC:/Users/loren/git/ISPW-Project/SkateSpot/src/logic/beans/SignUpBean.javaê ê("3*ˆ
 2U
-IC:/Users/loren/git/ISPW-Project/SkateSpot/src/logic/beans/SignUpBean.javaÜ) Ü(6ß
-§
+IC:/Users/loren/git/ISPW-Project/SkateSpot/src/logic/beans/SignUpBean.javaî
+ î(¢
+ü
 U
-IC:/Users/loren/git/ISPW-Project/SkateSpot/src/logic/beans/SignUpBean.javaÜ) Ü(6
-%2java.lang.String"__id*-*+
-logic.beans.SignUpBean"
-typeOfAccountÿ’
+IC:/Users/loren/git/ISPW-Project/SkateSpot/src/logic/beans/SignUpBean.javaî
+ î(
+%2java.lang.String"__id*(*&
+logic.beans.SignUpBean"
+
+password©
+¶
 U
-IC:/Users/loren/git/ISPW-Project/SkateSpot/src/logic/beans/SignUpBean.javaÜ) Ü(F
-%3boolean",java.lang.String#equals(Ljava/lang/Object;)Z*
+IC:/Users/loren/git/ISPW-Project/SkateSpot/src/logic/beans/SignUpBean.javaî î()
+%3java.lang.String"__id*/*-
+logic.beans.SignUpBean"
+confirmPasswordÁ‰
+U
+IC:/Users/loren/git/ISPW-Project/SkateSpot/src/logic/beans/SignUpBean.javaî
+ î(*
+%4boolean",java.lang.String#equals(Ljava/lang/Object;)Z*
 
-%2java.lang.String*	
-Owner2equals(Ljava/lang/Object;)*
-1*Ë
+%2java.lang.String*
+
+%3java.lang.String2equals(Ljava/lang/Object;)"_
+U
+IC:/Users/loren/git/ISPW-Project/SkateSpot/src/logic/beans/SignUpBean.javaî î(,
+""*Ø
 3U
-IC:/Users/loren/git/ISPW-Project/SkateSpot/src/logic/beans/SignUpBean.javaÜ	 Ü(ß
-§
+IC:/Users/loren/git/ISPW-Project/SkateSpot/src/logic/beans/SignUpBean.javaí í(¢
+ü
 U
-IC:/Users/loren/git/ISPW-Project/SkateSpot/src/logic/beans/SignUpBean.javaÜ	 Ü(
-%0java.lang.String"__id*-*+
-logic.beans.SignUpBean"
-typeOfAccountŸ÷
+IC:/Users/loren/git/ISPW-Project/SkateSpot/src/logic/beans/SignUpBean.javaí í(
+%0java.lang.String"__id*(*&
+logic.beans.SignUpBean"
+
+password•¢
 U
-IC:/Users/loren/git/ISPW-Project/SkateSpot/src/logic/beans/SignUpBean.javaÜ	 Ü('
-%1boolean",java.lang.String#equals(Ljava/lang/Object;)Z*
+IC:/Users/loren/git/ISPW-Project/SkateSpot/src/logic/beans/SignUpBean.javaí í(	
+%1int"java.lang.String#length()I*
 
-%0java.lang.String*
-
-Skater2equals(Ljava/lang/Object;)*
+%0java.lang.String2length()*
 2
 1*ª
 1U
-IC:/Users/loren/git/ISPW-Project/SkateSpot/src/logic/beans/SignUpBean.javaÜ Ü(H"_
+IC:/Users/loren/git/ISPW-Project/SkateSpot/src/logic/beans/SignUpBean.javaò
+ ò("_
 U
-IC:/Users/loren/git/ISPW-Project/SkateSpot/src/logic/beans/SignUpBean.javaÜ Ü(H
+IC:/Users/loren/git/ISPW-Project/SkateSpot/src/logic/beans/SignUpBean.javaò ò(
 ""B
 logic.beans.SignUpBean

@@ -1,59 +1,74 @@
 
-jorg.apache.jsp.WebContent.signUpException_jsp#_jsp_getInstanceManager()Lorg/apache/tomcat/InstanceManager;w
-mC:\Users\loren\git\ISPW-Project\SkateSpot\.scannerwork\jsp\org\apache\jsp\WebContent\signUpException_jsp.java>+ >(B"5*·
-2w
-mC:\Users\loren\git\ISPW-Project\SkateSpot\.scannerwork\jsp\org\apache\jsp\WebContent\signUpException_jsp.javaB! B($­ª
-w
-mC:\Users\loren\git\ISPW-Project\SkateSpot\.scannerwork\jsp\org\apache\jsp\WebContent\signUpException_jsp.javaBe B(w!
-%2javax.servlet.ServletConfig"Ejavax.servlet.Servlet#getServletConfig()Ljavax/servlet/ServletConfig;*1/
--org.apache.jsp.WebContent.signUpException_jsp2getServletConfig()ˆ
-…
-w
-mC:\Users\loren\git\ISPW-Project\SkateSpot\.scannerwork\jsp\org\apache\jsp\WebContent\signUpException_jsp.javaB! B(x'
-%3!org.apache.tomcat.InstanceManager"…org.apache.jasper.runtime.InstanceManagerFactory#getInstanceManager(Ljavax/servlet/ServletConfig;)Lorg/apache/tomcat/InstanceManager;*4"2
-0org.apache.jasper.runtime.InstanceManagerFactory*#
+borg.apache.jsp.WebContent.pages.logout_jsp#_jsp_getExpressionFactory()Ljavax/el/ExpressionFactory;t
+jC:\Users\loren\git\ISPW-Project\SkateSpot\.scannerwork\jsp\org\apache\jsp\WebContent\pages\logout_jsp.java3$ 3(="5*ä
+2t
+jC:\Users\loren\git\ISPW-Project\SkateSpot\.scannerwork\jsp\org\apache\jsp\WebContent\pages\logout_jsp.java7" 7(.«
+¨
+t
+jC:\Users\loren\git\ISPW-Project\SkateSpot\.scannerwork\jsp\org\apache\jsp\WebContent\pages\logout_jsp.java7" 7(."
+%2javax.servlet.jsp.JspFactory"__id*
+""§¤
+t
+jC:\Users\loren\git\ISPW-Project\SkateSpot\.scannerwork\jsp\org\apache\jsp\WebContent\pages\logout_jsp.java7H 7(Z!
+%3javax.servlet.ServletConfig"Ejavax.servlet.Servlet#getServletConfig()Ljavax/servlet/ServletConfig;*.,
+*org.apache.jsp.WebContent.pages.logout_jsp2getServletConfig()¦£
+t
+jC:\Users\loren\git\ISPW-Project\SkateSpot\.scannerwork\jsp\org\apache\jsp\WebContent\pages\logout_jsp.java7H 7(n"
+%4javax.servlet.ServletContext"Mjavax.servlet.ServletConfig#getServletContext()Ljavax/servlet/ServletContext;*#
 !
-%2javax.servlet.ServletConfigø
-õ
-w
-mC:\Users\loren\git\ISPW-Project\SkateSpot\.scannerwork\jsp\org\apache\jsp\WebContent\signUpException_jsp.javaB
- B(xI/
--org.apache.jsp.WebContent.signUpException_jsp"
-_jsp_instancemanager"__id*)
-'
-%3!org.apache.tomcat.InstanceManager*
-1*ÿ
-3w
-mC:\Users\loren\git\ISPW-Project\SkateSpot\.scannerwork\jsp\org\apache\jsp\WebContent\signUpException_jsp.javaA A( ø
-õ
-w
-mC:\Users\loren\git\ISPW-Project\SkateSpot\.scannerwork\jsp\org\apache\jsp\WebContent\signUpException_jsp.javaA A( '
-%1!org.apache.tomcat.InstanceManager"__id*K*I/
--org.apache.jsp.WebContent.signUpException_jsp"
-_jsp_instancemanager*
+%3javax.servlet.ServletConfig2getServletContext()®«
+t
+jC:\Users\loren\git\ISPW-Project\SkateSpot\.scannerwork\jsp\org\apache\jsp\WebContent\pages\logout_jsp.java7" 7(o-
+%5'javax.servlet.jsp.JspApplicationContext"~javax.servlet.jsp.JspFactory#getJspApplicationContext(Ljavax/servlet/ServletContext;)Ljavax/servlet/jsp/JspApplicationContext;*$
+"
+%2javax.servlet.jsp.JspFactory*$
+"
+%4javax.servlet.ServletContext28getJspApplicationContext(Ljavax/servlet/ServletContext;)Á¾
+u
+jC:\Users\loren\git\ISPW-Project\SkateSpot\.scannerwork\jsp\org\apache\jsp\WebContent\pages\logout_jsp.java7" 7(† 
+%6javax.el.ExpressionFactory"Zjavax.servlet.jsp.JspApplicationContext#getExpressionFactory()Ljavax/el/ExpressionFactory;*/
+-
+%5'javax.servlet.jsp.JspApplicationContext2getExpressionFactory()í
+ê
+u
+jC:\Users\loren\git\ISPW-Project\SkateSpot\.scannerwork\jsp\org\apache\jsp\WebContent\pages\logout_jsp.java7
+ 7(†G,
+*org.apache.jsp.WebContent.pages.logout_jsp"
+_el_expressionfactory"__id*"
+ 
+%6javax.el.ExpressionFactory*
+1*ð
+3t
+jC:\Users\loren\git\ISPW-Project\SkateSpot\.scannerwork\jsp\org\apache\jsp\WebContent\pages\logout_jsp.java6 6(!ì
+é
+t
+jC:\Users\loren\git\ISPW-Project\SkateSpot\.scannerwork\jsp\org\apache\jsp\WebContent\pages\logout_jsp.java6 6(! 
+%1javax.el.ExpressionFactory"__id*I*G,
+*org.apache.jsp.WebContent.pages.logout_jsp"
+_el_expressionfactory*
 2
-1*ÿ
-5w
-mC:\Users\loren\git\ISPW-Project\SkateSpot\.scannerwork\jsp\org\apache\jsp\WebContent\signUpException_jsp.java? ?(ø
-õ
-w
-mC:\Users\loren\git\ISPW-Project\SkateSpot\.scannerwork\jsp\org\apache\jsp\WebContent\signUpException_jsp.java? ?('
-%0!org.apache.tomcat.InstanceManager"__id*K*I/
--org.apache.jsp.WebContent.signUpException_jsp"
-_jsp_instancemanager*
+1*ð
+5t
+jC:\Users\loren\git\ISPW-Project\SkateSpot\.scannerwork\jsp\org\apache\jsp\WebContent\pages\logout_jsp.java4 4(ì
+é
+t
+jC:\Users\loren\git\ISPW-Project\SkateSpot\.scannerwork\jsp\org\apache\jsp\WebContent\pages\logout_jsp.java4 4( 
+%0javax.el.ExpressionFactory"__id*I*G,
+*org.apache.jsp.WebContent.pages.logout_jsp"
+_el_expressionfactory*
 3
-1*ž
-1w
-mC:\Users\loren\git\ISPW-Project\SkateSpot\.scannerwork\jsp\org\apache\jsp\WebContent\signUpException_jsp.javaF F(ø
-õ
-w
-mC:\Users\loren\git\ISPW-Project\SkateSpot\.scannerwork\jsp\org\apache\jsp\WebContent\signUpException_jsp.javaF F('
-%4!org.apache.tomcat.InstanceManager"__id*K*I/
--org.apache.jsp.WebContent.signUpException_jsp"
-_jsp_instancemanager"¤
-w
-mC:\Users\loren\git\ISPW-Project\SkateSpot\.scannerwork\jsp\org\apache\jsp\WebContent\signUpException_jsp.javaF F( )
-'
-%4!org.apache.tomcat.InstanceManager:
-%jsp_contextB1/
--org.apache.jsp.WebContent.signUpException_jsp
+1*…
+1t
+jC:\Users\loren\git\ISPW-Project\SkateSpot\.scannerwork\jsp\org\apache\jsp\WebContent\pages\logout_jsp.java; ;( ì
+é
+t
+jC:\Users\loren\git\ISPW-Project\SkateSpot\.scannerwork\jsp\org\apache\jsp\WebContent\pages\logout_jsp.java; ;(  
+%7javax.el.ExpressionFactory"__id*I*G,
+*org.apache.jsp.WebContent.pages.logout_jsp"
+_el_expressionfactory"š
+t
+jC:\Users\loren\git\ISPW-Project\SkateSpot\.scannerwork\jsp\org\apache\jsp\WebContent\pages\logout_jsp.java; ;(!"
+ 
+%7javax.el.ExpressionFactory:
+%jsp_contextB.,
+*org.apache.jsp.WebContent.pages.logout_jsp

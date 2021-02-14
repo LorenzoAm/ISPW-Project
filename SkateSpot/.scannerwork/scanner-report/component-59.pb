@@ -1,0 +1,1 @@
+; 2javaXƒhr(src/logic/gui/ViewSpotGuiController.java
