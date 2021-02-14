@@ -1,0 +1,316 @@
+{
+  "id": "64c71d7e-cde3-48f3-998c-5dc06504e94f",
+  "version": "2.0",
+  "name": "ISPW-SkateSpot",
+  "url": "http://localhost:8081/SkateSpot/pages/index.jsp",
+  "tests": [{
+    "id": "4aef42bd-3a41-4cf3-afc3-b49320004114",
+    "name": "JoinLeaveSpot",
+    "commands": [{
+      "id": "56742795-cea3-421e-b5c1-15a67ecc3779",
+      "comment": "",
+      "command": "open",
+      "target": "http://localhost:8081/SkateSpot/pages/index.jsp",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "d5afd66f-42c6-40c0-9f17-c4140a3814cb",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1936x1056",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "c3816b8d-9e51-4fff-97cf-7f50306cdac5",
+      "comment": "",
+      "command": "click",
+      "target": "css=tr:nth-child(2) img",
+      "targets": [
+        ["css=tr:nth-child(2) img", "css:finder"],
+        ["xpath=//img[@alt='LOGIN-LOGOUT']", "xpath:img"],
+        ["xpath=//a/img", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "bf830fa4-cee2-4bd8-a743-07ae2c5389dd",
+      "comment": "",
+      "command": "click",
+      "target": "id=email",
+      "targets": [
+        ["id=email", "id"],
+        ["name=email", "name"],
+        ["css=#email", "css:finder"],
+        ["xpath=//input[@id='email']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "0e83e310-9377-4e71-94d4-30e01e2abbcf",
+      "comment": "",
+      "command": "type",
+      "target": "id=email",
+      "targets": [
+        ["id=email", "id"],
+        ["name=email", "name"],
+        ["css=#email", "css:finder"],
+        ["xpath=//input[@id='email']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "utente.premium@gmail.com"
+    }, {
+      "id": "fcee1a31-6e93-47b5-8d10-a41dc88b5c5a",
+      "comment": "",
+      "command": "click",
+      "target": "id=password",
+      "targets": [
+        ["id=password", "id"],
+        ["name=password", "name"],
+        ["css=#password", "css:finder"],
+        ["xpath=//input[@id='password']", "xpath:attributes"],
+        ["xpath=//input[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "11acb7f2-d0f8-450c-b3cd-1ea7612063c8",
+      "comment": "",
+      "command": "type",
+      "target": "id=password",
+      "targets": [
+        ["id=password", "id"],
+        ["name=password", "name"],
+        ["css=#password", "css:finder"],
+        ["xpath=//input[@id='password']", "xpath:attributes"],
+        ["xpath=//input[2]", "xpath:position"]
+      ],
+      "value": "password"
+    }, {
+      "id": "a2370564-8bb7-4730-b211-6c626833a40b",
+      "comment": "",
+      "command": "click",
+      "target": "name=login",
+      "targets": [
+        ["name=login", "name"],
+        ["css=input:nth-child(10)", "css:finder"],
+        ["xpath=//input[@name='login']", "xpath:attributes"],
+        ["xpath=//input[3]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "766ab422-8770-4b81-8957-e967e516a5d3",
+      "comment": "",
+      "command": "click",
+      "target": "css=img",
+      "targets": [
+        ["css=img", "css:finder"],
+        ["xpath=//img[@alt='Home']", "xpath:img"],
+        ["xpath=//img", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "dda41d79-b166-44f3-8b57-59b647844eff",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Join-Leave Spot",
+      "targets": [
+        ["linkText=Join-Leave Spot", "linkText"],
+        ["css=a:nth-child(5)", "css:finder"],
+        ["xpath=//a[contains(text(),'Join-Leave Spot')]", "xpath:link"],
+        ["xpath=//a[contains(@href, 'joinLeaveSpot.jsp')]", "xpath:href"],
+        ["xpath=//a[2]", "xpath:position"],
+        ["xpath=//a[contains(.,'Join-Leave Spot')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "e007b911-6f00-436d-9faa-11ddb58a0d4d",
+      "comment": "",
+      "command": "click",
+      "target": "id=street",
+      "targets": [
+        ["id=street", "id"],
+        ["name=street", "name"],
+        ["css=#street", "css:finder"],
+        ["xpath=//input[@id='street']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "2426ebd4-c94e-4932-81ac-7624ab5bfe46",
+      "comment": "",
+      "command": "type",
+      "target": "id=street",
+      "targets": [
+        ["id=street", "id"],
+        ["name=street", "name"],
+        ["css=#street", "css:finder"],
+        ["xpath=//input[@id='street']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "via Libero Leonardi"
+    }, {
+      "id": "faa5d875-f199-4643-87a2-22d97cf31d1c",
+      "comment": "",
+      "command": "click",
+      "target": "id=number",
+      "targets": [
+        ["id=number", "id"],
+        ["name=number", "name"],
+        ["css=#number", "css:finder"],
+        ["xpath=//input[@id='number']", "xpath:attributes"],
+        ["xpath=//input[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "37726c15-b942-42e2-9ac7-10d26e06df05",
+      "comment": "",
+      "command": "type",
+      "target": "id=number",
+      "targets": [
+        ["id=number", "id"],
+        ["name=number", "name"],
+        ["css=#number", "css:finder"],
+        ["xpath=//input[@id='number']", "xpath:attributes"],
+        ["xpath=//input[2]", "xpath:position"]
+      ],
+      "value": "106"
+    }, {
+      "id": "a33d4ed2-8032-423b-be20-997384a01e6d",
+      "comment": "",
+      "command": "click",
+      "target": "id=city",
+      "targets": [
+        ["id=city", "id"],
+        ["name=city", "name"],
+        ["css=#city", "css:finder"],
+        ["xpath=//input[@id='city']", "xpath:attributes"],
+        ["xpath=//input[3]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "00588363-f709-42bc-b985-c23d4bfb5c8b",
+      "comment": "",
+      "command": "type",
+      "target": "id=city",
+      "targets": [
+        ["id=city", "id"],
+        ["name=city", "name"],
+        ["css=#city", "css:finder"],
+        ["xpath=//input[@id='city']", "xpath:attributes"],
+        ["xpath=//input[3]", "xpath:position"]
+      ],
+      "value": "Roma"
+    }, {
+      "id": "9e7672b7-06f0-41f4-a401-142270e7c3f0",
+      "comment": "",
+      "command": "click",
+      "target": "name=join",
+      "targets": [
+        ["name=join", "name"],
+        ["css=input:nth-child(14)", "css:finder"],
+        ["xpath=//input[@name='join']", "xpath:attributes"],
+        ["xpath=//input[4]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "0dd68c7c-c7c0-4ebf-ae5c-c05a92759640",
+      "comment": "verify joined spot",
+      "command": "verifyText",
+      "target": "css=h2",
+      "targets": [
+        ["css=h2", "css:finder"],
+        ["xpath=//h2", "xpath:position"],
+        ["xpath=//h2[contains(.,'You have joined the spot! Enjoy your session!')]", "xpath:innerText"]
+      ],
+      "value": "You have joined the spot! Enjoy your session!"
+    }, {
+      "id": "b87fe279-120b-4261-8898-99e7afb22289",
+      "comment": "",
+      "command": "mouseOver",
+      "target": "css=a > img",
+      "targets": [
+        ["css=a > img", "css:finder"],
+        ["xpath=//img[@alt='HOME']", "xpath:img"],
+        ["xpath=//a/img", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "cceb3659-f489-476e-bd8d-ed0f1262cbd6",
+      "comment": "",
+      "command": "click",
+      "target": "css=a > img",
+      "targets": [
+        ["css=a > img", "css:finder"],
+        ["xpath=//img[@alt='HOME']", "xpath:img"],
+        ["xpath=//a/img", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "3474f4f6-3b91-46a7-9c0f-611261bc0382",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Join-Leave Spot",
+      "targets": [
+        ["linkText=Join-Leave Spot", "linkText"],
+        ["css=a:nth-child(5)", "css:finder"],
+        ["xpath=//a[contains(text(),'Join-Leave Spot')]", "xpath:link"],
+        ["xpath=//a[contains(@href, 'joinLeaveSpot.jsp')]", "xpath:href"],
+        ["xpath=//a[2]", "xpath:position"],
+        ["xpath=//a[contains(.,'Join-Leave Spot')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "02ed394e-f0a9-427c-96e9-e3487207ffb6",
+      "comment": "",
+      "command": "click",
+      "target": "css=img",
+      "targets": [
+        ["css=img", "css:finder"],
+        ["xpath=//img[@alt='HOME']", "xpath:img"],
+        ["xpath=//img", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "2647b896-9028-4e9a-9723-d988fd744914",
+      "comment": "",
+      "command": "click",
+      "target": "css=tr:nth-child(2) img",
+      "targets": [
+        ["css=tr:nth-child(2) img", "css:finder"],
+        ["xpath=//img[@alt='LOGIN-LOGOUT']", "xpath:img"],
+        ["xpath=//a/img", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "9abe22bf-d960-4983-9287-114a53b3f4be",
+      "comment": "",
+      "command": "mouseOver",
+      "target": "css=img",
+      "targets": [
+        ["css=img", "css:finder"],
+        ["xpath=//img[@alt='Home']", "xpath:img"],
+        ["xpath=//img", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "4f987ec1-bda8-48bb-b616-8e36e2059314",
+      "comment": "",
+      "command": "click",
+      "target": "css=img",
+      "targets": [
+        ["css=img", "css:finder"],
+        ["xpath=//img[@alt='Home']", "xpath:img"],
+        ["xpath=//img", "xpath:position"]
+      ],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "da80b07b-58b3-4860-823f-5bc9844cd20d",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": []
+  }],
+  "urls": ["http://localhost:8081/", "http://localhost:8081/SkateSpot/pages/index.jsp"],
+  "plugins": []
+}

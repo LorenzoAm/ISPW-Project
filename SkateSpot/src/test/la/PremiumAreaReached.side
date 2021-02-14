@@ -1,0 +1,199 @@
+{
+  "id": "e81d3860-a5cd-4a1e-ad38-5912e269a6f6",
+  "version": "2.0",
+  "name": "ISPWSkateSpot",
+  "url": "http://localhost:8081/SkateSpot/pages/index.jsp",
+  "tests": [{
+    "id": "40ef1a2b-476c-4507-b10f-ee227ddeffc8",
+    "name": "PremiumArea",
+    "commands": [{
+      "id": "216907dd-becc-4e3e-850d-d76cf35eb922",
+      "comment": "",
+      "command": "open",
+      "target": "http://localhost:8081/SkateSpot/pages/index.jsp",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "387f1e98-1c8e-4a04-9f7d-e99e8e9cb6b1",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1936x1056",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "2dc4e5b9-6f15-4c49-be3b-96fb56bfe145",
+      "comment": "",
+      "command": "click",
+      "target": "css=tr:nth-child(2) img",
+      "targets": [
+        ["css=tr:nth-child(2) img", "css:finder"],
+        ["xpath=//img[@alt='LOGIN-LOGOUT']", "xpath:img"],
+        ["xpath=//a/img", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "7578519d-570e-4c2e-b816-9dae7fa2caaa",
+      "comment": "",
+      "command": "click",
+      "target": "id=email",
+      "targets": [
+        ["id=email", "id"],
+        ["name=email", "name"],
+        ["css=#email", "css:finder"],
+        ["xpath=//input[@id='email']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "5b79cb33-fc79-4538-bfe8-731b3354f0ae",
+      "comment": "",
+      "command": "type",
+      "target": "id=email",
+      "targets": [
+        ["id=email", "id"],
+        ["name=email", "name"],
+        ["css=#email", "css:finder"],
+        ["xpath=//input[@id='email']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "utente.premium@gmail.com"
+    }, {
+      "id": "4761391c-6706-495c-b51a-1c7cea8e7a26",
+      "comment": "",
+      "command": "click",
+      "target": "css=form",
+      "targets": [
+        ["css=form", "css:finder"],
+        ["xpath=//form[@action='']", "xpath:attributes"],
+        ["xpath=//form", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "290285f3-8e34-459b-9a20-3c304279bbf2",
+      "comment": "",
+      "command": "click",
+      "target": "id=password",
+      "targets": [
+        ["id=password", "id"],
+        ["name=password", "name"],
+        ["css=#password", "css:finder"],
+        ["xpath=//input[@id='password']", "xpath:attributes"],
+        ["xpath=//input[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "daa61d88-9ef2-4543-9916-e92abd3ee0c5",
+      "comment": "",
+      "command": "type",
+      "target": "id=password",
+      "targets": [
+        ["id=password", "id"],
+        ["name=password", "name"],
+        ["css=#password", "css:finder"],
+        ["xpath=//input[@id='password']", "xpath:attributes"],
+        ["xpath=//input[2]", "xpath:position"]
+      ],
+      "value": "password"
+    }, {
+      "id": "c53f85c0-c073-4b7e-978f-d71f0490611d",
+      "comment": "",
+      "command": "click",
+      "target": "name=login",
+      "targets": [
+        ["name=login", "name"],
+        ["css=input:nth-child(10)", "css:finder"],
+        ["xpath=//input[@name='login']", "xpath:attributes"],
+        ["xpath=//input[3]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "5914a8a0-a3fc-484d-9e3e-8e97ce3d21d9",
+      "comment": "",
+      "command": "mouseOver",
+      "target": "css=img",
+      "targets": [
+        ["css=img", "css:finder"],
+        ["xpath=//img[@alt='Home']", "xpath:img"],
+        ["xpath=//img", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "7822f481-7f00-4520-99c8-838ef4bed162",
+      "comment": "",
+      "command": "click",
+      "target": "css=img",
+      "targets": [
+        ["css=img", "css:finder"],
+        ["xpath=//img[@alt='Home']", "xpath:img"],
+        ["xpath=//img", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "48895ed5-3093-4e25-a775-7a9ddf9afcf1",
+      "comment": "",
+      "command": "click",
+      "target": "name=premium",
+      "targets": [
+        ["name=premium", "name"],
+        ["css=input", "css:finder"],
+        ["xpath=//input[@name='premium']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "9fa04eeb-8fb2-49d2-a671-9026a17c1e96",
+      "comment": "",
+      "command": "verifyElementPresent",
+      "target": "css=td:nth-child(1) > a > img",
+      "targets": [
+        ["css=td:nth-child(1) > a > img", "css:finder"],
+        ["xpath=//img[@alt='ADD NEW SHOP']", "xpath:img"],
+        ["xpath=//body/table/tbody/tr[2]/td/a/img", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "46839730-7d87-43fd-88f3-78be20e1e53b",
+      "comment": "",
+      "command": "click",
+      "target": "css=td:nth-child(5) img",
+      "targets": [
+        ["css=td:nth-child(5) img", "css:finder"],
+        ["xpath=//img[@alt='HOME']", "xpath:img"],
+        ["xpath=//a/img", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "11bd4219-c5da-4943-9cc4-4595e9918369",
+      "comment": "",
+      "command": "click",
+      "target": "css=tr:nth-child(2) img",
+      "targets": [
+        ["css=tr:nth-child(2) img", "css:finder"],
+        ["xpath=//img[@alt='LOGIN-LOGOUT']", "xpath:img"],
+        ["xpath=//a/img", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "d3c53494-cfc4-4c8e-bda6-40f0f4405192",
+      "comment": "",
+      "command": "click",
+      "target": "css=img",
+      "targets": [
+        ["css=img", "css:finder"],
+        ["xpath=//img[@alt='Home']", "xpath:img"],
+        ["xpath=//img", "xpath:position"]
+      ],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "098c47d9-fc44-4bfd-a63c-3ace22229096",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": []
+  }],
+  "urls": ["http://localhost:8081/SkateSpot/pages/index.jsp"],
+  "plugins": []
+}
